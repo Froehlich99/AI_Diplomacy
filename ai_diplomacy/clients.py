@@ -1191,11 +1191,21 @@ class OpenRouterClient(BaseModelClient):
                 temperature=temperature,
             )
 
-            if not response.choices or not response.choices[0].message.content:
+            if not response.choices:
+                raise ValueError(f"[{self.model_name}] LLM returned no choices.")
+
+            msg = response.choices[0].message
+            content = msg.content
+            if not content:
+                # Some thinking models put the response in reasoning instead of content
+                reasoning = getattr(msg, "reasoning", None) or getattr(msg, "reasoning_content", None)
+                if reasoning:
+                    content = reasoning
+                    logger.warning(f"[{self.model_name}] No content in response, using reasoning field instead.")
+            if not content:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
 
-            content = response.choices[0].message.content.strip()
-            return content
+            return content.strip()
 
         except Exception as e:
             extra = ""

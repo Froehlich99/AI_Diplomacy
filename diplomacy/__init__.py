@@ -22,8 +22,6 @@ from .engine.map import Map
 from .engine.power import Power
 from .engine.game import Game
 from .engine.message import Message
-from .client.connection import Connection, connect
-from .server.server import Server
 from .utils.game_phase_data import GamePhaseData
 
 # Defining root logger
