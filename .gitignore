@@ -138,31 +138,17 @@ logs
 game.json
 .ruff_cache
 
-
-
-# Node MOdules
-diplomacy/animation/node_modules
-diplomacy/animation/dist
-ai_animation/src/elevenlabskey.txt
-
 ai_diplomacy/alt_implementations
-/experiments
 game_moments.json
 game_moments_report.md
 /game_moments
 model_power_statistics.csv
-
-# Playwrite test results
-**/test-results/
-**/playwright-report/
-/diplomacy_cicero
 
 # dev stuff
 bct.txt
 analysis_summary.txt
 analysis_summary_debug.txt
 /results_alpha
-
 ./results_alpha
 /results_alpha/20250607_222757
 /ai_diplomacy/prompts/famous_leaders_prompts
