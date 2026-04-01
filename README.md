@@ -11,22 +11,11 @@ Forked from [GoodStartLabs/AI_Diplomacy](https://github.com/GoodStartLabs/AI_Dip
 uv sync
 
 # Create .env with your API keys
-cat > .env << 'EOF'
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
-GEMINI_API_KEY=...
-OPENROUTER_API_KEY=sk-or-...
-# DEEPSEEK_API_KEY=...
-# TOGETHER_API_KEY=...
-EOF
 ```
 
 ## Usage
 
 ```bash
-# Run a game with default model assignments
-python lm_game.py
-
 # Specify models for each power (order: Austria, England, France, Germany, Italy, Russia, Turkey)
 python lm_game.py --models "gpt-4o,claude-sonnet-4-20250514,gpt-4o,gpt-4o,gpt-4o,gpt-4o,gpt-4o"
 
