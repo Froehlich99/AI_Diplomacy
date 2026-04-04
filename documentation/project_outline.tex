@@ -1,0 +1,88 @@
+% Do not change document class, margins, fonts, etc.
+\documentclass[a4paper,oneside,bibliography=totoc]{scrbook}
+
+% some useful packages (add more as needed)
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{algorithm} % you can modify the algorithm style to your liking
+\counterwithin{algorithm}{chapter} % so that algorithms have chapter numbers as well
+\usepackage{algorithmic}
+\usepackage{csquotes}
+\renewcommand{\algorithmiccomment}[1]{\hfill\textit{// #1}}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks,citecolor=Green]{hyperref} % you may change/remove the colors
+\usepackage{lipsum} % you do not need this
+
+% chicago citation style
+\usepackage{natbib}
+\bibliographystyle{chicagoa}
+\setcitestyle{authoryear,round,semicolon,aysep={},yysep={,}} \let\cite\citep
+
+% example enviroments (add more as needed)
+\newtheorem{definition}{Definition} \newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+
+% Quick fix to remove the 0 in front of sections.
+\makeatletter
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\makeatother
+
+
+
+\frontmatter \subject{Multi-Agent Gaming \\with the Board Game Diplomacy} % change to appropriate type
+\title{Project Outline}
+\author{
+  Maxim Fröhlich()\\
+  Gabriel Himmelein (1649181)\\
+  David Siregar ()\\
+  Anatole Lobenko ()\\
+  Jose David Burbano ()
+} \date{April 15, 2026}
+\publishers{{\small Submitted to}\\
+  Data and Web Science Group\\
+  Dr. Ralph Peters\\
+  Prof. Dr. Christian Bizer\\
+  University of Mannheim\\}
+\maketitle
+
+% none of the things below is needed, but you may add them if you feel that they
+% are helpful for your work \listofalgorithms \listoffigures \listoftables
+% \listtheorems{definition} \listtheorems{proposition}
+
+
+% okay, start new numbering ... here is where it really starts
+\mainmatter
+
+\section{What is the problem you are solving?}
+
+\section{What data will you use?}
+
+\subsection{Where will you get it?}
+\subsection{How will you gather it?}
+
+\section{How will you solve the problem?}
+
+\subsection{What LLMs do you plan to use?}
+\subsection{Which methods do you plan to apply? Be as specific as you can!}
+\subsection{What is your idea for a multi-agent workflow for your task?}
+
+\section{How will you measure success?}
+
+he evaluation of this project will follow a dual-track approach, combining quantitative performance metrics with qualitative behavioral analysis to determine how effectively multi-agent LLM systems can navigate the complex social and strategic landscape of the game Diplomacy. Since our primary research interest lies in the agents' ability to self-optimize through competition and memory, the most critical metric will be the "Improvement Delta"—the measurable shift in strategic efficacy and consistency between the initial game rounds and subsequent rounds where agents have access to their own reflected performance and updated memory.
+
+Quantitatively, we will track standard game-theoretic indicators such as the number of supply centers controlled, the duration of survival per round, and final win rates across the scheduled matches. This allows us to observe how different models handle the massive action space of Diplomacy and whether their performance improves over time. A key part of the quantitative evaluation will involve "Memory-Induced Success Rates," where we compare the performance of agents with persistent memory against their initial "naive" performance to see if the self-reflection loop actually results in a higher win rate or more stable alliances over time.
+
+Qualitatively, the project will dive into behavioral characteristics, specifically focusing on the axis of "Honorable vs. Deceitful" gameplay. We will implement a system to analyze the delta between an agent’s private reasoning (internal chain-of-thought) and its external communication with other players. Success in this area will be measured by the agent’s ability to recognize and adapt to betrayal. For instance, we will evaluate whether an agent correctly identifies a "deceitful" opponent based on past rounds and adjusts its trust parameters accordingly. This will be documented through "Trust Scores" that agents assign to one another in their memory logs, allowing us to visualize the evolution of diplomatic relations across the multi-round workflow.
+
+A successful implementation will demonstrate a systematic shift in strategic behavior and an increase in nuanced, long-term planning as the agents progress through the 3 to 4 planned rounds of play. Success will be defined by our ability to produce a benchmark where the primary value comes from the agents' emerging ability to learn, lie, and cooperate in ways that mimic human diplomatic complexity, specifically driven by the integration of their past experiences into their current decision-making.
+
+\end{document}

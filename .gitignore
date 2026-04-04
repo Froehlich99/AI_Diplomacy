@@ -152,3 +152,8 @@ analysis_summary_debug.txt
 ./results_alpha
 /results_alpha/20250607_222757
 /ai_diplomacy/prompts/famous_leaders_prompts
+documentation/project_outline.aux
+documentation/project_outline.fdb_latexmk
+documentation/project_outline.fls
+documentation/project_outline.out
+documentation/project_outline.synctex.gz
