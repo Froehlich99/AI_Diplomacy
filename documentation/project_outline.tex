@@ -72,8 +72,31 @@
 \section{How will you solve the problem?}
 
 \subsection{What LLMs do you plan to use?}
-\subsection{Which methods do you plan to apply? Be as specific as you can!}
-\subsection{What is your idea for a multi-agent workflow for your task?}
+
+We build on a fork of the open-source \href{https://github.com/GoodStartLabs/AI_Diplomacy}{GoodStartLabs/AI\_Diplomacy} repository, which wraps the \texttt{diplomacy} game engine with an LLM agent system. The codebase's unified \texttt{BaseModelClient} interface allows each of the seven powers to be assigned a different model, enabling direct head-to-head benchmarking. The model selection balances cost and performance and may evolve with new releases; the current lineup is: Grok 4.1 Fast (xAI), Gemma 4 31B and Gemini 2.5 Flash Lite (Google), Qwen 3.5 27B and Qwen 3.6 Plus (Alibaba), GPT OSS 120B (OpenAI), and Claude Haiku 4.5 (Anthropic). MiniMax, Kimi K2.5, and MiMo models were excluded after poor performance in early testing.
+
+\subsection{Which methods do you plan to apply?}
+
+\textbf{Structured agent state.} Each power is governed by a \texttt{DiplomacyAgent} that maintains strategic goals, a relationship map over the other six powers (Enemy / Unfriendly / Neutral / Friendly / Ally), and a private diary of phase-prefixed reflections. All three are initialized and updated via LLM calls every phase.
+
+\textbf{Diary-based long-term memory (within a game).} After every phase, each agent appends a structured diary entry summarizing its reasoning, the outcome of its orders, and any notable diplomatic events. At every Spring movement phase, an LLM-driven \emph{consolidation pass} rewrites the diary, pruning redundant content while preserving strategically relevant history. This prevents unbounded context growth while still allowing agents to adapt based on past experience.
+
+\textbf{Cross-game memory.} After a full game concludes, each agent's consolidated diary and final relationship map are persisted and injected into the system prompt of the \emph{next} game as prior experience. This allows an agent to carry strategic lessons, knowledge of opponents' playing styles, and calibrated trust scores across multiple sequential games, forming the self-improvement loop that distinguishes this project from single-game LLM evaluations.
+
+To enable behavioral analysis, all private diary entries and outgoing messages are logged separately throughout every game. This creates a structured record that reveals divergences between an agent's internal reasoning and its external communication, the primary signal for detecting deceptive behavior. Each agent also maintains an explicit numeric trust score per opponent, updated every phase, which is persisted as part of the cross-game memory.
+
+\subsection{What is your idea for a multi-agent workflow?}
+
+Each game phase executes the following pipeline concurrently across all active powers:
+
+\begin{enumerate}
+  \item \textbf{Negotiation} (movement phases): Powers exchange free-text messages in a round-robin fashion, choosing between private and global messages based on the board state and diary.
+  \item \textbf{Planning \& diary update}: Each agent optionally generates a short strategic plan, then writes a diary entry capturing intentions and perceived threats.
+  \item \textbf{Order generation}: Each agent's context prompt (board state, history, goals, relationships, recent diary) is sent to the LLM; invalid orders are filtered before submission.
+  \item \textbf{Phase advance \& memory update}: The engine resolves orders simultaneously. Agents write a post-phase diary entry; on Spring phases, a parallel consolidation pass condenses the full diary to keep context bounded.
+\end{enumerate}
+
+This loop repeats until a power controls 18 supply centers, a year limit is reached, or powers draw.
 
 \section{How will you measure success?}
 
