@@ -45,7 +45,7 @@
   Gabriel Himmelein (1649181)\\
   David Siregar ()\\
   Anatole Lobenko ()\\
-  Jose David Burbano ()
+  José David Burbano Pesántez (2266830)
 } \date{April 15, 2026}
 \publishers{{\small Submitted to}\\
   Data and Web Science Group\\
@@ -63,12 +63,23 @@
 \mainmatter
 
 \section{What is the problem you are solving?}
+Large language models (LLMs) are commonly evaluated through tasks such as complex questions answering, logical reasoning and performance on standardized benchmarks. However, these evaluations do not fully capture the challenges of multi-agent systems, where success is measured on negotiation, collaboration, flexibility and strategic planning \cite{cicero2022science,guo2024llm_multiagent_survey}. Our project addresses this gap by using the board game \texttt{diplomacy} to investigate LLM behavior in a competitive social environment\cite{cicero2022science,guan2024richelieu}.
+
+Our approach assigns each of the seven powers in the \texttt{diplomacy} game to a different LLM-based agent. In this setting, agents need to build partnerships, communicate and develop tactics while they assess other players' actions during the different stages of the game. The project provides useful evaluation environment for studying trust development, interaction between LLMs, strategic decision-making and time-based learning \cite{zhou2023sotopia}. 
+
+The main problem we address is how to analyze and evaluate LLM agents' performance in this type of long-horizon multi-agent environment. In particular, we investigate whether agents can enhance their performance across multiple game phases by using context, long-term memory and strategic adaptation to the observed play styles of other models\cite{guan2024richelieu}. In this way, we explore memory, social reasoning and strategic adaptation as key factors that determine agent performance in negotiation-based environments.
 
 \section{What data will you use?}
+Our project uses self-generated simulation data rather than a traditional external dataset.
 
 \subsection{Where will you get it?}
-\subsection{How will you gather it?}
+The data will come from the \texttt{diplomacy} game system, which generates full game records from matches between seven LLM agents. 
 
+We will use three types of data: structured game data (board states, unit positions, supply centers, and phase outcomes), interaction data (negotiation messages exchanged between agents and the orders they submit), and agent-level context (diary summaries, memory records, and execution traces).
+
+
+\subsection{How will you gather it?}
+We collect the data through a series of controlled experiments in which model assignments, prompts, and memory settings are varied across games. After each run, we gather the resulting records and analyze them to derive metrics such as move success, passivity, territorial growth, and alliance behavior. This lets us compare agents across games and assess whether different configurations lead to stronger strategic performance over time.
 \section{How will you solve the problem?}
 
 \subsection{What LLMs do you plan to use?}
@@ -107,5 +118,5 @@ Quantitatively, we will track standard game-theoretic indicators such as the num
 Qualitatively, the project will dive into behavioral characteristics, specifically focusing on the axis of "Honorable vs. Deceitful" gameplay. We will implement a system to analyze the delta between an agent’s private reasoning (internal chain-of-thought) and its external communication with other players. Success in this area will be measured by the agent’s ability to recognize and adapt to betrayal. For instance, we will evaluate whether an agent correctly identifies a "deceitful" opponent based on past rounds and adjusts its trust parameters accordingly. This will be documented through "Trust Scores" that agents assign to one another in their memory logs, allowing us to visualize the evolution of diplomatic relations across the multi-round workflow.
 
 A successful implementation will demonstrate a systematic shift in strategic behavior and an increase in nuanced, long-term planning as the agents progress through the 3 to 4 planned rounds of play. Success will be defined by our ability to produce a benchmark where the primary value comes from the agents' emerging ability to learn, lie, and cooperate in ways that mimic human diplomatic complexity, specifically driven by the integration of their past experiences into their current decision-making.
-
+\bibliography{references}
 \end{document}
