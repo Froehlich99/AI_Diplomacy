@@ -63,28 +63,25 @@
 \mainmatter
 
 \section{What is the problem you are solving?}
-Large language models (LLMs) are commonly evaluated through tasks such as complex questions answering, logical reasoning and performance on standardized benchmarks. However, these evaluations do not fully capture the challenges of multi-agent systems, where success is measured on negotiation, collaboration, flexibility and strategic planning \cite{cicero2022science,guo2024llm_multiagent_survey}. Our project addresses this gap by using the board game \texttt{diplomacy} to investigate LLM behavior in a competitive social environment\cite{cicero2022science,guan2024richelieu}.
+Large language models (LLMs) are typically evaluated on complex question answering and logical reasoning. However, these benchmarks fail to capture multi-agent challenges like negotiation, collaboration, and strategic planning. We address this gap by using the board game \texttt{Diplomacy} to investigate LLM behavior in a competitive social environment.
 
-Our approach assigns each of the seven powers in the \texttt{diplomacy} game to a different LLM-based agent. In this setting, agents need to build partnerships, communicate and develop tactics while they assess other players' actions during the different stages of the game. The project provides useful evaluation environment for studying trust development, interaction between LLMs, strategic decision-making and time-based learning \cite{zhou2023sotopia}. 
+By assigning each of the seven \texttt{Diplomacy} powers to a different LLM agent, we force them to build partnerships, communicate, and develop long-term tactics. This setup provides a robust evaluation environment for studying trust development, strategic decision-making, and time-based learning.
 
-The main problem we address is how to analyze and evaluate LLM agents' performance in this type of long-horizon multi-agent environment. In particular, we investigate whether agents can enhance their performance across multiple game phases by using context, long-term memory and strategic adaptation to the observed play styles of other models\cite{guan2024richelieu}. In this way, we explore memory, social reasoning and strategic adaptation as key factors that determine agent performance in negotiation-based environments.
+Our main objective is to evaluate LLM performance in long-horizon multi-agent settings. Specifically, we investigate whether agents enhance their performance across games using context, long-term memory, and strategic adaptation to opponents' play styles. Thus, we explore memory and social reasoning as key determinants in negotiation-based environments.
 
 \section{What data will you use?}
-Our project uses self-generated simulation data rather than a traditional external dataset.
 
 \subsection{Where will you get it?}
-The data will come from the \texttt{diplomacy} game system, which generates full game records from matches between seven LLM agents. 
-
-We will use three types of data: structured game data (board states, unit positions, supply centers, and phase outcomes), interaction data (negotiation messages exchanged between agents and the orders they submit), and agent-level context (diary summaries, memory records, and execution traces).
-
+Our project uses self-generated simulation data rather than a traditional external dataset. Data originates from the \texttt{Diplomacy} engine during matches between seven LLM agents. We utilize structured game data (board states, supply centers), interaction data (negotiation messages, submitted orders), and agent-level context (diary summaries, memory records, and execution traces).
 
 \subsection{How will you gather it?}
-We collect the data through a series of controlled experiments in which model assignments, prompts, and memory settings are varied across games. After each run, we gather the resulting records and analyze them to derive metrics such as move success, passivity, territorial growth, and alliance behavior. This lets us compare agents across games and assess whether different configurations lead to stronger strategic performance over time.
+We collect data through controlled experiments varying model assignments and memory settings. Analyzing the resulting records yields metrics like move success, territorial growth, and alliance behavior, allowing us to assess how different configurations impact strategic performance over time.
+
 \section{How will you solve the problem?}
 
 \subsection{What LLMs do you plan to use?}
 
-We build on a fork of the open-source \href{https://github.com/GoodStartLabs/AI_Diplomacy}{GoodStartLabs/AI\_Diplomacy} repository, which wraps the \texttt{diplomacy} game engine with an LLM agent system. The codebase's unified \texttt{BaseModelClient} interface allows each of the seven powers to be assigned a different model, enabling direct head-to-head benchmarking. The model selection balances cost and performance and may evolve with new releases; the current lineup is: Grok 4.1 Fast (xAI), Gemma 4 31B and Gemini 2.5 Flash Lite (Google), Qwen 3.5 27B and Qwen 3.6 Plus (Alibaba), GPT OSS 120B (OpenAI), and Claude Haiku 4.5 (Anthropic). MiniMax, Kimi K2.5, and MiMo models were excluded after poor performance in early testing.
+We build on a fork of the open-source \href{https://github.com/GoodStartLabs/AI_Diplomacy}{GoodStartLabs/AI\_Diplomacy} repository, which wraps the \texttt{Diplomacy} game engine with an LLM agent system. The codebase's unified \texttt{BaseModelClient} interface allows each of the seven powers to be assigned a different model, enabling direct head-to-head benchmarking. The model selection balances cost and performance and may evolve with new releases; the current lineup is: Grok 4.1 Fast (xAI), Gemma 4 31B and Gemini 2.5 Flash Lite (Google), Qwen 3.5 27B and Qwen 3.6 Plus (Alibaba), GPT OSS 120B (OpenAI), and Claude Haiku 4.5 (Anthropic). MiniMax, Kimi K2.5, and MiMo models were excluded after poor performance in early testing.
 
 \subsection{Which methods do you plan to apply?}
 
@@ -92,7 +89,7 @@ We build on a fork of the open-source \href{https://github.com/GoodStartLabs/AI_
 
 \textbf{Diary-based long-term memory (within a game).} After every phase, each agent appends a structured diary entry summarizing its reasoning, the outcome of its orders, and any notable diplomatic events. At every Spring movement phase, an LLM-driven \emph{consolidation pass} rewrites the diary, pruning redundant content while preserving strategically relevant history. This prevents unbounded context growth while still allowing agents to adapt based on past experience.
 
-\textbf{Cross-game memory.} After a full game concludes, each agent's consolidated diary and final relationship map are persisted and injected into the system prompt of the \emph{next} game as prior experience. This allows an agent to carry strategic lessons, knowledge of opponents' playing styles, and calibrated trust scores across multiple sequential games, forming the self-improvement loop that distinguishes this project from single-game LLM evaluations.
+\textbf{Cross-game memory.} After a full game concludes, each agent's consolidated diary (capped to a fixed token limit to ensure scalability) and final relationship map are persisted and injected into the system prompt of the \emph{next} game as prior experience. This allows an agent to carry strategic lessons, knowledge of opponents' playing styles, and calibrated trust scores across multiple sequential games, forming the self-improvement loop that distinguishes this project from single-game LLM evaluations.
 
 To enable behavioral analysis, all private diary entries and outgoing messages are logged separately throughout every game. This creates a structured record that reveals divergences between an agent's internal reasoning and its external communication, the primary signal for detecting deceptive behavior. Each agent also maintains an explicit numeric trust score per opponent, updated every phase, which is persisted as part of the cross-game memory.
 
@@ -107,16 +104,15 @@ Each game phase executes the following pipeline concurrently across all active p
   \item \textbf{Phase advance \& memory update}: The engine resolves orders simultaneously. Agents write a post-phase diary entry; on Spring phases, a parallel consolidation pass condenses the full diary to keep context bounded.
 \end{enumerate}
 
-This loop repeats until a power controls 18 supply centers, a year limit is reached, or powers draw.
+\noindent This loop repeats until a power controls 18 supply centers, a year limit is reached, or powers draw.
 
 \section{How will you measure success?}
 
-he evaluation of this project will follow a dual-track approach, combining quantitative performance metrics with qualitative behavioral analysis to determine how effectively multi-agent LLM systems can navigate the complex social and strategic landscape of the game Diplomacy. Since our primary research interest lies in the agents' ability to self-optimize through competition and memory, the most critical metric will be the "Improvement Delta," the measurable shift in strategic efficacy and consistency between the initial game rounds and subsequent rounds where agents have access to their own reflected performance and updated memory.
+The evaluation of this project will follow a dual-track approach, combining quantitative performance metrics with qualitative behavioral analysis to determine how effectively multi-agent LLM systems can navigate the complex social and strategic landscape of the game Diplomacy. Since our primary research interest lies in the agents' ability to self-optimize through competition and memory, the most critical metric will be the "Improvement Delta," the measurable shift in strategic efficacy and consistency between the initial game rounds and subsequent rounds where agents have access to their own reflected performance and updated memory.
 
-Quantitatively, we will track standard game-theoretic indicators such as the number of supply centers controlled, the duration of survival per round, and final win rates across the scheduled matches. This allows us to observe how different models handle the massive action space of Diplomacy and whether their performance improves over time. A key part of the quantitative evaluation will involve "Memory-Induced Success Rates," where we compare the performance of agents with persistent memory against their initial "naive" performance to see if the self-reflection loop actually results in a higher win rate or more stable alliances over time.
+Quantitatively, we will track standard game-theoretic indicators such as the number of supply centers controlled, the duration of survival per round, and final win rates across the scheduled matches. This allows us to observe how different models handle the massive action space of Diplomacy and whether their performance improves over time. To account for the limited sample size of planned matches, we will rotate starting powers across games to minimize positional bias. A key part of the quantitative evaluation will involve "Memory-Induced Success Rates," where we compare the performance of agents with persistent memory against a control baseline of "naive" agents (playing without memory loops) to isolate the impact of the self-reflection mechanism on win rates and alliance stability.
 
 Qualitatively, the project will dive into behavioral characteristics, specifically focusing on the axis of "Honorable vs. Deceitful" gameplay. We will implement a system to analyze the delta between an agent’s private reasoning (internal chain-of-thought) and its external communication with other players. Success in this area will be measured by the agent’s ability to recognize and adapt to betrayal. For instance, we will evaluate whether an agent correctly identifies a "deceitful" opponent based on past rounds and adjusts its trust parameters accordingly. This will be documented through "Trust Scores" that agents assign to one another in their memory logs, allowing us to visualize the evolution of diplomatic relations across the multi-round workflow.
 
 A successful implementation will demonstrate a systematic shift in strategic behavior and an increase in nuanced, long-term planning as the agents progress through the 3 to 4 planned rounds of play. Success will be defined by our ability to produce a benchmark where the primary value comes from the agents' emerging ability to learn, lie, and cooperate in ways that mimic human diplomatic complexity, specifically driven by the integration of their past experiences into their current decision-making.
-\bibliography{references}
 \end{document}
