@@ -281,6 +281,7 @@ async def run_single_game(
                         game_history, model_error_stats,
                         agent_goals=agent.goals,
                         agent_relationships=agent.relationships,
+                        agent_trust_scores=agent.trust_scores,
                         agent_private_diary_str=agent.get_latest_phase_diary_entries(),
                         log_file_path=llm_log_file_path,
                         phase=current_phase,

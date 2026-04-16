@@ -75,6 +75,7 @@ def export_agent_memories(
             },
             "consolidated_diary": diary_text,
             "final_relationships": dict(agent.relationships),
+            "final_trust_scores": dict(agent.trust_scores),
             "final_goals": list(agent.goals),
         }
 
@@ -131,6 +132,11 @@ def format_prior_experience(memory: dict) -> str:
     rel_lines = [f"  - {p}: {r}" for p, r in sorted(relationships.items())]
     rel_str = "\n".join(rel_lines) if rel_lines else "  (none recorded)"
 
+    # Trust scores
+    trust_scores = memory.get("final_trust_scores", {})
+    ts_lines = [f"  - {p}: {s:.2f}" for p, s in sorted(trust_scores.items())]
+    ts_str = "\n".join(ts_lines) if ts_lines else "  (none recorded)"
+
     # Goals
     goals = memory.get("final_goals", [])
     goals_lines = [f"  - {g}" for g in goals]
@@ -147,6 +153,7 @@ def format_prior_experience(memory: dict) -> str:
         f"Game Outcome: {outcome_str} when the game ended in {outcome.get('final_year', '?')}.\n\n"
         f"Your strategic diary from that game:\n{diary_str}\n\n"
         f"Your final assessment of other players:\n{rel_str}\n\n"
+        f"Your trust scores for other players (0.0=no trust, 1.0=full trust):\n{ts_str}\n\n"
         f"Your goals at game end:\n{goals_str}\n"
         f"--- END PRIOR EXPERIENCE ---\n"
     )
@@ -162,6 +169,7 @@ def serialize_agent(agent: DiplomacyAgent) -> dict:
         "max_tokens": agent.client.max_tokens,
         "goals": agent.goals,
         "relationships": agent.relationships,
+        "trust_scores": agent.trust_scores,
         "full_private_diary": agent.full_private_diary,
         "private_diary": agent.private_diary,
     }
@@ -196,6 +204,7 @@ def deserialize_agent(agent_data: dict, prompts_dir: Optional[str] = None, *, ov
     # Restore diary state
     agent.full_private_diary = agent_data.get("full_private_diary", [])
     agent.private_diary = agent_data.get("private_diary", [])
+    agent.trust_scores = agent_data.get("trust_scores", {p: 0.5 for p in ALL_POWERS if p != agent.power_name})
 
     return agent
 

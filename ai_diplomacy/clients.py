@@ -84,6 +84,7 @@ class BaseModelClient:
         phase: str,
         agent_goals: Optional[List[str]] = None,
         agent_relationships: Optional[Dict[str, str]] = None,
+        agent_trust_scores: Optional[Dict[str, float]] = None,
         agent_private_diary_str: Optional[str] = None,  # Added
     ) -> List[str]:
         """
@@ -103,6 +104,7 @@ class BaseModelClient:
             game_history=game_history_obj,  # Pass GameHistory object
             agent_goals=agent_goals,
             agent_relationships=agent_relationships,
+            agent_trust_scores=agent_trust_scores,
             agent_private_diary_str=agent_private_diary_str,
             prompts_dir=self.prompts_dir,
         )
