@@ -20,6 +20,9 @@ dependencies = [
   "together>=1.5.17",
   "tqdm>=4.67.1",
   "ujson>=5.10.0",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "pandas>=2.1",
 ]
 
 [tool.ruff]
