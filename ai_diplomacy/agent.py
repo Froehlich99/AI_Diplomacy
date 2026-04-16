@@ -40,6 +40,7 @@ class DiplomacyAgent:
         initial_goals: Optional[List[str]] = None,
         initial_relationships: Optional[Dict[str, str]] = None,
         prompts_dir: Optional[str] = None,
+        prior_experience: Optional[str] = None,
     ):
         """
         Initializes the DiplomacyAgent.
@@ -51,6 +52,8 @@ class DiplomacyAgent:
             initial_relationships: An optional dictionary mapping other power names to
                                      relationship statuses (e.g., 'ALLY', 'ENEMY', 'NEUTRAL').
             prompts_dir: Optional path to the prompts directory.
+            prior_experience: Optional formatted text block from a previous game to
+                              append to the system prompt (cross-game memory).
         """
         if power_name not in ALL_POWERS:
             raise ValueError(f"Invalid power name: {power_name}. Must be one of {ALL_POWERS}")
@@ -94,6 +97,9 @@ class DiplomacyAgent:
             system_prompt_content = load_prompt(default_prompt_path)
 
         if system_prompt_content:  # Ensure we actually have content before setting
+            if prior_experience:
+                system_prompt_content += prior_experience
+                logger.info(f"[{power_name}] Injected prior game experience into system prompt ({len(prior_experience)} chars)")
             self.client.set_system_prompt(system_prompt_content)
         else:
             logger.error(f"Could not load default system prompt either! Agent {power_name} may not function correctly.")

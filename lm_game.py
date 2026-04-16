@@ -29,6 +29,7 @@ from ai_diplomacy.game_logic import (
     save_game_state,
     load_game_state,
     initialize_new_game,
+    export_agent_memories,
 )
 from ai_diplomacy.diary_logic import run_diary_consolidation
 from config import config
@@ -185,6 +186,22 @@ def parse_arguments():
             "Falls back to generic prompts if country-specific not found."
         ),
     )
+    parser.add_argument(
+        "--prior_memory_dir",
+        type=str,
+        default="",
+        help=(
+            "Path to a directory containing prior-game agent memory files "
+            "(e.g., results/<prev_game>/agent_memories/). "
+            "When set, agents start with experience from the previous game injected into their system prompt."
+        ),
+    )
+    parser.add_argument(
+        "--memory_cap_words",
+        type=int,
+        default=500,
+        help="Maximum number of words to retain in the exported cross-game diary memory (default: 500).",
+    )
 
     return parser.parse_args()
 
@@ -323,7 +340,8 @@ async def main():
         game_history = GameHistory()
         if not hasattr(game, "phase_summaries"):
             game.phase_summaries = {}
-        agents = await initialize_new_game(run_config, game, game_history, llm_log_file_path)
+        agents = await initialize_new_game(run_config, game, game_history, llm_log_file_path,
+                                           prior_memory_dir=run_config.prior_memory_dir or None)
 
     if _detect_victory(game):
         game.is_game_done = True          # short-circuit the main loop
@@ -495,6 +513,14 @@ async def main():
     # --- 5. Game End ---
     total_time = time.time() - start_whole
     logger.info(f"Game ended after {total_time:.2f}s. Final state saved in {run_dir}")
+
+    # Export cross-game memory for each agent
+    try:
+        memory_cap = getattr(run_config, "memory_cap_words", 500)
+        exported_memories = export_agent_memories(game, agents, run_dir, memory_cap_words=memory_cap)
+        logger.info(f"Exported cross-game memories for {len(exported_memories)} agents to {run_dir}/agent_memories/")
+    except Exception as e:
+        logger.error(f"Failed to export agent memories: {e}", exc_info=True)
 
     # Save final overview stats
     overview_file_path = os.path.join(run_dir, "overview.jsonl")

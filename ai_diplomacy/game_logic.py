@@ -19,6 +19,138 @@ from .utils import atomic_write_json, atomic_write_json_async, assign_models_to_
 
 logger = logging.getLogger(__name__)
 
+# --- Cross-Game Memory ---
+
+DEFAULT_MEMORY_CAP_WORDS = 500
+
+
+def export_agent_memories(
+    game: "Game",
+    agents: Dict[str, "DiplomacyAgent"],
+    output_dir: str,
+    memory_cap_words: int = DEFAULT_MEMORY_CAP_WORDS,
+) -> Dict[str, str]:
+    """
+    Export each agent's consolidated memory to a per-power JSON file
+    for injection into a subsequent game.
+
+    Returns a dict mapping power_name -> file path of the exported memory.
+    """
+    memories_dir = os.path.join(output_dir, "agent_memories")
+    os.makedirs(memories_dir, exist_ok=True)
+
+    exported: Dict[str, str] = {}
+
+    for power_name, agent in agents.items():
+        power_obj = game.powers.get(power_name)
+        survived = power_obj is not None and not power_obj.is_eliminated()
+        sc_count = len(power_obj.centers) if power_obj else 0
+        won = survived and sc_count >= 18
+
+        # Determine final year from the last phase in history
+        final_year = "unknown"
+        phase_history = game.get_phase_history()
+        if phase_history:
+            last_phase_name = phase_history[-1].name
+            m = _PHASE_RE.match(last_phase_name)
+            if m:
+                final_year = m.group(1)
+
+        # Build consolidated diary text, token-capped by word count
+        diary_text = "\n\n".join(agent.private_diary) if agent.private_diary else ""
+        if memory_cap_words > 0:
+            words = diary_text.split()
+            if len(words) > memory_cap_words:
+                diary_text = " ".join(words[:memory_cap_words]) + "\n[... truncated to fit memory cap ...]"
+
+        memory = {
+            "power_name": power_name,
+            "model_id": agent.client.model_name,
+            "game_outcome": {
+                "survived": survived,
+                "won": won,
+                "draw": game.is_game_done and not won and survived,
+                "final_supply_center_count": sc_count,
+                "final_year": final_year,
+            },
+            "consolidated_diary": diary_text,
+            "final_relationships": dict(agent.relationships),
+            "final_goals": list(agent.goals),
+        }
+
+        file_path = os.path.join(memories_dir, f"{power_name}_memory.json")
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(memory, f, indent=2, ensure_ascii=False)
+
+        exported[power_name] = file_path
+        logger.info(
+            f"[{power_name}] Exported cross-game memory to {file_path} "
+            f"(diary: {len(diary_text.split())} words)"
+        )
+
+    return exported
+
+
+def load_agent_memory(memory_dir: str, power_name: str) -> Optional[dict]:
+    """
+    Load a single agent's prior-game memory from a JSON file.
+    Returns None if the file doesn't exist.
+    """
+    file_path = os.path.join(memory_dir, f"{power_name}_memory.json")
+    if not os.path.isfile(file_path):
+        logger.info(f"[{power_name}] No prior memory file found at {file_path}")
+        return None
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        memory = json.load(f)
+
+    logger.info(f"[{power_name}] Loaded prior game memory from {file_path}")
+    return memory
+
+
+def format_prior_experience(memory: dict) -> str:
+    """
+    Format a loaded memory dict into a text block suitable for
+    appending to the agent's system prompt.
+    """
+    outcome = memory.get("game_outcome", {})
+    power = memory.get("power_name", "Unknown")
+
+    # Outcome description
+    if outcome.get("won"):
+        outcome_str = f"You won the game, controlling {outcome.get('final_supply_center_count', '?')} supply centers"
+    elif not outcome.get("survived"):
+        outcome_str = "You were eliminated"
+    elif outcome.get("draw"):
+        outcome_str = f"The game ended in a draw. You controlled {outcome.get('final_supply_center_count', '?')} supply centers"
+    else:
+        outcome_str = f"The game ended. You controlled {outcome.get('final_supply_center_count', '?')} supply centers"
+
+    # Relationships
+    relationships = memory.get("final_relationships", {})
+    rel_lines = [f"  - {p}: {r}" for p, r in sorted(relationships.items())]
+    rel_str = "\n".join(rel_lines) if rel_lines else "  (none recorded)"
+
+    # Goals
+    goals = memory.get("final_goals", [])
+    goals_lines = [f"  - {g}" for g in goals]
+    goals_str = "\n".join(goals_lines) if goals_lines else "  (none recorded)"
+
+    # Diary
+    diary = memory.get("consolidated_diary", "")
+    diary_str = diary if diary.strip() else "(no diary recorded)"
+
+    return (
+        f"\n\n--- PRIOR GAME EXPERIENCE ---\n"
+        f"You have played a previous game of Diplomacy as {power}. "
+        f"Use this experience to inform your strategy, but adapt to the new game state.\n\n"
+        f"Game Outcome: {outcome_str} when the game ended in {outcome.get('final_year', '?')}.\n\n"
+        f"Your strategic diary from that game:\n{diary_str}\n\n"
+        f"Your final assessment of other players:\n{rel_str}\n\n"
+        f"Your goals at game end:\n{goals_str}\n"
+        f"--- END PRIOR EXPERIENCE ---\n"
+    )
+
 # --- Serialization / Deserialization ---
 
 
@@ -306,8 +438,13 @@ async def initialize_new_game(
     game: Game,
     game_history: GameHistory,
     llm_log_file_path: str,
+    prior_memory_dir: Optional[str] = None,
 ) -> Dict[str, DiplomacyAgent]:
-    """Initializes agents for a new game (supports per-power prompt directories)."""
+    """Initializes agents for a new game (supports per-power prompt directories).
+    
+    If *prior_memory_dir* is provided, each agent will have its prior-game
+    memory loaded and injected into its system prompt.
+    """
 
     powers_order = sorted(list(ALL_POWERS))
 
@@ -357,10 +494,19 @@ async def initialize_new_game(
             try:
                 client = load_model_client(model_id, prompts_dir=prompts_dir_for_power)
                 client.max_tokens = model_max_tokens[power_name]
+
+                # Load prior-game memory if available
+                prior_experience_text = None
+                if prior_memory_dir:
+                    memory_data = load_agent_memory(prior_memory_dir, power_name)
+                    if memory_data:
+                        prior_experience_text = format_prior_experience(memory_data)
+
                 agent = DiplomacyAgent(
                     power_name=power_name,
                     client=client,
                     prompts_dir=prompts_dir_for_power,
+                    prior_experience=prior_experience_text,
                 )
                 agents[power_name] = agent
                 logger.info(f"Preparing initialization task for {power_name} with model {model_id}")
