@@ -40,6 +40,7 @@ class DiplomacyAgent:
         initial_goals: Optional[List[str]] = None,
         initial_relationships: Optional[Dict[str, str]] = None,
         prompts_dir: Optional[str] = None,
+        prior_experience: Optional[str] = None,
     ):
         """
         Initializes the DiplomacyAgent.
@@ -51,6 +52,8 @@ class DiplomacyAgent:
             initial_relationships: An optional dictionary mapping other power names to
                                      relationship statuses (e.g., 'ALLY', 'ENEMY', 'NEUTRAL').
             prompts_dir: Optional path to the prompts directory.
+            prior_experience: Optional formatted text block from a previous game to
+                              append to the system prompt (cross-game memory).
         """
         if power_name not in ALL_POWERS:
             raise ValueError(f"Invalid power name: {power_name}. Must be one of {ALL_POWERS}")
@@ -65,6 +68,8 @@ class DiplomacyAgent:
             self.relationships: Dict[str, str] = {p: "Neutral" for p in ALL_POWERS if p != self.power_name}
         else:
             self.relationships: Dict[str, str] = initial_relationships
+        # Numeric trust scores (0.0 = no trust, 1.0 = full trust)
+        self.trust_scores: Dict[str, float] = {p: 0.5 for p in ALL_POWERS if p != self.power_name}
         self.private_journal: List[str] = []
 
         # The permanent, unabridged record of all entries. This only ever grows.
@@ -94,6 +99,9 @@ class DiplomacyAgent:
             system_prompt_content = load_prompt(default_prompt_path)
 
         if system_prompt_content:  # Ensure we actually have content before setting
+            if prior_experience:
+                system_prompt_content += prior_experience
+                logger.info(f"[{power_name}] Injected prior game experience into system prompt ({len(prior_experience)} chars)")
             self.client.set_system_prompt(system_prompt_content)
         else:
             logger.error(f"Could not load default system prompt either! Agent {power_name} may not function correctly.")
@@ -125,6 +133,7 @@ class DiplomacyAgent:
             "goals",
             "relationships",
             "intent",
+            "trust_scores",
         ]
         for pattern in problematic_patterns:
             text = re.sub(rf'\n\s*"{pattern}"', f'"{pattern}"', text)
@@ -662,6 +671,21 @@ class DiplomacyAgent:
                 if "goals" in parsed_data:
                     self.update_goals(parsed_data["goals"])
 
+                # Parse trust scores
+                if "trust_scores" in parsed_data and isinstance(parsed_data["trust_scores"], dict):
+                    valid_ts = {}
+                    for p, s in parsed_data["trust_scores"].items():
+                        p_upper = str(p).upper()
+                        try:
+                            score = float(s)
+                            if p_upper in ALL_POWERS and p_upper != self.power_name and 0.0 <= score <= 1.0:
+                                valid_ts[p_upper] = round(score, 2)
+                        except (ValueError, TypeError):
+                            pass
+                    if valid_ts:
+                        self.trust_scores.update(valid_ts)
+                        logger.info(f"[{self.power_name}] Trust scores updated: {valid_ts}")
+
             # Add the generated (or fallback) diary entry
             self.add_diary_entry(diary_entry_text, game.current_short_phase)
             if relationships_updated:
@@ -987,6 +1011,7 @@ class DiplomacyAgent:
                 game_history=game_history,  # Pass game_history
                 agent_goals=[], # pass empty goals to force model to regenerate goals each phase
                 agent_relationships=self.relationships,
+                agent_trust_scores=self.trust_scores,
                 agent_private_diary=formatted_diary,  # Pass formatted diary
                 prompts_dir=self.prompts_dir,
                 include_messages=True,
@@ -1160,6 +1185,22 @@ class DiplomacyAgent:
                 else:  # Log if the original dict was empty
                     logger.warning(f"[{power_name}] LLM did not provide valid 'updated_relationships' dict in state update.")
                     # Keep current relationships, no update needed
+
+            # Parse trust scores
+            updated_trust = update_data.get("trust_scores")
+            if isinstance(updated_trust, dict):
+                valid_ts = {}
+                for p, s in updated_trust.items():
+                    p_upper = p.upper()
+                    try:
+                        score = float(s)
+                        if p_upper in ALL_POWERS and p_upper != power_name and 0.0 <= score <= 1.0:
+                            valid_ts[p_upper] = round(score, 2)
+                    except (ValueError, TypeError):
+                        pass
+                if valid_ts:
+                    self.trust_scores.update(valid_ts)
+                    logger.info(f"[{power_name}] Trust scores updated: {valid_ts}")
 
         except FileNotFoundError:
             logger.error(f"[{power_name}] state_update_prompt.txt not found. Skipping state update.")

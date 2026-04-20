@@ -39,6 +39,7 @@ def build_context_prompt(
     game_history: GameHistory,
     agent_goals: Optional[List[str]] = None,
     agent_relationships: Optional[Dict[str, str]] = None,
+    agent_trust_scores: Optional[Dict[str, float]] = None,
     agent_private_diary: Optional[str] = None,
     prompts_dir: Optional[str] = None,
     include_messages: Optional[bool] = True,
@@ -143,6 +144,7 @@ def build_context_prompt(
         possible_orders=possible_orders_context_str,
         agent_goals="\n".join(f"- {g}" for g in agent_goals) if agent_goals else "None specified",
         agent_relationships="\n".join(f"- {p}: {s}" for p, s in agent_relationships.items()) if agent_relationships else "None specified",
+        agent_trust_scores="\n".join(f"- {p}: {s:.2f}" for p, s in agent_trust_scores.items()) if agent_trust_scores else "None specified",
         agent_private_diary=agent_private_diary if agent_private_diary else "(No diary entries yet)",
     )
 
@@ -158,6 +160,7 @@ def construct_order_generation_prompt(
     game_history: GameHistory,
     agent_goals: Optional[List[str]] = None,
     agent_relationships: Optional[Dict[str, str]] = None,
+    agent_trust_scores: Optional[Dict[str, float]] = None,
     agent_private_diary_str: Optional[str] = None,
     prompts_dir: Optional[str] = None,
 ) -> str:
@@ -222,6 +225,7 @@ def construct_order_generation_prompt(
         game_history,
         agent_goals=agent_goals,
         agent_relationships=agent_relationships,
+        agent_trust_scores=agent_trust_scores,
         agent_private_diary=agent_private_diary_str,
         prompts_dir=prompts_dir,
         include_messages=not _use_simple,  # include only when *not* simple

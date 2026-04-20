@@ -14,6 +14,9 @@ Current Goals:
 # Relationships:
 {agent_relationships}
 
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+{agent_trust_scores}
+
 # Order History
 {order_history}
 

@@ -14,12 +14,17 @@ IMPORTANT RULES
 2. Use ONLY these relationship values: Enemy, Unfriendly, Neutral, Friendly, Ally
 3. Make goals specific and actionable
 4. Return ONLY valid JSON - no text before or after
+5. Update trust_scores for ALL powers (0.0 = no trust/enemy, 0.5 = neutral, 1.0 = full trust/ally)
 
 Response Structure:
 {{
   "reasoning": "Brief reasoning about the update",
   "relationships": {{
     "POWER NAME": "Relationship Status",
+    ...
+  }},
+  "trust_scores": {{
+    "POWER NAME": 0.0 to 1.0,
     ...
   }},
   "goals": [

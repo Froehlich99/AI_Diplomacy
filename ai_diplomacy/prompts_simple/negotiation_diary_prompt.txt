@@ -26,6 +26,7 @@ Analyze the negotiations, goals, relationships, and game state to:
 3. Update relationships as needed (Enemy, Unfriendly, Neutral, Friendly, Ally)
 4. Include your latest overarching goals (including any updates)
 5. Important: You will not see the full negotiation log in the order decision phase, so you must transmit key information about the negotiations to your future self via this summary.
+6. Update numeric trust scores for each power (0.0 = no trust, 0.5 = neutral, 1.0 = full trust)
 
 RESPONSE FORMAT
 Return ONLY a JSON object with this structure:
@@ -35,6 +36,9 @@ Return ONLY a JSON object with this structure:
   "intent": "Specific intent for upcoming orders this phase",
   "updated_relationships": {{
     "POWER_NAME": "Enemy|Unfriendly|Neutral|Friendly|Ally"
+  }},
+  "trust_scores": {{
+    "POWER_NAME": 0.0 to 1.0
   }},
   "goals": [
     "goal 1",
