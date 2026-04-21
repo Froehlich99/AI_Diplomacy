@@ -1,0 +1,45 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 16,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Austria's Diplomacy History Summary (1901-1909):** Early dominance (1901-02): Secured ALB/GAL/RUM/SER via pacts—Italy NAP (Alps/Adriatic peace), Turkey spheres (AUS north Balkans/BUL, TUR south GRE), Russia 2yr NAP (no GAL), Germany non-agg (no BOH/TYR). All honored initially; +5 SCs, Balkan lock. Pivots & betrayals (1903-05): Turkey broke spheres (held BUL/GRE, no handoff)—war declared. Russia stabbed WAR post-supps (1904). Italy probed TYR/ION/ADR/VEN—NAP strained to hostile. Opportunistic AUS gains: GRE/BUL/CON/SMY/VEN/SEV/MOS despite bounces. GER truce vs RU (no west agg); FRA joined anti-GER NAP then turned hostile (BOH/VIE/BUD grabs 1907-08). GER reliability (1906-09): East-only truce/NAP held—AUS no west/north (no BOH-MUN/BER/PRU/SIL west/TYR-MUN), GER no WAR/SIL agg (minor BOH-SIL probe forgiven). Fulfilled supps (GAL s PRU-WAR); post-RU neutral planned. ENG spheres non-agg confirmed, west containment vs FRA/GER aids AUS east solo. Current status (post-F1909M): 13 SCs/12+ units; east elite (Balkans/Black Sea/Adriatic/Med locked: BUL/CON/ANK/SMY/GRE/RUM/SER/SEV/MOS/WAR/STP/LVN/APU/NAP/VEN). RU near-elim (SEV remnant), TUR 2 SCs (CON/BUL defended), ITA eliminated. FRA overt foe (VIE/BUD lost, SER/BOH threats—bluff-heavy west stall). GER/ENG neutral buffers. Lessons/forward utility: Demand explicit move confirms/supps; preempt bluffs w/ aggression (no holds, garrison capitals like BUD/VIE); total east strikes wipe TUR/RU remnants (ANK-CON/GRE/RUM/SER/ROM-BUL/BLA/SEV); maintain GER non-agg exactly (PRU/LVN/STP south-only); ignore west noise, solo to 18 via relentless expansion. Builds prioritize F TRI/A VIE/A BUL for Med/Balkans crush. (298 words) [S1910M] GER NAP exactly confirmed & held: They commit BER/SIL H west-only vs FRA/ENG; AUS promises no west/north moves (no BOH/MUN/PRU/TYR/SIL/LVN north, STP/MOS/UKR south SEV only, VEN/ALB/TRI south/Adri). Intend full honour. ENG spheres/non-agg solid (PRU/NWY/LVN clear, west distraction). TUR non-agg/withdrawal rejected outright. Global anti-AUS calls (ENG/FRA/GER/RU/TUR) dismissed as west-bleed bluffs. Intent: S1910M: Fulfil GER NAP precisely (no betrayal: STP/MOS/UKR south vs SEV kill RU F w/ multi-supp; no PRU/SIL/LVN/BOH/MUN/TYR north/west moves); Wipe TUR: ANK-CON (GRE s), GRE/SER/RUM-BUL overkill kill F BUL/EC (multi-supp), ROM-BLA pressure; Kill RU SEV (MOS/UKR/RUM/STP s); Lock Med/ITA: ION-TYS/NAP, VEN-APU, F ALB/ADR-TRI/VEN; Garrison BUD/SER H vs FRA; F LYO vs FRA west; All 13 units aggressive/no holds. Target +3 SCs (CON/BUL/SEV) to 16; east solo to 18. [S1910M] Phase S1910M completed. Unable to analyze results due to error. [F1910M] GER NAP reconfirmed repeatedly: mutual non-agg (AUS no west/north moves into BOH/TYR/SIL/PRU/MUN/BER/KIE, focus east vs RU/TUR; GER west-only vs FRA/ENG, no AUS cores). ENG publicly pushes anti-AUS coalition w/FRA/GER/RU/TUR, despite past LVN supp. FRA threatens VEN/VIE/TRI pressure. RU/TUR defiant (Baltic/Black Sea pacts), irrelevant vs wipe. Intent: F1910M: Fulfil GER NAP exactly (no west/north moves: zero BOH/TYR/SIL/PRU/LVN/WAR/STP to MUN/BER/KIE/PRU/SIL; STP/MOS/UKR south-only vs RU); wipe TUR/RU remnants (BUL/CON/ANK/BLA vs F BLA kill, seize CON/BUL/SEV/LVN; multi-supp SEV); lock Med/Adri/ITA (TYS/ROM/NAP/APU/ADR/VEN); garrison BUD/SER vs FRA; F MAR/LYO pressure west if safe; all 13 units aggressive/no holds; target +3-4 SCs to 16-17. [F1910M] [F1910M] GER NAP perfectly honored bilaterally: AUS zero west/north (STP-LVN east, no BOH/TYR/SIL/PRU); GER PRU-BER/KIE west shuffle vs FRA/ENG. Successful collab preserves neutral buffer. East wipes botched: BUL-CON/CON-BUL mutual bounce (TUR BLA-ANK evade); RUM-SEV/SEV-RUM pointless bounces, SER supp void—no TUR/RU gains despite multi-supp intent. Secured LVN (STP vs ENG LVN-STP bounce), VEN (ADR s APU vs FRA VEN-PIE). West pressure:\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Enemy",
+    "ENGLAND": "Unfriendly",
+    "FRANCE": "Enemy",
+    "TURKEY": "Enemy",
+    "GERMANY": "Neutral",
+    "RUSSIA": "Enemy"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.0,
+    "ENGLAND": 0.3,
+    "FRANCE": 0.0,
+    "TURKEY": 0.0,
+    "GERMANY": 0.9,
+    "RUSSIA": 0.0
+  },
+  "final_goals": [
+    "Fulfil GER NAP exactly: no west moves (no BOH-MUN/BER/KIE/SIL-PRU/TYR-MUN); LVN/WAR/STP south MOS/SEV only vs RU SEV.",
+    "Wipe TUR remnants: BUL/CON/ANK/BLA kill F BLA; seize CON/BUL; multi-supp GRE/SER/RUM-BUL if needed.",
+    "Elim ITA remnants/Med lock: VEN-APU/ADR/TYS/NAP/ROM/ION total control vs FRA VEN.",
+    "East solo dominance to 18 SCs (add LVN/CON/BUL/SEV; full: Balkans/UKR/SEV/MOS/WAR/LVN/BLA/CON/GRE/ANK/SMY + builds); GER neutral post-TUR.",
+    "Contain west indirectly: ENG vs FRA/GER (ignore ENG coalition bluffs); stall FRA SER/BOH/VEN/ALB w/garrisons/Adri/Med crush, east solo.",
+    "All units aggressive/no holds; garrison key (BUD/SER/VEN); preempt bluffs w/total east strikes."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "power_name": "ITALY",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Italy’s early Mediterranean dominance collapsed due to repeated failures in multi-power coordination and overreliance on unverified diplomatic promises. The initial 5-power NAP fractured as France, Russia, and Turkey proved transactional and unreliable, while Austria emerged as an 11+ SC hegemon. Aggressive zero-hold advances without ironclad support chains led to catastrophic territorial losses: VEN, NAP, ROM, TYS, and ION fell to sustained Austrian naval and land pressure. By S1909M, a failed coalition push with Turkey and France resulted in Italy’s complete military disbandment, leaving zero units on the board. Current strategic reality: Austria controls approximately 13 SCs and is aggressively pushing into LYO, posing an immediate existential threat. France is disillusioned, focusing on reclaiming its own centers and pressuring England and Germany. England advocates an anti-Austria coalition but provides no tangible Mediterranean support. Turkey maintains a strict ION/TYS boundary but operates purely transactionally. Russia is effectively eliminated. All prior pacts are void; diplomacy is strictly survival-focused. Immediate priority: Rebuild naval strength via W1909 fleet builds in MAR. Enforce absolute defensive consolidation until a credible fleet is established. Future operations require explicit, simultaneous order verification from at least two allied powers before any advance. The zero-hold doctrine is suspended until numerical superiority and verified support chains are secured. Austria’s overextension must be monitored, but engagement will only occur when Franco-English clashes or Austrian logistical gaps create guaranteed tactical advantages. Trust is zero; survival depends on disciplined consolidation, fortified western coasts, and exploiting verified multi-power coordination. No speculative pushes. All moves must anchor on ironclad, pre-verified support. [S1910M] Global consensus identifies Austria as the imminent solo threat, but coordination remains unverified and transactional. France offers conditional support to reclaim Italian centers pending a clear plan. Germany proposes delayed coordination. Russia requests an impossible Adriatic convoy. Austria declares eastern dominance and inevitable victory. All prior pacts are void; future cooperation requires explicit, simultaneous order verification. I will maintain strict boundaries and only engage with powers that provide concrete, synchronized move commitments. Intent: Zero units on board preclude any movement orders for S1910M. Will monitor Austrian expansion and French/German positioning. Explicitly decline Russia's convoy request due to lack of forces. Will demand France and Germany provide exact, verifiable move orders before committing any future Italian advances. Focus remains on diplomatic survival, enforcing the ION/TYS boundary, and preparing for naval builds in MAR at the next build phase. [S1910M] Phase S1910M completed. Unable to analyze results due to error. [F1910M] Austria dominates with 13 SCs, actively crushing Turkey and Russia while dismissing coalition efforts. England proposes an anti-Austria coalition but offers no immediate Mediterranean support. France is actively attacking Austria's western flank (VIE to PIE, A VEN in Austrian territory) and seeks Italian cooperation against our mutual enemy. Russia plans to retake WAR and build at STP, requesting non-interference. Turkey holds BLA defensively, refusing surrender but acknowledging inevitable elimination. Italy currently has zero units, cannot act this phase, and must wait for the next build phase. All prior pacts are void; future coordination requires\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ENGLAND": "Neutral",
+    "FRANCE": "Friendly",
+    "TURKEY": "Neutral",
+    "GERMANY": "Neutral",
+    "RUSSIA": "Neutral"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.0,
+    "ENGLAND": 0.3,
+    "FRANCE": 0.6,
+    "TURKEY": 0.3,
+    "GERMANY": 0.4,
+    "RUSSIA": 0.2
+  },
+  "final_goals": [
+    "Survive zero-unit state and execute immediate naval build in MAR during the next build phase",
+    "Maintain strict ION/TYS boundary with Turkey to prevent a two-front war",
+    "Demand explicit, simultaneous order verification before committing to any coalition or advance",
+    "Monitor Austrian overextension and Franco-English clashes for exploitable vulnerabilities",
+    "Rebuild naval strength to contest TYS/ADR dominance once units are available",
+    "Enforce zero-hold doctrine for all future moves, anchoring advances only in guaranteed allied support",
+    "Coordinate with France to pressure Austrian western flank while rebuilding Italian forces"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

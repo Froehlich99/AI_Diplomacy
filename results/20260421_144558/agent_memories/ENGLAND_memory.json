@@ -1,0 +1,44 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria is the primary existential threat and global hegemon (13+ SCs), pursuing a solo victory. Austria has consistently used deceptive \"spheres of influence\" agreements to keep England pinned in the West while dismantling Russia, Turkey, and Italy in the East. Trust in Austria is zero. France is a fundamentally treacherous and persistent enemy. After years of betrayals and failed ceasefires, France currently occupies Belgium. England has recently reclaimed the English Channel (ENG) and Holland (HOL), securing home waters, but the conflict with France continues to act as a shield for Austria's expansion. Germany is an opportunistic parasite. Despite various truces, Germany recently betrayed a non-aggression pact by attempting to seize Prussia. They are a secondary threat but cannot be trusted. Russia and Turkey are crippled. Russia maintains a Baltic NAP and a long-standing agreement to split Scandinavia (England holds Norway, Russia holds Sweden), though this has been periodically contested by France. Italy remains a loyal ally but is critically weakened by Austrian aggression. Strategic Priority: Evict France from Belgium to regain continental mobility and free units to coordinate with the remnants of the East (Italy/Russia/Turkey) to bleed Austria. Any prolonged stalemate with France directly facilitates an Austrian solo victory. Home security is currently stable, but the window to stop Austria is closing rapidly. [S1910M] Agreed to a temporary DMZ with France: England will vacate Belgium, and France will remain out of the English Channel and Holland. Agreed to a status quo NAP with Germany to avoid a multi-front war while Germany rebuilds. Austria is maintaining a deceptive 'spheres' alliance with England while openly bragging to the global community about an imminent solo victory (claiming 15-16 SCs). Russia remains friendly but is mechanically crippled and making geographically impossible requests. Intent: Vacate Belgium to honor the DMZ with France and signal good faith. Secure the English Channel and Holland to ensure home security. Maintain F PRU and F HEL to project power in the Baltic. Honor the NAP with Germany by not attacking Berlin. Prepare to pivot all available resources toward bleeding Austria once the West is stabilized. [S1910M] Phase S1910M completed. Unable to analyze results due to error. [F1910M] Established a DMZ with France (Belgium, English Channel, and Holland) to stabilize the West and focus on Austria. Agreed with Germany that Germany may take KIE to rebuild its strength, while England will hold HOL and LVN. Russia remains committed to the Baltic NAP and intends to retake Warsaw. Austria is openly pursuing a solo victory and attempting to manipulate England into remaining focused on France and Germany. Intent: I will honor the DMZ with France and the agreement with Germany. Specifically, I will hold F HOL and F LVN to allow Germany to take KIE. I will maintain the Baltic NAP with Russia. My primary focus is ensuring the West remains stable so that Germany and France can apply pressure to Austria, as England is too distant to strike the Austrian core directly this turn. [F1910M] Austria has seized\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ITALY": "Ally",
+    "FRANCE": "Neutral",
+    "TURKEY": "Neutral",
+    "GERMANY": "Neutral",
+    "RUSSIA": "Friendly"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.0,
+    "ITALY": 0.8,
+    "FRANCE": 0.3,
+    "TURKEY": 0.5,
+    "GERMANY": 0.4,
+    "RUSSIA": 0.7
+  },
+  "final_goals": [
+    "Prevent an Austrian solo victory by any means possible",
+    "Maintain the DMZ with France to stabilize the West",
+    "Support Germany's rebuild in KIE to create a viable second front against Austria",
+    "Maintain the Baltic NAP with Russia",
+    "Secure the English Channel and Holland"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}
