@@ -16,10 +16,10 @@ class Configuration(BaseSettings):
     # Default 7 models (one per power: AUSTRIA, ENGLAND, FRANCE, GERMANY, ITALY, RUSSIA, TURKEY)
     DEFAULT_MODELS: list[str] = [
         "openrouter:x-ai/grok-4.1-fast",
-        "openrouter:google/gemma-4-31b",
+        "openrouter:google/gemma-4-31b-it",
         "openrouter:google/gemini-2.5-flash-lite",
-        "openrouter:alibaba/qwen-3.5-27b",
-        "openrouter:alibaba/qwen-3.6-plus",
+        "openrouter:qwen/qwen3.5-27b",
+        "openrouter:qwen/qwen3.6-plus",
         "openrouter:openai/gpt-oss-120b",
         "openrouter:anthropic/claude-haiku-4.5",
     ]

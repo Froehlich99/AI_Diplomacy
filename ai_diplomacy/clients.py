@@ -1260,7 +1260,10 @@ class OpenRouterClient(BaseModelClient):
             if not content:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
 
-            return content.strip()
+            content = content.strip()
+            if '<think>' in content and '</think>' in content:
+                content = content[content.rfind('</think>') + len('</think>'):].strip()
+            return content
 
         except Exception as e:
             extra = ""

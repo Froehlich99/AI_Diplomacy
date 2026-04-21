@@ -77,6 +77,7 @@ def export_agent_memories(
             "final_relationships": dict(agent.relationships),
             "final_trust_scores": dict(agent.trust_scores),
             "final_goals": list(agent.goals),
+            "power_model_map": dict(getattr(game, "power_model_map", {})),
         }
 
         file_path = os.path.join(memories_dir, f"{power_name}_memory.json")
@@ -109,7 +110,7 @@ def load_agent_memory(memory_dir: str, power_name: str) -> Optional[dict]:
     return memory
 
 
-def format_prior_experience(memory: dict) -> str:
+def format_prior_experience(memory: dict, current_power_model_map: Optional[Dict[str, str]] = None) -> str:
     """
     Format a loaded memory dict into a text block suitable for
     appending to the agent's system prompt.
@@ -146,6 +147,25 @@ def format_prior_experience(memory: dict) -> str:
     diary = memory.get("consolidated_diary", "")
     diary_str = diary if diary.strip() else "(no diary recorded)"
 
+    # Model identities
+    prev_map = memory.get("power_model_map", {})
+    model_id_str = ""
+    if prev_map:
+        prev_lines = [f"  - {p} was played by {m}" for p, m in sorted(prev_map.items())]
+        model_id_str = "\nModel identities from the previous game:\n" + "\n".join(prev_lines)
+
+        if current_power_model_map:
+            prev_model_to_power = {m: p for p, m in prev_map.items()}
+            remap_lines = []
+            for cur_power, cur_model in sorted(current_power_model_map.items()):
+                prev_power = prev_model_to_power.get(cur_model)
+                if prev_power and prev_power != cur_power:
+                    remap_lines.append(f"  - {cur_model} (was {prev_power}) is now playing {cur_power}")
+            if remap_lines:
+                model_id_str += "\n\nIn the current game, the model assignments have changed:\n" + "\n".join(remap_lines)
+
+        model_id_str += "\n"
+
     return (
         f"\n\n--- PRIOR GAME EXPERIENCE ---\n"
         f"You have played a previous game of Diplomacy as {power}. "
@@ -155,6 +175,7 @@ def format_prior_experience(memory: dict) -> str:
         f"Your final assessment of other players:\n{rel_str}\n\n"
         f"Your trust scores for other players (0.0=no trust, 1.0=full trust):\n{ts_str}\n\n"
         f"Your goals at game end:\n{goals_str}\n"
+        f"{model_id_str}"
         f"--- END PRIOR EXPERIENCE ---\n"
     )
 
@@ -509,7 +530,10 @@ async def initialize_new_game(
                 if prior_memory_dir:
                     memory_data = load_agent_memory(prior_memory_dir, power_name)
                     if memory_data:
-                        prior_experience_text = format_prior_experience(memory_data)
+                        prior_experience_text = format_prior_experience(
+                            memory_data,
+                            current_power_model_map=getattr(game, "power_model_map", None),
+                        )
 
                 agent = DiplomacyAgent(
                     power_name=power_name,
