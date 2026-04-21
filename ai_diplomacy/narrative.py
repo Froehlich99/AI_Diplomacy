@@ -44,6 +44,9 @@ async def _call_model_async(statistical_summary: str, phase_key: str) -> str:
         # Load the narrative client
         narrative_client = load_model_client(OPENAI_MODEL)
 
+        from .token_tracker import get_tracker
+        get_tracker().set_context(power="NARRATIVE", phase=phase_key, response_type="phase_summary")
+
         system = (
             "You are an energetic e-sports commentator narrating a game of Diplomacy. "
             "Turn the provided phase recap into a concise, thrilling story (max 4 sentences). "

@@ -848,6 +848,14 @@ class OpenAIClient(BaseModelClient):
             ):
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
 
+            if hasattr(response, "usage") and response.usage:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=response.usage.prompt_tokens or 0,
+                    output_tokens=response.usage.completion_tokens or 0,
+                )
+
             return response.choices[0].message.content.strip()
 
         except json.JSONDecodeError as json_err:
@@ -907,6 +915,15 @@ class ClaudeClient(BaseModelClient):
             )
             if not response.content or not response.content[0].text:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
+
+            if hasattr(response, "usage") and response.usage:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=response.usage.input_tokens or 0,
+                    output_tokens=response.usage.output_tokens or 0,
+                )
+
             return response.content[0].text.strip()
         except json.JSONDecodeError as json_err:
             logger.error(f"[{self.model_name}] JSON decoding failed in generate_response: {json_err}")
@@ -962,6 +979,15 @@ class GeminiClient(BaseModelClient):
 
             if not response or not response.text:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
+
+            if hasattr(response, "usage_metadata") and response.usage_metadata:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=getattr(response.usage_metadata, "prompt_token_count", 0) or 0,
+                    output_tokens=getattr(response.usage_metadata, "candidates_token_count", 0) or 0,
+                )
+
             return response.text.strip()
         except Exception as e:
             # Gemini’s sdk wraps grpc errors; include full message
@@ -1015,6 +1041,14 @@ class DeepSeekClient(BaseModelClient):
 
             if not response or not response.choices or not response.choices[0].message.content:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
+
+            if hasattr(response, "usage") and response.usage:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=response.usage.prompt_tokens or 0,
+                    output_tokens=response.usage.completion_tokens or 0,
+                )
 
             content = response.choices[0].message.content.strip()
             return content
@@ -1114,6 +1148,15 @@ class OpenAIResponsesClient(BaseModelClient):
                 response.raise_for_status()  # Will raise for non-2xx responses
                 response_data = await response.json()
 
+                usage = response_data.get("usage", {})
+                if usage:
+                    from .token_tracker import get_tracker
+                    await get_tracker().record(
+                        model=self.model_name,
+                        input_tokens=usage.get("input_tokens", 0) or usage.get("prompt_tokens", 0) or 0,
+                        output_tokens=usage.get("output_tokens", 0) or usage.get("completion_tokens", 0) or 0,
+                    )
+
                 # Extract the text from the nested response structure
                 try:
                     outputs = response_data.get("output", [])
@@ -1195,6 +1238,16 @@ class OpenRouterClient(BaseModelClient):
 
             if not response.choices:
                 raise ValueError(f"[{self.model_name}] LLM returned no choices.")
+
+            if hasattr(response, "usage") and response.usage:
+                from .token_tracker import get_tracker
+                api_cost = getattr(response.usage, "cost", None)
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=response.usage.prompt_tokens or 0,
+                    output_tokens=response.usage.completion_tokens or 0,
+                    cost=api_cost,
+                )
 
             msg = response.choices[0].message
             content = msg.content
@@ -1279,6 +1332,14 @@ class TogetherAIClient(BaseModelClient):
 
             if not response.choices or not response.choices[0].message or response.choices[0].message.content is None:
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
+
+            if hasattr(response, "usage") and response.usage:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=getattr(response.usage, "prompt_tokens", 0) or 0,
+                    output_tokens=getattr(response.usage, "completion_tokens", 0) or 0,
+                )
 
             content = response.choices[0].message.content
             return content.strip()
@@ -1385,6 +1446,17 @@ class RequestsOpenAIClient(BaseModelClient):
         loop = asyncio.get_running_loop()
         try:
             data = await loop.run_in_executor(None, self._post_sync, payload)
+
+            usage = data.get("usage")
+            if usage:
+                from .token_tracker import get_tracker
+                await get_tracker().record(
+                    model=self.model_name,
+                    input_tokens=usage.get("prompt_tokens", 0) or 0,
+                    output_tokens=usage.get("completion_tokens", 0) or 0,
+                    cost=usage.get("cost"),
+                )
+
             if not data.get("choices") or not data["choices"][0].get("message") or not data["choices"][0]["message"].get("content"):
                 raise ValueError(f"[{self.model_name}] LLM returned an empty or invalid response.")
             content = data["choices"][0]["message"]["content"].strip()

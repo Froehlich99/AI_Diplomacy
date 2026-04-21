@@ -13,6 +13,17 @@ class Configuration(BaseSettings):
     SIMPLE_PROMPTS: bool = True
     COUNTRY_SPECIFIC_PROMPTS: bool = False
 
+    # Default 7 models (one per power: AUSTRIA, ENGLAND, FRANCE, GERMANY, ITALY, RUSSIA, TURKEY)
+    DEFAULT_MODELS: list[str] = [
+        "openrouter:x-ai/grok-4.1-fast",
+        "openrouter:google/gemma-4-31b",
+        "openrouter:google/gemini-2.5-flash-lite",
+        "openrouter:alibaba/qwen-3.5-27b",
+        "openrouter:alibaba/qwen-3.6-plus",
+        "openrouter:openai/gpt-oss-120b",
+        "openrouter:anthropic/claude-haiku-4.5",
+    ]
+
     # Default models for tasks
     AI_DIPLOMACY_NARRATIVE_MODEL: str = "openrouter-google/gemini-2.5-flash-preview-05-20"
     AI_DIPLOMACY_FORMATTER_MODEL: str = "openrouter-google/gemini-2.5-flash-preview-05-20"

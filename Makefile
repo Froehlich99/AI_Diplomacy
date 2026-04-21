@@ -1,0 +1,2 @@
+budget:
+	@bash budget.sh

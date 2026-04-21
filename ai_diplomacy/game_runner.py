@@ -31,6 +31,7 @@ from .game_logic import (
     export_agent_memories,
 )
 from .diary_logic import run_diary_consolidation
+from .token_tracker import init_tracker, get_tracker
 from config import config
 
 logger = logging.getLogger(__name__)
@@ -94,6 +95,8 @@ async def run_single_game(
     Returns a result dict with game outcome summary.
     """
     start_whole = time.time()
+
+    tracker = init_tracker()
 
     # Build an args Namespace matching what the old main() expected
     args = Namespace(
@@ -358,11 +361,26 @@ async def run_single_game(
                 await asyncio.gather(*state_update_tasks, return_exceptions=True)
 
         await save_game_state(game, agents, game_history, game_file_path, run_config, completed_phase)
+
+        tracker.export_json(os.path.join(run_dir, "token_usage.json"))
+
         logger.info(f"Phase {current_phase} took {time.time() - phase_start:.2f}s")
 
     # --- Game end ---
     total_time = time.time() - start_whole
     logger.info(f"Game ended after {total_time:.2f}s. Final state saved in {run_dir}")
+
+    # Final token usage export
+    token_summary = tracker.get_summary()
+    tracker.export_json(os.path.join(run_dir, "token_usage.json"))
+    tracker.export_csv(os.path.join(run_dir, "token_usage.csv"))
+    logger.info(
+        "Total cost: $%.4f | %s calls | %s in / %s out tokens",
+        token_summary["total_cost_usd"],
+        token_summary["total_calls"],
+        f'{token_summary["total_input_tokens"]:,}',
+        f'{token_summary["total_output_tokens"]:,}',
+    )
 
     # Export cross-game memory
     try:
@@ -381,6 +399,7 @@ async def run_single_game(
         overview_file.write(json.dumps(model_error_stats) + "\n")
         overview_file.write(json.dumps(getattr(game, "power_model_map", {})) + "\n")
         overview_file.write(json.dumps(cfg) + "\n")
+        overview_file.write(json.dumps(token_summary) + "\n")
 
     # Remove file handler to avoid accumulating handlers across games
     logging.getLogger().removeHandler(file_handler)

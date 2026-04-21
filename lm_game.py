@@ -15,6 +15,7 @@ os.environ["GRPC_POLL_STRATEGY"] = "poll"  # Use 'poll' for macOS compatibility
 
 dotenv.load_dotenv()
 
+from config import config  # noqa: E402
 from ai_diplomacy.game_runner import run_single_game  # noqa: E402
 
 logger = logging.getLogger(__name__)
@@ -83,10 +84,11 @@ def parse_arguments():
     parser.add_argument(
         "--models",
         type=str,
-        default="",
+        default=",".join(config.DEFAULT_MODELS),
         help=(
             "Comma-separated list of model names to assign to powers in order. "
-            "The order is: AUSTRIA, ENGLAND, FRANCE, GERMANY, ITALY, RUSSIA, TURKEY."
+            "The order is: AUSTRIA, ENGLAND, FRANCE, GERMANY, ITALY, RUSSIA, TURKEY. "
+            "Defaults to DEFAULT_MODELS from config.py if not provided."
         ),
     )
     parser.add_argument(

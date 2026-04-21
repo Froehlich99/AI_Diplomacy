@@ -74,6 +74,9 @@ async def format_with_gemini_flash(
     try:
         logger.info(f"[FORMATTER] Calling {model_name} for {format_type} formatting")
 
+        from .token_tracker import get_tracker
+        get_tracker().set_context(power=power_name or "FORMATTER", phase=phase or "N/A", response_type=f"format_{format_type}")
+
         # Create the full prompt with system message
         system_content = "You are a precise formatting assistant. Extract and format information exactly as requested."
         formatter_client.set_system_prompt(system_content)

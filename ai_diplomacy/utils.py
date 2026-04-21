@@ -432,6 +432,9 @@ async def run_llm_and_log(
     """
     last_exception: Optional[Exception] = None
 
+    from .token_tracker import get_tracker
+    get_tracker().set_context(power=power_name or "unknown", phase=phase, response_type=response_type)
+
     for attempt in range(attempts):
         try:
             raw_response = await client.generate_response(prompt, temperature=temperature)
