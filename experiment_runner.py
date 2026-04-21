@@ -86,6 +86,8 @@ async def run_experiment(config: dict, output_dir: str):
     models = config.get("models", [])
     games = config.get("games", [])
     rotate_powers = config.get("rotate_powers", False)
+    rotation_offset = config.get("rotation_offset", 0)
+    initial_memory_dir = config.get("initial_memory_dir", "")
     max_year = config["max_year"]
 
     # Shared game settings
@@ -114,11 +116,16 @@ async def run_experiment(config: dict, output_dir: str):
     completed = set(state.get("completed_games", []))
     last_memory_dir = state.get("last_memory_dir", "")
 
+    # Seed initial memory from config (e.g. prior local game uploaded to B2)
+    if not last_memory_dir and initial_memory_dir and os.path.isdir(initial_memory_dir):
+        last_memory_dir = initial_memory_dir
+        logger.info(f"Seeding initial memory from: {initial_memory_dir}")
+
     logger.info(f"=== Experiment: {experiment_name} ===")
     logger.info(f"Output: {output_dir}")
     logger.info(f"Games: {len(games)} total, {len(completed)} already completed")
     logger.info(f"Models: {models}")
-    logger.info(f"Power rotation: {rotate_powers}")
+    logger.info(f"Power rotation: {rotate_powers} (offset={rotation_offset})")
 
     all_results = state.get("results", {})
 
@@ -140,7 +147,7 @@ async def run_experiment(config: dict, output_dir: str):
 
         # Apply power rotation
         if rotate_powers and len(models) == 7:
-            rotated = rotate_models(models, game_idx)
+            rotated = rotate_models(models, game_idx + rotation_offset)
         else:
             rotated = list(models)
 
@@ -231,6 +238,12 @@ def main():
         default="",
         help="Override output directory (default: results/<experiment_name>).",
     )
+    parser.add_argument(
+        "--initial_memory_dir",
+        type=str,
+        default="",
+        help="Seed cross-game memory from a prior game's agent_memories/ directory.",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -241,6 +254,10 @@ def main():
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
     config = load_experiment_config(args.config)
+
+    # CLI overrides for config values
+    if args.initial_memory_dir:
+        config["initial_memory_dir"] = args.initial_memory_dir
 
     output_dir = args.output_dir
     if not output_dir:
