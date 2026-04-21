@@ -1,0 +1,37 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: diplomacy-game2-3
+  namespace: ai-diplomacy
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      imagePullSecrets:
+        - name: ghcr-secret
+      containers:
+        - name: game
+          image: ghcr.io/froehlich99/ai_diplomacy:latest
+          env:
+            - name: EXPERIMENT_CONFIG
+              value: "experiment_configs/k8s_3game_memory.py"
+            - name: EXPERIMENT_NAME
+              value: "k8s_3game_memory"
+            - name: B2_BUCKET
+              value: "diplomacy"
+            # Path within the bucket to Game 1's agent_memories/
+            - name: PRIOR_GAME_B2_PATH
+              value: "game1_local/agent_memories/"
+          envFrom:
+            - secretRef:
+                name: api-keys
+            - secretRef:
+                name: b2-credentials
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+      restartPolicy: Never

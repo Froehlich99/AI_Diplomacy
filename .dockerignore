@@ -1,0 +1,59 @@
+# Build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+
+# Dev / IDE
+.git
+.gitignore
+.idea
+.notes
+.ruff_cache
+.pytest_cache
+.venv
+venv/
+env/
+venv-dip/
+myenv/
+.myenv
+
+# Secrets
+.env
+.env.prod
+.env.local
+
+# Output (rebuilt at runtime)
+results/
+logs/
+out*
+zzz*
+
+# Docs & non-runtime files
+documentation/
+README.md
+*.md
+Makefile
+budget.sh
+
+# Dev scripts not needed in container
+create_test_memory.py
+deception_analyzer.py
+evaluate.py
+
+# OS
+*.DS_Store
+*~
+*#
+*.bak
+
+# Large / binary
+*.pkl
+!diplomacy/maps/convoy_paths_cache.pkl
+*.p
+*.pb
