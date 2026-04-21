@@ -87,6 +87,11 @@ celerybeat-schedule
 .env.prod
 .env.local
 
+# K8s secrets (contain API keys)
+k8s/secret-api-keys.yaml
+k8s/secret-b2.yaml
+k8s/secret-ghcr.yaml
+
 # virtualenv
 .venv
 .myenv

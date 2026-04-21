@@ -1247,7 +1247,7 @@ class OpenRouterClient(BaseModelClient):
             # Hard wall-clock timeout — catches thinking models that stream slowly
             extra_body = {}
             if self.thinking_budget:
-                extra_body["reasoning"] = {"max_tokens": self.thinking_budget, "effort": "low"}
+                extra_body["reasoning"] = {"max_tokens": self.thinking_budget}
 
             async with asyncio.timeout(self._timeout):
                 response = await self.client.chat.completions.create(

@@ -1,0 +1,34 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1901"
+  },
+  "consolidated_diary": "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.\n\n[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war.\n\n[F1901M] No negotiations have taken place yet.\nIntent: Solidify control over the Black Sea and the Levant. I intend to move units to secure my current supply centers and prepare for expansion into the Aegean or towards the Levant/Middle East. I will also seek diplomatic contact with Russia to prevent a two-front war.\n\n[F1901M] The Fall 1901 moves have concluded with mixed results. My attempt to expand into Greece via Bulgaria bounced, indicating a clash of intentions with Austria, who also moved toward Greece. This tension in the Balkans must be managed immediately to avoid a premature two-front war. On a positive note, my moves to Sevastopol and Armenia were successful, solidifying my presence in the Black Sea and the Caucasus. Russia's movement into Ukraine and Galicia suggests they are consolidating, but my hold on the Black Sea remains firm for now. Italy's move into Tunis is noted, though they don't pose an immediate threat to my Levant holdings. My priority for Winter 1901 is to resolve the Greek dispute—either through diplomacy or force—and to seek a formal non-aggression pact with Russia to ensure I can focus my expansion toward the Mediterranean or the Levant without fear of a Black Sea collapse.",
+  "final_relationships": {
+    "ITALY": "Neutral",
+    "FRANCE": "Neutral",
+    "RUSSIA": "Neutral",
+    "GERMANY": "Neutral",
+    "ENGLAND": "Neutral",
+    "AUSTRIA": "Unfriendly"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.5,
+    "FRANCE": 0.5,
+    "RUSSIA": 0.5,
+    "GERMANY": 0.5,
+    "ENGLAND": 0.5,
+    "AUSTRIA": 0.3
+  },
+  "final_goals": [
+    "Resolve the dispute over Greece, either through diplomatic negotiation with Austria or military force in the Fall.",
+    "Solidify control over the Caucasus and Black Sea regions to prevent Russian encroachment.",
+    "Expand further into the Levant or Middle East to increase supply center count.",
+    "Initiate diplomatic contact with Russia to discuss a potential non-aggression pact regarding the Black Sea."
+  ]
+}

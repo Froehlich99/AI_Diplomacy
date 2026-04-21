@@ -1,0 +1,6354 @@
+{
+  "total_cost_usd": 3.434779,
+  "total_input_tokens": 2918205,
+  "total_output_tokens": 1673656,
+  "total_calls": 610,
+  "by_model": {
+    "x-ai/grok-4.1-fast": {
+      "input_tokens": 558188,
+      "output_tokens": 240698,
+      "cost_usd": 0.23003870000000004,
+      "calls": 88
+    },
+    "google/gemini-2.5-flash-lite": {
+      "input_tokens": 413926,
+      "output_tokens": 374073,
+      "cost_usd": 0.1910218,
+      "calls": 90
+    },
+    "openai/gpt-oss-120b": {
+      "input_tokens": 356134,
+      "output_tokens": 43421,
+      "cost_usd": 0.04918796200000001,
+      "calls": 87
+    },
+    "anthropic/claude-haiku-4.5": {
+      "input_tokens": 501956,
+      "output_tokens": 149378,
+      "cost_usd": 1.2488460000000001,
+      "calls": 86
+    },
+    "qwen/qwen3.5-27b": {
+      "input_tokens": 319703,
+      "output_tokens": 437937,
+      "cost_usd": 0.9415814400000003,
+      "calls": 87
+    },
+    "google/gemma-4-31b-it": {
+      "input_tokens": 398390,
+      "output_tokens": 157198,
+      "cost_usd": 0.12552831000000003,
+      "calls": 88
+    },
+    "qwen/qwen3.6-plus": {
+      "input_tokens": 369908,
+      "output_tokens": 270951,
+      "cost_usd": 0.6485745500000002,
+      "calls": 84
+    }
+  },
+  "by_power": {
+    "TURKEY": {
+      "input_tokens": 2868071,
+      "output_tokens": 1610667,
+      "cost_usd": 3.366142251000002,
+      "calls": 582
+    },
+    "RUSSIA": {
+      "input_tokens": 26793,
+      "output_tokens": 26477,
+      "cost_usd": 0.021653530999999997,
+      "calls": 15
+    },
+    "ITALY": {
+      "input_tokens": 18189,
+      "output_tokens": 24853,
+      "cost_usd": 0.03634344999999999,
+      "calls": 10
+    },
+    "GERMANY": {
+      "input_tokens": 3413,
+      "output_tokens": 6638,
+      "cost_usd": 0.00845723,
+      "calls": 2
+    },
+    "FRANCE": {
+      "input_tokens": 1739,
+      "output_tokens": 5021,
+      "cost_usd": 0.0021823,
+      "calls": 1
+    }
+  },
+  "by_phase": {
+    "S1904M": {
+      "input_tokens": 225686,
+      "output_tokens": 124840,
+      "cost_usd": 0.27555900199999994,
+      "calls": 49
+    },
+    "F1904M": {
+      "input_tokens": 205086,
+      "output_tokens": 135181,
+      "cost_usd": 0.281657955,
+      "calls": 42
+    },
+    "F1904R": {
+      "input_tokens": 3691,
+      "output_tokens": 4661,
+      "cost_usd": 0.0022611,
+      "calls": 2
+    },
+    "W1904A": {
+      "input_tokens": 7241,
+      "output_tokens": 7523,
+      "cost_usd": 0.011904254999999999,
+      "calls": 4
+    },
+    "S1905M": {
+      "input_tokens": 239785,
+      "output_tokens": 133361,
+      "cost_usd": 0.29400801,
+      "calls": 49
+    },
+    "F1905M": {
+      "input_tokens": 210507,
+      "output_tokens": 125781,
+      "cost_usd": 0.25899131000000003,
+      "calls": 42
+    },
+    "F1905R": {
+      "input_tokens": 1839,
+      "output_tokens": 2129,
+      "cost_usd": 0.004749225,
+      "calls": 1
+    },
+    "W1905A": {
+      "input_tokens": 3413,
+      "output_tokens": 6638,
+      "cost_usd": 0.00845723,
+      "calls": 2
+    },
+    "S1906M": {
+      "input_tokens": 243000,
+      "output_tokens": 128672,
+      "cost_usd": 0.27153638499999994,
+      "calls": 49
+    },
+    "S1906R": {
+      "input_tokens": 1603,
+      "output_tokens": 332,
+      "cost_usd": 0.00032298,
+      "calls": 1
+    },
+    "F1906M": {
+      "input_tokens": 189308,
+      "output_tokens": 115825,
+      "cost_usd": 0.24059094699999997,
+      "calls": 42
+    },
+    "F1906R": {
+      "input_tokens": 1878,
+      "output_tokens": 2078,
+      "cost_usd": 0.00466245,
+      "calls": 1
+    },
+    "W1906A": {
+      "input_tokens": 7231,
+      "output_tokens": 13123,
+      "cost_usd": 0.01502752,
+      "calls": 4
+    },
+    "S1907M": {
+      "input_tokens": 248889,
+      "output_tokens": 128542,
+      "cost_usd": 0.262142337,
+      "calls": 49
+    },
+    "S1907R": {
+      "input_tokens": 4545,
+      "output_tokens": 2569,
+      "cost_usd": 0.0121663,
+      "calls": 2
+    },
+    "F1907M": {
+      "input_tokens": 197803,
+      "output_tokens": 130551,
+      "cost_usd": 0.27021632000000007,
+      "calls": 42
+    },
+    "W1907A": {
+      "input_tokens": 8363,
+      "output_tokens": 10278,
+      "cost_usd": 0.02043133,
+      "calls": 4
+    },
+    "S1908M": {
+      "input_tokens": 255176,
+      "output_tokens": 123403,
+      "cost_usd": 0.26876305399999995,
+      "calls": 49
+    },
+    "S1908R": {
+      "input_tokens": 1785,
+      "output_tokens": 542,
+      "cost_usd": 0.0007648,
+      "calls": 1
+    },
+    "F1908M": {
+      "input_tokens": 193666,
+      "output_tokens": 129122,
+      "cost_usd": 0.248074842,
+      "calls": 42
+    },
+    "F1908R": {
+      "input_tokens": 5339,
+      "output_tokens": 7065,
+      "cost_usd": 0.007286964,
+      "calls": 3
+    },
+    "W1908A": {
+      "input_tokens": 7067,
+      "output_tokens": 8103,
+      "cost_usd": 0.007861136999999999,
+      "calls": 4
+    },
+    "S1909M": {
+      "input_tokens": 258707,
+      "output_tokens": 122470,
+      "cost_usd": 0.25485063700000005,
+      "calls": 49
+    },
+    "S1909R": {
+      "input_tokens": 3551,
+      "output_tokens": 4760,
+      "cost_usd": 0.00222915,
+      "calls": 2
+    },
+    "F1909M": {
+      "input_tokens": 156682,
+      "output_tokens": 99714,
+      "cost_usd": 0.18265154500000003,
+      "calls": 34
+    },
+    "F1909R": {
+      "input_tokens": 1739,
+      "output_tokens": 5021,
+      "cost_usd": 0.0021823,
+      "calls": 1
+    },
+    "W1909A": {
+      "input_tokens": 3757,
+      "output_tokens": 1014,
+      "cost_usd": 0.0009274,
+      "calls": 2
+    },
+    "S1910M": {
+      "input_tokens": 230868,
+      "output_tokens": 100358,
+      "cost_usd": 0.224502277,
+      "calls": 38
+    }
+  },
+  "records": [
+    {
+      "timestamp": "2026-04-21T16:40:28.301677",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6672,
+      "output_tokens": 1146,
+      "cost_usd": 0.00188535
+    },
+    {
+      "timestamp": "2026-04-21T16:40:32.703786",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4260,
+      "output_tokens": 4547,
+      "cost_usd": 0.0022448
+    },
+    {
+      "timestamp": "2026-04-21T16:40:32.706498",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4222,
+      "output_tokens": 427,
+      "cost_usd": 0.000245788
+    },
+    {
+      "timestamp": "2026-04-21T16:40:39.352989",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5694,
+      "output_tokens": 1932,
+      "cost_usd": 0.015354
+    },
+    {
+      "timestamp": "2026-04-21T16:41:11.170916",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 3949,
+      "output_tokens": 4173,
+      "cost_usd": 0.007279935
+    },
+    {
+      "timestamp": "2026-04-21T16:41:22.707863",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4851,
+      "output_tokens": 1538,
+      "cost_usd": 0.00121507
+    },
+    {
+      "timestamp": "2026-04-21T16:41:34.566159",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5192,
+      "output_tokens": 4168,
+      "cost_usd": 0.009815
+    },
+    {
+      "timestamp": "2026-04-21T16:41:52.568754",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5757,
+      "output_tokens": 601,
+      "cost_usd": 0.000338713
+    },
+    {
+      "timestamp": "2026-04-21T16:41:55.018707",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7759,
+      "output_tokens": 2069,
+      "cost_usd": 0.00256425
+    },
+    {
+      "timestamp": "2026-04-21T16:41:55.830823",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7186,
+      "output_tokens": 1967,
+      "cost_usd": 0.017021
+    },
+    {
+      "timestamp": "2026-04-21T16:42:31.210924",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5776,
+      "output_tokens": 1280,
+      "cost_usd": 0.00132064
+    },
+    {
+      "timestamp": "2026-04-21T16:42:41.152266",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6645,
+      "output_tokens": 3521,
+      "cost_usd": 0.009025575
+    },
+    {
+      "timestamp": "2026-04-21T16:43:38.476097",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "timestamp": "2026-04-21T16:46:03.083879",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4704,
+      "output_tokens": 7255,
+      "cost_usd": 0.01694088
+    },
+    {
+      "timestamp": "2026-04-21T16:46:18.225068",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 8806,
+      "output_tokens": 1352,
+      "cost_usd": 0.015566
+    },
+    {
+      "timestamp": "2026-04-21T16:46:22.742281",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 8553,
+      "output_tokens": 1726,
+      "cost_usd": 0.00255155
+    },
+    {
+      "timestamp": "2026-04-21T16:46:32.063988",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6908,
+      "output_tokens": 684,
+      "cost_usd": 0.0005164
+    },
+    {
+      "timestamp": "2026-04-21T16:46:42.609568",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5393,
+      "output_tokens": 3430,
+      "cost_usd": 0.006402435
+    },
+    {
+      "timestamp": "2026-04-21T16:47:17.329899",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6471,
+      "output_tokens": 1266,
+      "cost_usd": 0.00141234
+    },
+    {
+      "timestamp": "2026-04-21T16:47:18.038347",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7800,
+      "output_tokens": 3880,
+      "cost_usd": 0.010101
+    },
+    {
+      "timestamp": "2026-04-21T16:48:11.289769",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6442,
+      "output_tokens": 4675,
+      "cost_usd": 0.0025142
+    },
+    {
+      "timestamp": "2026-04-21T16:48:28.129819",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5365,
+      "output_tokens": 2132,
+      "cost_usd": 0.00211695
+    },
+    {
+      "timestamp": "2026-04-21T16:48:29.128712",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 8107,
+      "output_tokens": 1892,
+      "cost_usd": 0.017567
+    },
+    {
+      "timestamp": "2026-04-21T16:48:32.432200",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6425,
+      "output_tokens": 737,
+      "cost_usd": 0.000390605
+    },
+    {
+      "timestamp": "2026-04-21T16:49:20.923055",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4248,
+      "output_tokens": 1354,
+      "cost_usd": 0.00113632
+    },
+    {
+      "timestamp": "2026-04-21T16:49:23.096404",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5934,
+      "output_tokens": 3910,
+      "cost_usd": 0.00955305
+    },
+    {
+      "timestamp": "2026-04-21T16:49:36.687974",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3906,
+      "output_tokens": 7359,
+      "cost_usd": 0.0188334
+    },
+    {
+      "timestamp": "2026-04-21T16:50:13.155882",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5054,
+      "output_tokens": 4586,
+      "cost_usd": 0.0023398
+    },
+    {
+      "timestamp": "2026-04-21T16:50:20.444072",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 2958,
+      "output_tokens": 274,
+      "cost_usd": 0.0006081
+    },
+    {
+      "timestamp": "2026-04-21T16:50:24.948647",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 5461,
+      "output_tokens": 939,
+      "cost_usd": 0.010156
+    },
+    {
+      "timestamp": "2026-04-21T16:50:26.555976",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 3269,
+      "output_tokens": 1084,
+      "cost_usd": 0.00117375
+    },
+    {
+      "timestamp": "2026-04-21T16:50:30.448347",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 3272,
+      "output_tokens": 585,
+      "cost_usd": 0.000238758
+    },
+    {
+      "timestamp": "2026-04-21T16:50:32.733845",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 3795,
+      "output_tokens": 1998,
+      "cost_usd": 0.013785
+    },
+    {
+      "timestamp": "2026-04-21T16:50:33.212512",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 3282,
+      "output_tokens": 4591,
+      "cost_usd": 0.0021646
+    },
+    {
+      "timestamp": "2026-04-21T16:51:09.926176",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 2720,
+      "output_tokens": 4510,
+      "cost_usd": 0.010476
+    },
+    {
+      "timestamp": "2026-04-21T16:51:12.884396",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 2766,
+      "output_tokens": 4463,
+      "cost_usd": 0.00750165
+    },
+    {
+      "timestamp": "2026-04-21T16:51:20.425104",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 4548,
+      "output_tokens": 3643,
+      "cost_usd": 0.00858195
+    },
+    {
+      "timestamp": "2026-04-21T16:51:23.011179",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 2853,
+      "output_tokens": 3706,
+      "cost_usd": 0.008153925
+    },
+    {
+      "timestamp": "2026-04-21T16:51:26.721088",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 5844,
+      "output_tokens": 6812,
+      "cost_usd": 0.00455275
+    },
+    {
+      "timestamp": "2026-04-21T16:51:48.820923",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 4160,
+      "output_tokens": 3402,
+      "cost_usd": 0.0019432
+    },
+    {
+      "timestamp": "2026-04-21T16:52:20.279750",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "timestamp": "2026-04-21T16:52:46.741877",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "order",
+      "input_tokens": 2695,
+      "output_tokens": 1216,
+      "cost_usd": 0.001147
+    },
+    {
+      "timestamp": "2026-04-21T16:53:00.133064",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2352,
+      "output_tokens": 400,
+      "cost_usd": 0.000167728
+    },
+    {
+      "timestamp": "2026-04-21T16:53:01.913800",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2826,
+      "output_tokens": 1250,
+      "cost_usd": 0.009076
+    },
+    {
+      "timestamp": "2026-04-21T16:53:04.196517",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2454,
+      "output_tokens": 1607,
+      "cost_usd": 0.00127225
+    },
+    {
+      "timestamp": "2026-04-21T16:53:25.832750",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2114,
+      "output_tokens": 2093,
+      "cost_usd": 0.0047684
+    },
+    {
+      "timestamp": "2026-04-21T16:53:41.270994",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2001,
+      "output_tokens": 5007,
+      "cost_usd": 0.01135539
+    },
+    {
+      "timestamp": "2026-04-21T16:53:59.585910",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1855,
+      "output_tokens": 1141,
+      "cost_usd": 0.0009415
+    },
+    {
+      "timestamp": "2026-04-21T16:54:51.159895",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2382,
+      "output_tokens": 2512,
+      "cost_usd": 0.001243
+    },
+    {
+      "timestamp": "2026-04-21T16:55:04.362831",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4103,
+      "output_tokens": 451,
+      "cost_usd": 0.000245707
+    },
+    {
+      "timestamp": "2026-04-21T16:55:05.460160",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4812,
+      "output_tokens": 4601,
+      "cost_usd": 0.0023216
+    },
+    {
+      "timestamp": "2026-04-21T16:55:08.965051",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5123,
+      "output_tokens": 1560,
+      "cost_usd": 0.012923
+    },
+    {
+      "timestamp": "2026-04-21T16:55:15.688984",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5786,
+      "output_tokens": 2548,
+      "cost_usd": 0.00240915
+    },
+    {
+      "timestamp": "2026-04-21T16:55:47.483014",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4537,
+      "output_tokens": 1317,
+      "cost_usd": 0.00109027
+    },
+    {
+      "timestamp": "2026-04-21T16:55:47.855701",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 3592,
+      "output_tokens": 4681,
+      "cost_usd": 0.0110808
+    },
+    {
+      "timestamp": "2026-04-21T16:55:54.648246",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5419,
+      "output_tokens": 3371,
+      "cost_usd": 0.008334625
+    },
+    {
+      "timestamp": "2026-04-21T16:56:10.273003",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6340,
+      "output_tokens": 1843,
+      "cost_usd": 0.00216745
+    },
+    {
+      "timestamp": "2026-04-21T16:56:20.516641",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6473,
+      "output_tokens": 2341,
+      "cost_usd": 0.018178
+    },
+    {
+      "timestamp": "2026-04-21T16:56:43.482283",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5255,
+      "output_tokens": 592,
+      "cost_usd": 0.00096662
+    },
+    {
+      "timestamp": "2026-04-21T16:56:47.179652",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5183,
+      "output_tokens": 1221,
+      "cost_usd": 0.0016471
+    },
+    {
+      "timestamp": "2026-04-21T16:57:22.250374",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6612,
+      "output_tokens": 4731,
+      "cost_usd": 0.01137435
+    },
+    {
+      "timestamp": "2026-04-21T16:57:34.349894",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4090,
+      "output_tokens": 5148,
+      "cost_usd": 0.01222398
+    },
+    {
+      "timestamp": "2026-04-21T16:58:03.380335",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5962,
+      "output_tokens": 4764,
+      "cost_usd": 0.0025018
+    },
+    {
+      "timestamp": "2026-04-21T16:58:17.635857",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6313,
+      "output_tokens": 564,
+      "cost_usd": 0.000353367
+    },
+    {
+      "timestamp": "2026-04-21T16:58:18.201624",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7033,
+      "output_tokens": 1356,
+      "cost_usd": 0.00206255
+    },
+    {
+      "timestamp": "2026-04-21T16:58:18.587120",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 6949,
+      "output_tokens": 4673,
+      "cost_usd": 0.0025641
+    },
+    {
+      "timestamp": "2026-04-21T16:58:26.815405",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7804,
+      "output_tokens": 2077,
+      "cost_usd": 0.018189
+    },
+    {
+      "timestamp": "2026-04-21T16:58:57.655306",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 4882,
+      "output_tokens": 4381,
+      "cost_usd": 0.00778635
+    },
+    {
+      "timestamp": "2026-04-21T16:59:15.454050",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 7833,
+      "output_tokens": 3876,
+      "cost_usd": 0.010103925
+    },
+    {
+      "timestamp": "2026-04-21T16:59:32.862755",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation",
+      "input_tokens": 5759,
+      "output_tokens": 1379,
+      "cost_usd": 0.00135786
+    },
+    {
+      "timestamp": "2026-04-21T16:59:47.347460",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4790,
+      "output_tokens": 1696,
+      "cost_usd": 0.00178395
+    },
+    {
+      "timestamp": "2026-04-21T16:59:48.906240",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5957,
+      "output_tokens": 751,
+      "cost_usd": 0.0008961
+    },
+    {
+      "timestamp": "2026-04-21T16:59:55.336092",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7829,
+      "output_tokens": 2147,
+      "cost_usd": 0.018564
+    },
+    {
+      "timestamp": "2026-04-21T17:00:47.024602",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6138,
+      "output_tokens": 3953,
+      "cost_usd": 0.0097032
+    },
+    {
+      "timestamp": "2026-04-21T17:01:29.114633",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4472,
+      "output_tokens": 18443,
+      "cost_usd": 0.0456048
+    },
+    {
+      "timestamp": "2026-04-21T17:01:33.893887",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5846,
+      "output_tokens": 4665,
+      "cost_usd": 0.0024506
+    },
+    {
+      "timestamp": "2026-04-21T17:03:54.195520",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3745,
+      "output_tokens": 1542,
+      "cost_usd": 0.0011411
+    },
+    {
+      "timestamp": "2026-04-21T17:04:00.843615",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 2889,
+      "output_tokens": 326,
+      "cost_usd": 0.000174611
+    },
+    {
+      "timestamp": "2026-04-21T17:04:08.167859",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 3862,
+      "output_tokens": 4613,
+      "cost_usd": 0.0022314
+    },
+    {
+      "timestamp": "2026-04-21T17:04:41.191150",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 3965,
+      "output_tokens": 2403,
+      "cost_usd": 0.01598
+    },
+    {
+      "timestamp": "2026-04-21T17:04:43.831319",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 2487,
+      "output_tokens": 4541,
+      "cost_usd": 0.007568925
+    },
+    {
+      "timestamp": "2026-04-21T17:05:16.235490",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 4788,
+      "output_tokens": 4468,
+      "cost_usd": 0.0102687
+    },
+    {
+      "timestamp": "2026-04-21T17:05:25.831523",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 5102,
+      "output_tokens": 10515,
+      "cost_usd": 0.00625585
+    },
+    {
+      "timestamp": "2026-04-21T17:12:00.517155",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "order",
+      "input_tokens": 4187,
+      "output_tokens": 2588,
+      "cost_usd": 0.00162138
+    },
+    {
+      "timestamp": "2026-04-21T17:12:02.371001",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2801,
+      "output_tokens": 336,
+      "cost_usd": 0.00062175
+    },
+    {
+      "timestamp": "2026-04-21T17:12:11.393695",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2819,
+      "output_tokens": 2163,
+      "cost_usd": 0.0011471
+    },
+    {
+      "timestamp": "2026-04-21T17:12:16.056476",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3615,
+      "output_tokens": 1276,
+      "cost_usd": 0.009995
+    },
+    {
+      "timestamp": "2026-04-21T17:12:38.544164",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2948,
+      "output_tokens": 3795,
+      "cost_usd": 0.00246505
+    },
+    {
+      "timestamp": "2026-04-21T17:12:45.741452",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2544,
+      "output_tokens": 2439,
+      "cost_usd": 0.00558285
+    },
+    {
+      "timestamp": "2026-04-21T17:12:53.854284",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2279,
+      "output_tokens": 4271,
+      "cost_usd": 0.007107165
+    },
+    {
+      "timestamp": "2026-04-21T17:12:58.858758",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1904M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2163,
+      "output_tokens": 775,
+      "cost_usd": 0.00061282
+    },
+    {
+      "timestamp": "2026-04-21T17:13:01.086182",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "F1904R",
+      "response_type": "order",
+      "input_tokens": 1938,
+      "output_tokens": 276,
+      "cost_usd": 0.0003318
+    },
+    {
+      "timestamp": "2026-04-21T17:13:11.784904",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "RUSSIA",
+      "phase": "F1904R",
+      "response_type": "order",
+      "input_tokens": 1753,
+      "output_tokens": 4385,
+      "cost_usd": 0.0019293
+    },
+    {
+      "timestamp": "2026-04-21T17:13:22.250649",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "ITALY",
+      "phase": "W1904A",
+      "response_type": "order",
+      "input_tokens": 2073,
+      "output_tokens": 1075,
+      "cost_usd": 0.00093005
+    },
+    {
+      "timestamp": "2026-04-21T17:13:46.784978",
+      "model": "qwen/qwen3.5-27b",
+      "power": "ITALY",
+      "phase": "W1904A",
+      "response_type": "order",
+      "input_tokens": 1612,
+      "output_tokens": 3289,
+      "cost_usd": 0.00544518
+    },
+    {
+      "timestamp": "2026-04-21T17:13:54.172849",
+      "model": "qwen/qwen3.6-plus",
+      "power": "ITALY",
+      "phase": "W1904A",
+      "response_type": "order",
+      "input_tokens": 1891,
+      "output_tokens": 2205,
+      "cost_usd": 0.004914325
+    },
+    {
+      "timestamp": "2026-04-21T17:15:38.089450",
+      "model": "google/gemma-4-31b-it",
+      "power": "ITALY",
+      "phase": "W1904A",
+      "response_type": "order",
+      "input_tokens": 1665,
+      "output_tokens": 954,
+      "cost_usd": 0.0006147
+    },
+    {
+      "timestamp": "2026-04-21T17:15:52.349151",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 7032,
+      "output_tokens": 1194,
+      "cost_usd": 0.0019803
+    },
+    {
+      "timestamp": "2026-04-21T17:15:52.704795",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4790,
+      "output_tokens": 4460,
+      "cost_usd": 0.002263
+    },
+    {
+      "timestamp": "2026-04-21T17:16:10.624625",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4389,
+      "output_tokens": 577,
+      "cost_usd": 0.0003637
+    },
+    {
+      "timestamp": "2026-04-21T17:16:29.745964",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 3990,
+      "output_tokens": 3626,
+      "cost_usd": 0.0098994
+    },
+    {
+      "timestamp": "2026-04-21T17:16:30.510654",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5556,
+      "output_tokens": 1827,
+      "cost_usd": 0.014691
+    },
+    {
+      "timestamp": "2026-04-21T17:16:40.248876",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5412,
+      "output_tokens": 3367,
+      "cost_usd": 0.00832455
+    },
+    {
+      "timestamp": "2026-04-21T17:20:08.647149",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4051,
+      "output_tokens": 491,
+      "cost_usd": 0.00076354
+    },
+    {
+      "timestamp": "2026-04-21T17:20:15.714930",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5598,
+      "output_tokens": 796,
+      "cost_usd": 0.0013173
+    },
+    {
+      "timestamp": "2026-04-21T17:20:22.560576",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5763,
+      "output_tokens": 3946,
+      "cost_usd": 0.0021547
+    },
+    {
+      "timestamp": "2026-04-21T17:20:28.470691",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6842,
+      "output_tokens": 1802,
+      "cost_usd": 0.015852
+    },
+    {
+      "timestamp": "2026-04-21T17:20:38.141229",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 7895,
+      "output_tokens": 3211,
+      "cost_usd": 0.00316245
+    },
+    {
+      "timestamp": "2026-04-21T17:20:50.589634",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4577,
+      "output_tokens": 3288,
+      "cost_usd": 0.0092643
+    },
+    {
+      "timestamp": "2026-04-21T17:21:20.724642",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6777,
+      "output_tokens": 3919,
+      "cost_usd": 0.009844575
+    },
+    {
+      "timestamp": "2026-04-21T17:22:27.374680",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5258,
+      "output_tokens": 1279,
+      "cost_usd": 0.00124772
+    },
+    {
+      "timestamp": "2026-04-21T17:22:35.896084",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8530,
+      "output_tokens": 971,
+      "cost_usd": 0.00216945
+    },
+    {
+      "timestamp": "2026-04-21T17:22:41.206109",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6964,
+      "output_tokens": 770,
+      "cost_usd": 0.0015066
+    },
+    {
+      "timestamp": "2026-04-21T17:22:44.106708",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6457,
+      "output_tokens": 4639,
+      "cost_usd": 0.0025013
+    },
+    {
+      "timestamp": "2026-04-21T17:22:48.073747",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8607,
+      "output_tokens": 2097,
+      "cost_usd": 0.019092
+    },
+    {
+      "timestamp": "2026-04-21T17:23:23.601363",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5087,
+      "output_tokens": 4474,
+      "cost_usd": 0.007971405
+    },
+    {
+      "timestamp": "2026-04-21T17:23:47.000541",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8174,
+      "output_tokens": 4283,
+      "cost_usd": 0.0110084
+    },
+    {
+      "timestamp": "2026-04-21T17:23:51.604812",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5905,
+      "output_tokens": 1547,
+      "cost_usd": 0.0014455
+    },
+    {
+      "timestamp": "2026-04-21T17:24:05.877078",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5258,
+      "output_tokens": 4043,
+      "cost_usd": 0.002143
+    },
+    {
+      "timestamp": "2026-04-21T17:24:06.922125",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5124,
+      "output_tokens": 2175,
+      "cost_usd": 0.00209025
+    },
+    {
+      "timestamp": "2026-04-21T17:24:07.879126",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6528,
+      "output_tokens": 571,
+      "cost_usd": 0.0008812
+    },
+    {
+      "timestamp": "2026-04-21T17:24:12.916944",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 8097,
+      "output_tokens": 2157,
+      "cost_usd": 0.018882
+    },
+    {
+      "timestamp": "2026-04-21T17:24:42.346277",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3806,
+      "output_tokens": 4127,
+      "cost_usd": 0.0110466
+    },
+    {
+      "timestamp": "2026-04-21T17:24:48.387334",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6280,
+      "output_tokens": 3065,
+      "cost_usd": 0.00801775
+    },
+    {
+      "timestamp": "2026-04-21T17:29:51.595088",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4018,
+      "output_tokens": 1404,
+      "cost_usd": 0.00112412
+    },
+    {
+      "timestamp": "2026-04-21T17:29:54.190078",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 4306,
+      "output_tokens": 522,
+      "cost_usd": 0.0009591
+    },
+    {
+      "timestamp": "2026-04-21T17:29:54.526053",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 2865,
+      "output_tokens": 435,
+      "cost_usd": 0.00069075
+    },
+    {
+      "timestamp": "2026-04-21T17:30:01.714841",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 4308,
+      "output_tokens": 1042,
+      "cost_usd": 0.00136055
+    },
+    {
+      "timestamp": "2026-04-21T17:30:03.469109",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 6989,
+      "output_tokens": 1109,
+      "cost_usd": 0.012534
+    },
+    {
+      "timestamp": "2026-04-21T17:30:09.298477",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3366,
+      "output_tokens": 5585,
+      "cost_usd": 0.0025706
+    },
+    {
+      "timestamp": "2026-04-21T17:30:18.530243",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3904,
+      "output_tokens": 3040,
+      "cost_usd": 0.019104
+    },
+    {
+      "timestamp": "2026-04-21T17:30:42.762776",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3664,
+      "output_tokens": 2729,
+      "cost_usd": 0.00651235
+    },
+    {
+      "timestamp": "2026-04-21T17:30:43.345532",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 6336,
+      "output_tokens": 7567,
+      "cost_usd": 0.00502865
+    },
+    {
+      "timestamp": "2026-04-21T17:30:48.014063",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 4527,
+      "output_tokens": 3025,
+      "cost_usd": 0.007370025
+    },
+    {
+      "timestamp": "2026-04-21T17:30:58.376774",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 2895,
+      "output_tokens": 4588,
+      "cost_usd": 0.007721805
+    },
+    {
+      "timestamp": "2026-04-21T17:31:18.738589",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3329,
+      "output_tokens": 8024,
+      "cost_usd": 0.0202563
+    },
+    {
+      "timestamp": "2026-04-21T17:31:55.353915",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3844,
+      "output_tokens": 2238,
+      "cost_usd": 0.0012796
+    },
+    {
+      "timestamp": "2026-04-21T17:33:53.081015",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3350,
+      "output_tokens": 1068,
+      "cost_usd": 0.0008962
+    },
+    {
+      "timestamp": "2026-04-21T17:40:55.651488",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "order",
+      "input_tokens": 3831,
+      "output_tokens": 4892,
+      "cost_usd": 0.0032122
+    },
+    {
+      "timestamp": "2026-04-21T17:41:02.539624",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2271,
+      "output_tokens": 434,
+      "cost_usd": 0.00060105
+    },
+    {
+      "timestamp": "2026-04-21T17:41:03.284657",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2484,
+      "output_tokens": 1238,
+      "cost_usd": 0.00109375
+    },
+    {
+      "timestamp": "2026-04-21T17:41:07.190686",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2896,
+      "output_tokens": 1123,
+      "cost_usd": 0.008511
+    },
+    {
+      "timestamp": "2026-04-21T17:41:09.479271",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1993,
+      "output_tokens": 4233,
+      "cost_usd": 0.0018925
+    },
+    {
+      "timestamp": "2026-04-21T17:41:54.952759",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2102,
+      "output_tokens": 3181,
+      "cost_usd": 0.0068861
+    },
+    {
+      "timestamp": "2026-04-21T17:42:05.806613",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1929,
+      "output_tokens": 6049,
+      "cost_usd": 0.01358667
+    },
+    {
+      "timestamp": "2026-04-21T17:42:34.025317",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1831,
+      "output_tokens": 1133,
+      "cost_usd": 0.0009327
+    },
+    {
+      "timestamp": "2026-04-21T18:06:28.053059",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4187,
+      "output_tokens": 4393,
+      "cost_usd": 0.0021759
+    },
+    {
+      "timestamp": "2026-04-21T18:06:28.154727",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6622,
+      "output_tokens": 1310,
+      "cost_usd": 0.00195735
+    },
+    {
+      "timestamp": "2026-04-21T18:06:33.392250",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5134,
+      "output_tokens": 2131,
+      "cost_usd": 0.015789
+    },
+    {
+      "timestamp": "2026-04-21T18:06:37.103214",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4008,
+      "output_tokens": 457,
+      "cost_usd": 0.00074067
+    },
+    {
+      "timestamp": "2026-04-21T18:07:05.581501",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5047,
+      "output_tokens": 3006,
+      "cost_usd": 0.007501975
+    },
+    {
+      "timestamp": "2026-04-21T18:07:54.290613",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4047,
+      "output_tokens": 1159,
+      "cost_usd": 0.0013889
+    },
+    {
+      "timestamp": "2026-04-21T18:10:08.933288",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 3992,
+      "output_tokens": 4358,
+      "cost_usd": 0.01049112
+    },
+    {
+      "timestamp": "2026-04-21T18:10:28.818480",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5231,
+      "output_tokens": 4623,
+      "cost_usd": 0.0023723
+    },
+    {
+      "timestamp": "2026-04-21T18:10:29.327572",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6839,
+      "output_tokens": 1938,
+      "cost_usd": 0.016529
+    },
+    {
+      "timestamp": "2026-04-21T18:10:29.848121",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 7624,
+      "output_tokens": 1671,
+      "cost_usd": 0.00233825
+    },
+    {
+      "timestamp": "2026-04-21T18:10:37.451052",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5371,
+      "output_tokens": 478,
+      "cost_usd": 0.00038805
+    },
+    {
+      "timestamp": "2026-04-21T18:11:04.697710",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 4896,
+      "output_tokens": 4513,
+      "cost_usd": 0.007995
+    },
+    {
+      "timestamp": "2026-04-21T18:11:34.878652",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6643,
+      "output_tokens": 4679,
+      "cost_usd": 0.011283025
+    },
+    {
+      "timestamp": "2026-04-21T18:14:34.688287",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5014,
+      "output_tokens": 1141,
+      "cost_usd": 0.00115836
+    },
+    {
+      "timestamp": "2026-04-21T18:14:40.583586",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6498,
+      "output_tokens": 394,
+      "cost_usd": 0.0012111
+    },
+    {
+      "timestamp": "2026-04-21T18:14:50.229933",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 6287,
+      "output_tokens": 4635,
+      "cost_usd": 0.0024827
+    },
+    {
+      "timestamp": "2026-04-21T18:14:54.268706",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8410,
+      "output_tokens": 1886,
+      "cost_usd": 0.01784
+    },
+    {
+      "timestamp": "2026-04-21T18:15:03.603902",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8324,
+      "output_tokens": 3288,
+      "cost_usd": 0.00328675
+    },
+    {
+      "timestamp": "2026-04-21T18:15:04.669965",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5619,
+      "output_tokens": 1564,
+      "cost_usd": 0.0019058
+    },
+    {
+      "timestamp": "2026-04-21T18:15:47.085387",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 8010,
+      "output_tokens": 3910,
+      "cost_usd": 0.01022775
+    },
+    {
+      "timestamp": "2026-04-21T18:15:54.452313",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation",
+      "input_tokens": 5535,
+      "output_tokens": 5532,
+      "cost_usd": 0.0149373
+    },
+    {
+      "timestamp": "2026-04-21T18:16:04.869695",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6076,
+      "output_tokens": 737,
+      "cost_usd": 0.0013536
+    },
+    {
+      "timestamp": "2026-04-21T18:16:09.613411",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5288,
+      "output_tokens": 4568,
+      "cost_usd": 0.002356
+    },
+    {
+      "timestamp": "2026-04-21T18:16:11.429310",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5343,
+      "output_tokens": 2038,
+      "cost_usd": 0.00206555
+    },
+    {
+      "timestamp": "2026-04-21T18:16:24.421396",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7928,
+      "output_tokens": 3158,
+      "cost_usd": 0.023718
+    },
+    {
+      "timestamp": "2026-04-21T18:16:49.993718",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6517,
+      "output_tokens": 3011,
+      "cost_usd": 0.007989475
+    },
+    {
+      "timestamp": "2026-04-21T18:16:51.110678",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4528,
+      "output_tokens": 4544,
+      "cost_usd": 0.0079716
+    },
+    {
+      "timestamp": "2026-04-21T18:21:15.249916",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4388,
+      "output_tokens": 2150,
+      "cost_usd": 0.00138744
+    },
+    {
+      "timestamp": "2026-04-21T18:21:28.391877",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 3424,
+      "output_tokens": 4071,
+      "cost_usd": 0.0019708
+    },
+    {
+      "timestamp": "2026-04-21T18:21:37.825004",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 3999,
+      "output_tokens": 2313,
+      "cost_usd": 0.015564
+    },
+    {
+      "timestamp": "2026-04-21T18:21:51.838256",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 2887,
+      "output_tokens": 1554,
+      "cost_usd": 0.00081927
+    },
+    {
+      "timestamp": "2026-04-21T18:21:58.604249",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 4530,
+      "output_tokens": 2278,
+      "cost_usd": 0.00591435
+    },
+    {
+      "timestamp": "2026-04-21T18:22:57.685097",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 6363,
+      "output_tokens": 13258,
+      "cost_usd": 0.00787955
+    },
+    {
+      "timestamp": "2026-04-21T18:25:05.410618",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 3322,
+      "output_tokens": 4395,
+      "cost_usd": 0.00750399
+    },
+    {
+      "timestamp": "2026-04-21T18:28:35.453032",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "order",
+      "input_tokens": 3501,
+      "output_tokens": 4136,
+      "cost_usd": 0.0027682
+    },
+    {
+      "timestamp": "2026-04-21T18:28:44.612609",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2347,
+      "output_tokens": 4233,
+      "cost_usd": 0.0019279
+    },
+    {
+      "timestamp": "2026-04-21T18:28:45.606799",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3122,
+      "output_tokens": 1475,
+      "cost_usd": 0.00133985
+    },
+    {
+      "timestamp": "2026-04-21T18:28:48.810023",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2793,
+      "output_tokens": 275,
+      "cost_usd": 0.0002084
+    },
+    {
+      "timestamp": "2026-04-21T18:28:53.875853",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3815,
+      "output_tokens": 1541,
+      "cost_usd": 0.01152
+    },
+    {
+      "timestamp": "2026-04-21T18:29:02.229313",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2164,
+      "output_tokens": 785,
+      "cost_usd": 0.00061696
+    },
+    {
+      "timestamp": "2026-04-21T18:29:20.246571",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2503,
+      "output_tokens": 2366,
+      "cost_usd": 0.005427175
+    },
+    {
+      "timestamp": "2026-04-21T18:29:56.910269",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1905M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2331,
+      "output_tokens": 5829,
+      "cost_usd": 0.0146889
+    },
+    {
+      "timestamp": "2026-04-21T18:30:36.811573",
+      "model": "qwen/qwen3.6-plus",
+      "power": "ITALY",
+      "phase": "F1905R",
+      "response_type": "order",
+      "input_tokens": 1839,
+      "output_tokens": 2129,
+      "cost_usd": 0.004749225
+    },
+    {
+      "timestamp": "2026-04-21T18:31:23.944173",
+      "model": "qwen/qwen3.5-27b",
+      "power": "GERMANY",
+      "phase": "W1905A",
+      "response_type": "order",
+      "input_tokens": 1726,
+      "output_tokens": 4508,
+      "cost_usd": 0.00736905
+    },
+    {
+      "timestamp": "2026-04-21T18:31:41.770913",
+      "model": "google/gemma-4-31b-it",
+      "power": "GERMANY",
+      "phase": "W1905A",
+      "response_type": "order",
+      "input_tokens": 1687,
+      "output_tokens": 2130,
+      "cost_usd": 0.00108818
+    },
+    {
+      "timestamp": "2026-04-21T18:32:04.131069",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4395,
+      "output_tokens": 4547,
+      "cost_usd": 0.0022583
+    },
+    {
+      "timestamp": "2026-04-21T18:32:06.063821",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 7360,
+      "output_tokens": 1686,
+      "cost_usd": 0.00229295
+    },
+    {
+      "timestamp": "2026-04-21T18:32:06.413319",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5538,
+      "output_tokens": 1519,
+      "cost_usd": 0.013133
+    },
+    {
+      "timestamp": "2026-04-21T18:32:39.761547",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 3961,
+      "output_tokens": 4394,
+      "cost_usd": 0.007627035
+    },
+    {
+      "timestamp": "2026-04-21T18:32:41.052964",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4234,
+      "output_tokens": 457,
+      "cost_usd": 0.00076327
+    },
+    {
+      "timestamp": "2026-04-21T18:32:53.667187",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5120,
+      "output_tokens": 3491,
+      "cost_usd": 0.00847145
+    },
+    {
+      "timestamp": "2026-04-21T18:33:03.451704",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4579,
+      "output_tokens": 1190,
+      "cost_usd": 0.00111706
+    },
+    {
+      "timestamp": "2026-04-21T18:33:13.626971",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 8210,
+      "output_tokens": 1136,
+      "cost_usd": 0.00218795
+    },
+    {
+      "timestamp": "2026-04-21T18:33:16.423881",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5317,
+      "output_tokens": 538,
+      "cost_usd": 0.00067221
+    },
+    {
+      "timestamp": "2026-04-21T18:33:19.428944",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5333,
+      "output_tokens": 4855,
+      "cost_usd": 0.0024753
+    },
+    {
+      "timestamp": "2026-04-21T18:33:22.965534",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6993,
+      "output_tokens": 1737,
+      "cost_usd": 0.015678
+    },
+    {
+      "timestamp": "2026-04-21T18:33:57.774738",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4521,
+      "output_tokens": 4386,
+      "cost_usd": 0.0118827
+    },
+    {
+      "timestamp": "2026-04-21T18:34:16.441103",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6294,
+      "output_tokens": 3969,
+      "cost_usd": 0.0097851
+    },
+    {
+      "timestamp": "2026-04-21T18:34:24.023798",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5473,
+      "output_tokens": 1085,
+      "cost_usd": 0.00120022
+    },
+    {
+      "timestamp": "2026-04-21T18:34:29.444039",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6205,
+      "output_tokens": 241,
+      "cost_usd": 0.0007169
+    },
+    {
+      "timestamp": "2026-04-21T18:34:36.612025",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 8888,
+      "output_tokens": 1644,
+      "cost_usd": 0.00257755
+    },
+    {
+      "timestamp": "2026-04-21T18:34:38.713536",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6250,
+      "output_tokens": 4407,
+      "cost_usd": 0.0023878
+    },
+    {
+      "timestamp": "2026-04-21T18:34:56.838059",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 8241,
+      "output_tokens": 1212,
+      "cost_usd": 0.014301
+    },
+    {
+      "timestamp": "2026-04-21T18:35:24.978705",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 7363,
+      "output_tokens": 3256,
+      "cost_usd": 0.008742175
+    },
+    {
+      "timestamp": "2026-04-21T18:35:40.921088",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5292,
+      "output_tokens": 5961,
+      "cost_usd": 0.015894
+    },
+    {
+      "timestamp": "2026-04-21T18:35:46.616150",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6202,
+      "output_tokens": 978,
+      "cost_usd": 0.00125948
+    },
+    {
+      "timestamp": "2026-04-21T18:35:53.257276",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5342,
+      "output_tokens": 736,
+      "cost_usd": 0.0012429
+    },
+    {
+      "timestamp": "2026-04-21T18:36:00.988888",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5247,
+      "output_tokens": 1707,
+      "cost_usd": 0.00188085
+    },
+    {
+      "timestamp": "2026-04-21T18:36:10.734390",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7491,
+      "output_tokens": 2438,
+      "cost_usd": 0.019681
+    },
+    {
+      "timestamp": "2026-04-21T18:36:30.431129",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4102,
+      "output_tokens": 3542,
+      "cost_usd": 0.0097314
+    },
+    {
+      "timestamp": "2026-04-21T18:37:08.820603",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5548,
+      "output_tokens": 4260,
+      "cost_usd": 0.0101101
+    },
+    {
+      "timestamp": "2026-04-21T18:37:49.179090",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4596,
+      "output_tokens": 4599,
+      "cost_usd": 0.0022992
+    },
+    {
+      "timestamp": "2026-04-21T18:37:51.940115",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4083,
+      "output_tokens": 1343,
+      "cost_usd": 0.00110882
+    },
+    {
+      "timestamp": "2026-04-21T18:37:53.279501",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 2827,
+      "output_tokens": 358,
+      "cost_usd": 0.00063885
+    },
+    {
+      "timestamp": "2026-04-21T18:38:00.708722",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 5524,
+      "output_tokens": 1133,
+      "cost_usd": 0.00164925
+    },
+    {
+      "timestamp": "2026-04-21T18:38:02.142740",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 8695,
+      "output_tokens": 867,
+      "cost_usd": 0.01303
+    },
+    {
+      "timestamp": "2026-04-21T18:38:06.999288",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 3546,
+      "output_tokens": 4936,
+      "cost_usd": 0.002329
+    },
+    {
+      "timestamp": "2026-04-21T18:38:11.711294",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 5320,
+      "output_tokens": 595,
+      "cost_usd": 0.00131005
+    },
+    {
+      "timestamp": "2026-04-21T18:38:11.893278",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 3729,
+      "output_tokens": 2018,
+      "cost_usd": 0.013819
+    },
+    {
+      "timestamp": "2026-04-21T18:38:34.605639",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4077,
+      "output_tokens": 1151,
+      "cost_usd": 0.00096739
+    },
+    {
+      "timestamp": "2026-04-21T18:38:40.379564",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4015,
+      "output_tokens": 4569,
+      "cost_usd": 0.007910565
+    },
+    {
+      "timestamp": "2026-04-21T18:38:41.831671",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4458,
+      "output_tokens": 2692,
+      "cost_usd": 0.00669825
+    },
+    {
+      "timestamp": "2026-04-21T18:38:42.836205",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 2996,
+      "output_tokens": 4504,
+      "cost_usd": 0.00761046
+    },
+    {
+      "timestamp": "2026-04-21T18:38:45.607763",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4429,
+      "output_tokens": 2856,
+      "cost_usd": 0.007008625
+    },
+    {
+      "timestamp": "2026-04-21T18:39:06.191148",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 6667,
+      "output_tokens": 8656,
+      "cost_usd": 0.00563935
+    },
+    {
+      "timestamp": "2026-04-21T18:39:55.950405",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4083,
+      "output_tokens": 5145,
+      "cost_usd": 0.00262962
+    },
+    {
+      "timestamp": "2026-04-21T18:39:56.227061",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "order",
+      "input_tokens": 4619,
+      "output_tokens": 2455,
+      "cost_usd": 0.0014439
+    },
+    {
+      "timestamp": "2026-04-21T18:40:04.166479",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2296,
+      "output_tokens": 484,
+      "cost_usd": 0.0006348
+    },
+    {
+      "timestamp": "2026-04-21T18:40:07.188375",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2549,
+      "output_tokens": 1377,
+      "cost_usd": 0.00117625
+    },
+    {
+      "timestamp": "2026-04-21T18:40:07.764272",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2969,
+      "output_tokens": 1014,
+      "cost_usd": 0.008039
+    },
+    {
+      "timestamp": "2026-04-21T18:40:10.223121",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1950,
+      "output_tokens": 3444,
+      "cost_usd": 0.0015726
+    },
+    {
+      "timestamp": "2026-04-21T18:40:41.266573",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2110,
+      "output_tokens": 4278,
+      "cost_usd": 0.00708513
+    },
+    {
+      "timestamp": "2026-04-21T18:41:07.116542",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2103,
+      "output_tokens": 3866,
+      "cost_usd": 0.008222175
+    },
+    {
+      "timestamp": "2026-04-21T18:41:27.187056",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1860,
+      "output_tokens": 960,
+      "cost_usd": 0.0006444
+    },
+    {
+      "timestamp": "2026-04-21T18:43:52.697363",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "S1906R",
+      "response_type": "order",
+      "input_tokens": 1603,
+      "output_tokens": 332,
+      "cost_usd": 0.00032298
+    },
+    {
+      "timestamp": "2026-04-21T18:43:59.142560",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 3178,
+      "output_tokens": 408,
+      "cost_usd": 0.000721092
+    },
+    {
+      "timestamp": "2026-04-21T18:44:05.622335",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 3858,
+      "output_tokens": 3825,
+      "cost_usd": 0.0019158
+    },
+    {
+      "timestamp": "2026-04-21T18:44:08.094711",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4552,
+      "output_tokens": 1332,
+      "cost_usd": 0.011212
+    },
+    {
+      "timestamp": "2026-04-21T18:44:12.809435",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6347,
+      "output_tokens": 1732,
+      "cost_usd": 0.00211335
+    },
+    {
+      "timestamp": "2026-04-21T18:44:45.640263",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 3611,
+      "output_tokens": 4227,
+      "cost_usd": 0.01010529
+    },
+    {
+      "timestamp": "2026-04-21T18:44:53.020216",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4307,
+      "output_tokens": 1849,
+      "cost_usd": 0.00134258
+    },
+    {
+      "timestamp": "2026-04-21T18:45:18.090398",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4646,
+      "output_tokens": 4638,
+      "cost_usd": 0.01055405
+    },
+    {
+      "timestamp": "2026-04-21T18:45:20.308709",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4023,
+      "output_tokens": 453,
+      "cost_usd": 0.0017478
+    },
+    {
+      "timestamp": "2026-04-21T18:45:32.504580",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 7214,
+      "output_tokens": 1312,
+      "cost_usd": 0.00207675
+    },
+    {
+      "timestamp": "2026-04-21T18:45:36.461467",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5444,
+      "output_tokens": 1529,
+      "cost_usd": 0.013089
+    },
+    {
+      "timestamp": "2026-04-21T18:46:10.677947",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5792,
+      "output_tokens": 2835,
+      "cost_usd": 0.00741065
+    },
+    {
+      "timestamp": "2026-04-21T18:46:13.191235",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4331,
+      "output_tokens": 4417,
+      "cost_usd": 0.01071009
+    },
+    {
+      "timestamp": "2026-04-21T18:46:18.265654",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5120,
+      "output_tokens": 1020,
+      "cost_usd": 0.0011248
+    },
+    {
+      "timestamp": "2026-04-21T18:47:21.825254",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4784,
+      "output_tokens": 4687,
+      "cost_usd": 0.0023532
+    },
+    {
+      "timestamp": "2026-04-21T18:47:23.591542",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4973,
+      "output_tokens": 404,
+      "cost_usd": 0.00098835
+    },
+    {
+      "timestamp": "2026-04-21T18:47:36.836230",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5582,
+      "output_tokens": 4618,
+      "cost_usd": 0.0024054
+    },
+    {
+      "timestamp": "2026-04-21T18:47:38.708425",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6598,
+      "output_tokens": 1473,
+      "cost_usd": 0.013963
+    },
+    {
+      "timestamp": "2026-04-21T18:47:39.176424",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 7811,
+      "output_tokens": 1542,
+      "cost_usd": 0.00231115
+    },
+    {
+      "timestamp": "2026-04-21T18:47:52.262954",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 4997,
+      "output_tokens": 2153,
+      "cost_usd": 0.0066663
+    },
+    {
+      "timestamp": "2026-04-21T18:48:18.445466",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 5618,
+      "output_tokens": 883,
+      "cost_usd": 0.0015651
+    },
+    {
+      "timestamp": "2026-04-21T18:48:41.376555",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation",
+      "input_tokens": 6920,
+      "output_tokens": 4297,
+      "cost_usd": 0.01062815
+    },
+    {
+      "timestamp": "2026-04-21T18:48:56.566817",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4376,
+      "output_tokens": 4504,
+      "cost_usd": 0.0022392
+    },
+    {
+      "timestamp": "2026-04-21T18:48:56.729120",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4493,
+      "output_tokens": 1719,
+      "cost_usd": 0.00173605
+    },
+    {
+      "timestamp": "2026-04-21T18:49:10.875077",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6110,
+      "output_tokens": 2329,
+      "cost_usd": 0.017755
+    },
+    {
+      "timestamp": "2026-04-21T18:49:31.142072",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4799,
+      "output_tokens": 741,
+      "cost_usd": 0.00103277
+    },
+    {
+      "timestamp": "2026-04-21T18:49:33.944299",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4061,
+      "output_tokens": 4310,
+      "cost_usd": 0.01040607
+    },
+    {
+      "timestamp": "2026-04-21T18:49:46.525133",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5232,
+      "output_tokens": 3513,
+      "cost_usd": 0.00855075
+    },
+    {
+      "timestamp": "2026-04-21T18:51:41.964500",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3656,
+      "output_tokens": 1329,
+      "cost_usd": 0.0013957
+    },
+    {
+      "timestamp": "2026-04-21T18:51:56.404945",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 3531,
+      "output_tokens": 4437,
+      "cost_usd": 0.0021279
+    },
+    {
+      "timestamp": "2026-04-21T18:52:00.567362",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 4028,
+      "output_tokens": 1971,
+      "cost_usd": 0.013883
+    },
+    {
+      "timestamp": "2026-04-21T18:52:31.194605",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 2298,
+      "output_tokens": 655,
+      "cost_usd": 0.00071817
+    },
+    {
+      "timestamp": "2026-04-21T18:52:40.369950",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 2918,
+      "output_tokens": 8861,
+      "cost_usd": 0.01992762
+    },
+    {
+      "timestamp": "2026-04-21T18:52:49.214278",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 6085,
+      "output_tokens": 8173,
+      "cost_usd": 0.00528145
+    },
+    {
+      "timestamp": "2026-04-21T18:53:03.130432",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 4478,
+      "output_tokens": 4402,
+      "cost_usd": 0.01003925
+    },
+    {
+      "timestamp": "2026-04-21T18:59:28.206950",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "order",
+      "input_tokens": 4247,
+      "output_tokens": 4059,
+      "cost_usd": 0.00221818
+    },
+    {
+      "timestamp": "2026-04-21T18:59:32.757720",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2750,
+      "output_tokens": 226,
+      "cost_usd": 0.00015019
+    },
+    {
+      "timestamp": "2026-04-21T18:59:42.822684",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 4114,
+      "output_tokens": 1317,
+      "cost_usd": 0.010699
+    },
+    {
+      "timestamp": "2026-04-21T18:59:55.844033",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2984,
+      "output_tokens": 2901,
+      "cost_usd": 0.00202525
+    },
+    {
+      "timestamp": "2026-04-21T18:59:57.753522",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2198,
+      "output_tokens": 1835,
+      "cost_usd": 0.0013571
+    },
+    {
+      "timestamp": "2026-04-21T19:00:13.149499",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2430,
+      "output_tokens": 4272,
+      "cost_usd": 0.00713817
+    },
+    {
+      "timestamp": "2026-04-21T19:00:16.721869",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2531,
+      "output_tokens": 2581,
+      "cost_usd": 0.005855525
+    },
+    {
+      "timestamp": "2026-04-21T19:01:25.481752",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1906M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2283,
+      "output_tokens": 2056,
+      "cost_usd": 0.0010507
+    },
+    {
+      "timestamp": "2026-04-21T19:02:04.606040",
+      "model": "qwen/qwen3.6-plus",
+      "power": "ITALY",
+      "phase": "F1906R",
+      "response_type": "order",
+      "input_tokens": 1878,
+      "output_tokens": 2078,
+      "cost_usd": 0.00466245
+    },
+    {
+      "timestamp": "2026-04-21T19:02:19.706936",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "ITALY",
+      "phase": "W1906A",
+      "response_type": "order",
+      "input_tokens": 1993,
+      "output_tokens": 1671,
+      "cost_usd": 0.00121205
+    },
+    {
+      "timestamp": "2026-04-21T19:02:20.454072",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "ITALY",
+      "phase": "W1906A",
+      "response_type": "order",
+      "input_tokens": 1702,
+      "output_tokens": 5104,
+      "cost_usd": 0.0022118
+    },
+    {
+      "timestamp": "2026-04-21T19:02:40.900046",
+      "model": "qwen/qwen3.6-plus",
+      "power": "ITALY",
+      "phase": "W1906A",
+      "response_type": "order",
+      "input_tokens": 1884,
+      "output_tokens": 1965,
+      "cost_usd": 0.00444405
+    },
+    {
+      "timestamp": "2026-04-21T19:03:00.870292",
+      "model": "qwen/qwen3.5-27b",
+      "power": "ITALY",
+      "phase": "W1906A",
+      "response_type": "order",
+      "input_tokens": 1652,
+      "output_tokens": 4383,
+      "cost_usd": 0.00715962
+    },
+    {
+      "timestamp": "2026-04-21T19:03:07.461216",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 3694,
+      "output_tokens": 353,
+      "cost_usd": 0.000211136
+    },
+    {
+      "timestamp": "2026-04-21T19:03:16.123497",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6064,
+      "output_tokens": 1306,
+      "cost_usd": 0.012594
+    },
+    {
+      "timestamp": "2026-04-21T19:03:16.226125",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5107,
+      "output_tokens": 4562,
+      "cost_usd": 0.0023355
+    },
+    {
+      "timestamp": "2026-04-21T19:03:25.489017",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7750,
+      "output_tokens": 2626,
+      "cost_usd": 0.00284095
+    },
+    {
+      "timestamp": "2026-04-21T19:03:48.191697",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 3624,
+      "output_tokens": 4364,
+      "cost_usd": 0.00751452
+    },
+    {
+      "timestamp": "2026-04-21T19:04:11.956777",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4050,
+      "output_tokens": 3879,
+      "cost_usd": 0.0088803
+    },
+    {
+      "timestamp": "2026-04-21T19:05:59.336781",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4753,
+      "output_tokens": 1365,
+      "cost_usd": 0.00121142
+    },
+    {
+      "timestamp": "2026-04-21T19:06:11.143125",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 8627,
+      "output_tokens": 1395,
+      "cost_usd": 0.0024007
+    },
+    {
+      "timestamp": "2026-04-21T19:06:23.608255",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7385,
+      "output_tokens": 2188,
+      "cost_usd": 0.018325
+    },
+    {
+      "timestamp": "2026-04-21T19:06:24.886877",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5820,
+      "output_tokens": 1346,
+      "cost_usd": 0.001837
+    },
+    {
+      "timestamp": "2026-04-21T19:06:29.776135",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4754,
+      "output_tokens": 427,
+      "cost_usd": 0.00079277
+    },
+    {
+      "timestamp": "2026-04-21T19:07:03.649611",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5344,
+      "output_tokens": 3488,
+      "cost_usd": 0.0085384
+    },
+    {
+      "timestamp": "2026-04-21T19:07:08.071261",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4672,
+      "output_tokens": 4482,
+      "cost_usd": 0.00790296
+    },
+    {
+      "timestamp": "2026-04-21T19:08:08.322027",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6446,
+      "output_tokens": 4565,
+      "cost_usd": 0.0024706
+    },
+    {
+      "timestamp": "2026-04-21T19:08:21.719570",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7080,
+      "output_tokens": 4745,
+      "cost_usd": 0.002606
+    },
+    {
+      "timestamp": "2026-04-21T19:08:28.892025",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 8424,
+      "output_tokens": 1686,
+      "cost_usd": 0.016854
+    },
+    {
+      "timestamp": "2026-04-21T19:08:32.719584",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5396,
+      "output_tokens": 597,
+      "cost_usd": 0.00041905
+    },
+    {
+      "timestamp": "2026-04-21T19:08:37.020150",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6252,
+      "output_tokens": 1204,
+      "cost_usd": 0.00127028
+    },
+    {
+      "timestamp": "2026-04-21T19:08:48.442256",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 8918,
+      "output_tokens": 4171,
+      "cost_usd": 0.00384705
+    },
+    {
+      "timestamp": "2026-04-21T19:08:54.858419",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5314,
+      "output_tokens": 3705,
+      "cost_usd": 0.00681603
+    },
+    {
+      "timestamp": "2026-04-21T19:09:05.307774",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5773,
+      "output_tokens": 3077,
+      "cost_usd": 0.007876375
+    },
+    {
+      "timestamp": "2026-04-21T19:09:28.674344",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7810,
+      "output_tokens": 2167,
+      "cost_usd": 0.018645
+    },
+    {
+      "timestamp": "2026-04-21T19:09:29.442289",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4891,
+      "output_tokens": 1923,
+      "cost_usd": 0.00191765
+    },
+    {
+      "timestamp": "2026-04-21T19:09:32.886164",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4998,
+      "output_tokens": 699,
+      "cost_usd": 0.00102117
+    },
+    {
+      "timestamp": "2026-04-21T19:10:01.176708",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4840,
+      "output_tokens": 2997,
+      "cost_usd": 0.00741715
+    },
+    {
+      "timestamp": "2026-04-21T19:10:29.616230",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4854,
+      "output_tokens": 3055,
+      "cost_usd": 0.0087882
+    },
+    {
+      "timestamp": "2026-04-21T19:11:13.652312",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5206,
+      "output_tokens": 4612,
+      "cost_usd": 0.0023654
+    },
+    {
+      "timestamp": "2026-04-21T19:11:27.354206",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4302,
+      "output_tokens": 1154,
+      "cost_usd": 0.00106388
+    },
+    {
+      "timestamp": "2026-04-21T19:11:31.483984",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 2232,
+      "output_tokens": 530,
+      "cost_usd": 0.0006528
+    },
+    {
+      "timestamp": "2026-04-21T19:11:38.394367",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 5331,
+      "output_tokens": 2402,
+      "cost_usd": 0.0014939
+    },
+    {
+      "timestamp": "2026-04-21T19:11:39.386803",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 10580,
+      "output_tokens": 872,
+      "cost_usd": 0.01494
+    },
+    {
+      "timestamp": "2026-04-21T19:11:39.884993",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 6569,
+      "output_tokens": 1072,
+      "cost_usd": 0.00182775
+    },
+    {
+      "timestamp": "2026-04-21T19:11:40.395192",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 6140,
+      "output_tokens": 566,
+      "cost_usd": 0.000347
+    },
+    {
+      "timestamp": "2026-04-21T19:11:43.405228",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 4480,
+      "output_tokens": 5014,
+      "cost_usd": 0.0024536
+    },
+    {
+      "timestamp": "2026-04-21T19:11:48.387913",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 4075,
+      "output_tokens": 2134,
+      "cost_usd": 0.014745
+    },
+    {
+      "timestamp": "2026-04-21T19:12:13.621279",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 4762,
+      "output_tokens": 1207,
+      "cost_usd": 0.00114948
+    },
+    {
+      "timestamp": "2026-04-21T19:12:18.301904",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 5252,
+      "output_tokens": 2693,
+      "cost_usd": 0.00695825
+    },
+    {
+      "timestamp": "2026-04-21T19:12:28.723267",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 2925,
+      "output_tokens": 3334,
+      "cost_usd": 0.007451925
+    },
+    {
+      "timestamp": "2026-04-21T19:13:00.123576",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 4662,
+      "output_tokens": 4333,
+      "cost_usd": 0.0117978
+    },
+    {
+      "timestamp": "2026-04-21T19:13:13.816572",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 7202,
+      "output_tokens": 9057,
+      "cost_usd": 0.0059458
+    },
+    {
+      "timestamp": "2026-04-21T19:15:20.477526",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 2338,
+      "output_tokens": 4448,
+      "cost_usd": 0.00739479
+    },
+    {
+      "timestamp": "2026-04-21T19:20:43.826433",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "order",
+      "input_tokens": 4189,
+      "output_tokens": 4330,
+      "cost_usd": 0.00231846
+    },
+    {
+      "timestamp": "2026-04-21T19:20:50.961962",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2274,
+      "output_tokens": 388,
+      "cost_usd": 0.000162406
+    },
+    {
+      "timestamp": "2026-04-21T19:20:54.043350",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3112,
+      "output_tokens": 889,
+      "cost_usd": 0.007557
+    },
+    {
+      "timestamp": "2026-04-21T19:21:10.145997",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2510,
+      "output_tokens": 2264,
+      "cost_usd": 0.00161195
+    },
+    {
+      "timestamp": "2026-04-21T19:21:26.368781",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1940,
+      "output_tokens": 949,
+      "cost_usd": 0.0006512
+    },
+    {
+      "timestamp": "2026-04-21T19:21:27.851212",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2189,
+      "output_tokens": 2379,
+      "cost_usd": 0.005350475
+    },
+    {
+      "timestamp": "2026-04-21T19:21:38.449441",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2016,
+      "output_tokens": 4279,
+      "cost_usd": 0.00706836
+    },
+    {
+      "timestamp": "2026-04-21T19:22:42.659798",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1963,
+      "output_tokens": 3264,
+      "cost_usd": 0.0015019
+    },
+    {
+      "timestamp": "2026-04-21T19:22:55.307720",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1907R",
+      "response_type": "order",
+      "input_tokens": 2739,
+      "output_tokens": 1256,
+      "cost_usd": 0.009019
+    },
+    {
+      "timestamp": "2026-04-21T19:23:07.415350",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1907R",
+      "response_type": "order",
+      "input_tokens": 1806,
+      "output_tokens": 1313,
+      "cost_usd": 0.0031473
+    },
+    {
+      "timestamp": "2026-04-21T19:23:13.173233",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 3256,
+      "output_tokens": 417,
+      "cost_usd": 0.0004924
+    },
+    {
+      "timestamp": "2026-04-21T19:23:17.847793",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7137,
+      "output_tokens": 1202,
+      "cost_usd": 0.00200635
+    },
+    {
+      "timestamp": "2026-04-21T19:23:19.836981",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4903,
+      "output_tokens": 4623,
+      "cost_usd": 0.0023395
+    },
+    {
+      "timestamp": "2026-04-21T19:23:28.723576",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4963,
+      "output_tokens": 2056,
+      "cost_usd": 0.015243
+    },
+    {
+      "timestamp": "2026-04-21T19:23:59.977469",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 3024,
+      "output_tokens": 4427,
+      "cost_usd": 0.0074958
+    },
+    {
+      "timestamp": "2026-04-21T19:24:09.109047",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 3839,
+      "output_tokens": 3347,
+      "cost_usd": 0.007774325
+    },
+    {
+      "timestamp": "2026-04-21T19:25:51.011064",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4346,
+      "output_tokens": 1867,
+      "cost_usd": 0.00135524
+    },
+    {
+      "timestamp": "2026-04-21T19:26:01.521832",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4221,
+      "output_tokens": 303,
+      "cost_usd": 0.0002868
+    },
+    {
+      "timestamp": "2026-04-21T19:26:03.553692",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7999,
+      "output_tokens": 1456,
+      "cost_usd": 0.00230575
+    },
+    {
+      "timestamp": "2026-04-21T19:26:06.765997",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6211,
+      "output_tokens": 4688,
+      "cost_usd": 0.0024963
+    },
+    {
+      "timestamp": "2026-04-21T19:26:10.374975",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6217,
+      "output_tokens": 1650,
+      "cost_usd": 0.014467
+    },
+    {
+      "timestamp": "2026-04-21T19:26:42.029336",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4009,
+      "output_tokens": 3999,
+      "cost_usd": 0.00972027
+    },
+    {
+      "timestamp": "2026-04-21T19:26:57.792347",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5559,
+      "output_tokens": 1189,
+      "cost_usd": 0.00117449
+    },
+    {
+      "timestamp": "2026-04-21T19:27:11.206366",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5011,
+      "output_tokens": 4335,
+      "cost_usd": 0.010081825
+    },
+    {
+      "timestamp": "2026-04-21T19:27:23.336687",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5242,
+      "output_tokens": 542,
+      "cost_usd": 0.000307418
+    },
+    {
+      "timestamp": "2026-04-21T19:27:25.277598",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 8722,
+      "output_tokens": 1739,
+      "cost_usd": 0.0025908
+    },
+    {
+      "timestamp": "2026-04-21T19:27:30.167991",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7147,
+      "output_tokens": 1739,
+      "cost_usd": 0.015842
+    },
+    {
+      "timestamp": "2026-04-21T19:28:04.559432",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 5732,
+      "output_tokens": 2823,
+      "cost_usd": 0.00736775
+    },
+    {
+      "timestamp": "2026-04-21T19:29:18.101409",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 7480,
+      "output_tokens": 4668,
+      "cost_usd": 0.0026152
+    },
+    {
+      "timestamp": "2026-04-21T19:29:49.929179",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 4899,
+      "output_tokens": 13979,
+      "cost_usd": 0.03151737
+    },
+    {
+      "timestamp": "2026-04-21T19:31:22.844036",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation",
+      "input_tokens": 6314,
+      "output_tokens": 1317,
+      "cost_usd": 0.00141076
+    },
+    {
+      "timestamp": "2026-04-21T19:31:29.741384",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4836,
+      "output_tokens": 742,
+      "cost_usd": 0.0007804
+    },
+    {
+      "timestamp": "2026-04-21T19:31:36.064559",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4472,
+      "output_tokens": 1557,
+      "cost_usd": 0.00165085
+    },
+    {
+      "timestamp": "2026-04-21T19:31:37.620149",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5058,
+      "output_tokens": 4540,
+      "cost_usd": 0.0023218
+    },
+    {
+      "timestamp": "2026-04-21T19:31:47.830767",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6245,
+      "output_tokens": 2450,
+      "cost_usd": 0.018495
+    },
+    {
+      "timestamp": "2026-04-21T19:33:34.044559",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4215,
+      "output_tokens": 6445,
+      "cost_usd": 0.0167325
+    },
+    {
+      "timestamp": "2026-04-21T19:33:41.627888",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4633,
+      "output_tokens": 4277,
+      "cost_usd": 0.009845875
+    },
+    {
+      "timestamp": "2026-04-21T19:34:00.510854",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4461,
+      "output_tokens": 2507,
+      "cost_usd": 0.00153259
+    },
+    {
+      "timestamp": "2026-04-21T19:34:12.020680",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 2270,
+      "output_tokens": 337,
+      "cost_usd": 0.00015256
+    },
+    {
+      "timestamp": "2026-04-21T19:34:21.608462",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 4219,
+      "output_tokens": 2082,
+      "cost_usd": 0.014629
+    },
+    {
+      "timestamp": "2026-04-21T19:34:21.739891",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 4705,
+      "output_tokens": 4737,
+      "cost_usd": 0.0023653
+    },
+    {
+      "timestamp": "2026-04-21T19:34:51.941200",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 2309,
+      "output_tokens": 4594,
+      "cost_usd": 0.007616895
+    },
+    {
+      "timestamp": "2026-04-21T19:34:58.147930",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 3338,
+      "output_tokens": 3087,
+      "cost_usd": 0.0071045
+    },
+    {
+      "timestamp": "2026-04-21T19:35:10.763978",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 7266,
+      "output_tokens": 7051,
+      "cost_usd": 0.00495665
+    },
+    {
+      "timestamp": "2026-04-21T19:37:38.238296",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "order",
+      "input_tokens": 4280,
+      "output_tokens": 4739,
+      "cost_usd": 0.0024948
+    },
+    {
+      "timestamp": "2026-04-21T19:37:45.270257",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2758,
+      "output_tokens": 310,
+      "cost_usd": 0.000166462
+    },
+    {
+      "timestamp": "2026-04-21T19:37:52.088510",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2265,
+      "output_tokens": 3696,
+      "cost_usd": 0.0017049
+    },
+    {
+      "timestamp": "2026-04-21T19:37:55.257234",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3068,
+      "output_tokens": 2063,
+      "cost_usd": 0.00162305
+    },
+    {
+      "timestamp": "2026-04-21T19:37:58.086514",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3870,
+      "output_tokens": 2054,
+      "cost_usd": 0.01414
+    },
+    {
+      "timestamp": "2026-04-21T19:37:58.685426",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2311,
+      "output_tokens": 1073,
+      "cost_usd": 0.00075274
+    },
+    {
+      "timestamp": "2026-04-21T19:38:22.133683",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2632,
+      "output_tokens": 2361,
+      "cost_usd": 0.00545935
+    },
+    {
+      "timestamp": "2026-04-21T19:39:08.760256",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1907M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2361,
+      "output_tokens": 7483,
+      "cost_usd": 0.01680075
+    },
+    {
+      "timestamp": "2026-04-21T19:39:24.240835",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "W1907A",
+      "response_type": "order",
+      "input_tokens": 2740,
+      "output_tokens": 1471,
+      "cost_usd": 0.010095
+    },
+    {
+      "timestamp": "2026-04-21T19:39:53.181302",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "W1907A",
+      "response_type": "order",
+      "input_tokens": 2071,
+      "output_tokens": 4405,
+      "cost_usd": 0.00259465
+    },
+    {
+      "timestamp": "2026-04-21T19:40:09.633196",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "W1907A",
+      "response_type": "order",
+      "input_tokens": 1850,
+      "output_tokens": 3317,
+      "cost_usd": 0.0070694
+    },
+    {
+      "timestamp": "2026-04-21T19:40:14.294285",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "W1907A",
+      "response_type": "order",
+      "input_tokens": 1702,
+      "output_tokens": 1085,
+      "cost_usd": 0.00067228
+    },
+    {
+      "timestamp": "2026-04-21T19:40:22.763484",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3834,
+      "output_tokens": 270,
+      "cost_usd": 0.0002592
+    },
+    {
+      "timestamp": "2026-04-21T19:40:30.293771",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5139,
+      "output_tokens": 4501,
+      "cost_usd": 0.0023143
+    },
+    {
+      "timestamp": "2026-04-21T19:40:31.401449",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5335,
+      "output_tokens": 1440,
+      "cost_usd": 0.012535
+    },
+    {
+      "timestamp": "2026-04-21T19:40:34.103869",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 8247,
+      "output_tokens": 1574,
+      "cost_usd": 0.00241435
+    },
+    {
+      "timestamp": "2026-04-21T19:41:12.683162",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3578,
+      "output_tokens": 4337,
+      "cost_usd": 0.00746343
+    },
+    {
+      "timestamp": "2026-04-21T19:41:17.342937",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3849,
+      "output_tokens": 3427,
+      "cost_usd": 0.007933575
+    },
+    {
+      "timestamp": "2026-04-21T19:41:29.836251",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5173,
+      "output_tokens": 1504,
+      "cost_usd": 0.0017866
+    },
+    {
+      "timestamp": "2026-04-21T19:41:44.628645",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6125,
+      "output_tokens": 4707,
+      "cost_usd": 0.0024953
+    },
+    {
+      "timestamp": "2026-04-21T19:41:47.148554",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 9002,
+      "output_tokens": 1657,
+      "cost_usd": 0.00260685
+    },
+    {
+      "timestamp": "2026-04-21T19:41:51.479937",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4666,
+      "output_tokens": 597,
+      "cost_usd": 0.00038255
+    },
+    {
+      "timestamp": "2026-04-21T19:41:53.619556",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6327,
+      "output_tokens": 2210,
+      "cost_usd": 0.017377
+    },
+    {
+      "timestamp": "2026-04-21T19:42:27.857919",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4252,
+      "output_tokens": 4617,
+      "cost_usd": 0.00803166
+    },
+    {
+      "timestamp": "2026-04-21T19:42:33.805709",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4602,
+      "output_tokens": 3428,
+      "cost_usd": 0.00818025
+    },
+    {
+      "timestamp": "2026-04-21T19:43:32.080112",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6007,
+      "output_tokens": 1111,
+      "cost_usd": 0.00128538
+    },
+    {
+      "timestamp": "2026-04-21T19:43:40.631753",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5770,
+      "output_tokens": 389,
+      "cost_usd": 0.00029894
+    },
+    {
+      "timestamp": "2026-04-21T19:43:42.993500",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 9835,
+      "output_tokens": 1105,
+      "cost_usd": 0.00249745
+    },
+    {
+      "timestamp": "2026-04-21T19:43:59.924586",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 7539,
+      "output_tokens": 2574,
+      "cost_usd": 0.020409
+    },
+    {
+      "timestamp": "2026-04-21T19:44:23.092769",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5258,
+      "output_tokens": 4448,
+      "cost_usd": 0.00796419
+    },
+    {
+      "timestamp": "2026-04-21T19:44:36.439157",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5560,
+      "output_tokens": 3431,
+      "cost_usd": 0.00849745
+    },
+    {
+      "timestamp": "2026-04-21T19:44:39.071722",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 7022,
+      "output_tokens": 1341,
+      "cost_usd": 0.0020749
+    },
+    {
+      "timestamp": "2026-04-21T19:45:35.242406",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation",
+      "input_tokens": 7332,
+      "output_tokens": 3740,
+      "cost_usd": 0.0022292
+    },
+    {
+      "timestamp": "2026-04-21T19:45:47.223494",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5135,
+      "output_tokens": 1968,
+      "cost_usd": 0.00198895
+    },
+    {
+      "timestamp": "2026-04-21T19:45:47.968192",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4925,
+      "output_tokens": 4031,
+      "cost_usd": 0.0021049
+    },
+    {
+      "timestamp": "2026-04-21T19:45:48.644399",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5386,
+      "output_tokens": 678,
+      "cost_usd": 0.000338874
+    },
+    {
+      "timestamp": "2026-04-21T19:46:03.809495",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7318,
+      "output_tokens": 2818,
+      "cost_usd": 0.021408
+    },
+    {
+      "timestamp": "2026-04-21T19:46:38.161999",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4367,
+      "output_tokens": 1750,
+      "cost_usd": 0.00131138
+    },
+    {
+      "timestamp": "2026-04-21T19:46:53.283467",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4661,
+      "output_tokens": 4261,
+      "cost_usd": 0.009823775
+    },
+    {
+      "timestamp": "2026-04-21T19:49:33.368874",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4511,
+      "output_tokens": 3935,
+      "cost_usd": 0.00971757
+    },
+    {
+      "timestamp": "2026-04-21T19:49:41.585435",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 7639,
+      "output_tokens": 1021,
+      "cost_usd": 0.00201625
+    },
+    {
+      "timestamp": "2026-04-21T19:49:41.812710",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 7138,
+      "output_tokens": 603,
+      "cost_usd": 0.00100927
+    },
+    {
+      "timestamp": "2026-04-21T19:49:44.385061",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 12240,
+      "output_tokens": 944,
+      "cost_usd": 0.01696
+    },
+    {
+      "timestamp": "2026-04-21T19:49:49.034176",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 2260,
+      "output_tokens": 518,
+      "cost_usd": 0.0002425
+    },
+    {
+      "timestamp": "2026-04-21T19:49:55.327492",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 4637,
+      "output_tokens": 4722,
+      "cost_usd": 0.0023525
+    },
+    {
+      "timestamp": "2026-04-21T19:50:04.125270",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 3706,
+      "output_tokens": 2326,
+      "cost_usd": 0.015336
+    },
+    {
+      "timestamp": "2026-04-21T19:50:08.536223",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 7911,
+      "output_tokens": 5167,
+      "cost_usd": 0.00414365
+    },
+    {
+      "timestamp": "2026-04-21T19:50:09.981780",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 5502,
+      "output_tokens": 1185,
+      "cost_usd": 0.00124428
+    },
+    {
+      "timestamp": "2026-04-21T19:50:16.175354",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 2652,
+      "output_tokens": 2305,
+      "cost_usd": 0.00535665
+    },
+    {
+      "timestamp": "2026-04-21T19:50:26.234001",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 6060,
+      "output_tokens": 2821,
+      "cost_usd": 0.00747045
+    },
+    {
+      "timestamp": "2026-04-21T19:50:39.072892",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 2448,
+      "output_tokens": 4655,
+      "cost_usd": 0.00773916
+    },
+    {
+      "timestamp": "2026-04-21T19:50:52.146692",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 5283,
+      "output_tokens": 4203,
+      "cost_usd": 0.007586865
+    },
+    {
+      "timestamp": "2026-04-21T19:51:24.405070",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 4653,
+      "output_tokens": 3569,
+      "cost_usd": 0.00207902
+    },
+    {
+      "timestamp": "2026-04-21T19:51:31.763167",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "order",
+      "input_tokens": 5994,
+      "output_tokens": 1976,
+      "cost_usd": 0.0013898
+    },
+    {
+      "timestamp": "2026-04-21T19:51:40.208354",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2311,
+      "output_tokens": 236,
+      "cost_usd": 0.00017455
+    },
+    {
+      "timestamp": "2026-04-21T19:51:42.945552",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2060,
+      "output_tokens": 2867,
+      "cost_usd": 0.0013528
+    },
+    {
+      "timestamp": "2026-04-21T19:51:47.210740",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3248,
+      "output_tokens": 1243,
+      "cost_usd": 0.009463
+    },
+    {
+      "timestamp": "2026-04-21T19:51:51.971247",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2542,
+      "output_tokens": 2284,
+      "cost_usd": 0.00162835
+    },
+    {
+      "timestamp": "2026-04-21T19:52:17.005425",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1916,
+      "output_tokens": 1028,
+      "cost_usd": 0.00067944
+    },
+    {
+      "timestamp": "2026-04-21T19:52:25.257461",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2037,
+      "output_tokens": 4273,
+      "cost_usd": 0.007063095
+    },
+    {
+      "timestamp": "2026-04-21T19:52:38.099451",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2184,
+      "output_tokens": 3608,
+      "cost_usd": 0.0077454
+    },
+    {
+      "timestamp": "2026-04-21T19:52:40.044338",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "S1908R",
+      "response_type": "order",
+      "input_tokens": 1785,
+      "output_tokens": 542,
+      "cost_usd": 0.0007648
+    },
+    {
+      "timestamp": "2026-04-21T19:52:43.189034",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3229,
+      "output_tokens": 722,
+      "cost_usd": 0.00055053
+    },
+    {
+      "timestamp": "2026-04-21T19:52:53.481266",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4609,
+      "output_tokens": 4672,
+      "cost_usd": 0.0023297
+    },
+    {
+      "timestamp": "2026-04-21T19:52:59.574504",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 7683,
+      "output_tokens": 2148,
+      "cost_usd": 0.00258855
+    },
+    {
+      "timestamp": "2026-04-21T19:52:59.753111",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4087,
+      "output_tokens": 1535,
+      "cost_usd": 0.011762
+    },
+    {
+      "timestamp": "2026-04-21T19:53:43.092142",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4945,
+      "output_tokens": 1375,
+      "cost_usd": 0.00116535
+    },
+    {
+      "timestamp": "2026-04-21T19:53:52.953935",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3182,
+      "output_tokens": 3980,
+      "cost_usd": 0.00879515
+    },
+    {
+      "timestamp": "2026-04-21T19:54:33.608171",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3025,
+      "output_tokens": 7459,
+      "cost_usd": 0.0188091
+    },
+    {
+      "timestamp": "2026-04-21T19:54:39.749119",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4330,
+      "output_tokens": 551,
+      "cost_usd": 0.00058806
+    },
+    {
+      "timestamp": "2026-04-21T19:54:45.302927",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 8630,
+      "output_tokens": 1466,
+      "cost_usd": 0.00243695
+    },
+    {
+      "timestamp": "2026-04-21T19:54:54.604612",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5320,
+      "output_tokens": 1871,
+      "cost_usd": 0.014675
+    },
+    {
+      "timestamp": "2026-04-21T19:55:48.645538",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4043,
+      "output_tokens": 4072,
+      "cost_usd": 0.009254375
+    },
+    {
+      "timestamp": "2026-04-21T19:55:55.937762",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 3995,
+      "output_tokens": 4753,
+      "cost_usd": 0.0126057
+    },
+    {
+      "timestamp": "2026-04-21T19:56:36.992621",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5978,
+      "output_tokens": 1089,
+      "cost_usd": 0.00127252
+    },
+    {
+      "timestamp": "2026-04-21T19:56:42.634110",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5850,
+      "output_tokens": 3996,
+      "cost_usd": 0.0021834
+    },
+    {
+      "timestamp": "2026-04-21T19:56:52.883676",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5383,
+      "output_tokens": 425,
+      "cost_usd": 0.000290687
+    },
+    {
+      "timestamp": "2026-04-21T19:56:53.113047",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 9251,
+      "output_tokens": 1279,
+      "cost_usd": 0.0024666
+    },
+    {
+      "timestamp": "2026-04-21T19:56:58.656449",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6657,
+      "output_tokens": 4762,
+      "cost_usd": 0.0025705
+    },
+    {
+      "timestamp": "2026-04-21T19:57:01.152371",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6385,
+      "output_tokens": 1577,
+      "cost_usd": 0.01427
+    },
+    {
+      "timestamp": "2026-04-21T19:57:33.867028",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 4649,
+      "output_tokens": 4509,
+      "cost_usd": 0.007940595
+    },
+    {
+      "timestamp": "2026-04-21T19:57:47.246237",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 5011,
+      "output_tokens": 3512,
+      "cost_usd": 0.008476975
+    },
+    {
+      "timestamp": "2026-04-21T19:58:28.487625",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation",
+      "input_tokens": 6608,
+      "output_tokens": 1005,
+      "cost_usd": 0.0018241
+    },
+    {
+      "timestamp": "2026-04-21T19:58:33.258483",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5288,
+      "output_tokens": 726,
+      "cost_usd": 0.0008192
+    },
+    {
+      "timestamp": "2026-04-21T19:58:41.470398",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4526,
+      "output_tokens": 2158,
+      "cost_usd": 0.0019611
+    },
+    {
+      "timestamp": "2026-04-21T19:58:42.642069",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4787,
+      "output_tokens": 4623,
+      "cost_usd": 0.0023279
+    },
+    {
+      "timestamp": "2026-04-21T19:58:52.108650",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6992,
+      "output_tokens": 2262,
+      "cost_usd": 0.018302
+    },
+    {
+      "timestamp": "2026-04-21T19:59:21.859462",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4742,
+      "output_tokens": 2884,
+      "cost_usd": 0.00716495
+    },
+    {
+      "timestamp": "2026-04-21T19:59:23.297297",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4228,
+      "output_tokens": 4126,
+      "cost_usd": 0.0111708
+    },
+    {
+      "timestamp": "2026-04-21T20:00:42.179566",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3803,
+      "output_tokens": 1578,
+      "cost_usd": 0.00109403
+    },
+    {
+      "timestamp": "2026-04-21T20:00:57.917107",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 4372,
+      "output_tokens": 4849,
+      "cost_usd": 0.0023768
+    },
+    {
+      "timestamp": "2026-04-21T20:01:00.623666",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 2834,
+      "output_tokens": 1813,
+      "cost_usd": 0.011899
+    },
+    {
+      "timestamp": "2026-04-21T20:01:01.175843",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 2380,
+      "output_tokens": 452,
+      "cost_usd": 0.000232
+    },
+    {
+      "timestamp": "2026-04-21T20:01:07.375905",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 2414,
+      "output_tokens": 1319,
+      "cost_usd": 0.0033566
+    },
+    {
+      "timestamp": "2026-04-21T20:01:59.776586",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 7931,
+      "output_tokens": 8716,
+      "cost_usd": 0.0059211
+    },
+    {
+      "timestamp": "2026-04-21T20:02:10.992036",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 2324,
+      "output_tokens": 16453,
+      "cost_usd": 0.02611986
+    },
+    {
+      "timestamp": "2026-04-21T20:02:54.828094",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "order",
+      "input_tokens": 5059,
+      "output_tokens": 5787,
+      "cost_usd": 0.00302306
+    },
+    {
+      "timestamp": "2026-04-21T20:02:58.534950",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2775,
+      "output_tokens": 275,
+      "cost_usd": 0.0003875
+    },
+    {
+      "timestamp": "2026-04-21T20:03:08.771542",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2389,
+      "output_tokens": 4238,
+      "cost_usd": 0.0019341
+    },
+    {
+      "timestamp": "2026-04-21T20:03:09.585809",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3799,
+      "output_tokens": 986,
+      "cost_usd": 0.008729
+    },
+    {
+      "timestamp": "2026-04-21T20:03:12.384900",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3089,
+      "output_tokens": 1531,
+      "cost_usd": 0.00136125
+    },
+    {
+      "timestamp": "2026-04-21T20:03:36.241831",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2531,
+      "output_tokens": 2233,
+      "cost_usd": 0.005176925
+    },
+    {
+      "timestamp": "2026-04-21T20:03:38.337526",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2307,
+      "output_tokens": 4272,
+      "cost_usd": 0.007114185
+    },
+    {
+      "timestamp": "2026-04-21T20:04:39.847912",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1908M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2246,
+      "output_tokens": 1083,
+      "cost_usd": 0.00074764
+    },
+    {
+      "timestamp": "2026-04-21T20:04:45.447996",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "F1908R",
+      "response_type": "order",
+      "input_tokens": 1841,
+      "output_tokens": 281,
+      "cost_usd": 0.000125189
+    },
+    {
+      "timestamp": "2026-04-21T20:04:53.436915",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "RUSSIA",
+      "phase": "F1908R",
+      "response_type": "order",
+      "input_tokens": 1713,
+      "output_tokens": 4399,
+      "cost_usd": 0.0019309
+    },
+    {
+      "timestamp": "2026-04-21T20:05:24.243937",
+      "model": "qwen/qwen3.6-plus",
+      "power": "RUSSIA",
+      "phase": "F1908R",
+      "response_type": "order",
+      "input_tokens": 1785,
+      "output_tokens": 2385,
+      "cost_usd": 0.005230875
+    },
+    {
+      "timestamp": "2026-04-21T20:05:30.687066",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "W1908A",
+      "response_type": "order",
+      "input_tokens": 1842,
+      "output_tokens": 530,
+      "cost_usd": 0.000593892
+    },
+    {
+      "timestamp": "2026-04-21T20:05:40.336765",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "RUSSIA",
+      "phase": "W1908A",
+      "response_type": "order",
+      "input_tokens": 1731,
+      "output_tokens": 4640,
+      "cost_usd": 0.0020291
+    },
+    {
+      "timestamp": "2026-04-21T20:06:03.622717",
+      "model": "qwen/qwen3.6-plus",
+      "power": "RUSSIA",
+      "phase": "W1908A",
+      "response_type": "order",
+      "input_tokens": 1801,
+      "output_tokens": 2092,
+      "cost_usd": 0.004664725
+    },
+    {
+      "timestamp": "2026-04-21T20:06:34.665272",
+      "model": "google/gemma-4-31b-it",
+      "power": "RUSSIA",
+      "phase": "W1908A",
+      "response_type": "order",
+      "input_tokens": 1693,
+      "output_tokens": 841,
+      "cost_usd": 0.00057342
+    },
+    {
+      "timestamp": "2026-04-21T20:06:43.692184",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3498,
+      "output_tokens": 427,
+      "cost_usd": 0.000217552
+    },
+    {
+      "timestamp": "2026-04-21T20:06:48.379224",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4794,
+      "output_tokens": 1288,
+      "cost_usd": 0.011234
+    },
+    {
+      "timestamp": "2026-04-21T20:06:48.480457",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 8014,
+      "output_tokens": 1368,
+      "cost_usd": 0.00226475
+    },
+    {
+      "timestamp": "2026-04-21T20:06:49.526455",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5890,
+      "output_tokens": 4504,
+      "cost_usd": 0.0023906
+    },
+    {
+      "timestamp": "2026-04-21T20:07:27.650142",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3340,
+      "output_tokens": 4451,
+      "cost_usd": 0.00759486
+    },
+    {
+      "timestamp": "2026-04-21T20:07:39.017685",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3291,
+      "output_tokens": 3409,
+      "cost_usd": 0.007717125
+    },
+    {
+      "timestamp": "2026-04-21T20:08:27.247092",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 6142,
+      "output_tokens": 1740,
+      "cost_usd": 0.00145966
+    },
+    {
+      "timestamp": "2026-04-21T20:08:35.087408",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4569,
+      "output_tokens": 353,
+      "cost_usd": 0.000245261
+    },
+    {
+      "timestamp": "2026-04-21T20:08:38.231178",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 8858,
+      "output_tokens": 1383,
+      "cost_usd": 0.00244105
+    },
+    {
+      "timestamp": "2026-04-21T20:08:44.000883",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7066,
+      "output_tokens": 5004,
+      "cost_usd": 0.0027082
+    },
+    {
+      "timestamp": "2026-04-21T20:08:46.642508",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 6078,
+      "output_tokens": 1737,
+      "cost_usd": 0.014763
+    },
+    {
+      "timestamp": "2026-04-21T20:09:15.991273",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4210,
+      "output_tokens": 2506,
+      "cost_usd": 0.00625495
+    },
+    {
+      "timestamp": "2026-04-21T20:09:28.630449",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4115,
+      "output_tokens": 3697,
+      "cost_usd": 0.0101073
+    },
+    {
+      "timestamp": "2026-04-21T20:09:52.291062",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7249,
+      "output_tokens": 1427,
+      "cost_usd": 0.00148463
+    },
+    {
+      "timestamp": "2026-04-21T20:10:00.876577",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5262,
+      "output_tokens": 616,
+      "cost_usd": 0.001157404
+    },
+    {
+      "timestamp": "2026-04-21T20:10:07.393737",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 8023,
+      "output_tokens": 4687,
+      "cost_usd": 0.0026771
+    },
+    {
+      "timestamp": "2026-04-21T20:10:09.984895",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 9406,
+      "output_tokens": 2003,
+      "cost_usd": 0.00286065
+    },
+    {
+      "timestamp": "2026-04-21T20:10:18.978092",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7244,
+      "output_tokens": 2657,
+      "cost_usd": 0.020529
+    },
+    {
+      "timestamp": "2026-04-21T20:10:47.737952",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4550,
+      "output_tokens": 4492,
+      "cost_usd": 0.00789477
+    },
+    {
+      "timestamp": "2026-04-21T20:10:48.679301",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7174,
+      "output_tokens": 455,
+      "cost_usd": 0.00118636
+    },
+    {
+      "timestamp": "2026-04-21T20:10:59.113930",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5118,
+      "output_tokens": 3637,
+      "cost_usd": 0.0087555
+    },
+    {
+      "timestamp": "2026-04-21T20:11:09.225118",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5017,
+      "output_tokens": 794,
+      "cost_usd": 0.0008193
+    },
+    {
+      "timestamp": "2026-04-21T20:11:14.610118",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4662,
+      "output_tokens": 1685,
+      "cost_usd": 0.00175285
+    },
+    {
+      "timestamp": "2026-04-21T20:11:21.957192",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 7235,
+      "output_tokens": 2271,
+      "cost_usd": 0.01859
+    },
+    {
+      "timestamp": "2026-04-21T20:11:45.014744",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3813,
+      "output_tokens": 2374,
+      "cost_usd": 0.00615735
+    },
+    {
+      "timestamp": "2026-04-21T20:12:18.847816",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4773,
+      "output_tokens": 4284,
+      "cost_usd": 0.009905025
+    },
+    {
+      "timestamp": "2026-04-21T20:12:49.082374",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3819,
+      "output_tokens": 2080,
+      "cost_usd": 0.00128687
+    },
+    {
+      "timestamp": "2026-04-21T20:13:02.285261",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4974,
+      "output_tokens": 4207,
+      "cost_usd": 0.0021802
+    },
+    {
+      "timestamp": "2026-04-21T20:13:05.626434",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 2018,
+      "output_tokens": 523,
+      "cost_usd": 0.0003699
+    },
+    {
+      "timestamp": "2026-04-21T20:13:13.253805",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 2856,
+      "output_tokens": 1023,
+      "cost_usd": 0.007971
+    },
+    {
+      "timestamp": "2026-04-21T20:13:13.897127",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 13885,
+      "output_tokens": 927,
+      "cost_usd": 0.01852
+    },
+    {
+      "timestamp": "2026-04-21T20:13:15.392108",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 8824,
+      "output_tokens": 1111,
+      "cost_usd": 0.0022972
+    },
+    {
+      "timestamp": "2026-04-21T20:13:22.725866",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 7987,
+      "output_tokens": 541,
+      "cost_usd": 0.0005346
+    },
+    {
+      "timestamp": "2026-04-21T20:13:36.113963",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 2051,
+      "output_tokens": 1781,
+      "cost_usd": 0.004139525
+    },
+    {
+      "timestamp": "2026-04-21T20:13:45.859067",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 6834,
+      "output_tokens": 2336,
+      "cost_usd": 0.00677625
+    },
+    {
+      "timestamp": "2026-04-21T20:13:52.401043",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 5870,
+      "output_tokens": 4452,
+      "cost_usd": 0.00808977
+    },
+    {
+      "timestamp": "2026-04-21T20:13:52.862251",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 2288,
+      "output_tokens": 4599,
+      "cost_usd": 0.0076206
+    },
+    {
+      "timestamp": "2026-04-21T20:14:17.203657",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 7428,
+      "output_tokens": 7482,
+      "cost_usd": 0.00520455
+    },
+    {
+      "timestamp": "2026-04-21T20:15:03.061844",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 5453,
+      "output_tokens": 4826,
+      "cost_usd": 0.0024757
+    },
+    {
+      "timestamp": "2026-04-21T20:15:08.304908",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 6778,
+      "output_tokens": 2460,
+      "cost_usd": 0.0016618
+    },
+    {
+      "timestamp": "2026-04-21T20:15:26.973043",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 6241,
+      "output_tokens": 967,
+      "cost_usd": 0.00126054
+    },
+    {
+      "timestamp": "2026-04-21T20:17:10.296552",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "order",
+      "input_tokens": 6041,
+      "output_tokens": 6349,
+      "cost_usd": 0.0043827
+    },
+    {
+      "timestamp": "2026-04-21T20:17:15.718754",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2285,
+      "output_tokens": 233,
+      "cost_usd": 0.000133385
+    },
+    {
+      "timestamp": "2026-04-21T20:17:21.067323",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2968,
+      "output_tokens": 949,
+      "cost_usd": 0.007713
+    },
+    {
+      "timestamp": "2026-04-21T20:17:34.273533",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2593,
+      "output_tokens": 1920,
+      "cost_usd": 0.00145655
+    },
+    {
+      "timestamp": "2026-04-21T20:17:52.408937",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2160,
+      "output_tokens": 2229,
+      "cost_usd": 0.00504855
+    },
+    {
+      "timestamp": "2026-04-21T20:18:03.316623",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2021,
+      "output_tokens": 4097,
+      "cost_usd": 0.0104391
+    },
+    {
+      "timestamp": "2026-04-21T20:19:01.617592",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 1870,
+      "output_tokens": 1340,
+      "cost_usd": 0.0007978
+    },
+    {
+      "timestamp": "2026-04-21T20:19:14.952661",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2072,
+      "output_tokens": 2789,
+      "cost_usd": 0.0013228
+    },
+    {
+      "timestamp": "2026-04-21T20:19:18.715772",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "S1909R",
+      "response_type": "order",
+      "input_tokens": 1819,
+      "output_tokens": 294,
+      "cost_usd": 0.00026955
+    },
+    {
+      "timestamp": "2026-04-21T20:19:26.790651",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "RUSSIA",
+      "phase": "S1909R",
+      "response_type": "order",
+      "input_tokens": 1732,
+      "output_tokens": 4466,
+      "cost_usd": 0.0019596
+    },
+    {
+      "timestamp": "2026-04-21T20:19:40.940459",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3850,
+      "output_tokens": 1256,
+      "cost_usd": 0.01013
+    },
+    {
+      "timestamp": "2026-04-21T20:19:41.996866",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5237,
+      "output_tokens": 4827,
+      "cost_usd": 0.0024545
+    },
+    {
+      "timestamp": "2026-04-21T20:19:45.667981",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7813,
+      "output_tokens": 1743,
+      "cost_usd": 0.00241205
+    },
+    {
+      "timestamp": "2026-04-21T20:20:27.637092",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5556,
+      "output_tokens": 1556,
+      "cost_usd": 0.00131356
+    },
+    {
+      "timestamp": "2026-04-21T20:23:47.873222",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3053,
+      "output_tokens": 3699,
+      "cost_usd": 0.0097935
+    },
+    {
+      "timestamp": "2026-04-21T20:24:03.602238",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 6348,
+      "output_tokens": 4719,
+      "cost_usd": 0.0025224
+    },
+    {
+      "timestamp": "2026-04-21T20:24:05.020536",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 8461,
+      "output_tokens": 1330,
+      "cost_usd": 0.00233515
+    },
+    {
+      "timestamp": "2026-04-21T20:24:06.218432",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4760,
+      "output_tokens": 1598,
+      "cost_usd": 0.01275
+    },
+    {
+      "timestamp": "2026-04-21T20:24:29.460149",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 3763,
+      "output_tokens": 3648,
+      "cost_usd": 0.006424665
+    },
+    {
+      "timestamp": "2026-04-21T20:27:42.629678",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 6310,
+      "output_tokens": 1298,
+      "cost_usd": 0.0014026
+    },
+    {
+      "timestamp": "2026-04-21T20:27:54.124110",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 9031,
+      "output_tokens": 1082,
+      "cost_usd": 0.00232515
+    },
+    {
+      "timestamp": "2026-04-21T20:27:59.243176",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 7029,
+      "output_tokens": 4782,
+      "cost_usd": 0.0026157
+    },
+    {
+      "timestamp": "2026-04-21T20:28:01.677451",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 5598,
+      "output_tokens": 1646,
+      "cost_usd": 0.013828
+    },
+    {
+      "timestamp": "2026-04-21T20:28:38.059603",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 4102,
+      "output_tokens": 4441,
+      "cost_usd": 0.00772785
+    },
+    {
+      "timestamp": "2026-04-21T20:29:37.570182",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation",
+      "input_tokens": 6866,
+      "output_tokens": 1242,
+      "cost_usd": 0.00136454
+    },
+    {
+      "timestamp": "2026-04-21T20:29:49.368106",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 2805,
+      "output_tokens": 632,
+      "cost_usd": 0.000229475
+    },
+    {
+      "timestamp": "2026-04-21T20:29:56.450381",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5487,
+      "output_tokens": 1942,
+      "cost_usd": 0.015197
+    },
+    {
+      "timestamp": "2026-04-21T20:29:58.135752",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4290,
+      "output_tokens": 2161,
+      "cost_usd": 0.00191645
+    },
+    {
+      "timestamp": "2026-04-21T20:30:00.799726",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4473,
+      "output_tokens": 4588,
+      "cost_usd": 0.0022825
+    },
+    {
+      "timestamp": "2026-04-21T20:30:42.702765",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 2537,
+      "output_tokens": 3541,
+      "cost_usd": 0.007729475
+    },
+    {
+      "timestamp": "2026-04-21T20:30:53.691598",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3689,
+      "output_tokens": 1638,
+      "cost_usd": 0.00117166
+    },
+    {
+      "timestamp": "2026-04-21T20:32:23.784693",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3373,
+      "output_tokens": 5257,
+      "cost_usd": 0.01226583
+    },
+    {
+      "timestamp": "2026-04-21T20:32:36.542749",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "order",
+      "input_tokens": 5098,
+      "output_tokens": 4032,
+      "cost_usd": 0.0021226
+    },
+    {
+      "timestamp": "2026-04-21T20:32:43.601869",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "order",
+      "input_tokens": 2567,
+      "output_tokens": 2087,
+      "cost_usd": 0.013002
+    },
+    {
+      "timestamp": "2026-04-21T20:33:22.680101",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "order",
+      "input_tokens": 2382,
+      "output_tokens": 5308,
+      "cost_usd": 0.00874497
+    },
+    {
+      "timestamp": "2026-04-21T20:33:52.270827",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "order",
+      "input_tokens": 8035,
+      "output_tokens": 9018,
+      "cost_usd": 0.00609395
+    },
+    {
+      "timestamp": "2026-04-21T20:37:06.050827",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "order",
+      "input_tokens": 5840,
+      "output_tokens": 5909,
+      "cost_usd": 0.00300462
+    },
+    {
+      "timestamp": "2026-04-21T20:37:12.939275",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2610,
+      "output_tokens": 307,
+      "cost_usd": 0.00016012
+    },
+    {
+      "timestamp": "2026-04-21T20:37:16.560553",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3461,
+      "output_tokens": 869,
+      "cost_usd": 0.007806
+    },
+    {
+      "timestamp": "2026-04-21T20:37:17.531475",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 3030,
+      "output_tokens": 1086,
+      "cost_usd": 0.00112695
+    },
+    {
+      "timestamp": "2026-04-21T20:37:42.593513",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2177,
+      "output_tokens": 897,
+      "cost_usd": 0.00066358
+    },
+    {
+      "timestamp": "2026-04-21T20:37:54.598167",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2436,
+      "output_tokens": 2618,
+      "cost_usd": 0.0058968
+    },
+    {
+      "timestamp": "2026-04-21T20:38:22.593169",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2258,
+      "output_tokens": 4671,
+      "cost_usd": 0.0118878
+    },
+    {
+      "timestamp": "2026-04-21T20:39:04.930155",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "F1909M",
+      "response_type": "phase_result_diary",
+      "input_tokens": 2357,
+      "output_tokens": 4286,
+      "cost_usd": 0.0019501
+    },
+    {
+      "timestamp": "2026-04-21T20:39:21.205999",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "FRANCE",
+      "phase": "F1909R",
+      "response_type": "order",
+      "input_tokens": 1739,
+      "output_tokens": 5021,
+      "cost_usd": 0.0021823
+    },
+    {
+      "timestamp": "2026-04-21T20:39:28.735305",
+      "model": "openai/gpt-oss-120b",
+      "power": "RUSSIA",
+      "phase": "W1909A",
+      "response_type": "order",
+      "input_tokens": 1708,
+      "output_tokens": 211,
+      "cost_usd": 0.00013815
+    },
+    {
+      "timestamp": "2026-04-21T20:39:30.271832",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "RUSSIA",
+      "phase": "W1909A",
+      "response_type": "order",
+      "input_tokens": 2049,
+      "output_tokens": 803,
+      "cost_usd": 0.00078925
+    },
+    {
+      "timestamp": "2026-04-21T20:39:37.886872",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 3182,
+      "output_tokens": 337,
+      "cost_usd": 0.000188128
+    },
+    {
+      "timestamp": "2026-04-21T20:39:41.806875",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 4351,
+      "output_tokens": 1009,
+      "cost_usd": 0.009396
+    },
+    {
+      "timestamp": "2026-04-21T20:39:45.487147",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 5443,
+      "output_tokens": 4542,
+      "cost_usd": 0.0023611
+    },
+    {
+      "timestamp": "2026-04-21T20:39:48.750755",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 8894,
+      "output_tokens": 1558,
+      "cost_usd": 0.00253575
+    },
+    {
+      "timestamp": "2026-04-21T20:40:39.027677",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 3323,
+      "output_tokens": 4009,
+      "cost_usd": 0.0106185
+    },
+    {
+      "timestamp": "2026-04-21T20:41:21.523615",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 5593,
+      "output_tokens": 1596,
+      "cost_usd": 0.00133357
+    },
+    {
+      "timestamp": "2026-04-21T20:41:25.209957",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 3896,
+      "output_tokens": 375,
+      "cost_usd": 0.00048564
+    },
+    {
+      "timestamp": "2026-04-21T20:41:33.929690",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 9699,
+      "output_tokens": 1420,
+      "cost_usd": 0.00262775
+    },
+    {
+      "timestamp": "2026-04-21T20:41:41.339492",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 5416,
+      "output_tokens": 1791,
+      "cost_usd": 0.014371
+    },
+    {
+      "timestamp": "2026-04-21T20:42:39.143821",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 6451,
+      "output_tokens": 1728,
+      "cost_usd": 0.00159434
+    },
+    {
+      "timestamp": "2026-04-21T20:42:47.509273",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 4303,
+      "output_tokens": 5582,
+      "cost_usd": 0.0146877
+    },
+    {
+      "timestamp": "2026-04-21T20:43:26.199712",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 6491,
+      "output_tokens": 3154,
+      "cost_usd": 0.0019107
+    },
+    {
+      "timestamp": "2026-04-21T20:43:34.183160",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 4832,
+      "output_tokens": 483,
+      "cost_usd": 0.000280218
+    },
+    {
+      "timestamp": "2026-04-21T20:43:37.191299",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 10242,
+      "output_tokens": 1240,
+      "cost_usd": 0.00264635
+    },
+    {
+      "timestamp": "2026-04-21T20:43:42.733300",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 7273,
+      "output_tokens": 4833,
+      "cost_usd": 0.0026605
+    },
+    {
+      "timestamp": "2026-04-21T20:43:47.752683",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 6201,
+      "output_tokens": 1832,
+      "cost_usd": 0.015361
+    },
+    {
+      "timestamp": "2026-04-21T20:44:28.928623",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 5187,
+      "output_tokens": 4142,
+      "cost_usd": 0.0114969
+    },
+    {
+      "timestamp": "2026-04-21T20:44:38.650987",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation",
+      "input_tokens": 7184,
+      "output_tokens": 1449,
+      "cost_usd": 0.0021613
+    },
+    {
+      "timestamp": "2026-04-21T20:44:49.503054",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5016,
+      "output_tokens": 1301,
+      "cost_usd": 0.00163165
+    },
+    {
+      "timestamp": "2026-04-21T20:44:50.387356",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4876,
+      "output_tokens": 597,
+      "cost_usd": 0.000303594
+    },
+    {
+      "timestamp": "2026-04-21T20:44:53.241623",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4977,
+      "output_tokens": 4603,
+      "cost_usd": 0.0023389
+    },
+    {
+      "timestamp": "2026-04-21T20:45:10.177038",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 6263,
+      "output_tokens": 1822,
+      "cost_usd": 0.015373
+    },
+    {
+      "timestamp": "2026-04-21T20:45:39.121418",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 5108,
+      "output_tokens": 4333,
+      "cost_usd": 0.01073844
+    },
+    {
+      "timestamp": "2026-04-21T20:45:40.269825",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 3594,
+      "output_tokens": 3328,
+      "cost_usd": 0.00765765
+    },
+    {
+      "timestamp": "2026-04-21T20:46:55.662722",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "negotiation_diary_raw",
+      "input_tokens": 4476,
+      "output_tokens": 1594,
+      "cost_usd": 0.0016922
+    },
+    {
+      "timestamp": "2026-04-21T20:47:01.171592",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 1828,
+      "output_tokens": 194,
+      "cost_usd": 0.00032614
+    },
+    {
+      "timestamp": "2026-04-21T20:47:03.339887",
+      "model": "openai/gpt-oss-120b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 8784,
+      "output_tokens": 866,
+      "cost_usd": 0.001682262
+    },
+    {
+      "timestamp": "2026-04-21T20:47:06.294743",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 9923,
+      "output_tokens": 967,
+      "cost_usd": 0.00244605
+    },
+    {
+      "timestamp": "2026-04-21T20:47:08.452122",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 15379,
+      "output_tokens": 1150,
+      "cost_usd": 0.021129
+    },
+    {
+      "timestamp": "2026-04-21T20:47:12.638295",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 4848,
+      "output_tokens": 5495,
+      "cost_usd": 0.0026828
+    },
+    {
+      "timestamp": "2026-04-21T20:47:14.377334",
+      "model": "anthropic/claude-haiku-4.5",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 2641,
+      "output_tokens": 1913,
+      "cost_usd": 0.012206
+    },
+    {
+      "timestamp": "2026-04-21T20:47:36.751365",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 6942,
+      "output_tokens": 1043,
+      "cost_usd": 0.00138908
+    },
+    {
+      "timestamp": "2026-04-21T20:47:54.917873",
+      "model": "qwen/qwen3.6-plus",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 7601,
+      "output_tokens": 3206,
+      "cost_usd": 0.008722025
+    },
+    {
+      "timestamp": "2026-04-21T20:47:56.040629",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 6507,
+      "output_tokens": 3385,
+      "cost_usd": 0.0100761
+    },
+    {
+      "timestamp": "2026-04-21T20:48:49.836741",
+      "model": "qwen/qwen3.5-27b",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 2362,
+      "output_tokens": 6604,
+      "cost_usd": 0.0165582
+    },
+    {
+      "timestamp": "2026-04-21T20:48:55.435368",
+      "model": "x-ai/grok-4.1-fast",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 8830,
+      "output_tokens": 9751,
+      "cost_usd": 0.00661945
+    },
+    {
+      "timestamp": "2026-04-21T20:48:55.547323",
+      "model": "google/gemini-2.5-flash-lite",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 7607,
+      "output_tokens": 2493,
+      "cost_usd": 0.0017579
+    },
+    {
+      "timestamp": "2026-04-21T20:50:47.105654",
+      "model": "google/gemma-4-31b-it",
+      "power": "TURKEY",
+      "phase": "S1910M",
+      "response_type": "order",
+      "input_tokens": 5345,
+      "output_tokens": 4633,
+      "cost_usd": 0.00245539
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "power_name": "ITALY",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1901"
+  },
+  "consolidated_diary": "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.\n\n[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey.\n\n[F1901M] No negotiations have been conducted yet. The Spring 1901 phase ended with a bounce on Venice/Tyrol, indicating immediate tension with Austria.\nIntent: Attempt to stabilize the northern border and secure the Mediterranean. I will prioritize establishing contact with Austria to prevent a two-front war. For Fall 1901, I intend to secure the Ionian Sea and look for opportunities to expand into the Balkans or North Africa if Austria remains hostile.\n\n[F1901M] The Fall 1901 phase has confirmed my worst fears: Austria is an immediate threat. The bounce on Venice/Tyrol and the movement of the Austrian fleet into the Adriatic (F ALB - ADR) signal a clear intent to contest my northern borders. My attempt to expand into Tyrol failed, leaving my position precarious. While I successfully secured Tunisia and stabilized Piedmont, I am now facing a potential two-front tension if Austria pushes from the north while I look toward the Balkans.\n\nThe lack of communication from Vienna is deafening. I must urgently attempt to open diplomatic channels to negotiate a partition of the Adriatic or, failing that, prepare for a defensive struggle to protect Venice. My priority is to prevent being squeezed between an aggressive Austria and a growing Turkey. I cannot afford a passive stance; I must either secure a truce or fortify my core immediately.",
+  "final_relationships": {
+    "FRANCE": "Neutral",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Neutral",
+    "GERMANY": "Neutral",
+    "ENGLAND": "Neutral",
+    "AUSTRIA": "Enemy"
+  },
+  "final_trust_scores": {
+    "FRANCE": 0.5,
+    "TURKEY": 0.5,
+    "RUSSIA": 0.5,
+    "GERMANY": 0.5,
+    "ENGLAND": 0.5,
+    "AUSTRIA": 0.0
+  },
+  "final_goals": [
+    "Defend Venice and Piedmont against Austrian incursions from the north.",
+    "Attempt to open diplomatic channels with Austria to negotiate a border or prepare for war.",
+    "Secure the Mediterranean by maintaining control of Tunisia and the Ionian Sea.",
+    "Monitor the Austro-Russian-Turkish movements to ensure I am not caught in a three-way squeeze."
+  ]
+}

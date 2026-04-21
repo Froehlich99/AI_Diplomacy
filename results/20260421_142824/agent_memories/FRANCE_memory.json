@@ -1,0 +1,34 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1901"
+  },
+  "consolidated_diary": "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.\n\n[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel.\n\n[F1901M] No negotiations have been conducted yet. The board state is currently stable but tense following the Spring 1901 moves.\nIntent: Expand and secure the northern flank. I intend to move F PIC to ENG to contest the English Channel and prevent an English invasion. I will also maintain presence in SPA and BUR to solidify the southern and eastern borders. I will attempt to initiate diplomatic contact with England to negotiate a division of the Atlantic/Channel.\n\n[F1901M] The Fall 1901 moves have yielded a mixed tactical outcome. My attempt to contest the English Channel with F ENG was successful, but the bounce in Belgium (A BUR to BEL) was a significant setback; I failed to secure that center and instead left my eastern flank vulnerable to German expansion. While I successfully consolidated my southern position by moving A SPA to POR, the tension in the north is escalating. England's failed attempt to take the North Sea suggests they are also struggling for dominance, which may present an opening for negotiation or a decisive strike. Germany's successful move into Belgium is a growing concern for my borders. My priority now is to stabilize the Picardy/Belgium area and decide whether to pursue a diplomatic truce with England or prepare for a full-scale naval war to control the Atlantic.",
+  "final_relationships": {
+    "ITALY": "Neutral",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Neutral",
+    "GERMANY": "Unfriendly",
+    "ENGLAND": "Unfriendly",
+    "AUSTRIA": "Neutral"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.5,
+    "TURKEY": 0.5,
+    "RUSSIA": 0.5,
+    "GERMANY": 0.3,
+    "ENGLAND": 0.3,
+    "AUSTRIA": 0.5
+  },
+  "final_goals": [
+    "Secure the Picardy/Belgium border to prevent further German encroachment.",
+    "Maintain presence in the English Channel to contest English naval supremacy in the Atlantic.",
+    "Attempt to negotiate a division of the Atlantic with England to avoid a two-front war.",
+    "Consolidate control over the Iberian Peninsula (POR) and southern borders."
+  ]
+}

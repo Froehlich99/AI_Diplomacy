@@ -1,0 +1,2512 @@
+{
+    "id": "CoJdsqiYrRrXYUKu",
+    "map": "standard",
+    "rules": [
+        "NO_PRESS",
+        "POWER_CHOICE"
+    ],
+    "phases": [
+        {
+            "name": "S1901M",
+            "state": {
+                "timestamp": 1776781751863989,
+                "zobrist_hash": "1919110489198082658",
+                "note": "",
+                "name": "S1901M",
+                "units": {
+                    "AUSTRIA": [
+                        "A BUD",
+                        "A VIE",
+                        "F TRI"
+                    ],
+                    "ENGLAND": [
+                        "F EDI",
+                        "F LON",
+                        "A LVP"
+                    ],
+                    "FRANCE": [
+                        "F BRE",
+                        "A MAR",
+                        "A PAR"
+                    ],
+                    "GERMANY": [
+                        "F KIE",
+                        "A BER",
+                        "A MUN"
+                    ],
+                    "ITALY": [
+                        "F NAP",
+                        "A ROM",
+                        "A VEN"
+                    ],
+                    "RUSSIA": [
+                        "A WAR",
+                        "A MOS",
+                        "F SEV",
+                        "F STP/SC"
+                    ],
+                    "TURKEY": [
+                        "F ANK",
+                        "A CON",
+                        "A SMY"
+                    ]
+                },
+                "retreats": {
+                    "AUSTRIA": {},
+                    "ENGLAND": {},
+                    "FRANCE": {},
+                    "GERMANY": {},
+                    "ITALY": {},
+                    "RUSSIA": {},
+                    "TURKEY": {}
+                },
+                "centers": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "homes": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "influence": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "VIE",
+                        "TRI"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "KIE",
+                        "BER",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "WAR",
+                        "MOS",
+                        "SEV",
+                        "STP"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "civil_disorder": {
+                    "AUSTRIA": 0,
+                    "ENGLAND": 0,
+                    "FRANCE": 0,
+                    "GERMANY": 0,
+                    "ITALY": 0,
+                    "RUSSIA": 0,
+                    "TURKEY": 0
+                },
+                "builds": {
+                    "AUSTRIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ENGLAND": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "FRANCE": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "GERMANY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ITALY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "RUSSIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "TURKEY": {
+                        "count": 0,
+                        "homes": []
+                    }
+                },
+                "phase": "S1901M",
+                "game_id": "CoJdsqiYrRrXYUKu",
+                "map": "standard",
+                "rules": [
+                    "NO_PRESS",
+                    "POWER_CHOICE"
+                ]
+            },
+            "orders": {
+                "AUSTRIA": [
+                    "A BUD - SER",
+                    "F TRI - ALB",
+                    "A VIE - TYR"
+                ],
+                "ENGLAND": [
+                    "F EDI - NTH",
+                    "F LON - NTH",
+                    "A LVP - YOR"
+                ],
+                "FRANCE": [
+                    "F BRE - PIC",
+                    "A MAR - SPA",
+                    "A PAR - BUR"
+                ],
+                "GERMANY": [
+                    "A BER - PRU",
+                    "F KIE - HOL",
+                    "A MUN - RUH"
+                ],
+                "ITALY": [
+                    "F NAP - ION",
+                    "A ROM - TUS",
+                    "A VEN - TYR"
+                ],
+                "RUSSIA": [
+                    "A MOS - UKR",
+                    "A WAR - UKR",
+                    "F SEV - RUM",
+                    "F STP/SC H"
+                ],
+                "TURKEY": [
+                    "F ANK - BLA",
+                    "A CON - BUL",
+                    "A SMY - SYR"
+                ]
+            },
+            "results": {
+                "A BUD": [],
+                "A VIE": [
+                    "bounce"
+                ],
+                "F TRI": [],
+                "F EDI": [
+                    "bounce"
+                ],
+                "F LON": [
+                    "bounce"
+                ],
+                "A LVP": [],
+                "F BRE": [],
+                "A MAR": [],
+                "A PAR": [],
+                "F KIE": [],
+                "A BER": [],
+                "A MUN": [],
+                "F NAP": [],
+                "A ROM": [],
+                "A VEN": [
+                    "bounce"
+                ],
+                "A WAR": [
+                    "bounce"
+                ],
+                "A MOS": [
+                    "bounce"
+                ],
+                "F SEV": [],
+                "F STP/SC": [],
+                "F ANK": [],
+                "A CON": [],
+                "A SMY": []
+            },
+            "messages": [],
+            "summary": "(No LLM callback provided.)",
+            "statistical_summary": null,
+            "state_agents": {
+                "AUSTRIA": {
+                    "power_name": "AUSTRIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Stabilize the Tyrolia/Venice border to prevent an Italian breakthrough into my home centers.",
+                        "Secure the Balkan territories (Serbia and Albania) to build a power base.",
+                        "Initiate diplomatic contact with Italy to determine if a non-aggression pact is possible or if war is inevitable.",
+                        "Monitor Russian and Turkish movements in the Black Sea/Ukraine region to identify opportunities for expansion."
+                    ],
+                    "relationships": {
+                        "ITALY": "Unfriendly",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.3,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical."
+                    ]
+                },
+                "ENGLAND": {
+                    "power_name": "ENGLAND",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Negotiate with Germany to establish a division of influence in the North Sea to prevent a two-front war.",
+                        "Secure the English Channel to prevent a French invasion of the English coast.",
+                        "Re-attempt to take the North Sea in the Fall phase using a more coordinated approach.",
+                        "Monitor French movements in Picardy and Burgundy to prepare for a defensive or offensive response in the West."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Unfriendly",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.4,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation."
+                    ]
+                },
+                "FRANCE": {
+                    "power_name": "FRANCE",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the English Channel to prevent an English invasion of the French coast.",
+                        "Establish a diplomatic dialogue with England to negotiate a division of the Atlantic/Channel.",
+                        "Consolidate control over SPA and BUR to solidify the southern and eastern borders.",
+                        "Monitor German movements in RUH and PRU to ensure they do not threaten the Picardy/Belgium area."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel."
+                    ]
+                },
+                "GERMANY": {
+                    "power_name": "GERMANY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the Low Countries (Holland/Belgium) to create a buffer against France and England.",
+                        "Monitor the French move into Burgundy and prepare a defensive response with A RUH or F HOL if necessary.",
+                        "Evaluate potential cooperation with England to contain France in the west.",
+                        "Expand towards Denmark or Scandinavia to secure northern supply centers."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Unfriendly",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.3,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West."
+                    ]
+                },
+                "ITALY": {
+                    "power_name": "ITALY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Initiate diplomatic contact with Austria to negotiate a division of the Adriatic/Tyrolian border.",
+                        "Secure the Ionian Sea and prepare for expansion into the Balkans or North Africa.",
+                        "Monitor Austrian movement in Trieste to prevent a sudden strike on Venice.",
+                        "Establish a defensive posture in Tuscany to protect the Italian core."
+                    ],
+                    "relationships": {
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Unfriendly"
+                    },
+                    "trust_scores": {
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.3
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey."
+                    ]
+                },
+                "RUSSIA": {
+                    "power_name": "RUSSIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Resolve the deadlock in Ukraine by coordinating Army movements from Moscow and Warsaw to avoid bouncing.",
+                        "Secure the northern supply centers by ensuring the fleet in St. Petersburg/Murman is positioned for Scandinavian expansion.",
+                        "Monitor Turkish movements in Bulgaria to prevent them from dominating the Black Sea/Balkan corridor.",
+                        "Establish diplomatic contact with Austria to potentially coordinate against Turkish expansion in the south."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Unfriendly",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.3,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow."
+                    ]
+                },
+                "TURKEY": {
+                    "power_name": "TURKEY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Solidify control over Bulgaria and the Black Sea to prevent Russian incursions.",
+                        "Monitor the Italian fleet in the Ionian Sea to prevent a southern flank squeeze.",
+                        "Initiate diplomatic contact with Russia to discuss a potential partition of the Balkans or Black Sea.",
+                        "Expand further into the Levant or towards the Aegean to increase supply center count."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war."
+                    ]
+                }
+            },
+            "order_results": {
+                "AUSTRIA": {
+                    "move": [
+                        {
+                            "order": "A BUD - SER",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F TRI - ALB",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A VIE - TYR",
+                            "result": "bounce"
+                        }
+                    ]
+                },
+                "ENGLAND": {
+                    "move": [
+                        {
+                            "order": "F EDI - NTH",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "F LON - NTH",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A LVP - YOR",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "FRANCE": {
+                    "move": [
+                        {
+                            "order": "F BRE - PIC",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A MAR - SPA",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A PAR - BUR",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "GERMANY": {
+                    "move": [
+                        {
+                            "order": "A BER - PRU",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F KIE - HOL",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A MUN - RUH",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "ITALY": {
+                    "move": [
+                        {
+                            "order": "F NAP - ION",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A ROM - TUS",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A VEN - TYR",
+                            "result": "bounce"
+                        }
+                    ]
+                },
+                "RUSSIA": {
+                    "move": [
+                        {
+                            "order": "A MOS - UKR",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A WAR - UKR",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "F SEV - RUM",
+                            "result": "success"
+                        }
+                    ],
+                    "hold": [
+                        {
+                            "order": "F STP/SC H",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "TURKEY": {
+                    "move": [
+                        {
+                            "order": "F ANK - BLA",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A CON - BUL",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A SMY - SYR",
+                            "result": "success"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "F1901M",
+            "state": {
+                "timestamp": 1776781806021627,
+                "zobrist_hash": "5149321116224256390",
+                "note": "",
+                "name": "F1901M",
+                "units": {
+                    "AUSTRIA": [
+                        "A VIE",
+                        "A SER",
+                        "F ALB"
+                    ],
+                    "ENGLAND": [
+                        "F EDI",
+                        "F LON",
+                        "A YOR"
+                    ],
+                    "FRANCE": [
+                        "F PIC",
+                        "A SPA",
+                        "A BUR"
+                    ],
+                    "GERMANY": [
+                        "F HOL",
+                        "A PRU",
+                        "A RUH"
+                    ],
+                    "ITALY": [
+                        "A VEN",
+                        "F ION",
+                        "A TUS"
+                    ],
+                    "RUSSIA": [
+                        "A WAR",
+                        "A MOS",
+                        "F STP/SC",
+                        "F RUM"
+                    ],
+                    "TURKEY": [
+                        "F BLA",
+                        "A BUL",
+                        "A SYR"
+                    ]
+                },
+                "retreats": {
+                    "AUSTRIA": {},
+                    "ENGLAND": {},
+                    "FRANCE": {},
+                    "GERMANY": {},
+                    "ITALY": {},
+                    "RUSSIA": {},
+                    "TURKEY": {}
+                },
+                "centers": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "homes": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "influence": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "VIE",
+                        "TRI",
+                        "SER",
+                        "ALB"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP",
+                        "YOR"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR",
+                        "PIC",
+                        "SPA",
+                        "BUR"
+                    ],
+                    "GERMANY": [
+                        "KIE",
+                        "BER",
+                        "MUN",
+                        "HOL",
+                        "PRU",
+                        "RUH"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN",
+                        "ION",
+                        "TUS"
+                    ],
+                    "RUSSIA": [
+                        "WAR",
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "RUM"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY",
+                        "BLA",
+                        "BUL",
+                        "SYR"
+                    ]
+                },
+                "civil_disorder": {
+                    "AUSTRIA": 0,
+                    "ENGLAND": 0,
+                    "FRANCE": 0,
+                    "GERMANY": 0,
+                    "ITALY": 0,
+                    "RUSSIA": 0,
+                    "TURKEY": 0
+                },
+                "builds": {
+                    "AUSTRIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ENGLAND": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "FRANCE": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "GERMANY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ITALY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "RUSSIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "TURKEY": {
+                        "count": 0,
+                        "homes": []
+                    }
+                },
+                "phase": "F1901M",
+                "game_id": "CoJdsqiYrRrXYUKu",
+                "map": "standard",
+                "rules": [
+                    "NO_PRESS",
+                    "POWER_CHOICE"
+                ]
+            },
+            "orders": {
+                "AUSTRIA": [
+                    "A VIE - TYR",
+                    "A SER - GRE",
+                    "F ALB - ADR"
+                ],
+                "ENGLAND": [
+                    "F EDI - NTH",
+                    "F LON - NTH",
+                    "A YOR - WAL"
+                ],
+                "FRANCE": [
+                    "F PIC - ENG",
+                    "A BUR - BEL",
+                    "A SPA - POR"
+                ],
+                "GERMANY": [
+                    "F HOL - BEL",
+                    "A RUH S F HOL - BEL",
+                    "A PRU - LVN"
+                ],
+                "ITALY": [
+                    "F ION - TUN",
+                    "A VEN - TYR",
+                    "A TUS - PIE"
+                ],
+                "RUSSIA": [
+                    "A MOS - UKR",
+                    "A WAR - GAL",
+                    "F RUM - BLA",
+                    "F STP/SC H"
+                ],
+                "TURKEY": [
+                    "A BUL - GRE",
+                    "F BLA - SEV",
+                    "A SYR - ARM"
+                ]
+            },
+            "results": {
+                "A VIE": [
+                    "bounce"
+                ],
+                "A SER": [
+                    "bounce"
+                ],
+                "F ALB": [],
+                "F EDI": [
+                    "bounce"
+                ],
+                "F LON": [
+                    "bounce"
+                ],
+                "A YOR": [],
+                "F PIC": [],
+                "A SPA": [],
+                "A BUR": [
+                    "bounce"
+                ],
+                "F HOL": [],
+                "A PRU": [],
+                "A RUH": [],
+                "A VEN": [
+                    "bounce"
+                ],
+                "F ION": [],
+                "A TUS": [],
+                "A WAR": [],
+                "A MOS": [],
+                "F STP/SC": [],
+                "F RUM": [],
+                "F BLA": [],
+                "A BUL": [
+                    "bounce"
+                ],
+                "A SYR": []
+            },
+            "messages": [],
+            "summary": "",
+            "statistical_summary": null,
+            "state_agents": {
+                "AUSTRIA": {
+                    "power_name": "AUSTRIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the Adriatic Sea by resolving the tension in Tyrolia, either through a defensive hold or an offensive push into Venice.",
+                        "Re-attempt expansion into the Balkans (Greece or Bulgaria) once the Italian threat is stabilized.",
+                        "Monitor Russian movements in Galicia to prevent a two-front war in the East.",
+                        "Maintain control of the home centers (Budapest, Trieste, Vienna) to ensure unit production capacity."
+                    ],
+                    "relationships": {
+                        "ITALY": "Enemy",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Unfriendly",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.1,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.3,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical.",
+                        "[F1901M] No negotiations have taken place yet. The Spring 1901 phase resulted in a bounce in Tyrolia (A VIE vs A VEN), indicating immediate tension with Italy.\nIntent: Stabilize the home centers and secure the Balkans. I intend to move A VIE to TYR to contest the border, A SER to BEL (or hold SER to secure the center), and F ALB to IAD to protect the southern flank. I must prepare for a potential Italian conflict in the Adriatic/Tyrolia.",
+                        "[F1901M] The Fall 1901 maneuvers have solidified a state of tension on my western flank. The bounce in Tyrolia between A VIE and A VEN confirms that Italy is an immediate threat, and our interests are currently incompatible. My attempt to expand into Greece with A SER also bounced against Turkey, indicating a contested Balkan theater. However, securing F ADR provides a vital defensive anchor for my home centers. While I have successfully expanded my supply centers to four, the board is highly volatile. I must now decide whether to commit to a full-scale war with Italy to secure the Adriatic or attempt a desperate diplomatic pivot to stabilize the west while I turn my attention toward the growing Russian and Turkish presence in the east. The failure to secure GRE and TYR means I must be more surgical in my Spring 1902 expansion."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical.",
+                        "[F1901M] No negotiations have taken place yet. The Spring 1901 phase resulted in a bounce in Tyrolia (A VIE vs A VEN), indicating immediate tension with Italy.\nIntent: Stabilize the home centers and secure the Balkans. I intend to move A VIE to TYR to contest the border, A SER to BEL (or hold SER to secure the center), and F ALB to IAD to protect the southern flank. I must prepare for a potential Italian conflict in the Adriatic/Tyrolia.",
+                        "[F1901M] The Fall 1901 maneuvers have solidified a state of tension on my western flank. The bounce in Tyrolia between A VIE and A VEN confirms that Italy is an immediate threat, and our interests are currently incompatible. My attempt to expand into Greece with A SER also bounced against Turkey, indicating a contested Balkan theater. However, securing F ADR provides a vital defensive anchor for my home centers. While I have successfully expanded my supply centers to four, the board is highly volatile. I must now decide whether to commit to a full-scale war with Italy to secure the Adriatic or attempt a desperate diplomatic pivot to stabilize the west while I turn my attention toward the growing Russian and Turkish presence in the east. The failure to secure GRE and TYR means I must be more surgical in my Spring 1902 expansion."
+                    ]
+                },
+                "ENGLAND": {
+                    "power_name": "ENGLAND",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Defend London and Edinburgh from the French fleet currently in the English Channel/English waters.",
+                        "Negotiate with Germany to establish a clear division of the North Sea to prevent a two-front war.",
+                        "Attempt to retake the North Sea or secure the English Channel to prevent French dominance in the Atlantic.",
+                        "Use A WAL to defend the western coast and prevent further French incursions into the home centers."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Enemy",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.0,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation.",
+                        "[F1901M] No negotiations have been conducted yet this phase.\nIntent: Initiate diplomatic contact with Germany to propose a North Sea division of influence. Prepare to secure the English Channel and defend against French expansion in Picardy/Burgundy. Focus on stabilizing the home waters after the North Sea bounce.",
+                        "[F1901M] The Spring 1901 moves have been disastrous for my opening ambitions. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, signaling that I am being actively contested\u2014likely by Germany or France. More critically, France has successfully moved F PIC to ENG, directly threatening my home waters and seizing a foothold in my territory. My A YOR to WAL was successful, but it does little to offset the loss of initiative. I am currently being squeezed in the West. I must immediately reach out to Germany to propose a North Sea division; if they are the ones contesting me, we need a pact to face France. If they are not, I must prepare for a two-front war. My priority is now survival and reclaiming the English Channel to prevent a total collapse of my western defense."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation.",
+                        "[F1901M] No negotiations have been conducted yet this phase.\nIntent: Initiate diplomatic contact with Germany to propose a North Sea division of influence. Prepare to secure the English Channel and defend against French expansion in Picardy/Burgundy. Focus on stabilizing the home waters after the North Sea bounce.",
+                        "[F1901M] The Spring 1901 moves have been disastrous for my opening ambitions. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, signaling that I am being actively contested\u2014likely by Germany or France. More critically, France has successfully moved F PIC to ENG, directly threatening my home waters and seizing a foothold in my territory. My A YOR to WAL was successful, but it does little to offset the loss of initiative. I am currently being squeezed in the West. I must immediately reach out to Germany to propose a North Sea division; if they are the ones contesting me, we need a pact to face France. If they are not, I must prepare for a two-front war. My priority is now survival and reclaiming the English Channel to prevent a total collapse of my western defense."
+                    ]
+                },
+                "FRANCE": {
+                    "power_name": "FRANCE",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the Picardy/Belgium border to prevent further German encroachment.",
+                        "Maintain presence in the English Channel to contest English naval supremacy in the Atlantic.",
+                        "Attempt to negotiate a division of the Atlantic with England to avoid a two-front war.",
+                        "Consolidate control over the Iberian Peninsula (POR) and southern borders."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Unfriendly",
+                        "ENGLAND": "Unfriendly",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.3,
+                        "ENGLAND": 0.3,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel.",
+                        "[F1901M] No negotiations have been conducted yet. The board state is currently stable but tense following the Spring 1901 moves.\nIntent: Expand and secure the northern flank. I intend to move F PIC to ENG to contest the English Channel and prevent an English invasion. I will also maintain presence in SPA and BUR to solidify the southern and eastern borders. I will attempt to initiate diplomatic contact with England to negotiate a division of the Atlantic/Channel.",
+                        "[F1901M] The Fall 1901 moves have yielded a mixed tactical outcome. My attempt to contest the English Channel with F ENG was successful, but the bounce in Belgium (A BUR to BEL) was a significant setback; I failed to secure that center and instead left my eastern flank vulnerable to German expansion. While I successfully consolidated my southern position by moving A SPA to POR, the tension in the north is escalating. England's failed attempt to take the North Sea suggests they are also struggling for dominance, which may present an opening for negotiation or a decisive strike. Germany's successful move into Belgium is a growing concern for my borders. My priority now is to stabilize the Picardy/Belgium area and decide whether to pursue a diplomatic truce with England or prepare for a full-scale naval war to control the Atlantic."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel.",
+                        "[F1901M] No negotiations have been conducted yet. The board state is currently stable but tense following the Spring 1901 moves.\nIntent: Expand and secure the northern flank. I intend to move F PIC to ENG to contest the English Channel and prevent an English invasion. I will also maintain presence in SPA and BUR to solidify the southern and eastern borders. I will attempt to initiate diplomatic contact with England to negotiate a division of the Atlantic/Channel.",
+                        "[F1901M] The Fall 1901 moves have yielded a mixed tactical outcome. My attempt to contest the English Channel with F ENG was successful, but the bounce in Belgium (A BUR to BEL) was a significant setback; I failed to secure that center and instead left my eastern flank vulnerable to German expansion. While I successfully consolidated my southern position by moving A SPA to POR, the tension in the north is escalating. England's failed attempt to take the North Sea suggests they are also struggling for dominance, which may present an opening for negotiation or a decisive strike. Germany's successful move into Belgium is a growing concern for my borders. My priority now is to stabilize the Picardy/Belgium area and decide whether to pursue a diplomatic truce with England or prepare for a full-scale naval war to control the Atlantic."
+                    ]
+                },
+                "GERMANY": {
+                    "power_name": "GERMANY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Fortify the western border to prevent a French breakthrough from Burgundy or Belgium.",
+                        "Secure the northern territories by moving A LVN towards Denmark or Norway to prevent English expansion.",
+                        "Monitor the Anglo-French conflict to see if an opportunity arises to pick off weakened units or negotiate a DMZ in the North Sea/Low Countries.",
+                        "Maintain control of the newly acquired Belgium (BEL) to ensure a buffer zone."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Unfriendly",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.3,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Secure the northern and western flanks. I intend to move A PRU - DEN to expand north and maintain a defensive posture with F HOL and A RUH to react to potential French aggression from Burgundy.",
+                        "[F1901M] The Fall 1901 maneuvers have significantly altered the western landscape. My attempt to secure the Low Countries was partially successful, as F HOL - BEL and A RUH - BEL successfully occupied Belgium, though the bounce in BUR suggests France is aggressively contesting this space. The most critical development is France's move into Belgium; they are clearly signaling hostility. My position in the north is stabilizing with A PRU - LVN, but I must remain vigilant. England's naval bounce in the North Sea indicates they are preoccupied with their own maritime dominance, potentially leaving them open for a future alliance against France. My immediate priority is to fortify the western border. I cannot afford to be caught between a French thrust from Burgundy and an English naval presence. I must decide whether to push for Holland or consolidate my current holdings to prevent a multi-front collapse."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Secure the northern and western flanks. I intend to move A PRU - DEN to expand north and maintain a defensive posture with F HOL and A RUH to react to potential French aggression from Burgundy.",
+                        "[F1901M] The Fall 1901 maneuvers have significantly altered the western landscape. My attempt to secure the Low Countries was partially successful, as F HOL - BEL and A RUH - BEL successfully occupied Belgium, though the bounce in BUR suggests France is aggressively contesting this space. The most critical development is France's move into Belgium; they are clearly signaling hostility. My position in the north is stabilizing with A PRU - LVN, but I must remain vigilant. England's naval bounce in the North Sea indicates they are preoccupied with their own maritime dominance, potentially leaving them open for a future alliance against France. My immediate priority is to fortify the western border. I cannot afford to be caught between a French thrust from Burgundy and an English naval presence. I must decide whether to push for Holland or consolidate my current holdings to prevent a multi-front collapse."
+                    ]
+                },
+                "ITALY": {
+                    "power_name": "ITALY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Defend Venice and Piedmont against Austrian incursions from the north.",
+                        "Attempt to open diplomatic channels with Austria to negotiate a border or prepare for war.",
+                        "Secure the Mediterranean by maintaining control of Tunisia and the Ionian Sea.",
+                        "Monitor the Austro-Russian-Turkish movements to ensure I am not caught in a three-way squeeze."
+                    ],
+                    "relationships": {
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Enemy"
+                    },
+                    "trust_scores": {
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.0
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey.",
+                        "[F1901M] No negotiations have been conducted yet. The Spring 1901 phase ended with a bounce on Venice/Tyrol, indicating immediate tension with Austria.\nIntent: Attempt to stabilize the northern border and secure the Mediterranean. I will prioritize establishing contact with Austria to prevent a two-front war. For Fall 1901, I intend to secure the Ionian Sea and look for opportunities to expand into the Balkans or North Africa if Austria remains hostile.",
+                        "[F1901M] The Fall 1901 phase has confirmed my worst fears: Austria is an immediate threat. The bounce on Venice/Tyrol and the movement of the Austrian fleet into the Adriatic (F ALB - ADR) signal a clear intent to contest my northern borders. My attempt to expand into Tyrol failed, leaving my position precarious. While I successfully secured Tunisia and stabilized Piedmont, I am now facing a potential two-front tension if Austria pushes from the north while I look toward the Balkans.\n\nThe lack of communication from Vienna is deafening. I must urgently attempt to open diplomatic channels to negotiate a partition of the Adriatic or, failing that, prepare for a defensive struggle to protect Venice. My priority is to prevent being squeezed between an aggressive Austria and a growing Turkey. I cannot afford a passive stance; I must either secure a truce or fortify my core immediately."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey.",
+                        "[F1901M] No negotiations have been conducted yet. The Spring 1901 phase ended with a bounce on Venice/Tyrol, indicating immediate tension with Austria.\nIntent: Attempt to stabilize the northern border and secure the Mediterranean. I will prioritize establishing contact with Austria to prevent a two-front war. For Fall 1901, I intend to secure the Ionian Sea and look for opportunities to expand into the Balkans or North Africa if Austria remains hostile.",
+                        "[F1901M] The Fall 1901 phase has confirmed my worst fears: Austria is an immediate threat. The bounce on Venice/Tyrol and the movement of the Austrian fleet into the Adriatic (F ALB - ADR) signal a clear intent to contest my northern borders. My attempt to expand into Tyrol failed, leaving my position precarious. While I successfully secured Tunisia and stabilized Piedmont, I am now facing a potential two-front tension if Austria pushes from the north while I look toward the Balkans.\n\nThe lack of communication from Vienna is deafening. I must urgently attempt to open diplomatic channels to negotiate a partition of the Adriatic or, failing that, prepare for a defensive struggle to protect Venice. My priority is to prevent being squeezed between an aggressive Austria and a growing Turkey. I cannot afford a passive stance; I must either secure a truce or fortify my core immediately."
+                    ]
+                },
+                "RUSSIA": {
+                    "power_name": "RUSSIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Reclaim Sevastopol and secure the Black Sea from Turkish expansion.",
+                        "Consolidate control over Ukraine and Galicia to build a stable southern front.",
+                        "Prepare a naval expedition from St. Petersburg to contest Scandinavia.",
+                        "Monitor German movements in Belgium and Prussia to prevent a western encirclement."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Enemy",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.0,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow.",
+                        "[F1901M] No negotiations have occurred in this phase yet.\nIntent: Execute aggressive expansion. I will attempt to resolve the Ukraine deadlock by coordinating Moscow and Warsaw movements to avoid bounces. I will also position the fleet in St. Petersburg/Murman for Scandinavian expansion and monitor Turkey's presence in Bulgaria to secure the Black Sea.",
+                        "[F1901M] The expansion into the south has finally yielded results. By coordinating the movements of Moscow and Warsaw, I successfully secured Ukraine and Galicia, breaking the previous deadlock and increasing my supply center count. The fleet in the Black Sea is now positioned to monitor Turkish aggression, which is vital given their successful expansion into Syria and Armenia. However, Turkey's presence in the Black Sea remains a significant threat to my southern flank. In the north, my fleet in St. Petersburg remains secure, providing a stable base for future Scandinavian operations. While I have gained momentum, the board is becoming increasingly crowded. My next priority is to solidify these gains and prevent Turkey from turning the Black Sea into a Turkish lake. I must also keep a close eye on Germany's rapid consolidation in the west to ensure they do not become an unstoppable force."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow.",
+                        "[F1901M] No negotiations have occurred in this phase yet.\nIntent: Execute aggressive expansion. I will attempt to resolve the Ukraine deadlock by coordinating Moscow and Warsaw movements to avoid bounces. I will also position the fleet in St. Petersburg/Murman for Scandinavian expansion and monitor Turkey's presence in Bulgaria to secure the Black Sea.",
+                        "[F1901M] The expansion into the south has finally yielded results. By coordinating the movements of Moscow and Warsaw, I successfully secured Ukraine and Galicia, breaking the previous deadlock and increasing my supply center count. The fleet in the Black Sea is now positioned to monitor Turkish aggression, which is vital given their successful expansion into Syria and Armenia. However, Turkey's presence in the Black Sea remains a significant threat to my southern flank. In the north, my fleet in St. Petersburg remains secure, providing a stable base for future Scandinavian operations. While I have gained momentum, the board is becoming increasingly crowded. My next priority is to solidify these gains and prevent Turkey from turning the Black Sea into a Turkish lake. I must also keep a close eye on Germany's rapid consolidation in the west to ensure they do not become an unstoppable force."
+                    ]
+                },
+                "TURKEY": {
+                    "power_name": "TURKEY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Resolve the dispute over Greece, either through diplomatic negotiation with Austria or military force in the Fall.",
+                        "Solidify control over the Caucasus and Black Sea regions to prevent Russian encroachment.",
+                        "Expand further into the Levant or Middle East to increase supply center count.",
+                        "Initiate diplomatic contact with Russia to discuss a potential non-aggression pact regarding the Black Sea."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Unfriendly"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.3
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Solidify control over the Black Sea and the Levant. I intend to move units to secure my current supply centers and prepare for expansion into the Aegean or towards the Levant/Middle East. I will also seek diplomatic contact with Russia to prevent a two-front war.",
+                        "[F1901M] The Fall 1901 moves have concluded with mixed results. My attempt to expand into Greece via Bulgaria bounced, indicating a clash of intentions with Austria, who also moved toward Greece. This tension in the Balkans must be managed immediately to avoid a premature two-front war. On a positive note, my moves to Sevastopol and Armenia were successful, solidifying my presence in the Black Sea and the Caucasus. Russia's movement into Ukraine and Galicia suggests they are consolidating, but my hold on the Black Sea remains firm for now. Italy's move into Tunis is noted, though they don't pose an immediate threat to my Levant holdings. My priority for Winter 1901 is to resolve the Greek dispute\u2014either through diplomacy or force\u2014and to seek a formal non-aggression pact with Russia to ensure I can focus my expansion toward the Mediterranean or the Levant without fear of a Black Sea collapse."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Solidify control over the Black Sea and the Levant. I intend to move units to secure my current supply centers and prepare for expansion into the Aegean or towards the Levant/Middle East. I will also seek diplomatic contact with Russia to prevent a two-front war.",
+                        "[F1901M] The Fall 1901 moves have concluded with mixed results. My attempt to expand into Greece via Bulgaria bounced, indicating a clash of intentions with Austria, who also moved toward Greece. This tension in the Balkans must be managed immediately to avoid a premature two-front war. On a positive note, my moves to Sevastopol and Armenia were successful, solidifying my presence in the Black Sea and the Caucasus. Russia's movement into Ukraine and Galicia suggests they are consolidating, but my hold on the Black Sea remains firm for now. Italy's move into Tunis is noted, though they don't pose an immediate threat to my Levant holdings. My priority for Winter 1901 is to resolve the Greek dispute\u2014either through diplomacy or force\u2014and to seek a formal non-aggression pact with Russia to ensure I can focus my expansion toward the Mediterranean or the Levant without fear of a Black Sea collapse."
+                    ]
+                }
+            },
+            "order_results": {
+                "AUSTRIA": {
+                    "move": [
+                        {
+                            "order": "A VIE - TYR",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A SER - GRE",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "F ALB - ADR",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "ENGLAND": {
+                    "move": [
+                        {
+                            "order": "F EDI - NTH",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "F LON - NTH",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A YOR - WAL",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "FRANCE": {
+                    "move": [
+                        {
+                            "order": "F PIC - ENG",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A BUR - BEL",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A SPA - POR",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "GERMANY": {
+                    "move": [
+                        {
+                            "order": "F HOL - BEL",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A PRU - LVN",
+                            "result": "success"
+                        }
+                    ],
+                    "support": [
+                        {
+                            "order": "A RUH S F HOL - BEL",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "ITALY": {
+                    "move": [
+                        {
+                            "order": "F ION - TUN",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A VEN - TYR",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "A TUS - PIE",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "RUSSIA": {
+                    "move": [
+                        {
+                            "order": "A MOS - UKR",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A WAR - GAL",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F RUM - BLA",
+                            "result": "success"
+                        }
+                    ],
+                    "hold": [
+                        {
+                            "order": "F STP/SC H",
+                            "result": "success"
+                        }
+                    ]
+                },
+                "TURKEY": {
+                    "move": [
+                        {
+                            "order": "A BUL - GRE",
+                            "result": "bounce"
+                        },
+                        {
+                            "order": "F BLA - SEV",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A SYR - ARM",
+                            "result": "success"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "W1901A",
+            "state": {
+                "timestamp": 1776781846678254,
+                "zobrist_hash": "8002718917024318173",
+                "note": "",
+                "name": "W1901A",
+                "units": {
+                    "AUSTRIA": [
+                        "A VIE",
+                        "A SER",
+                        "F ADR"
+                    ],
+                    "ENGLAND": [
+                        "F EDI",
+                        "F LON",
+                        "A WAL"
+                    ],
+                    "FRANCE": [
+                        "A BUR",
+                        "F ENG",
+                        "A POR"
+                    ],
+                    "GERMANY": [
+                        "A RUH",
+                        "F BEL",
+                        "A LVN"
+                    ],
+                    "ITALY": [
+                        "A VEN",
+                        "F TUN",
+                        "A PIE"
+                    ],
+                    "RUSSIA": [
+                        "F STP/SC",
+                        "A GAL",
+                        "A UKR",
+                        "F BLA"
+                    ],
+                    "TURKEY": [
+                        "A BUL",
+                        "F SEV",
+                        "A ARM"
+                    ]
+                },
+                "retreats": {
+                    "AUSTRIA": {},
+                    "ENGLAND": {},
+                    "FRANCE": {},
+                    "GERMANY": {},
+                    "ITALY": {},
+                    "RUSSIA": {},
+                    "TURKEY": {}
+                },
+                "centers": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE",
+                        "SER"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR",
+                        "POR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN",
+                        "BEL"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN",
+                        "TUN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY",
+                        "SEV",
+                        "BUL"
+                    ]
+                },
+                "homes": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "influence": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "VIE",
+                        "TRI",
+                        "SER",
+                        "ALB",
+                        "ADR"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP",
+                        "YOR",
+                        "WAL"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR",
+                        "PIC",
+                        "SPA",
+                        "BUR",
+                        "ENG",
+                        "POR"
+                    ],
+                    "GERMANY": [
+                        "KIE",
+                        "BER",
+                        "MUN",
+                        "HOL",
+                        "PRU",
+                        "RUH",
+                        "BEL",
+                        "LVN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN",
+                        "ION",
+                        "TUS",
+                        "TUN",
+                        "PIE"
+                    ],
+                    "RUSSIA": [
+                        "WAR",
+                        "MOS",
+                        "STP",
+                        "RUM",
+                        "GAL",
+                        "UKR",
+                        "BLA"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY",
+                        "BUL",
+                        "SYR",
+                        "SEV",
+                        "ARM"
+                    ]
+                },
+                "civil_disorder": {
+                    "AUSTRIA": 0,
+                    "ENGLAND": 0,
+                    "FRANCE": 0,
+                    "GERMANY": 0,
+                    "ITALY": 0,
+                    "RUSSIA": 0,
+                    "TURKEY": 0
+                },
+                "builds": {
+                    "AUSTRIA": {
+                        "count": 1,
+                        "homes": [
+                            "BUD",
+                            "TRI"
+                        ]
+                    },
+                    "ENGLAND": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "FRANCE": {
+                        "count": 1,
+                        "homes": [
+                            "BRE",
+                            "MAR",
+                            "PAR"
+                        ]
+                    },
+                    "GERMANY": {
+                        "count": 1,
+                        "homes": [
+                            "BER",
+                            "KIE",
+                            "MUN"
+                        ]
+                    },
+                    "ITALY": {
+                        "count": 1,
+                        "homes": [
+                            "NAP",
+                            "ROM"
+                        ]
+                    },
+                    "RUSSIA": {
+                        "count": -1,
+                        "homes": []
+                    },
+                    "TURKEY": {
+                        "count": 2,
+                        "homes": [
+                            "ANK",
+                            "CON",
+                            "SMY"
+                        ]
+                    }
+                },
+                "phase": "W1901A",
+                "game_id": "CoJdsqiYrRrXYUKu",
+                "map": "standard",
+                "rules": [
+                    "NO_PRESS",
+                    "POWER_CHOICE"
+                ]
+            },
+            "orders": {
+                "AUSTRIA": [
+                    "A BUD B",
+                    "F TRI B"
+                ],
+                "ENGLAND": [],
+                "FRANCE": [
+                    "A PAR B",
+                    "F BRE B",
+                    "A MAR B"
+                ],
+                "GERMANY": [
+                    "A BER B",
+                    "A KIE B",
+                    "A MUN B"
+                ],
+                "ITALY": [
+                    "A NAP B",
+                    "A ROM B"
+                ],
+                "RUSSIA": [
+                    "F BLA D",
+                    "A GAL D",
+                    "F STP/SC D",
+                    "A UKR D"
+                ],
+                "TURKEY": [
+                    "A ANK B",
+                    "F CON B",
+                    "A SMY B"
+                ]
+            },
+            "results": {
+                "A BUD": [
+                    ""
+                ],
+                "F TRI": [
+                    "void"
+                ],
+                "A PAR": [
+                    ""
+                ],
+                "F BRE": [
+                    "void"
+                ],
+                "A MAR": [
+                    "void"
+                ],
+                "A BER": [
+                    ""
+                ],
+                "A KIE": [
+                    "void"
+                ],
+                "A MUN": [
+                    "void"
+                ],
+                "A NAP": [
+                    ""
+                ],
+                "A ROM": [
+                    "void"
+                ],
+                "F BLA": [
+                    ""
+                ],
+                "A GAL": [
+                    "void"
+                ],
+                "F STP/SC": [
+                    "void"
+                ],
+                "A UKR": [
+                    "void"
+                ],
+                "A ANK": [
+                    ""
+                ],
+                "F CON": [
+                    ""
+                ],
+                "A SMY": [
+                    "void"
+                ]
+            },
+            "messages": [],
+            "summary": "",
+            "statistical_summary": null,
+            "config": {
+                "models": "openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it,openrouter:google/gemma-4-26b-a4b-it",
+                "max_year": 1901,
+                "run_dir": "",
+                "prior_memory_dir": "",
+                "memory_cap_words": 500,
+                "num_negotiation_rounds": 0,
+                "simple_prompts": true,
+                "planning_phase": false,
+                "max_tokens": 16000,
+                "max_tokens_per_model": "",
+                "prompts_dir": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                "generate_phase_summaries": false,
+                "use_unformatted_prompts": false,
+                "country_specific_prompts": false,
+                "end_at_phase": "",
+                "resume_from_phase": "",
+                "critical_state_analysis_dir": "",
+                "seed_base": 42,
+                "prompts_dir_map": {
+                    "AUSTRIA": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "ENGLAND": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "FRANCE": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "GERMANY": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "ITALY": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "RUSSIA": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple",
+                    "TURKEY": "/Users/I569362/dev/AI_Diplomacy/ai_diplomacy/prompts_simple"
+                }
+            },
+            "state_agents": {
+                "AUSTRIA": {
+                    "power_name": "AUSTRIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the Adriatic Sea by resolving the tension in Tyrolia, either through a defensive hold or an offensive push into Venice.",
+                        "Re-attempt expansion into the Balkans (Greece or Bulgaria) once the Italian threat is stabilized.",
+                        "Monitor Russian movements in Galicia to prevent a two-front war in the East.",
+                        "Maintain control of the home centers (Budapest, Trieste, Vienna) to ensure unit production capacity."
+                    ],
+                    "relationships": {
+                        "ITALY": "Enemy",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Unfriendly",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.1,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.3,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical.",
+                        "[F1901M] No negotiations have taken place yet. The Spring 1901 phase resulted in a bounce in Tyrolia (A VIE vs A VEN), indicating immediate tension with Italy.\nIntent: Stabilize the home centers and secure the Balkans. I intend to move A VIE to TYR to contest the border, A SER to BEL (or hold SER to secure the center), and F ALB to IAD to protect the southern flank. I must prepare for a potential Italian conflict in the Adriatic/Tyrolia.",
+                        "[F1901M] The Fall 1901 maneuvers have solidified a state of tension on my western flank. The bounce in Tyrolia between A VIE and A VEN confirms that Italy is an immediate threat, and our interests are currently incompatible. My attempt to expand into Greece with A SER also bounced against Turkey, indicating a contested Balkan theater. However, securing F ADR provides a vital defensive anchor for my home centers. While I have successfully expanded my supply centers to four, the board is highly volatile. I must now decide whether to commit to a full-scale war with Italy to secure the Adriatic or attempt a desperate diplomatic pivot to stabilize the west while I turn my attention toward the growing Russian and Turkish presence in the east. The failure to secure GRE and TYR means I must be more surgical in my Spring 1902 expansion."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.",
+                        "[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical.",
+                        "[F1901M] No negotiations have taken place yet. The Spring 1901 phase resulted in a bounce in Tyrolia (A VIE vs A VEN), indicating immediate tension with Italy.\nIntent: Stabilize the home centers and secure the Balkans. I intend to move A VIE to TYR to contest the border, A SER to BEL (or hold SER to secure the center), and F ALB to IAD to protect the southern flank. I must prepare for a potential Italian conflict in the Adriatic/Tyrolia.",
+                        "[F1901M] The Fall 1901 maneuvers have solidified a state of tension on my western flank. The bounce in Tyrolia between A VIE and A VEN confirms that Italy is an immediate threat, and our interests are currently incompatible. My attempt to expand into Greece with A SER also bounced against Turkey, indicating a contested Balkan theater. However, securing F ADR provides a vital defensive anchor for my home centers. While I have successfully expanded my supply centers to four, the board is highly volatile. I must now decide whether to commit to a full-scale war with Italy to secure the Adriatic or attempt a desperate diplomatic pivot to stabilize the west while I turn my attention toward the growing Russian and Turkish presence in the east. The failure to secure GRE and TYR means I must be more surgical in my Spring 1902 expansion."
+                    ]
+                },
+                "ENGLAND": {
+                    "power_name": "ENGLAND",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Defend London and Edinburgh from the French fleet currently in the English Channel/English waters.",
+                        "Negotiate with Germany to establish a clear division of the North Sea to prevent a two-front war.",
+                        "Attempt to retake the North Sea or secure the English Channel to prevent French dominance in the Atlantic.",
+                        "Use A WAL to defend the western coast and prevent further French incursions into the home centers."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Enemy",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.0,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation.",
+                        "[F1901M] No negotiations have been conducted yet this phase.\nIntent: Initiate diplomatic contact with Germany to propose a North Sea division of influence. Prepare to secure the English Channel and defend against French expansion in Picardy/Burgundy. Focus on stabilizing the home waters after the North Sea bounce.",
+                        "[F1901M] The Spring 1901 moves have been disastrous for my opening ambitions. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, signaling that I am being actively contested\u2014likely by Germany or France. More critically, France has successfully moved F PIC to ENG, directly threatening my home waters and seizing a foothold in my territory. My A YOR to WAL was successful, but it does little to offset the loss of initiative. I am currently being squeezed in the West. I must immediately reach out to Germany to propose a North Sea division; if they are the ones contesting me, we need a pact to face France. If they are not, I must prepare for a two-front war. My priority is now survival and reclaiming the English Channel to prevent a total collapse of my western defense."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in S1901M.\nIntent: Establish initial diplomatic contacts. Prepare to secure the North Sea and English Channel areas. Focus on potential coordination with Germany or France to manage the Western Front, while monitoring movements in the North.",
+                        "[S1901M] The Spring 1901 moves have concluded with a tense standoff in the North Sea. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, indicating that either France or Germany is contesting the waters, or I have inadvertently signaled a lack of coordination. While A LVP to YOR was successful, consolidating my home waters, the stalemate in the North Sea is a setback to my aggressive expansion goals. France has moved into Picardy and Burgundy, positioning themselves strongly for a potential English Channel grab. Germany appears to be consolidating its central positions. I must immediately reach out to Germany to coordinate a division of the North Sea and prevent a Franco-German alliance from squeezing me. My priority is to resolve the North Sea conflict and secure the Channel before France can capitalize on my hesitation.",
+                        "[F1901M] No negotiations have been conducted yet this phase.\nIntent: Initiate diplomatic contact with Germany to propose a North Sea division of influence. Prepare to secure the English Channel and defend against French expansion in Picardy/Burgundy. Focus on stabilizing the home waters after the North Sea bounce.",
+                        "[F1901M] The Spring 1901 moves have been disastrous for my opening ambitions. My attempt to secure the North Sea with both F EDI and F LON resulted in a bounce, signaling that I am being actively contested\u2014likely by Germany or France. More critically, France has successfully moved F PIC to ENG, directly threatening my home waters and seizing a foothold in my territory. My A YOR to WAL was successful, but it does little to offset the loss of initiative. I am currently being squeezed in the West. I must immediately reach out to Germany to propose a North Sea division; if they are the ones contesting me, we need a pact to face France. If they are not, I must prepare for a two-front war. My priority is now survival and reclaiming the English Channel to prevent a total collapse of my western defense."
+                    ]
+                },
+                "FRANCE": {
+                    "power_name": "FRANCE",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Secure the Picardy/Belgium border to prevent further German encroachment.",
+                        "Maintain presence in the English Channel to contest English naval supremacy in the Atlantic.",
+                        "Attempt to negotiate a division of the Atlantic with England to avoid a two-front war.",
+                        "Consolidate control over the Iberian Peninsula (POR) and southern borders."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Unfriendly",
+                        "ENGLAND": "Unfriendly",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.3,
+                        "ENGLAND": 0.3,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel.",
+                        "[F1901M] No negotiations have been conducted yet. The board state is currently stable but tense following the Spring 1901 moves.\nIntent: Expand and secure the northern flank. I intend to move F PIC to ENG to contest the English Channel and prevent an English invasion. I will also maintain presence in SPA and BUR to solidify the southern and eastern borders. I will attempt to initiate diplomatic contact with England to negotiate a division of the Atlantic/Channel.",
+                        "[F1901M] The Fall 1901 moves have yielded a mixed tactical outcome. My attempt to contest the English Channel with F ENG was successful, but the bounce in Belgium (A BUR to BEL) was a significant setback; I failed to secure that center and instead left my eastern flank vulnerable to German expansion. While I successfully consolidated my southern position by moving A SPA to POR, the tension in the north is escalating. England's failed attempt to take the North Sea suggests they are also struggling for dominance, which may present an opening for negotiation or a decisive strike. Germany's successful move into Belgium is a growing concern for my borders. My priority now is to stabilize the Picardy/Belgium area and decide whether to pursue a diplomatic truce with England or prepare for a full-scale naval war to control the Atlantic."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively in the Spring 1901 phase. Focus on securing the Western Mediterranean or North Sea/English Channel area depending on potential English coordination. Likely moves: A MAR -> MAR, A PAR -> MAR (or hold), F BRE -> BRE (or move to ENG/ESP). I will seek to establish early contact with England and Germany to secure my borders.",
+                        "[S1901M] The Spring 1901 moves have concluded, and while I executed my opening moves successfully, the board state is becoming complex. My expansion into SPA and BUR secures my southern and eastern flanks for now, and moving F BRE to PIC positions me well to contest the English Channel or defend against a northern thrust. However, the bounces in the North Sea and Tyrolia suggest a highly contested opening. England and Germany are both positioning for dominance in the North, and the bounce between Austria and Italy in TYR indicates a brewing conflict in the Mediterranean/Central Europe theater. I must remain cautious; while I have no direct enemies yet, the tension between the Great Powers is palpable. My next priority is to establish contact with England to negotiate a division of the Atlantic, or prepare to strike if they move toward the Channel.",
+                        "[F1901M] No negotiations have been conducted yet. The board state is currently stable but tense following the Spring 1901 moves.\nIntent: Expand and secure the northern flank. I intend to move F PIC to ENG to contest the English Channel and prevent an English invasion. I will also maintain presence in SPA and BUR to solidify the southern and eastern borders. I will attempt to initiate diplomatic contact with England to negotiate a division of the Atlantic/Channel.",
+                        "[F1901M] The Fall 1901 moves have yielded a mixed tactical outcome. My attempt to contest the English Channel with F ENG was successful, but the bounce in Belgium (A BUR to BEL) was a significant setback; I failed to secure that center and instead left my eastern flank vulnerable to German expansion. While I successfully consolidated my southern position by moving A SPA to POR, the tension in the north is escalating. England's failed attempt to take the North Sea suggests they are also struggling for dominance, which may present an opening for negotiation or a decisive strike. Germany's successful move into Belgium is a growing concern for my borders. My priority now is to stabilize the Picardy/Belgium area and decide whether to pursue a diplomatic truce with England or prepare for a full-scale naval war to control the Atlantic."
+                    ]
+                },
+                "GERMANY": {
+                    "power_name": "GERMANY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Fortify the western border to prevent a French breakthrough from Burgundy or Belgium.",
+                        "Secure the northern territories by moving A LVN towards Denmark or Norway to prevent English expansion.",
+                        "Monitor the Anglo-French conflict to see if an opportunity arises to pick off weakened units or negotiate a DMZ in the North Sea/Low Countries.",
+                        "Maintain control of the newly acquired Belgium (BEL) to ensure a buffer zone."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Unfriendly",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.3,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Secure the northern and western flanks. I intend to move A PRU - DEN to expand north and maintain a defensive posture with F HOL and A RUH to react to potential French aggression from Burgundy.",
+                        "[F1901M] The Fall 1901 maneuvers have significantly altered the western landscape. My attempt to secure the Low Countries was partially successful, as F HOL - BEL and A RUH - BEL successfully occupied Belgium, though the bounce in BUR suggests France is aggressively contesting this space. The most critical development is France's move into Belgium; they are clearly signaling hostility. My position in the north is stabilizing with A PRU - LVN, but I must remain vigilant. England's naval bounce in the North Sea indicates they are preoccupied with their own maritime dominance, potentially leaving them open for a future alliance against France. My immediate priority is to fortify the western border. I cannot afford to be caught between a French thrust from Burgundy and an English naval presence. I must decide whether to push for Holland or consolidate my current holdings to prevent a multi-front collapse."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Secure the northern and western flanks. I intend to move A PRU - DEN to expand north and maintain a defensive posture with F HOL and A RUH to react to potential French aggression from Burgundy.",
+                        "[F1901M] The Fall 1901 maneuvers have significantly altered the western landscape. My attempt to secure the Low Countries was partially successful, as F HOL - BEL and A RUH - BEL successfully occupied Belgium, though the bounce in BUR suggests France is aggressively contesting this space. The most critical development is France's move into Belgium; they are clearly signaling hostility. My position in the north is stabilizing with A PRU - LVN, but I must remain vigilant. England's naval bounce in the North Sea indicates they are preoccupied with their own maritime dominance, potentially leaving them open for a future alliance against France. My immediate priority is to fortify the western border. I cannot afford to be caught between a French thrust from Burgundy and an English naval presence. I must decide whether to push for Holland or consolidate my current holdings to prevent a multi-front collapse."
+                    ]
+                },
+                "ITALY": {
+                    "power_name": "ITALY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Defend Venice and Piedmont against Austrian incursions from the north.",
+                        "Attempt to open diplomatic channels with Austria to negotiate a border or prepare for war.",
+                        "Secure the Mediterranean by maintaining control of Tunisia and the Ionian Sea.",
+                        "Monitor the Austro-Russian-Turkish movements to ensure I am not caught in a three-way squeeze."
+                    ],
+                    "relationships": {
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Enemy"
+                    },
+                    "trust_scores": {
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.0
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey.",
+                        "[F1901M] No negotiations have been conducted yet. The Spring 1901 phase ended with a bounce on Venice/Tyrol, indicating immediate tension with Austria.\nIntent: Attempt to stabilize the northern border and secure the Mediterranean. I will prioritize establishing contact with Austria to prevent a two-front war. For Fall 1901, I intend to secure the Ionian Sea and look for opportunities to expand into the Balkans or North Africa if Austria remains hostile.",
+                        "[F1901M] The Fall 1901 phase has confirmed my worst fears: Austria is an immediate threat. The bounce on Venice/Tyrol and the movement of the Austrian fleet into the Adriatic (F ALB - ADR) signal a clear intent to contest my northern borders. My attempt to expand into Tyrol failed, leaving my position precarious. While I successfully secured Tunisia and stabilized Piedmont, I am now facing a potential two-front tension if Austria pushes from the north while I look toward the Balkans.\n\nThe lack of communication from Vienna is deafening. I must urgently attempt to open diplomatic channels to negotiate a partition of the Adriatic or, failing that, prepare for a defensive struggle to protect Venice. My priority is to prevent being squeezed between an aggressive Austria and a growing Turkey. I cannot afford a passive stance; I must either secure a truce or fortify my core immediately."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Expand aggressively to secure early supply centers. Focus on potential moves toward Austria (Trieste/Venice area) or securing the Mediterranean. I will wait for opening communications to solidify specific alliances.",
+                        "[S1901M] The Spring 1901 phase has concluded with mixed results. My primary objective was to expand aggressively, but my attempt to move A VEN to TYR resulted in a bounce, likely due to Austrian interference or a defensive move from Austria. This lack of progress in the Adriatic/Tyrolian area is a concern, as it leaves my northern flank uncertain. On a positive note, F ION successfully moved to ION, and A ROM to TUS, securing my core Mediterranean presence.\n\nThe board is heating up: Austria is moving toward Serbia and Albania, and Russia is contesting Ukraine. Turkey is expanding rapidly into Syria and Bulgaria. I must now urgently seek communications with Austria to determine if we are destined to clash over Trieste or if a partition is possible. My priority for Fall 1901 is to resolve the tension in the Adriatic and ensure I am not squeezed between an expansionist Austria and a growing Turkey.",
+                        "[F1901M] No negotiations have been conducted yet. The Spring 1901 phase ended with a bounce on Venice/Tyrol, indicating immediate tension with Austria.\nIntent: Attempt to stabilize the northern border and secure the Mediterranean. I will prioritize establishing contact with Austria to prevent a two-front war. For Fall 1901, I intend to secure the Ionian Sea and look for opportunities to expand into the Balkans or North Africa if Austria remains hostile.",
+                        "[F1901M] The Fall 1901 phase has confirmed my worst fears: Austria is an immediate threat. The bounce on Venice/Tyrol and the movement of the Austrian fleet into the Adriatic (F ALB - ADR) signal a clear intent to contest my northern borders. My attempt to expand into Tyrol failed, leaving my position precarious. While I successfully secured Tunisia and stabilized Piedmont, I am now facing a potential two-front tension if Austria pushes from the north while I look toward the Balkans.\n\nThe lack of communication from Vienna is deafening. I must urgently attempt to open diplomatic channels to negotiate a partition of the Adriatic or, failing that, prepare for a defensive struggle to protect Venice. My priority is to prevent being squeezed between an aggressive Austria and a growing Turkey. I cannot afford a passive stance; I must either secure a truce or fortify my core immediately."
+                    ]
+                },
+                "RUSSIA": {
+                    "power_name": "RUSSIA",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Reclaim Sevastopol and secure the Black Sea from Turkish expansion.",
+                        "Consolidate control over Ukraine and Galicia to build a stable southern front.",
+                        "Prepare a naval expedition from St. Petersburg to contest Scandinavia.",
+                        "Monitor German movements in Belgium and Prussia to prevent a western encirclement."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "TURKEY": "Enemy",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Neutral"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "TURKEY": 0.0,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.5
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow.",
+                        "[F1901M] No negotiations have occurred in this phase yet.\nIntent: Execute aggressive expansion. I will attempt to resolve the Ukraine deadlock by coordinating Moscow and Warsaw movements to avoid bounces. I will also position the fleet in St. Petersburg/Murman for Scandinavian expansion and monitor Turkey's presence in Bulgaria to secure the Black Sea.",
+                        "[F1901M] The expansion into the south has finally yielded results. By coordinating the movements of Moscow and Warsaw, I successfully secured Ukraine and Galicia, breaking the previous deadlock and increasing my supply center count. The fleet in the Black Sea is now positioned to monitor Turkish aggression, which is vital given their successful expansion into Syria and Armenia. However, Turkey's presence in the Black Sea remains a significant threat to my southern flank. In the north, my fleet in St. Petersburg remains secure, providing a stable base for future Scandinavian operations. While I have gained momentum, the board is becoming increasingly crowded. My next priority is to solidify these gains and prevent Turkey from turning the Black Sea into a Turkish lake. I must also keep a close eye on Germany's rapid consolidation in the west to ensure they do not become an unstoppable force."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet in this phase.\nIntent: Expand aggressively into contested territories. Focus on securing the north (St. Petersburg/Murman) and preparing for expansion into Scandinavia or the Black Sea/Galicia regions. I will assign orders to all units to ensure maximum pressure.",
+                        "[S1901M] The opening phase was marked by significant friction in the East. My attempt to seize Ukraine was thwarted by a bounce between my armies in Moscow and Warsaw, leaving my expansion into the south stalled. While I successfully moved the fleet from Sevastopol to Romania, the failure to secure Ukraine is a setback for my goal of rapid expansion. Meanwhile, Turkey has moved aggressively, securing Bulgaria and Syria, which signals they are positioning themselves for dominance in the Black Sea and Levant. Germany's movement toward Holland and the Ruhr suggests they are consolidating central Europe. I must reassess my approach to Ukraine; perhaps a more coordinated effort or a diplomatic overture to a neighbor is needed to prevent such stalemates. My priority remains securing the north and breaking the deadlock in the south to ensure my supply centers grow.",
+                        "[F1901M] No negotiations have occurred in this phase yet.\nIntent: Execute aggressive expansion. I will attempt to resolve the Ukraine deadlock by coordinating Moscow and Warsaw movements to avoid bounces. I will also position the fleet in St. Petersburg/Murman for Scandinavian expansion and monitor Turkey's presence in Bulgaria to secure the Black Sea.",
+                        "[F1901M] The expansion into the south has finally yielded results. By coordinating the movements of Moscow and Warsaw, I successfully secured Ukraine and Galicia, breaking the previous deadlock and increasing my supply center count. The fleet in the Black Sea is now positioned to monitor Turkish aggression, which is vital given their successful expansion into Syria and Armenia. However, Turkey's presence in the Black Sea remains a significant threat to my southern flank. In the north, my fleet in St. Petersburg remains secure, providing a stable base for future Scandinavian operations. While I have gained momentum, the board is becoming increasingly crowded. My next priority is to solidify these gains and prevent Turkey from turning the Black Sea into a Turkish lake. I must also keep a close eye on Germany's rapid consolidation in the west to ensure they do not become an unstoppable force."
+                    ]
+                },
+                "TURKEY": {
+                    "power_name": "TURKEY",
+                    "model_id": "google/gemma-4-26b-a4b-it",
+                    "max_tokens": 16000,
+                    "goals": [
+                        "Resolve the dispute over Greece, either through diplomatic negotiation with Austria or military force in the Fall.",
+                        "Solidify control over the Caucasus and Black Sea regions to prevent Russian encroachment.",
+                        "Expand further into the Levant or Middle East to increase supply center count.",
+                        "Initiate diplomatic contact with Russia to discuss a potential non-aggression pact regarding the Black Sea."
+                    ],
+                    "relationships": {
+                        "ITALY": "Neutral",
+                        "FRANCE": "Neutral",
+                        "RUSSIA": "Neutral",
+                        "GERMANY": "Neutral",
+                        "ENGLAND": "Neutral",
+                        "AUSTRIA": "Unfriendly"
+                    },
+                    "trust_scores": {
+                        "ITALY": 0.5,
+                        "FRANCE": 0.5,
+                        "RUSSIA": 0.5,
+                        "GERMANY": 0.5,
+                        "ENGLAND": 0.5,
+                        "AUSTRIA": 0.3
+                    },
+                    "full_private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Solidify control over the Black Sea and the Levant. I intend to move units to secure my current supply centers and prepare for expansion into the Aegean or towards the Levant/Middle East. I will also seek diplomatic contact with Russia to prevent a two-front war.",
+                        "[F1901M] The Fall 1901 moves have concluded with mixed results. My attempt to expand into Greece via Bulgaria bounced, indicating a clash of intentions with Austria, who also moved toward Greece. This tension in the Balkans must be managed immediately to avoid a premature two-front war. On a positive note, my moves to Sevastopol and Armenia were successful, solidifying my presence in the Black Sea and the Caucasus. Russia's movement into Ukraine and Galicia suggests they are consolidating, but my hold on the Black Sea remains firm for now. Italy's move into Tunis is noted, though they don't pose an immediate threat to my Levant holdings. My priority for Winter 1901 is to resolve the Greek dispute\u2014either through diplomacy or force\u2014and to seek a formal non-aggression pact with Russia to ensure I can focus my expansion toward the Mediterranean or the Levant without fear of a Black Sea collapse."
+                    ],
+                    "private_diary": [
+                        "[S1901M] No negotiations have taken place yet.\nIntent: Expand aggressively in the early game. Focus on securing the Black Sea and potentially pressuring Russia or Austria depending on their opening moves. I will assign orders to all units to ensure maximum expansion and avoid passive play.",
+                        "[S1901M] The Spring 1901 moves have concluded, and my aggressive opening has been highly successful. I have successfully expanded my presence into the Black Sea and the Levant, securing BLA, BUL, and SYR. My units are well-positioned to exert pressure on the Mediterranean and the Middle East. \n\nRussia's attempt to move into Ukraine was thwarted by a bounce, which is a positive development as it prevents them from consolidating power too quickly in the Balkans/Black Sea corridor. However, I must remain vigilant; Russia's presence in Sevastopol and Rum means the Black Sea remains a contested theater. Italy has moved into the Ionian Sea, which could pose a threat to my southern flank if they decide to contest the Eastern Mediterranean. My immediate priority is to solidify my hold on the newly acquired centers and prepare for inevitable friction with Russia or Italy. No negotiations have occurred yet, so I must seek allies to prevent a two-front war.",
+                        "[F1901M] No negotiations have taken place yet.\nIntent: Solidify control over the Black Sea and the Levant. I intend to move units to secure my current supply centers and prepare for expansion into the Aegean or towards the Levant/Middle East. I will also seek diplomatic contact with Russia to prevent a two-front war.",
+                        "[F1901M] The Fall 1901 moves have concluded with mixed results. My attempt to expand into Greece via Bulgaria bounced, indicating a clash of intentions with Austria, who also moved toward Greece. This tension in the Balkans must be managed immediately to avoid a premature two-front war. On a positive note, my moves to Sevastopol and Armenia were successful, solidifying my presence in the Black Sea and the Caucasus. Russia's movement into Ukraine and Galicia suggests they are consolidating, but my hold on the Black Sea remains firm for now. Italy's move into Tunis is noted, though they don't pose an immediate threat to my Levant holdings. My priority for Winter 1901 is to resolve the Greek dispute\u2014either through diplomacy or force\u2014and to seek a formal non-aggression pact with Russia to ensure I can focus my expansion toward the Mediterranean or the Levant without fear of a Black Sea collapse."
+                    ]
+                }
+            },
+            "order_results": {
+                "AUSTRIA": {
+                    "build": [
+                        {
+                            "order": "A BUD B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F TRI B",
+                            "result": "void: no effect"
+                        }
+                    ]
+                },
+                "FRANCE": {
+                    "build": [
+                        {
+                            "order": "A PAR B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F BRE B",
+                            "result": "void: no effect"
+                        },
+                        {
+                            "order": "A MAR B",
+                            "result": "void: no effect"
+                        }
+                    ]
+                },
+                "GERMANY": {
+                    "build": [
+                        {
+                            "order": "A BER B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A KIE B",
+                            "result": "void: no effect"
+                        },
+                        {
+                            "order": "A MUN B",
+                            "result": "void: no effect"
+                        }
+                    ]
+                },
+                "ITALY": {
+                    "build": [
+                        {
+                            "order": "A NAP B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A ROM B",
+                            "result": "void: no effect"
+                        }
+                    ]
+                },
+                "RUSSIA": {
+                    "disband": [
+                        {
+                            "order": "F BLA D",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A GAL D",
+                            "result": "void: no effect"
+                        },
+                        {
+                            "order": "F STP/SC D",
+                            "result": "void: no effect"
+                        },
+                        {
+                            "order": "A UKR D",
+                            "result": "void: no effect"
+                        }
+                    ]
+                },
+                "TURKEY": {
+                    "build": [
+                        {
+                            "order": "A ANK B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "F CON B",
+                            "result": "success"
+                        },
+                        {
+                            "order": "A SMY B",
+                            "result": "void: no effect"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "S1902M",
+            "state": {
+                "timestamp": 1776781846683964,
+                "zobrist_hash": "4206225611592114503",
+                "note": "",
+                "name": "S1902M",
+                "units": {
+                    "AUSTRIA": [
+                        "A VIE",
+                        "A SER",
+                        "F ADR",
+                        "A BUD"
+                    ],
+                    "ENGLAND": [
+                        "F EDI",
+                        "F LON",
+                        "A WAL"
+                    ],
+                    "FRANCE": [
+                        "A BUR",
+                        "F ENG",
+                        "A POR",
+                        "A PAR"
+                    ],
+                    "GERMANY": [
+                        "A RUH",
+                        "F BEL",
+                        "A LVN",
+                        "A BER"
+                    ],
+                    "ITALY": [
+                        "A VEN",
+                        "F TUN",
+                        "A PIE",
+                        "A NAP"
+                    ],
+                    "RUSSIA": [
+                        "F STP/SC",
+                        "A GAL",
+                        "A UKR"
+                    ],
+                    "TURKEY": [
+                        "A BUL",
+                        "F SEV",
+                        "A ARM",
+                        "A ANK",
+                        "F CON"
+                    ]
+                },
+                "retreats": {
+                    "AUSTRIA": {},
+                    "ENGLAND": {},
+                    "FRANCE": {},
+                    "GERMANY": {},
+                    "ITALY": {},
+                    "RUSSIA": {},
+                    "TURKEY": {}
+                },
+                "centers": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE",
+                        "SER"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR",
+                        "POR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN",
+                        "BEL"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN",
+                        "TUN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY",
+                        "SEV",
+                        "BUL"
+                    ]
+                },
+                "homes": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "TRI",
+                        "VIE"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR"
+                    ],
+                    "GERMANY": [
+                        "BER",
+                        "KIE",
+                        "MUN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN"
+                    ],
+                    "RUSSIA": [
+                        "MOS",
+                        "SEV",
+                        "STP",
+                        "WAR"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY"
+                    ]
+                },
+                "influence": {
+                    "AUSTRIA": [
+                        "BUD",
+                        "VIE",
+                        "TRI",
+                        "SER",
+                        "ALB",
+                        "ADR"
+                    ],
+                    "ENGLAND": [
+                        "EDI",
+                        "LON",
+                        "LVP",
+                        "YOR",
+                        "WAL"
+                    ],
+                    "FRANCE": [
+                        "BRE",
+                        "MAR",
+                        "PAR",
+                        "PIC",
+                        "SPA",
+                        "BUR",
+                        "ENG",
+                        "POR"
+                    ],
+                    "GERMANY": [
+                        "KIE",
+                        "BER",
+                        "MUN",
+                        "HOL",
+                        "PRU",
+                        "RUH",
+                        "BEL",
+                        "LVN"
+                    ],
+                    "ITALY": [
+                        "NAP",
+                        "ROM",
+                        "VEN",
+                        "ION",
+                        "TUS",
+                        "TUN",
+                        "PIE"
+                    ],
+                    "RUSSIA": [
+                        "WAR",
+                        "MOS",
+                        "STP",
+                        "RUM",
+                        "GAL",
+                        "UKR",
+                        "BLA"
+                    ],
+                    "TURKEY": [
+                        "ANK",
+                        "CON",
+                        "SMY",
+                        "BUL",
+                        "SYR",
+                        "SEV",
+                        "ARM"
+                    ]
+                },
+                "civil_disorder": {
+                    "AUSTRIA": 0,
+                    "ENGLAND": 0,
+                    "FRANCE": 0,
+                    "GERMANY": 0,
+                    "ITALY": 0,
+                    "RUSSIA": 0,
+                    "TURKEY": 0
+                },
+                "builds": {
+                    "AUSTRIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ENGLAND": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "FRANCE": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "GERMANY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "ITALY": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "RUSSIA": {
+                        "count": 0,
+                        "homes": []
+                    },
+                    "TURKEY": {
+                        "count": 0,
+                        "homes": []
+                    }
+                },
+                "phase": "S1902M",
+                "game_id": "CoJdsqiYrRrXYUKu",
+                "map": "standard",
+                "rules": [
+                    "NO_PRESS",
+                    "POWER_CHOICE"
+                ]
+            },
+            "orders": {
+                "AUSTRIA": null,
+                "ENGLAND": null,
+                "FRANCE": null,
+                "GERMANY": null,
+                "ITALY": null,
+                "RUSSIA": null,
+                "TURKEY": null
+            },
+            "results": {},
+            "messages": [],
+            "summary": "",
+            "statistical_summary": null
+        }
+    ],
+    "phase_summaries": {
+        "S1901M": "(No LLM callback provided.)",
+        "F1901M": "(No LLM callback provided.)",
+        "W1901A": "(No LLM callback provided.)"
+    },
+    "final_agent_states": {
+        "AUSTRIA": {
+            "relationships": {
+                "ITALY": "Enemy",
+                "FRANCE": "Neutral",
+                "TURKEY": "Unfriendly",
+                "RUSSIA": "Neutral",
+                "GERMANY": "Neutral",
+                "ENGLAND": "Neutral"
+            },
+            "goals": [
+                "Secure the Adriatic Sea by resolving the tension in Tyrolia, either through a defensive hold or an offensive push into Venice.",
+                "Re-attempt expansion into the Balkans (Greece or Bulgaria) once the Italian threat is stabilized.",
+                "Monitor Russian movements in Galicia to prevent a two-front war in the East.",
+                "Maintain control of the home centers (Budapest, Trieste, Vienna) to ensure unit production capacity."
+            ]
+        },
+        "ENGLAND": {
+            "relationships": {
+                "ITALY": "Neutral",
+                "FRANCE": "Enemy",
+                "TURKEY": "Neutral",
+                "RUSSIA": "Neutral",
+                "GERMANY": "Neutral",
+                "AUSTRIA": "Neutral"
+            },
+            "goals": [
+                "Defend London and Edinburgh from the French fleet currently in the English Channel/English waters.",
+                "Negotiate with Germany to establish a clear division of the North Sea to prevent a two-front war.",
+                "Attempt to retake the North Sea or secure the English Channel to prevent French dominance in the Atlantic.",
+                "Use A WAL to defend the western coast and prevent further French incursions into the home centers."
+            ]
+        },
+        "FRANCE": {
+            "relationships": {
+                "ITALY": "Neutral",
+                "TURKEY": "Neutral",
+                "RUSSIA": "Neutral",
+                "GERMANY": "Unfriendly",
+                "ENGLAND": "Unfriendly",
+                "AUSTRIA": "Neutral"
+            },
+            "goals": [
+                "Secure the Picardy/Belgium border to prevent further German encroachment.",
+                "Maintain presence in the English Channel to contest English naval supremacy in the Atlantic.",
+                "Attempt to negotiate a division of the Atlantic with England to avoid a two-front war.",
+                "Consolidate control over the Iberian Peninsula (POR) and southern borders."
+            ]
+        },
+        "GERMANY": {
+            "relationships": {
+                "ITALY": "Neutral",
+                "FRANCE": "Unfriendly",
+                "TURKEY": "Neutral",
+                "RUSSIA": "Neutral",
+                "ENGLAND": "Neutral",
+                "AUSTRIA": "Neutral"
+            },
+            "goals": [
+                "Fortify the western border to prevent a French breakthrough from Burgundy or Belgium.",
+                "Secure the northern territories by moving A LVN towards Denmark or Norway to prevent English expansion.",
+                "Monitor the Anglo-French conflict to see if an opportunity arises to pick off weakened units or negotiate a DMZ in the North Sea/Low Countries.",
+                "Maintain control of the newly acquired Belgium (BEL) to ensure a buffer zone."
+            ]
+        },
+        "ITALY": {
+            "relationships": {
+                "FRANCE": "Neutral",
+                "TURKEY": "Neutral",
+                "RUSSIA": "Neutral",
+                "GERMANY": "Neutral",
+                "ENGLAND": "Neutral",
+                "AUSTRIA": "Enemy"
+            },
+            "goals": [
+                "Defend Venice and Piedmont against Austrian incursions from the north.",
+                "Attempt to open diplomatic channels with Austria to negotiate a border or prepare for war.",
+                "Secure the Mediterranean by maintaining control of Tunisia and the Ionian Sea.",
+                "Monitor the Austro-Russian-Turkish movements to ensure I am not caught in a three-way squeeze."
+            ]
+        },
+        "RUSSIA": {
+            "relationships": {
+                "ITALY": "Neutral",
+                "FRANCE": "Neutral",
+                "TURKEY": "Enemy",
+                "GERMANY": "Neutral",
+                "ENGLAND": "Neutral",
+                "AUSTRIA": "Neutral"
+            },
+            "goals": [
+                "Reclaim Sevastopol and secure the Black Sea from Turkish expansion.",
+                "Consolidate control over Ukraine and Galicia to build a stable southern front.",
+                "Prepare a naval expedition from St. Petersburg to contest Scandinavia.",
+                "Monitor German movements in Belgium and Prussia to prevent a western encirclement."
+            ]
+        },
+        "TURKEY": {
+            "relationships": {
+                "ITALY": "Neutral",
+                "FRANCE": "Neutral",
+                "RUSSIA": "Neutral",
+                "GERMANY": "Neutral",
+                "ENGLAND": "Neutral",
+                "AUSTRIA": "Unfriendly"
+            },
+            "goals": [
+                "Resolve the dispute over Greece, either through diplomatic negotiation with Austria or military force in the Fall.",
+                "Solidify control over the Caucasus and Black Sea regions to prevent Russian encroachment.",
+                "Expand further into the Levant or Middle East to increase supply center count.",
+                "Initiate diplomatic contact with Russia to discuss a potential non-aggression pact regarding the Black Sea."
+            ]
+        }
+    }
+}

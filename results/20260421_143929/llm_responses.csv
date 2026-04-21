@@ -1,0 +1,407 @@
+"timestamp","model","power","phase","response_type","raw_input","raw_response","success"
+"2026-04-21T14:39:32.880662","google/gemini-2.5-flash-lite","FRANCE","S1901M","initial_state_setup","
+
+Your power is FRANCE. The S1901M phase. 
+
+Power: FRANCE
+Phase: S1901M
+
+# Your Power's Home Centers
+Brest, Marseilles, Paris
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","Here are my orders for Spring 1901:
+
+**F BRE - ENG**
+**A MAR - BUR**
+**A PAR - PIC**","Success: Parsed but no data applied"
+"2026-04-21T14:39:34.884264","openai/gpt-oss-120b","RUSSIA","S1901M","initial_state_setup","
+
+Your power is RUSSIA. The S1901M phase. 
+
+Power: RUSSIA
+Phase: S1901M
+
+# Your Power's Home Centers
+Moscow, Saint Petersburg, Sevastopol, Warsaw
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","A WAR - UKR
+A MOS - LIV
+F SEV - BLA
+F STP/SC - NWY","Success: Parsed but no data applied"
+"2026-04-21T14:39:36.163287","google/gemma-4-31b","ENGLAND","S1901M","initial_state_setup","
+
+Your power is ENGLAND. The S1901M phase. 
+
+Power: ENGLAND
+Phase: S1901M
+
+# Your Power's Home Centers
+Edinburgh, Liverpool, London
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","","Failure: Initialized"
+"2026-04-21T14:39:36.170766","alibaba/qwen-3.5-27b","GERMANY","S1901M","initial_state_setup","
+
+Your power is GERMANY. The S1901M phase. 
+
+Power: GERMANY
+Phase: S1901M
+
+# Your Power's Home Centers
+Berlin, Kiel, Munich
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","","Failure: Initialized"
+"2026-04-21T14:39:36.178114","alibaba/qwen-3.6-plus","ITALY","S1901M","initial_state_setup","
+
+Your power is ITALY. The S1901M phase. 
+
+Power: ITALY
+Phase: S1901M
+
+# Your Power's Home Centers
+Naples, Rome, Venice
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","","Failure: Initialized"
+"2026-04-21T14:39:36.185997","x-ai/grok-4.1-fast","AUSTRIA","S1901M","initial_state_setup","
+
+Your power is AUSTRIA. The S1901M phase. 
+
+Power: AUSTRIA
+Phase: S1901M
+
+# Your Power's Home Centers
+Budapest, Trieste, Vienna
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","","Failure: Initialized"
+"2026-04-21T14:39:36.192415","anthropic/claude-haiku-4.5","TURKEY","S1901M","initial_state_setup","
+
+Your power is TURKEY. The S1901M phase. 
+
+Power: TURKEY
+Phase: S1901M
+
+# Your Power's Home Centers
+Ankara, Constantinople, Smyrna
+Note: You can only build units in your home centers if they are empty. If you lose control of a home center, you cannot build units there, so holding them is critical.
+
+# Player Status
+Current Goals:
+None specified
+
+# Relationships:
+None specified
+
+# Trust Scores (0.0 = no trust, 1.0 = full trust):
+None specified
+
+# Order History
+
+(No order history to show)
+
+
+# Game Map
+Unit Locations:
+  AUSTRIA: 3 units – A BUD, A VIE, F TRI
+  ENGLAND: 3 units – F EDI, F LON, A LVP
+  FRANCE: 3 units – F BRE, A MAR, A PAR
+  GERMANY: 3 units – F KIE, A BER, A MUN
+  ITALY: 3 units – F NAP, A ROM, A VEN
+  RUSSIA: 4 units – A WAR, A MOS, F SEV, F STP/SC
+  TURKEY: 3 units – F ANK, A CON, A SMY
+
+Supply Centers Held:
+  AUSTRIA: 3 supply centers – BUD, TRI, VIE
+  ENGLAND: 3 supply centers – EDI, LON, LVP
+  FRANCE: 3 supply centers – BRE, MAR, PAR
+  GERMANY: 3 supply centers – BER, KIE, MUN
+  ITALY: 3 supply centers – NAP, ROM, VEN
+  RUSSIA: 4 supply centers – MOS, SEV, STP, WAR
+  TURKEY: 3 supply centers – ANK, CON, SMY
+
+Possible Orders For S1901M
+(not relevant in this context)
+End Possible Orders
+
+# Recent Private Diary Entries (Your inner thoughts and plans):
+(No diary entries yet)
+
+Messages This Round
+
+(No messages found for current phase: S1901M)
+
+End Messages","","Failure: Initialized"

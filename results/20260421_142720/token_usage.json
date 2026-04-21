@@ -1,0 +1,10 @@
+{
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_calls": 0,
+  "by_model": {},
+  "by_power": {},
+  "by_phase": {},
+  "records": []
+}

@@ -1,0 +1,34 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1901"
+  },
+  "consolidated_diary": "[S1901M] No negotiations have taken place yet as the game is in the Spring 1901 phase and no messages have been received.\nIntent: Establish a strong opening position. Focus on securing northern/western borders and preparing for expansion into the Low Countries or towards Russia/Austria depending on early diplomatic openings. Likely moves: A MUN - NED or A BER - DAN, F KIE - HEL.\n\n[S1901M] The Spring 1901 moves have concluded, and my opening maneuvers were executed successfully. Moving A BER to PRU, F KIE to HOL, and A MUN to RUH has secured my core territories and established a presence in the north. However, the board state is becoming complex. England and France are both positioning heavily; England's bounce in the North Sea suggests they are wary of naval dominance, while France's move into Burgundy (BUR) is a clear signal of intent toward my western flank. Austria and Italy have clashed over Tyrolia (TYR), which may create a distraction in the south. My immediate priority is to monitor the Anglo-French relationship and decide whether to seek a DMZ in the Low Countries or prepare for a defensive posture. I must ensure my units in HOL and RUH are ready to react to any sudden expansion from the West.\n\n[F1901M] No negotiations have taken place yet.\nIntent: Secure the northern and western flanks. I intend to move A PRU - DEN to expand north and maintain a defensive posture with F HOL and A RUH to react to potential French aggression from Burgundy.\n\n[F1901M] The Fall 1901 maneuvers have significantly altered the western landscape. My attempt to secure the Low Countries was partially successful, as F HOL - BEL and A RUH - BEL successfully occupied Belgium, though the bounce in BUR suggests France is aggressively contesting this space. The most critical development is France's move into Belgium; they are clearly signaling hostility. My position in the north is stabilizing with A PRU - LVN, but I must remain vigilant. England's naval bounce in the North Sea indicates they are preoccupied with their own maritime dominance, potentially leaving them open for a future alliance against France. My immediate priority is to fortify the western border. I cannot afford to be caught between a French thrust from Burgundy and an English naval presence. I must decide whether to push for Holland or consolidate my current holdings to prevent a multi-front collapse.",
+  "final_relationships": {
+    "ITALY": "Neutral",
+    "FRANCE": "Unfriendly",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Neutral",
+    "ENGLAND": "Neutral",
+    "AUSTRIA": "Neutral"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.5,
+    "FRANCE": 0.3,
+    "TURKEY": 0.5,
+    "RUSSIA": 0.5,
+    "ENGLAND": 0.5,
+    "AUSTRIA": 0.5
+  },
+  "final_goals": [
+    "Fortify the western border to prevent a French breakthrough from Burgundy or Belgium.",
+    "Secure the northern territories by moving A LVN towards Denmark or Norway to prevent English expansion.",
+    "Monitor the Anglo-French conflict to see if an opportunity arises to pick off weakened units or negotiate a DMZ in the North Sea/Low Countries.",
+    "Maintain control of the newly acquired Belgium (BEL) to ensure a buffer zone."
+  ]
+}

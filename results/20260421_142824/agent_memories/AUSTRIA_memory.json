@@ -1,0 +1,34 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemma-4-26b-a4b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1901"
+  },
+  "consolidated_diary": "[S1901M] No negotiations have taken place yet.\nIntent: Establish initial positioning. Focus on securing the home centers (VIE, BUD, TRI) and preparing for expansion into either the Balkans (Turkey/Russia) or Italy, depending on early diplomatic openings.\n\n[S1901M] The Spring 1901 moves have concluded with a mixed tactical outcome. My expansion into the Balkans is progressing well; moving A BUD to SER and F TRI to ALB secures my immediate periphery and positions me to contest the Balkan theater. However, the attempt to move A VIE to TYR resulted in a bounce against Italy, signaling a potential early conflict in the Adriatic. Italy's move A VEN to TYR confirms they are eyeing my territory. Meanwhile, Russia's failed attempts to enter UKR suggest they are struggling to coordinate their northern expansion. My priority now is to stabilize my borders. I must decide whether to seek a non-aggression pact with Italy to secure my western flank or prepare for a defensive stance in the Tyrolia/Venice corridor. The board is volatile, and early positioning is critical.\n\n[F1901M] No negotiations have taken place yet. The Spring 1901 phase resulted in a bounce in Tyrolia (A VIE vs A VEN), indicating immediate tension with Italy.\nIntent: Stabilize the home centers and secure the Balkans. I intend to move A VIE to TYR to contest the border, A SER to BEL (or hold SER to secure the center), and F ALB to IAD to protect the southern flank. I must prepare for a potential Italian conflict in the Adriatic/Tyrolia.\n\n[F1901M] The Fall 1901 maneuvers have solidified a state of tension on my western flank. The bounce in Tyrolia between A VIE and A VEN confirms that Italy is an immediate threat, and our interests are currently incompatible. My attempt to expand into Greece with A SER also bounced against Turkey, indicating a contested Balkan theater. However, securing F ADR provides a vital defensive anchor for my home centers. While I have successfully expanded my supply centers to four, the board is highly volatile. I must now decide whether to commit to a full-scale war with Italy to secure the Adriatic or attempt a desperate diplomatic pivot to stabilize the west while I turn my attention toward the growing Russian and Turkish presence in the east. The failure to secure GRE and TYR means I must be more surgical in my Spring 1902 expansion.",
+  "final_relationships": {
+    "ITALY": "Enemy",
+    "FRANCE": "Neutral",
+    "TURKEY": "Unfriendly",
+    "RUSSIA": "Neutral",
+    "GERMANY": "Neutral",
+    "ENGLAND": "Neutral"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.1,
+    "FRANCE": 0.5,
+    "TURKEY": 0.3,
+    "RUSSIA": 0.5,
+    "GERMANY": 0.5,
+    "ENGLAND": 0.5
+  },
+  "final_goals": [
+    "Secure the Adriatic Sea by resolving the tension in Tyrolia, either through a defensive hold or an offensive push into Venice.",
+    "Re-attempt expansion into the Balkans (Greece or Bulgaria) once the Italian threat is stabilized.",
+    "Monitor Russian movements in Galicia to prevent a two-front war in the East.",
+    "Maintain control of the home centers (Budapest, Trieste, Vienna) to ensure unit production capacity."
+  ]
+}
