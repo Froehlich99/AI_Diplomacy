@@ -19,6 +19,7 @@ dependencies = [
   "pytz>=2025.2",
   "together>=1.5.17",
   "tqdm>=4.67.1",
+  "aiohttp>=3.9.0",
   "ujson>=5.10.0",
   "matplotlib>=3.8",
   "seaborn>=0.13",
