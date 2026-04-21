@@ -96,7 +96,7 @@ async def run_single_game(
     """
     start_whole = time.time()
 
-    tracker = init_tracker()
+    # Tracker is initialized after run_dir is resolved (below) so it can preload existing data
 
     # Build an args Namespace matching what the old main() expected
     args = Namespace(
@@ -172,6 +172,10 @@ async def run_single_game(
 
     os.makedirs(run_dir, exist_ok=True)
     logger.info(f"Using result directory: {run_dir}")
+
+    # Init tracker — preload existing records on resume so totals accumulate
+    token_usage_path = os.path.join(run_dir, "token_usage.json")
+    tracker = init_tracker(preload_path=token_usage_path if is_resuming else None)
 
     # --- Logging ---
     general_log_file_path = os.path.join(run_dir, "general_game.log")

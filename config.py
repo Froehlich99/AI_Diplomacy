@@ -28,7 +28,9 @@ class Configuration(BaseSettings):
     AI_DIPLOMACY_NARRATIVE_MODEL: str = "openrouter-google/gemini-2.5-flash-preview-05-20"
     AI_DIPLOMACY_FORMATTER_MODEL: str = "openrouter-google/gemini-2.5-flash-preview-05-20"
 
-    # API Keys to be validated. Warns if they aren't present at startup, raises ValueError if you attempt to use them when they aren't present.
+    # Thinking model budget (tokens). Controls how many tokens Qwen etc. spend on internal reasoning.
+    # Maps to OpenRouter's reasoning.max_tokens → Qwen's native thinking_budget. Min 1024, max 128000.
+    THINKING_BUDGET: int = 4096
     DEEPSEEK_API_KEY: str | None = None
     OPENAI_API_KEY: str | None = None
     ANTHROPIC_API_KEY: str | None = None

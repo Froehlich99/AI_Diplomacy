@@ -25,7 +25,7 @@ class LLMCallRecord:
 class TokenTracker:
     _instance: Optional["TokenTracker"] = None
 
-    def __init__(self):
+    def __init__(self, preload_path: Optional[str] = None):
         self.records: list[LLMCallRecord] = []
         self.total_cost: float = 0.0
         self.total_input_tokens: int = 0
@@ -34,6 +34,36 @@ class TokenTracker:
         self._context_power: str = "unknown"
         self._context_phase: str = "unknown"
         self._context_response_type: str = "unknown"
+
+        if preload_path:
+            self._load_existing(preload_path)
+
+    def _load_existing(self, filepath: str):
+        """Load records from a previous token_usage.json so totals survive restarts."""
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for r in data.get("records", []):
+                rec = LLMCallRecord(
+                    timestamp=r["timestamp"],
+                    model=r["model"],
+                    power=r["power"],
+                    phase=r["phase"],
+                    response_type=r["response_type"],
+                    input_tokens=r["input_tokens"],
+                    output_tokens=r["output_tokens"],
+                    cost_usd=r["cost_usd"],
+                )
+                self.records.append(rec)
+                self.total_cost += rec.cost_usd
+                self.total_input_tokens += rec.input_tokens
+                self.total_output_tokens += rec.output_tokens
+            if self.records:
+                logger.info("Loaded %d existing records (%.4f USD) from %s", len(self.records), self.total_cost, filepath)
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logger.warning("Could not load existing token usage from %s: %s", filepath, e)
 
     def set_context(self, power: Optional[str] = None, phase: Optional[str] = None, response_type: Optional[str] = None):
         if power is not None:
@@ -109,8 +139,8 @@ class TokenTracker:
             logger.error("Failed to export token CSV to %s: %s", filepath, e)
 
 
-def init_tracker() -> TokenTracker:
-    TokenTracker._instance = TokenTracker()
+def init_tracker(preload_path: Optional[str] = None) -> TokenTracker:
+    TokenTracker._instance = TokenTracker(preload_path=preload_path)
     return TokenTracker._instance
 
 

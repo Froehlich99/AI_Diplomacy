@@ -1201,7 +1201,13 @@ class OpenRouterClient(BaseModelClient):
     For OpenRouter models, with default being 'openrouter/quasar-alpha'
     """
 
-    def __init__(self, model_name: str = "openrouter/quasar-alpha", prompts_dir: Optional[str] = None):
+    THINKING_MODELS = {"qwen/qwen3.5-27b", "qwen/qwen3.6-plus", "qwen/qwen3-235b-a22b", "google/gemma-4-31b-it"}
+    SLOW_MODELS = {"google/gemma-4-31b-it"}
+    DEFAULT_THINKING_BUDGET = 4096
+    DEFAULT_TIMEOUT = 180
+    SLOW_MODEL_TIMEOUT = 300
+
+    def __init__(self, model_name: str = "openrouter/quasar-alpha", prompts_dir: Optional[str] = None, thinking_budget: Optional[int] = None):
         # Allow specifying just the model identifier or the full path
         if not model_name.startswith("openrouter/") and "/" not in model_name:
             model_name = f"openrouter/{model_name}"
@@ -1213,8 +1219,18 @@ class OpenRouterClient(BaseModelClient):
         if not self.api_key:
             raise ValueError("OPENROUTER_API_KEY environment variable is required")
 
-        self.client = AsyncOpenAI(base_url="https://openrouter.ai/api/v1", api_key=self.api_key)
+        self._is_thinking_model = self.model_name in self.THINKING_MODELS
+        self.thinking_budget = thinking_budget or (self.DEFAULT_THINKING_BUDGET if self._is_thinking_model else None)
+        self._timeout = self.SLOW_MODEL_TIMEOUT if self.model_name in self.SLOW_MODELS else self.DEFAULT_TIMEOUT
 
+        self.client = AsyncOpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=self.api_key,
+            timeout=float(self._timeout),
+        )
+
+        if self.thinking_budget:
+            logger.info(f"[{self.model_name}] Thinking budget: {self.thinking_budget} tokens")
         logger.debug(f"[{self.model_name}] Initialized OpenRouter client")
 
     async def generate_response(self, prompt: str, temperature: float = 0.0, inject_random_seed: bool = True) -> str:
@@ -1228,13 +1244,19 @@ class OpenRouterClient(BaseModelClient):
                 random_seed = generate_random_seed()
                 system_prompt_content = f"{random_seed}\n\n{self.system_prompt}"
 
-            # Prepare standard OpenAI-compatible request
-            response = await self.client.chat.completions.create(
-                model=self.model_name,
-                messages=[{"role": "system", "content": system_prompt_content}, {"role": "user", "content": prompt_with_cta}],
-                max_tokens=self.max_tokens,
-                temperature=temperature,
-            )
+            # Hard wall-clock timeout — catches thinking models that stream slowly
+            extra_body = {}
+            if self.thinking_budget:
+                extra_body["reasoning"] = {"max_tokens": self.thinking_budget, "effort": "low"}
+
+            async with asyncio.timeout(self._timeout):
+                response = await self.client.chat.completions.create(
+                    model=self.model_name,
+                    messages=[{"role": "system", "content": system_prompt_content}, {"role": "user", "content": prompt_with_cta}],
+                    max_tokens=self.max_tokens,
+                    temperature=temperature,
+                    **({"extra_body": extra_body} if extra_body else {}),
+                )
 
             if not response.choices:
                 raise ValueError(f"[{self.model_name}] LLM returned no choices.")
@@ -1590,7 +1612,7 @@ def load_model_client(model_id: str, prompts_dir: Optional[str] = None) -> BaseM
             case Prefix.DEEPSEEK:
                 return DeepSeekClient(spec.model, prompts_dir)
             case Prefix.OPENROUTER:
-                return OpenRouterClient(spec.model, prompts_dir)
+                return OpenRouterClient(spec.model, prompts_dir, thinking_budget=config.THINKING_BUDGET)
             case Prefix.TOGETHER:
                 return TogetherAIClient(spec.model, prompts_dir)
 
