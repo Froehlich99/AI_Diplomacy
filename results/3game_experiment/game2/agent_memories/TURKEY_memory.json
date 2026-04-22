@@ -1,0 +1,45 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **TURKEY CONSOLIDATED STRATEGIC SUMMARY** **Current Position:** 5 supply centers (ANK, BUL, CON, SER, SMY), 5 units (F BUL/EC, F AEG, F BLA, A SER, A CON). Stagnant growth due to repeated self-order errors (intended aggressive SC grabs executed as holds, missing empty GRE/ALB multiple times). France dominates Balkans (9+ SCs: GRE/TRI/VIE/BUD/ALB), overextended. Austria eliminated by France. **Critical Betrayals & Ally Assessment:** - **France:** Serial betrayer (stole empty GRE F1905M, ALB S1906M, TRI S1906M, BUD S1908M despite joint promises)—trust 0.0, existential enemy. Hostile threats vs Balkans interference. - **Russia:** Early partial non-supports (SER/GRE), but eternal Black Sea NAP verified repeatedly (SEV/ARM/RUM inviolate for Russia; BUL/CON/ANK/SER for Turkey; F BLA H mandatory non-interference)—trust 1.0, reliable ally. Independent ops, no further sups. - **Italy:** Flawless Med/ION/TYS/AEG NAP holds; locked F1910M convoy post-MAR build (F CON-ION c A VEN-TUS s F AEG-ION/F BUL/EC for joint ADR/ALB/TUS vs France)—trust 1.0, key anti-France partner. - **England/Germany:** Neutral/open to grand anti-France alliance post-north stalemate (E vs G NWY); south non-interference confirmed. **Ongoing Commitments:** Eternal Russia Black Sea NAP (F BLA H every phase); Italy Med NAP/convoy setup (F AEG H prep). **Key Lessons:** Triple/quadruple-verify aggressive orders (no self-holds); solo-strike verified empties (GRE ripe F1910M); sequence supports for contested SCs (e.g., F BUL/EC s A SER-BUD); no unverified ally sups—pure solo/verified aggression. **Strategic Doctrine:** Ruthless anti-France pivot: F1910M solo GRE/ALB + Italy convoy ADR/TUS (+3 SCs to 8); eternal F BLA H; pitch E/G west hits (MAO/POR/BRE). Expand aggressively via Med/Balkans solos, exploit French overextension. No passives—world domination trajectory via principled NAPs + opportunistic erasure. (298 words) [S1910M] Italy confirms S1910M holds (F NAP H, A ROM H, retreat A VEN?), builds F MAR, locks F1910M convoy: F CON-ION c A VEN-TUS s F AEG-ION + F BUL/EC s F AEG-ION; eternal ION/TYS/AEG NAP. Russia eternal Black Sea NAP: F BLA H, SEV/ARM/RUM/BUL/CON/ANK/SER inviolate. England confirms S1910M F MAO-POR vs FRA, open post-ENG anti-FRA coalition. Germany no west moves S1910M (temp FRA NAP), open post-ENG anti-FRA west strikes. France threatens GRE/SER/AEG counters. No betrayals; solo empty GRE strike + fulfill NAPs/preps. Intent: S1910M: Fulfill Russia NAP exactly with F BLA H; fulfill Italy NAP/convoy prep with A CON H; aggressive solo GRE capture (empty SC vacated by FRA F ION): F BUL/EC - GRE s F AEG - GRE s A SER - GRE (3v0 guaranteed +1 to 6 SCs). All units ordered, no holds except sworn/prep; sequence supports ruthlessly; post-gain F1910M Italy convoy ADR/ALB/TUS +2-3 SCs to 8+. Quadruple-verify no self-errors. [S1910M] [S1910M] Catastrophic self-order error repeated: Intended F BUL/EC-GRE s F AEG-GRE s A SER-GRE (3v0 empty GRE post-FRA F ION retreat) executed as universal holds, missing +1 SC (stuck at 5). France F ION-GRE success (consolidates GRE), A BUD-SER bounce (preserves A SER). No ally betrayals—Italy/Russia/England flawless holds (F NAP/A ROM H, all RU H, E MAO-POR success vs FRA POR theft). France erases Italy A ROM (VEN/TUS capture). E gains POR SC, weakening FRA (8 SCs?). Trust: Italy/Russia 1.0 (eternal NAPs intact),\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Ally",
+    "ENGLAND": "Friendly",
+    "RUSSIA": "Ally",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Enemy",
+    "GERMANY": "Neutral"
+  },
+  "final_trust_scores": {
+    "ITALY": 1.0,
+    "ENGLAND": 0.9,
+    "RUSSIA": 1.0,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.0,
+    "GERMANY": 0.3
+  },
+  "final_goals": [
+    "F1910M solo GRE +1 (F BUL/EC-GRE s F AEG-GRE s A SER-GRE; 3v1 vs FRA F GRE).",
+    "Russia eternal Black Sea NAP: F BLA H; SEV/ARM/RUM/BUL/CON/ANK/SER inviolate.",
+    "Italy eternal Med/ION/TYS/AEG NAP + adapt F1910M convoy post-MAR build: F AEG-GRE clear/setup, joint ALB/ADR/TUS vs FRA.",
+    "Balkans/Med expansion to 8+ SCs (GRE F1910M + ALB/ADR/TUS).",
+    "France anti-alliance: Solo/Italy strikes + England MAO pressure + Germany post-ENG west stab (BEL/BUR).",
+    "Aggressive/verified moves only; no unverified sups; sequence supports/empties; all units ordered; quintuple-verify no self-holds."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

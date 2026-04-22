@@ -1,0 +1,40 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria's early dominance (SER/GAL/GRE) collapsed due to a RU-TUR alliance and a subsequent French betrayal. France is the primary existential threat, currently occupying Vienna and Trieste. Russia holds Galicia, and Turkey holds Serbia. Austria is reduced to a single supply center: Budapest.\n\nCrucially, survival from 1906-1907 has depended entirely on the systemic coordination failure of the RU-TUR-FRA bloc; France (A TRI) and Turkey (A SER) have repeatedly bounced each other in simultaneous attempts to seize Budapest. This lack of synchronization is Austria's only strategic lifeline.\n\nDiplomatically, Germany is the only high-trust partner, having strictly honored a long-term NAP. Italy has remained largely passive and reliable regarding DMZs in Venice and Trieste, providing a necessary western buffer. Russia and Turkey remain hostile and opportunistic, though their alliance with France is fragmented.\n\nStrategic priority: Maintain the German NAP and the Italian peace while exploiting the friction between France and Turkey to prevent total elimination.\n\n[S1908M] Turkey has explicitly declared a global intent to eliminate Austria this phase via A SER -> BUD. France currently occupies Vienna and Trieste, posing an existential threat. Italy is holding all units (NAP, ROM, VEN) and has expressed openness to coordinated action against France's western flank once they build a fleet in MAR. Germany remains a reliable partner under a strict NAP. Russia claims a state of total defensive consolidation and non-interference.\nIntent: Order A BUD Hold. Survival depends entirely on a coordination failure (bounce) between Turkey (A SER -> BUD) and France (A TRI -> BUD), as seen in previous turns. I will fulfill the NAP with Germany.\n\n[S1908M] S1908M was the end. My survival strategy—relying on a coordination failure between France and Turkey—collapsed. France successfully coordinated A TRI - BUD supported by A VIE, while Turkey's A SER - BUD bounced against my hold. Consequently, France seized Budapest, leaving me with 0 units and 0 supply centers. I am effectively eliminated from the game.\n\nGermany remained a loyal partner, but their NAP was irrelevant once my last stronghold fell. Italy's passivity provided no relief. The critical lesson is that hoping for a bounce between two hostile powers is a gamble with catastrophic odds, especially when one opponent possesses the units to provide support. France's efficiency in the final blow confirms their status as the primary aggressor. My game ends here, outmaneuvered by a synchronized French offensive.\n\n[F1908M] Austria has been eliminated from the game. France successfully coordinated the seizure of Budapest, leaving Austria with 0 units and 0 supply centers.\nIntent: None. I am eliminated and have no units to order for F1908M.",
+  "final_relationships": {
+    "ITALY": "Neutral",
+    "ENGLAND": "Unfriendly",
+    "TURKEY": "Enemy",
+    "RUSSIA": "Enemy",
+    "FRANCE": "Enemy",
+    "GERMANY": "Friendly"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.5,
+    "ENGLAND": 0.3,
+    "TURKEY": 0.0,
+    "RUSSIA": 0.0,
+    "FRANCE": 0.0,
+    "GERMANY": 0.9
+  },
+  "final_goals": [
+    "None - Eliminated"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

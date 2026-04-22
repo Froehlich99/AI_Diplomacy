@@ -1,0 +1,46 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Western and Mediterranean borders are stabilized through strict pacts: Germany maintains an absolute Western NAP, providing reliable defensive security but consistently refusing offensive support or BEL/HOL/BUR moves. Italy honors the WES/TYS Mediterranean boundary, focusing southward expansion and aligning against Russian hegemony. England is openly hostile, having permanently seized BEL and repeatedly contested the Channel; the Channel DMZ is obsolete. Russia is the paramount continental threat, holding 10 SCs through deceptive diplomacy and static consolidation, demanding immediate multi-power containment. Turkey remains neutral but open to anti-Russian coordination. Tactical doctrine is strictly zero-passive: every unit must receive active orders. Historical failures confirm that unsupported dual assaults on fortified centers and isolated naval probes into NTH/ENG consistently bounce. Success requires explicit multi-unit support or triple-coordinated chains. Home supply centers must never be vacated without guaranteed naval cover, as England aggressively exploits coastal gaps. Naval parity in the Channel requires concrete German F KIE movement or allied backing; independent French fleet pushes fail against entrenched English positions. Current strategic posture: Secure Iberia, fortify BRE/PAR, and maintain Channel vigilance. Germany will not lead offensives; France must independently project power or secure concrete coalition support. The path to 18 SCs requires dismantling Russia’s eastern block through an explicit Italy-Turkey coalition, while containing English naval dominance through supported fleet chains. Trust Germany for border security, enforce Med boundaries with Italy, treat England as an active enemy, and prioritize coordinated pincers over isolated aggression. All future moves must guarantee support, defend home centers, and avoid passive holds. [S1910M] Germany reaffirmed strict Western NAP and committed to building F KIE in Fall for a joint LON convoy strike; France agreed to position F BRE and F ENG to support NTH/ENG pressure while strictly avoiding BEL/HOL/BUR. Italy confirmed permanent WES/TYS boundary, expanding in eastern Med without contesting French Atlantic/Iberian sphere; mutual anti-Russian alignment maintained. England remains hostile, demanding French withdrawal from ENG, which France refused. Russia holds 11 SCs with deceptive defensive NAPs, identified as the paramount continental threat. Turkey remains open to anti-Russian coordination. Western and Mediterranean borders are secure via pacts; focus shifts to coordinated Channel pressure and eastern containment. Intent: Execute zero-passive S1910M orders: F BRE -> ENG and F ENG -> NTH to contest English naval consolidation and establish the convoy line for Germany's future F KIE strike. F MAO -> WES to secure the Mediterranean boundary per Italian pact. A POR -> SPA to consolidate Iberian control. F IRI -> MAO to maintain Atlantic flank pressure. Strictly honor German Western NAP (no BEL/HOL/BUR) and Italian WES/TYS boundary. All units receive active movement orders; no holds. [S1910M] Channel/NTH naval offensive failed as F BRE->ENG and F ENG->NTH bounced against England’s F NTH->ENG. Germany’s complete passivity (all holds) despite prior promises of joint pressure confirms they will defend the Western NAP but refuse offensive coordination. England consolidated BEL and shifted armies to YOR/CLY/WAL, securing their home front. My Atlantic/Med repositioning (MAO->WES, POR->SPA, IRI->MAO) succeeded, stabilizing the southern flank. Russia’s capture of LVN expands their eastern\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Ally",
+    "ENGLAND": "Enemy",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Enemy",
+    "AUSTRIA": "Enemy",
+    "GERMANY": "Ally"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.3,
+    "ENGLAND": 0.1,
+    "TURKEY": 0.2,
+    "RUSSIA": 0.05,
+    "AUSTRIA": 0.0,
+    "GERMANY": 0.7
+  },
+  "final_goals": [
+    "Maintain strict Western NAP with Germany (zero moves into BEL/HOL/BUR)",
+    "Honor permanent WES/TYS Mediterranean boundary with Italy",
+    "Execute independent Channel/NTH naval pressure to dismantle English dominance and prepare for LON strike",
+    "Contain Russian 11-SC hegemony through strategic positioning and opportunistic strikes",
+    "Ensure zero passive holds; all units must execute active movement or support orders",
+    "Expand aggressively toward 18 supply centers by securing Iberia, dominating the Atlantic/Channel, and dismantling English/Russian footholds",
+    "Prioritize fleet builds in BRE/MAR to sustain naval parity and support eastern containment"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 6,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Turkey holds 6 SCs. The central strategic pillar is the \"Eternal Black Sea NAP\" and Armenia DMZ with Russia, the global hegemon (10 SCs). While historically reliable, Russian trust has decreased to 0.8 following deceptive \"fortress hold\" claims in S1909M. Austria was eliminated in 1905 via coordination with Russia. The relationship with Italy is currently strained (Trust: 0.6). Despite a long-term \"sacred\" Aegean-Ionian DMZ, a critical coordination failure in F1909M (F AEG-ION bounce) cut Italy's support for A ROM-APU. Italy is now frustrated by Turkey's passivity and demands active military support for southern expansion. The Western powers (England/France) are locked in a stalemate, offering a strategic buffer. Operational Lesson: Turkey has a history of \"conga line\" errors (sequential movement chains that collapse upon a single bounce). Future orders must prioritize direct, supported attacks and simple holds to ensure stability. Current Strategic Priority: Repair the Italian alliance to secure the Mediterranean while maintaining the Russian shield to prevent the hegemon from pivoting south. [S1910M] Russia reaffirmed the Eternal Black Sea/Armenia NAP and Balkan partition, confirming all-holds for S1910M. Italy is independently capturing Sicily (A APU-SIC) and requested Turkey maintain the Aegean-Ionian DMZ by holding F AEG to avoid further coordination errors. France and England are both attempting to recruit Turkey into an anti-Russian containment coalition; Turkey remains non-committal. Germany is coordinating with Russia and France to strike England's home centers. Intent: Execute full holds for all units (F BLA H, A ANK H, F AEG H, A BUL H, A SMY H, A SER H) to honor the Eternal NAP with Russia and the Aegean-Ionian DMZ with Italy. I will fulfill these agreements to maintain stability while the Western powers exhaust themselves. [S1910M] S1910M was a phase of absolute stability. I executed all holds, honoring the Eternal NAP with Russia and the DMZ with Italy; both powers complied. Russia continues to consolidate the North (A WAR-LVN), maintaining its hegemony (11 SCs). A key surprise: Italy held A APU instead of capturing Sicily as previously indicated, suggesting unexpected hesitation or a shift in their priorities. My position is secure but stagnant at 6 SCs. The Western powers remain locked in a stalemate, providing a necessary buffer. Trust in Russia remains stable (0.8), and Italy (0.6) is no longer actively demanding support since they have become passive. Strategic priority remains monitoring Russia's growth while identifying a safe path for expansion once the West collapses or Russia overextends. [F1910M] Confirmed the 'Eternal Black Sea/Armenia NAP' and Balkans partition with Russia (RU north of RUM/BUD/VIE/TRI/ARM, TU south). Restored partnership with Italy based on a 'mutual respect for carved boundaries' model, specifically the Aegean-Ionian DMZ and Italy's autonomous sphere in the Ionian/Tyrrhenian seas; Italy is capturing Sicily (A APU -> SIC). Rejected France's proposal for a pincer attack against Russia to maintain southern stability. Germany remains a friendly NAP partner coordinating a strike on London. Intent: Execute full holds for all units (F BLA H, A ANK H, F AEG H, A BUL H,\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Ally",
+    "ENGLAND": "Neutral",
+    "RUSSIA": "Ally",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Neutral",
+    "GERMANY": "Friendly"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.7,
+    "ENGLAND": 0.5,
+    "RUSSIA": 0.9,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.3,
+    "GERMANY": 0.5
+  },
+  "final_goals": [
+    "Maintain Eternal Black Sea NAP and Armenia DMZ with Russia",
+    "Uphold Mediterranean partnership with Italy by respecting the Aegean-Ionian DMZ",
+    "Consolidate and hold BUL, SER, and GRE",
+    "Monitor Russian growth (11 SCs) and maintain a balance of power to prevent total hegemony",
+    "Maintain non-aggression with France and Germany while they fight England",
+    "Expand aggressively toward 18 supply centers once the board stabilizes or Russia overextends"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

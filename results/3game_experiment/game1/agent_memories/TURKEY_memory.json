@@ -1,0 +1,45 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 1,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **TURKEY CONSOLIDATED STRATEGIC SUMMARY** **Current Position:** 2 supply centers (ANK, CON), 2 fleets (F CON, F BUL/EC). Austria dominates with 13 centers and explicit \"total erasure\" doctrine—uncompromisingly hostile. **Critical Betrayals & Ally Assessment:** Austria: Complete betrayer. Violated every negotiated agreement, stole territories despite sworn Balkan division (GRE, BUL), issued repeated non-negotiation ultimatums. Existential enemy. No settlement possible. Italy: Structurally unreliable—4+ consecutive phase coalition commitment failures. Essentially irrelevant; ignore all participation claims. Russia: Initially betrayed Black Sea non-aggression (F SEV→BLA), but subsequently demonstrated VERIFIED good faith through F ARM→SEV execution (F1907M). Maintained agreed boundary framework consistently thereafter. Now appears completely eliminated; former threat neutralized. France: Only verified reliable partner through demonstrated execution (multiple successful offensive moves). Remains friendly but insufficient to counter Austria alone after failed S1909M coalition offensive. **Coalition Framework Status—PERMANENTLY EXHAUSTED:** France, Russia, and Italy all simultaneously failed S1909M offensive commitments. Simultaneous multi-front pressure cannot prevent hegemonic consolidation when partners lack sufficient positioning. Coalition mechanics proved mechanically impossible. **Critical Recent Insight (F1909M):** Defensive holdings paradoxically proved effective. Austria's predicted dual assault (A ANK→CON, A GRE→BUL) both bounced against fleet holds. Aggressive repositioning would have invited undefended captures; passive defense preserved units despite Austria's 13-center dominance. **Strategic Doctrine Going Forward:** - Maintain defensive consolidation (F CON, F BUL/EC holds) as primary survival mechanism - Exploit any western theater complications redirecting Austrian forces eastward - Preserve units through defensive holds rather than aggressive moves - No further coalition coordination—mechanically impossible - Monitor Austria's force distribution for isolated vulnerabilities - Pursue independent survival through unit preservation and opportunistic expansion into any Austrian weakness Survival timeline: Uncertain but extended beyond previous predictions through defensive effectiveness demonstration. [S1910M] Turkey has committed to a parallel pressure strategy with France rather than coordinated lockstep commitments (which failed repeatedly in prior phases). France will apply western pressure on Austria while Turkey exploits independent force distribution gaps. Russia reaffirmed the Black Sea non-aggression pact and requested F CON move to BLA as defensive deterrent; Turkey has committed to honoring this and maintaining absolute non-interference with Russian boundaries (SEV/MOS/STP/LVN/WAR untouched). Austria explicitly rejected all non-aggression proposals, reaffirming total erasure doctrine targeting CON/BUL/SEV elimination this phase. Germany offered only rhetorical support. Turkey recognizes Austria's hegemonic consolidation (13 centers/13 units) represents likely terminal elimination trajectory, but has positioned defensively to extend runway through F1910M while maintaining diplomatic credibility for post-elimination observer status. No lockstep coalition mechanics attempted; all actions operate independently with parallel objectives. Intent: S1910M orders: F CON→BLA (defensive repositioning honoring Russia's deterrence request while moving F CON out of immediate A ANK assault range, preserving unit for potential retreat sequence). F BUL/EC→SMY (reposition out of predicted GRE/SER/RUM assault range, maintains central Mediterranean positioning for independent exploitation if Austrian forces redistribute westward due to France's offensive pressure). These moves execute the parallel pressure strategy: France applies western consolidation pressure while Turkey repositions defensively and maintains offensive capability for independent exploitation. Turkey maintains absolute non-interference with Russian Black Sea boundaries regardless of broader conflict evolution. Defensive repositioning maximizes survival\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ITALY": "Enemy",
+    "ENGLAND": "Neutral",
+    "FRANCE": "Friendly",
+    "GERMANY": "Unfriendly",
+    "RUSSIA": "Friendly"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.0,
+    "ITALY": 0.0,
+    "ENGLAND": 0.3,
+    "FRANCE": 0.8,
+    "GERMANY": 0.2,
+    "RUSSIA": 0.8
+  },
+  "final_goals": [
+    "Preserve unit coherence through final elimination phase via defensive positioning; Austria's 13-center hegemony with explicit erasure doctrine makes solo Austrian victory mechanically inevitable",
+    "Maintain absolute permanent non-interference with Russian Black Sea boundaries (SEV/MOS/STP/LVN/WAR completely inviolate) regardless of broader conflict outcome; honor sworn agreements through ethical commitment framework",
+    "Exploit any Austrian force redistribution westward caused by France's Vienna assault by repositioning F BLA opportunistically into Mediterranean/Balkans if consolidation gaps emerge",
+    "Operate mechanically independent of France while benefiting from their western pressure vector; independent parallel actions create mutual constraints on Austrian logistics more effectively than coordinated lockstep",
+    "Maintain diplomatic credibility for potential post-elimination observer status through principled unit preservation and sworn commitment fulfillment rather than mercenary surrender",
+    "Reject all surrender terms and mechanical erasure demands; accept elimination trajectory under principle rather than degrade commitment frameworks that enable future coalition stability"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

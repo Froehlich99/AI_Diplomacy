@@ -1,0 +1,46 @@
+{
+  "power_name": "ITALY",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 1,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Italy’s position has been a defensive stalemate centered on three supply centres (NAP, ROM, VEN) and a single fleet in the Western Mediterranean. The core diplomatic framework is a non‑aggression pact with Austria (demilitarised zone around Venice/Trieste/Tyrol) and a strict ION/TYS boundary with Turkey. Both pacts have held throughout; Austria has remained reliable (now eliminated) and Turkey has consistently promised a convoy for A VEN → TUS once Italy builds a fleet in MAR. The convoy promise is the only actionable offensive tool and must be secured in writing before any move. France has repeatedly refused any convoy or fleet support and has become openly hostile, repeatedly attempting to take VEN (most recently PIE → VEN succeeded, stripping Italy of a supply centre) and positioning a fleet in ION that blocks the Turkish convoy route. Trust in France is now effectively zero; any cooperation with France is unsafe. England has offered a verbal non‑aggression understanding in the western Mediterranean but provides no concrete orders or naval aid. Germany and Russia remain neutral and have offered no useful support. Key recent events: - S1909M: All Italian units held; Turkey supplied a detailed convoy plan (F CON → ION, support from F AEG and F BUL/EC) contingent on a MAR fleet build. - F1909M: Italy confirmed the hold and will build a fleet in MAR at the next build phase; England pledged non‑aggression in the ION‑TYS corridor, France demanded Venice and remains hostile. - The loss of VEN to France (PIE → VEN) demonstrates the danger of leaving VEN undefended; future plans must protect VEN until the convoy can be executed. Strategic priorities: 1. Build a fleet in MAR immediately at the next build phase. 2. Obtain a written, simultaneous convoy order from Turkey (including supporting fleets) before any A VEN → TUS move. 3. Keep the Austrian DMZ intact; no moves toward TRI or TYR. 4. Defend VEN aggressively (or consider a pre‑emptive retreat to a safer SC) until the convoy is ready. 5. Avoid any reliance on France; treat England as a low‑trust but non‑threatening neighbour. [S1910M] Turkey confirmed a binding convoy plan to move A VEN to TUS via ION/TYS once Italy builds a fleet in MAR, and pledged to keep the ION/TYS corridor free and not enter Italian waters. England offered a non‑aggression understanding in the western Mediterranean and promised not to contest Italy's MAR build, but gave no concrete support. France remained hostile, demanding Italy surrender Venice and offering no cooperation. Austria is eliminated. No other powers offered actionable support. Intent: Hold all Italian units this season: F NAP H, A ROM H. No offensive moves. Prepare to build a fleet in MAR at the next build phase and, after it appears, fulfill the convoy orders with Turkey as previously agreed. [S1910M] S1910M – We held NAP, but ROM was dislodged by France’s surprise move: A VEN S F TUS‑ROM, allowing a Turkish fleet to seize our capital. France thus broke the non‑aggression pact and\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ENGLAND": "Friendly",
+    "TURKEY": "Ally",
+    "RUSSIA": "Neutral",
+    "AUSTRIA": "Neutral",
+    "FRANCE": "Enemy",
+    "GERMANY": "Neutral"
+  },
+  "final_trust_scores": {
+    "ENGLAND": 0.4,
+    "TURKEY": 0.3,
+    "RUSSIA": 0.2,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.0,
+    "GERMANY": 0.4
+  },
+  "final_goals": [
+    "Maintain the Austrian DMZ (Venice/Trieste/Tyrol) despite Austria being eliminated.",
+    "Preserve the Turkish ION/TYS non‑aggression line.",
+    "Build a fleet in MAR at the next build phase to enable the Turkish convoy.",
+    "Obtain a written, simultaneous convoy order from Turkey before moving A VEN to TUS.",
+    "Avoid any offensive moves without explicit, simultaneous support from a trusted ally.",
+    "Monitor Franco‑English dynamics for exploitable opportunities.",
+    "Coordinate with Turkey for joint pressure on France once naval capability is restored."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

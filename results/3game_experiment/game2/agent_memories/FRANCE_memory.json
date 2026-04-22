@@ -1,0 +1,46 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 10,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany is the only reliable ally; maintain a strict Western Non-Aggression Pact to secure the border against England. Austria is the primary early-game target; eliminate them quickly to prevent hegemonic expansion. Do not trust Italy, Turkey, or Russia for coordinated offensives. Italy holds stubbornly and requires pincer attacks to dislodge (e.g., Venice). Turkey consistently betrays joint operations (Greece/Budapest) and becomes a hostile Balkan threat. Russia prioritizes self-expansion over alliances and will seize undefended centers (e.g., Vienna). England is a naval adversary; DMZs work but do not guarantee safety. Strategic Lessons: Avoid passive holds; expand aggressively but consolidate gains. Never attack fortified supply centers solo; always coordinate pincers. Do not overextend into the Balkans without securing the Italian and Russian flanks. The previous game ended in failure (7 SCs) due to over-reliance on unreliable partners and failing to neutralize Russia/Turkey simultaneously after Austria's fall. Future Strategy: Prioritize the German alliance. Eliminate Austria early. Treat Italy, Turkey, and Russia as potential enemies requiring containment rather than partnership. Secure the Mediterranean naval dominance independently. Reclaim lost SCs (Belgium, Spain) before pushing east. Monitor Russia closely; they are a late-game betrayal risk. England should be managed via naval parity, not trust. Focus on reclaiming lost supply centers like Belgium and Spain while acknowledging Austria as the main threat and England's naval power as a critical obstacle. [S1910M] Germany confirms Western NAP holds strictly; will not assist with Vienna, focused on England. Russia claims Vienna (VIE) is legitimate Russian territory, refuses withdrawal, threatens alliance violation if attacked. Turkey explicitly threatens 3v1+ assault on Greece (GRE) from SER/AEG/BUL, demands French withdrawal from Balkans. Italy holds NAP/ROM, allied with Turkey, refuses partition. England contests Channel but DMZ holds. Intent: Priority 1: Defend Greece against Turkey. F ION -> GRE (Hold/Support). A BUD -> SER (Attack Turkish A SER to remove land threat). Priority 2: Reclaim Vienna. A TYR -> VIE (Attack Russian A VIE). Priority 3: Pressure Italy. F TUS -> NAP (Attack). F MAR -> LIG (Expand). Priority 4: Maintain Western NAP. A GAS, A PAR, F SPA Hold. A VEN -> TRI (Hold). [S1910M] Rome is secured; Italy is broken. F TUS and A VEN successfully dislodged A ROM, securing a vital Mediterranean foothold. However, eastern expansion stalled. A TYR bounced against A VIE; Russia refuses to yield Vienna, confirming them as a primary eastern threat alongside Turkey. A BUD also bounced against A SER, proving Turkey will not vacate the Balkans without a pincer. Germany remains reliable, holding the Western NAP strictly, allowing focus on the south and east. England’s move to POR threatens Spain; F SPA must be vigilant. Future strategy must prioritize breaking the Russia-Turkey deadlock. Attacking Vienna solo is futile; I need German support or a Russian betrayal. Italy is vulnerable; consolidate Rome and Naples before pushing further. Trust Germany, contain Russia, crush Turkey, and watch England’s southern flank. [F1910M] Germany reaffirmed Western NAP, focusing on England (LON). England confirmed DMZ but moved F POR to MAO, threatening Spain's\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Enemy",
+    "ENGLAND": "Neutral",
+    "TURKEY": "Enemy",
+    "RUSSIA": "Enemy",
+    "AUSTRIA": "Enemy",
+    "GERMANY": "Ally"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.2,
+    "ENGLAND": 0.5,
+    "TURKEY": 0.0,
+    "RUSSIA": 0.1,
+    "AUSTRIA": 0.0,
+    "GERMANY": 0.9
+  },
+  "final_goals": [
+    "Survive Turkish assault on Greece and retain SC.",
+    "Reclaim Vienna from Russia.",
+    "Maintain Non-Aggression Pact with Germany (Western Border).",
+    "Monitor England's MAO move to ensure Spain is not threatened.",
+    "Contain Turkish expansion in the Balkans and Aegean.",
+    "Expand into Italy (Naples/Rome).",
+    "Achieve world domination by controlling 18 supply centers."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

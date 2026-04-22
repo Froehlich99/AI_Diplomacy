@@ -1,0 +1,46 @@
+{
+  "power_name": "RUSSIA",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Russia‑Russia (RUS) – Key diplomatic timeline **England** – A reliable partner for the north. Since S1901 England agreed to a Norway‑Sweden split and has repeatedly honoured it, never contesting a Russian fleet move into Sweden so long as Norway stays English. In S1908 and S1909 England extended a two‑year Baltic non‑aggression pact, kept Norway secure and offered verbal support for LVN→WAR, but never provided convoy or cut‑support. England’s stance remains the only dependable naval guarantee; keep the split alive and consider asking for a convoy when a fleet is built at St Petersburg. **Turkey** – Initially a solid Black‑Sea ally (S1901‑S1904) with a mutual‑defence protocol (hold BLA/SEV, convoy support). After a brief rupture in S1905‑S1907 Turkey briefly turned hostile, seizing ARM, but from S1908 onward it re‑affirmed a defensive‑coordination framework: both sides will not enter each other’s cores (RUS: MOS, STP, LVN, WAR, SEV; TUR: ANK, CON, ARM) and will share intelligence on Austrian moves. Turkey now holds BLA, will stay out of the Black Sea this turn, and will move its fleet to SMY as coordinated pressure on Austria. Treat Turkey as a dependable southern shield and possible convoy partner for Black‑Sea operations, but do not rely on offensive support. **Austria** – Once a NAP partner (S1901‑S1904) but has become hostile. Repeatedly promised support for MOS→WAR or GAL→WAR and then either bounced or attacked Russian units (e.g., GAL→WAR support for Germany, PRU→WAR support). From S1905 onward Austria threatens WAR, GAL and SEV and has even backed German moves against Warsaw. Consider Austria an enemy; keep armies away from Galicia and avoid any joint actions. **Germany** – Persistent eastern threat. Frequently moves PRU→WAR or PRU→WAR‑bounce, seizes Prussia and threatens Warsaw and Livonia. In S1908 Germany accepted a temporary Baltic non‑aggression pact but remains aggressive; never trust German support. **France** – Opportunistic. Occasionally offers “naval pressure” or anti‑Austrian sentiment but has seized Sweden (S1904, S1905) and never provided concrete fleet aid. Treat as unreliable; do not count on French naval cooperation. **Italy** – Generally friendly in the south, pressuring Austria (S1904‑S1909) and willing to support Russian moves in the north (e.g., SIL→BOH support). However Italy offers only diplomatic backing, no units for convoys. Keep Italy as a southern ally and possible diplomatic blocker against Austria. **Current strategic picture (S1909)** - Supply centres: MOS, STP, LVN (lost? still held), SEV; WAR remains German. - No Russian fleet; plan to build a fleet at St Petersburg in the next build phase and later move to Sweden (England will not object). - Immediate goal: retake WAR with LVN→WAR supported by MOS; ensure MOS remains free to support and to defend SEV. - Secure southern safety via Turkey’s BLA hold; consider a convoy from Turkey if a Black‑Sea operation is needed. - Maintain Baltic NAP with England; keep Austria isolated and Germany watched. **Action priorities** 1. Build fleet at St Petersburg next build turn. 2. Execute LVN→WAR with MOS support (no external help). 3. Keep SEV held; use MOS to support SEV if\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ITALY": "Friendly",
+    "ENGLAND": "Ally",
+    "FRANCE": "Unfriendly",
+    "TURKEY": "Ally",
+    "GERMANY": "Neutral"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.0,
+    "ITALY": 0.7,
+    "ENGLAND": 0.9,
+    "FRANCE": 0.3,
+    "TURKEY": 0.9,
+    "GERMANY": 0.5
+  },
+  "final_goals": [
+    "Retake and hold Warsaw (WAR) as a Russian supply centre.",
+    "Build a fleet at St Petersburg in the next build phase and later move STP→SWE once England vacates Sweden.",
+    "Maintain the England‑Russia Baltic non‑aggression pact for the agreed period.",
+    "Preserve defensive coordination with Turkey in the Black Sea and Baltic, avoiding mutual interference.",
+    "Support Italy's southern pressure against Austria while respecting Italy's Mediterranean focus.",
+    "Contain German expansion in the Baltic and Prussia.",
+    "Achieve control of 18 supply centres for world domination."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

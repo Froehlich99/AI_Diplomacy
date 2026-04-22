@@ -1,0 +1,48 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 9,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany controls 9 supply centers, dominating Scandinavia, the Low Countries, and the North Sea. Diplomacy is strictly transactional. Russia maintains an ironclad 3-point NAP securing PRU/BER/KIE, contingent on A SIL holding indefinitely; this eastern anchor remains highly reliable and non-negotiable. France honors a Western NAP, respecting BEL/HOL/RUH while expanding southward, but has matched Germany at 9 SCs. Their opportunistic expansion guarantees future hostility once England falls, making France the primary long-term threat. England is isolated, openly hostile, and militarily collapsing, reduced to defending LON/LVP. Austria is eliminated. Turkey and Italy remain neutral, with Turkey open to post-England anti-France coordination. Strategic execution demands overwhelming, explicitly supported offensives. Historical data proves unsupported naval probes consistently fail, and mutual army support in the Low Countries is vulnerable to targeted support cuts. The immediate priority is a fully coordinated 3-fleet assault (F DEN and F SKA supporting F NTH) to clear the English Channel, capture LON, and dismantle England’s remaining naval presence. Continuous fleet builds in BER/KIE are mandatory to sustain North Sea dominance and enable amphibious strikes. Long-term posture requires balancing aggressive expansion with strict treaty compliance. A SIL must hold to preserve Russian trust and prevent a catastrophic two-front war. France’s rapid growth demands immediate defensive screening and eventual confrontation. Trust is purely transactional: Russia is dependable, France is a ticking threat, and England requires total military eradication. The path to 18 SCs hinges on crushing England, securing the British Isles, then pivoting decisively against France while leveraging the Russian buffer. All future orders must be active, fully supported, and aligned with verified diplomatic commitments. Passive positioning is fatal. [S1910M] Russia reaffirmed the ironclad 3-point Eastern NAP; A SIL hold guarantees eastern security. France confirmed the Western NAP, pledging no moves west of the Rhine or into RUH/PIC, and declined to coordinate on VIE. Turkey proposed post-England anti-France coordination; I agreed to sequence strikes after LON/LVP fall but explicitly declined moving BEL/HOL west this season. England remains defiant and isolated, refusing surrender. All flanks are secured via transactional NAPs, allowing full focus on England. Intent: Execute fully supported naval assault on ENG: F NTH -> ENG, F DEN Support F NTH -> ENG, F SKA Support F NTH -> ENG. Lock Low Countries: A BEL Support A HOL, A HOL Support A BEL. Secure Scandinavia: F SWE Hold, F NWY Hold, F EDI Hold. Maintain Russian NAP: A SIL Hold. I will fulfill all diplomatic commitments (no westward moves, strict A SIL hold) while concentrating overwhelming force to clear ENG and isolate LON. [S1910M] Naval assault on ENG failed due to critical order execution errors: F DEN held instead of supporting, and F SKA backed a phantom English move, causing F NTH to bounce against F LON. England survives, retaining LON/LVP. Russia strictly honored the Eastern NAP, securing my flank. France aggressively expanded, capturing ROM and matching my 9 SCs, proving their Western NAP is purely temporary. The failed strike exposes a fatal flaw in command execution; passive holds during\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Neutral",
+    "ENGLAND": "Enemy",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Ally",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Friendly"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.5,
+    "ENGLAND": 0.0,
+    "TURKEY": 0.4,
+    "RUSSIA": 0.9,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.4
+  },
+  "final_goals": [
+    "Execute fully supported 3-fleet naval assault on ENG to capture LON and eliminate England",
+    "Maintain strict Russian 3-point NAP (A SIL Hold) to guarantee eastern security",
+    "Lock BEL and HOL via mutual army support to prevent French land invasions",
+    "Defend SWE, NWY, and EDI with fleet holds to secure Scandinavian SCs",
+    "Build fleets in BER and KIE next phase to sustain North Sea pressure and enable future convoy strikes",
+    "Monitor French expansion (9 SCs) and maintain Western NAP deterrence while preparing for inevitable confrontation",
+    "Sequence post-England transactional coordination with Turkey and Italy against French hegemony",
+    "Ensure all orders are explicitly supported and synchronized to avoid previous execution failures",
+    "Expand aggressively toward 18 SCs by securing British Isles then pivoting west/south"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

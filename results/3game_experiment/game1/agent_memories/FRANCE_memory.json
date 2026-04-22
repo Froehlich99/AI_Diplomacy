@@ -1,0 +1,48 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] France's diplomatic landscape is characterized by deep mistrust and shifting alliances. Initial pacts with Italy (southern flank security) and Germany (western NAP) have dissolved into transactional relationships and outright hostility. Italy has proven unreliable, betraying alliances and failing to support French objectives, leading to the loss of Spain. Germany, after rejecting broader non-aggression pacts, now maintains a western non-aggression pact, focusing its efforts elsewhere. England remains France's most persistent naval adversary. Despite early attempts to contest the Channel and North Sea, France has suffered consistent naval failures, losing Norway and failing to break England's dominance. England's violation of DMZs and aggressive naval moves have been a constant strategic challenge. Austria has emerged as the paramount threat, capitalizing on collapsed coalitions. France's attempts to coordinate against Austria with Italy and Turkey have largely failed due to unreliability and shifting priorities. Russia has become a passive, weakened ally. France has suffered significant territorial losses, including Belgium and Norway, and struggles to reclaim Spain. Recent phases (S1909M, F1909M) were catastrophic failures, with all offensive moves bouncing, leaving France vulnerable and focused on survival. The primary lessons are the fatal consequences of uncoordinated aggression, the unreliability of former allies, and the need to prioritize reclaiming lost supply centers (Belgium, Spain) while acknowledging Austria as the main threat and England's naval power as a critical obstacle. [S1910M] France has agreed to a temporary Western DMZ with England, wherein England will vacate Belgium, and France will not contest the English Channel or Holland. This allows France to focus on dismantling Austria. Germany maintains its NAP with France and will act as a buffer, encouraging France to pressure Austria's western flank. Turkey is operating in parallel, acknowledging France's pressure as a potential opportunity and will exploit Austrian force redistribution independently. France is reaching out to Italy and Russia to coordinate against Austria. Intent: France will execute a multi-pronged offensive focused on Austria and securing its western flank. A HOL -> BEL to secure the center. A PAR -> VIE to pressure Austria's western flank and reclaim Vienna. A POR -> SPA to reclaim Spain. F BRE -> ION and F MAO -> TYN to apply naval pressure south towards Austria/Italy. A TRI -> VEN to attack Austria. A PIC -> BUR to support the push on Vienna. A RUH -> BEL to support the move into Belgium. A BEL -> GRE to attack Austria. F ENG will hold in England to respect the DMZ. [S1910M] Phase S1910M completed. Unable to analyze results due to error. [F1910M] France has secured a temporary Western DMZ with England, wherein England vacates Belgium and France will not contest the Channel or Holland. This allows France to focus its offensive efforts entirely on Austria. A Western NAP with Germany remains strong, with both powers agreeing to focus on Austria. Turkey is acting independently but acknowledges France's offensive as the primary pressure vector against Austria. France is attempting to rally Italy and Russia against Austria, but Italy remains unreliable. France has\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ITALY": "Unfriendly",
+    "ENGLAND": "Neutral",
+    "TURKEY": "Friendly",
+    "GERMANY": "Friendly",
+    "RUSSIA": "Friendly"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.0,
+    "ITALY": 0.2,
+    "ENGLAND": 0.6,
+    "TURKEY": 0.7,
+    "GERMANY": 0.9,
+    "RUSSIA": 0.5
+  },
+  "final_goals": [
+    "Achieve world domination by controlling 18 supply centers.",
+    "Dismantle Austria's hegemonic expansion.",
+    "Neutralize and break England's naval dominance in the Channel and North Sea (post-DMZ).",
+    "Reclaim Belgium, Spain, Portugal, and Vienna.",
+    "Secure the French southern flank.",
+    "Maintain the Non-Aggression Pact with Germany.",
+    "Expand aggressively and avoid passive holds.",
+    "Survive the current crisis and rebuild France's position.",
+    "Secure Venice and Piedmont from Austria."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

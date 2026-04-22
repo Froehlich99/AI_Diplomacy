@@ -1,0 +1,46 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] England is in a critical survival phase (F1909M) with only 5 supply centers (LON, EDI, YOR, WAL, LVP), facing an active coalition of France, Russia, and Germany. France is the primary existential threat, having violated the Channel DMZ repeatedly. They currently hold ENG, BRE, POR, PIC, GAS, SPA, and IRI. Their fleet at ENG directly threatens London. Russia betrayed the Baltic NAP, expanding to 10 SCs and occupying NTH and NWY, effectively boxing England in the North Sea. Germany confirmed alliance with France and Russia against England, planning convoy strikes on London. Trust in France, Russia, and Germany is zero. Italy remains neutral and non-aggressive in the Mediterranean. Historical failures include catastrophic internal coordination (bounces in S1905M, F1908M) and over-reliance on French/Russian agreements. France seized BEL and HOL despite DMZs; Russia voided support and moved into English waters. Naval control proved insufficient without territorial gains (SCs). The loss of BRE and PIC crippled build rates. The S1907M capture of BRE was lost in F1907M due to French counter-attack. Immediate priorities: 1. Defend London at all costs against F ENG. 2. Dislodge French fleet from ENG to secure the Channel. 3. Contain Russian fleet in NTH to block German convoy routes. 4. Capture a 6th SC (PAR/MAR or NWY) to enable building. 5. Avoid internal bounces. 6. Exploit potential friction between France and Russia. 7. Maintain Italy's neutrality. Survival depends on breaking the French naval stranglehold and preventing the coalition from cutting off supply lines. Do not trust diplomatic overtures from France or Russia. The coalition is active; Germany waits for England to weaken. Russia's move to NTH is a direct violation of security. France's aggression is relentless. England must prioritize home defense over expansion until the immediate threat is neutralized. [S1910M] Germany, France, and Russia have formed a public coalition against England. Russia proposed a private anti-France alliance, but this contradicts their public stance. France refuses to withdraw from ENG. Italy maintains non-aggression. Turkey is unresponsive. Intent: Dislodge F ENG using F NTH supported by A LON and F HOL. Hold A EDI and A LVP. Do not trust Russia or France. Prepare to capture an SC next turn. [S1910M] The critical attempt to dislodge F ENG failed due to a three-way bounce with F BRE and F ENG. France remains entrenched in the Channel, directly threatening London. Russia holds NWY, effectively blocking North Sea expansion and maintaining the coalition stranglehold. Germany remains passive but their alliance with France and Russia confirms the existential threat. My units consolidated on the home island, securing defense but failing to capture a new SC beyond BEL. Trust in France, Russia, and Germany is absolute zero; their coalition is active and coordinated. The stalemate in the Channel is dangerous. I must find a way to break the French naval grip without overextending. Italy remains neutral, a potential future lever. Survival depends on exploiting friction between France and Russia or forcing a mistake in the Channel. Direct assaults are currently futile; indirect pressure\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Friendly",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Enemy",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Enemy",
+    "GERMANY": "Enemy"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.8,
+    "TURKEY": 0.5,
+    "RUSSIA": 0.1,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.0,
+    "GERMANY": 0.0
+  },
+  "final_goals": [
+    "Dislodge F ENG to secure London",
+    "Defend home island (LON, EDI, LVP, HOL, BEL)",
+    "Secure Channel dominance",
+    "Capture an SC to build (ENG)",
+    "Survive the France/Russia/Germany coalition",
+    "Exploit friction between France and Russia",
+    "Maintain non-aggression with Italy"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

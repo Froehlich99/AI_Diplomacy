@@ -1,0 +1,45 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany survived a near-elimination by a coordinated 5-power NAP (AUS/RUS/ITA/FRA/TUR) between 1902-1904. Austria is now the primary existential threat, controlling 13 SCs and demonstrating a consistent pattern of betrayal. Despite tactical truces, Austria seized WAR, KIE, and BOH when convenient, prioritizing their own expansion over German security. France is hostile but currently respects border NAPs, focusing on England and Austria. England holds PRU adjacent to BER, conceding KIE but remaining a tactical threat. Russia is significantly weakened. Current Holdings: BER, KIE, SIL. Strategic Priorities: 1. Consolidate core (BER/KIE/SIL). Build in BER immediately to reinforce the Eastern flank. 2. Maintain transactional NAPs with Austria and France to prevent immediate encirclement, but prepare for inevitable war with Austria. Do not rely on Austrian support for Eastern operations. 3. Monitor England at PRU closely; they may strike if Germany shows weakness. 4. Exploit Austria-France tensions to keep them occupied. Diplomatic Reality: No reliable allies exist. Trust is dead. Previous overextension caused catastrophic losses (down to 3 SCs). Aggression must be precise and focused. England and France are currently restrained by mutual conflict with Austria, offering a critical window to rebuild strength. Austria’s reliability is transactional; they will attack if Germany becomes vulnerable. Prioritize defense of BER against England and Austria. Avoid split attacks; concentrate force. The path to 18 SCs requires breaking the Austrian superpower status first. Diplomacy is a tool for deception, not alliance. Recent NAPs (S1909/F1909) held, with Austria focusing East (LVN/MOS) and France focusing West (BEL/HOL). However, Austria’s growth is alarming. England’s presence at PRU contradicts their spirit of cooperation. Survival depends on rebuilding strength before Austria consolidates further. Do not trust Austrian promises regarding Western borders. [S1910M] Austria confirmed NAP (no west/north moves, focus East vs Turkey/Russia). England confirmed status quo (F PRU holds, no attack on BER). France confirmed NAP (focus Austria/England). Russia requested convoy help (declined due to no fleet). Turkey called for coalition (acknowledged). Austria claims solo victory imminent and dismisses western coalitions. Intent: A BER Hold, A SIL Hold. Fulfill NAPs with Austria and France. Maintain status quo with England. Do not attack. Monitor Austria's East expansion and England's F PRU. Prepare to build in BER after F1910M if SC gained. [S1910M] Phase S1910M completed. Unable to analyze results due to error. [F1910M] England agreed to vacate KIE for Germany in exchange for Germany not attacking LVN (England holds LVN). Austria confirmed NAP (focus East, no west moves into German cores). France confirmed NAP (focus Austria, no west moves). Russia and Turkey maintain status quo. Austria is the primary existential threat (13 SCs) despite NAP. Intent: A BER Hold. A PRU Move to KIE. Secure KIE as agreed with England. Prepare to build in BER next build phase if SC gained. [F1910M] England honored their agreement to vacate KIE, allowing A BER to move in successfully. Austria and France maintained their NAPs, focusing elsewhere as promised. This phase was a tactical victory; Germany now controls BER and KIE, securing a vital foothold. The\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "AUSTRIA": "Enemy",
+    "ITALY": "Neutral",
+    "ENGLAND": "Friendly",
+    "FRANCE": "Friendly",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Neutral"
+  },
+  "final_trust_scores": {
+    "AUSTRIA": 0.1,
+    "ITALY": 0.5,
+    "ENGLAND": 0.6,
+    "FRANCE": 0.6,
+    "TURKEY": 0.3,
+    "RUSSIA": 0.3
+  },
+  "final_goals": [
+    "Secure KIE immediately",
+    "Build in BER after F1910M",
+    "Maintain NAPs with Austria and France temporarily",
+    "Contain Austrian expansion in the East",
+    "Rebuild German strength to 18 SCs",
+    "Monitor England F PRU/LVN for betrayal"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

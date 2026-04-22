@@ -1,0 +1,49 @@
+{
+  "power_name": "ITALY",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] ITALY'S CONSOLIDATED STRATEGIC MEMORY **Current Position:** 4 supply centers (NAP, ROM, VEN, TUN). Armies positioned for Sicily invasion (A APU staging for S1910M capture). **Four Eternal Demilitarized Zones (All Holding Firm):** 1. RUSSIA (Trust 0.95): Adriatic-Balkans-Tyrol DMZ inviolate. Russia explicitly permits Italy's southern expansion to 6 SCs within Mediterranean bounds. Russia dominates at 10+ SCs but honors boundaries scrupulously. Never violated or probed. 2. FRANCE (Trust 0.40): WES/TYS Mediterranean boundary sacred. France consolidating Iberia/Atlantic indefinitely, respecting central-eastern Mediterranean as Italian sphere. Reliable on written boundary. 3. TURKEY (Trust 0.40): Aegean-Ionian DMZ confirmed sacred. Turkey verbally supports Sicily consolidation but operationally unreliable—failed F AEG→ION support (F1909M) despite explicit commitment. Passive despite \"partnership\" rhetoric. 4. ENGLAND (Trust 0.40): Non-aggression confirmed; multi-front commitment (Germany/Russia/France) prevents Mediterranean aggression. **Critical Strategic Reality:** Italy has achieved perfect DMZ fidelity for eight phases but remains stalled at 4 SCs since S1906M. This stagnation despite diplomatic consensus is catastrophic vulnerability—prior game ended with 1 SC through identical passive consolidation pattern. **Immediate Imperative:** Sicily capture S1910M MUST execute independently without allied coordination. Russia explicitly authorized expansion; Sicily remains undefended. A APU positioned for invasion; F TUN (Naples fleet) must provide independent support without reliance on Turkey's operational coordination. **Lesson Learned Repeatedly:** Diplomatic credibility without visible territorial results becomes liability. Stronger powers dismiss Italy as irrelevant, cascade betrayals follow. Sicily represents first major territorial validation since S1906M and is essential to prevent slow marginalization. **Path Forward:** Execute Sicily S1910M decisively. Maintain all four DMZs absolutely. Consolidate 5 SCs minimum by F1910M. Credibility paired with visible expansion establishes Italy as independent Mediterranean force, not passive diplomatic footnote. [S1910M] CRITICAL DIPLOMATIC CONSENSUS ACHIEVED FOR SICILY EXPANSION: Russia explicitly authorizes Italy's Mediterranean consolidation to 6 SCs (Sicily/Tunisia pathway) within eternal Adriatic-Balkans-Tyrol DMZ framework—Adriatic security absolutely preserved. France confirms WES/TYS Mediterranean boundary sacred/inviolate; F MAO positioned to secure their flank; no French interference in eastern Mediterranean sphere. Turkey reaffirms Aegean-Ionian DMZ as sacred and commits F AEG defensive position to ensure unobstructed Italian movement (addresses F1909M bounce via explicit commitment this season). England maintains mutual non-interference policy and welcomes Italy's Sicily consolidation as counter-balance to potential Mediterranean hegemony. Germany continues multi-front containment strategy (focused on England/Russia/France); poses no Italian theater threat. All four foundational DMZs (Russia/Turkey/France/England) unanimously ratified for Sicily expansion. NO POWER contests Sicily capture objective. Intent: S1910M EXECUTION—SICILY CAPTURE with absolute DMZ fidelity: (1) A APU → SIC: execute undefended Sicily capture, validating Italy's diplomatic credibility through concrete territorial results (consolidate to 5 SCs from current 4). This move is fully authorized by Russia, France, Turkey, and England consensus and does not violate any DMZ. (2) F TUN H: defensive consolidation of Tunisia fleet, providing rear support for Sicily operations and maintaining TYS corridor control. (3) F ION H: maintain Ionian Mediterranean naval coordination point; ensures Italian fleet presence in central Mediterranean sphere without violating Turkey's Aegean boundary. (4) A VEN H: ABSOLUTE DEFENSIVE HOLD at Venice—non-negotiable validation of Russia's eternal Adriatic-Balkans-Tyrol DMZ guarantee. Zero violations permitted. This order set\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ENGLAND": "Friendly",
+    "TURKEY": "Ally",
+    "RUSSIA": "Ally",
+    "AUSTRIA": "Neutral",
+    "FRANCE": "Friendly",
+    "GERMANY": "Neutral"
+  },
+  "final_trust_scores": {
+    "ENGLAND": 0.5,
+    "TURKEY": 0.55,
+    "RUSSIA": 0.95,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.45,
+    "GERMANY": 0.4
+  },
+  "final_goals": [
+    "Execute Sicily capture (A APU → SIC) immediately this phase—consolidate from 4 to 5 supply centers, breaking S1910M passive-stagnation pattern that historically cascades to marginalization (prior game ended 1 SC)",
+    "Absolute eternal fidelity to all four foundational demilitarized zones (Russia Adriatic-Balkans-Tyrol, Turkey Aegean-Ionian, France WES/TYS Mediterranean, England western sphere)—treat boundary violations as reputation-fatal under ANY circumstance; diplomatic fidelity is primary strategic asset",
+    "Consolidate to sustainable 6-8 SC Mediterranean independent fortress by F1911M+ (Sicily + Tunisia + potential GRE/central Med naval control) while preserving all DMZ commitments absolutely",
+    "Establish Italy as stabilizing independent Mediterranean power demonstrating credible bounded territorial growth paired with unwavering alliance fidelity—reputation for reliability distinguishes Italy from opportunistic swing-power mediocrity",
+    "Reinforce Russia partnership (0.95 trust; 11-SC dominant fortress) through eternal Adriatic-Balkans-Tyrol DMZ compliance and independent southern consolidation—mutual non-aggression and bounded expansion indefinitely",
+    "Maintain Turkey operational partnership (0.55 trust; partnership partially restored)—Sicily consolidation proceeds independently rather than dependent on Turkish coordination, reducing execution uncertainty while preserving Aegean-Ionian DMZ",
+    "Enforce France permanent WES/TYS boundary (0.45 trust; diplomatically stable)—zero interference with Atlantic/Iberian consolidation; both powers maximize respective spheres when continental powers exhaust each other",
+    "Leverage England multi-front commitment (0.50 trust; friendly but operationally distant)—western Mediterranean non-interference pact ensures Italy's autonomous consolidation while England focuses west",
+    "REJECT all future swing-power temptations regardless of tactical advantage or alliance pressure (e.g., anti-Russia coordination offers from France)—fidelity reputation is primary strategic asset in mid-to-late game realignment scenarios",
+    "Post-Sicily consolidation (F1911M+): Assess continental power dynamics, potential realignments, and Russia/France hegemony trajectories while Italy strengthens independent 6-SC Mediterranean fortress within eternal boundary commitments; prepare contingency responses if east/west power balances shift catastrophically"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

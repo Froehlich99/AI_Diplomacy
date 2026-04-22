@@ -1,0 +1,47 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria has been eliminated, removing the primary existential threat. Germany is now the immediate and primary threat, exhibiting untrustworthy, hostile, and aggressive expansion, particularly naval dominance in the North Sea and Baltic. Germany has betrayed multiple agreements, seized key territories (Sweden, Denmark, Belgium, Holland, Norway), and successfully repelled England's direct attempts to break their northern stranglehold. Trust in Germany is zero; their naval power poses a direct threat to home centers. The DMZ with France in the English Channel and Holland remains stable, with England respecting Belgium and France focusing on Austria. This provides crucial western stability. The Baltic NAP with Russia is reaffirmed, with Russia acting as a defensive anchor but unable to break their Eastern NAP with Germany. Italy is a loyal ally, currently defensive but planning a fleet build in Marseilles to support future anti-German moves, having agreed to non-aggression in the ION-TYS corridor. Turkey proposes a grand alliance against France's growing hegemony, suggesting England probe west for Germany, but England's priority is breaking Germany's northern grip. England's direct confrontations with Germany have repeatedly failed due to bounces and German consolidation, leaving England pinned and unable to pivot East. The current strategy must shift from direct assault to coordinated or indirect approaches to challenge Germany's naval supremacy and enable a pivot towards continental objectives. [S1910M] England has confirmed a move of F MAO to POR with Turkey, aligning with a strategy to pressure France. England has also pledged non-aggression in the western Mediterranean and not to contest Italy's fleet build in MAR. The DMZ with France regarding the English Channel and Holland is confirmed to be holding, with France agreeing not to contest the North Sea or Holland. Russia reaffirms its Baltic NAP and defensive consolidation. Germany remains aggressive, threatening England and reaffirming its control over the North Sea and Low Countries. England has publicly stated intent to contest the English Channel, while privately assuring Russia of fleet movement into the Channel, which appears to contradict the DMZ with France. However, the explicit confirmation of the DMZ to France and the diary's emphasis on its importance suggest the 'contest the Channel' message is either a bluff, a move against German presence in the Channel, or a misdirection, rather than a violation of the DMZ with France. Austria has been eliminated, making Germany the primary threat. Intent: F MAO to POR (as agreed with Turkey). F LON to ENG (to contest German presence in the Channel and support North Sea stability, while respecting the DMZ with France). [S1910M] Germany's northern stranglehold remains unbroken; F LON bounced F NTH, and their support order was voided. My attempt to contest the Channel failed, confirming the futility of direct naval assaults against their consolidated power. The DMZ with France holds, providing western stability but limiting my pivot options. With Austria eliminated, Germany is the primary threat, and their aggressive expansion is unchecked. Italy's position is weakening with A ROM dislodged, jeopardizing our planned coalition. Trust in Germany is zero;\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Ally",
+    "TURKEY": "Neutral",
+    "RUSSIA": "Friendly",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Neutral",
+    "GERMANY": "Enemy"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.8,
+    "TURKEY": 0.5,
+    "RUSSIA": 0.7,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.3,
+    "GERMANY": 0.1
+  },
+  "final_goals": [
+    "Prevent German hegemony and solo victory.",
+    "Break Germany's naval stranglehold in the North Sea and Baltic.",
+    "Defend England's home island and waters.",
+    "Maintain the DMZ with France.",
+    "Solidify the Baltic NAP with Russia.",
+    "Coordinate with Italy and Russia to apply pressure on Germany.",
+    "Support Italy's efforts against France while prioritizing the fight against Germany.",
+    "Exploit Germany's expansionist moves to create opportunities."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemma-4-31b-it",
+    "ENGLAND": "openrouter:google/gemini-2.5-flash-lite",
+    "FRANCE": "openrouter:qwen/qwen3.5-27b",
+    "GERMANY": "openrouter:qwen/qwen3.6-plus",
+    "ITALY": "openrouter:openai/gpt-oss-120b",
+    "RUSSIA": "openrouter:anthropic/claude-haiku-4.5",
+    "TURKEY": "openrouter:x-ai/grok-4.1-fast"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "power_name": "RUSSIA",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 11,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **RUSSIA CONSOLIDATED DIPLOMATIC SUMMARY** **Current Position:** 11 supply centers (MOS/STP/SEV/WAR/RUM/SWE/DEN/NWY/BUD/VIE/TRI) + BOH/GAL/UKR/ARM fortress. 11 units locked in defensive holds verifying NAPs; AUS erased via RU-TUR pincer (1904-1905). West ENG-FRA-GER stalemate creates vacuums for north/south surges. **Verified Reliable Allies (High NAP Compliance):** - **GERMANY (Trust 0.95):** Eternal east boundary NAP (no PRU/SIL/LVN/BER/MUN/KIE aggression; GER holds verified 100% S1901M-F1909M). Minor support lapses (S1908M KIE-BAL grab, F1908M BAL-KIE) but perfect holds. Coords post-build convoys: KIE-BAL-NTH-LON/EDI (50/50 NWY/BEL/LON spoils). - **TURKEY (Trust 0.98):** Eternal Black Sea/ARM/BUL DMZ + Balkans partition (RU north RUM/BUD/VIE/TRI/ARM; TUR south BUL/GRE/SER/CON). All holds (BLA H eternal); no RUM-BUL interference. - **ITALY (Trust 0.92):** Eternal Adriatic/Trieste-Tyrol DMZ (no TYR/PIE/ADR aggression); Med spheres non-overlapping (ITA south to 6 SCs). Defensive partnership vs west/AUS (declined TRI supp but DMZ intact). **Unreliable/Tensions:** - **ENGLAND (Trust 0.85↓):** Baltic NAP strained (F NTH-NWY S1909M grab vs protests; F NWY H F1909M de-escalates). No DEN/SKA/NTH aggression pledged; requests anti-FRA/GER (declined per GER NAP). - **FRANCE (Trust 0.10):** Hostile threats vs RU expansion; west stalemate irrelevant. **Critical Strategic Lessons:** Bilateral NAP holds + solo neutral grabs (SWE/BAL/DEN/SKA/NWY) yield uncontested 4→11 SC surge. Multi-power coords fail; reward ally compliance eternally, punish overreach (AUS erasure). West exhaustion enables north GER-RU convoys (BAL/NTH-LON/EDI) + south RUM-BUL probes (post F SEV build). **Current Strategic Position:** Impregnable fortress via perfect holds; prep S1910M north convoys (GER KIE supp), south flex (F SEV/BLA), target 15+ SCs exploiting stalemates. Maintain 100% NAP verification; monitor ENG friction, GER BAL intentions. (298 words) [S1910M] GER: Eternal Eastern 3-pt NAP flawless (BER/MUN/BAL holds); confirmed joint north convoy post-build F KIE-BAL (BER S, RU STP/NC-BAL S), then KIE-BAL-NTH-ENG-LON (RU NWY-NTH S STP-BAL S), split LON/EDI/BEL/HOL 50/50. ITA: Eternal Adriatic/Balkans-Tyrol DMZ + Med spheres (ITA to 6 SCs) locked, mutual non-aggro/support vs FRA. TUR: Eternal Black Sea/ARM/BUL DMZ + Balkans partition (RU north RUM/BUD/VIE/TRI/ARM, TUR south) confirmed indefinitely. ENG: Tense/distrusts RU-GER alliance (public GER msg), demands F NWY H, rejects anti-FRA; RU de-escalation pledged. FRA: Irrelevant threats ignored. All allies 100% holds verified. Intent: S1910M: Fulfill GER agreement - F STP/NC - BAL S F BAL (corridor/convoy prep), F NWY H (de-escalate ENG + secure north), all others HOLD (F SEV/RUM H Black Sea DMZ, A ARM H, A TRI/BUD H Adriatic/Balkans, A MOS/UKR/WAR H Eastern NAP) verifying eternal NAPs/DMZs. No aggression; prep GER post-build KIE-BAL-NTH convoy supp + F SEV build south flex. [S1910M] [S1910M] All NAPs verified 100%: GER eternal Eastern holds (BER/MUN/BAL H flawless), TUR Black Sea/Balkans DMZ (BLA/BUL/ANK H), ITA Adriatic/Tyrol holds (VEN/APU H). No betrayals—perfect compliance reinforces trust (GER 0.95, TUR 0.98, ITA 0.92). Russia internal shuffle succeeds (A WAR/MOS-LVN consolidation secures LVN fortress vs zero threats). ENG-FRA west bounces (NTH/ENG) + ENG BEL/HOL lockdown confirm stalemate vacuums. No surprises; ENG NWY de-escalation holds. Impact: Impregnable 11-SC position + LVN double-army buffer. Lessons: Bilateral holds > coords; internal flex safe amid compliance. Future: F1910M execute GER-RU north convoy (NWY-NTH S STP/NC-BAL S KIE-BAL), build F SEV for south independence, target LON/EDI grabs\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Ally",
+    "ENGLAND": "Friendly",
+    "TURKEY": "Ally",
+    "AUSTRIA": "Enemy",
+    "FRANCE": "Enemy",
+    "GERMANY": "Ally"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.94,
+    "ENGLAND": 0.75,
+    "TURKEY": 0.98,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.1,
+    "GERMANY": 0.95
+  },
+  "final_goals": [
+    "Maintain 11-SC fortress (MOS/STP/SEV/WAR/RUM/SWE/DEN/BUD/VIE/TRI/NWY) via eternal NAP holds/DMZs: GER Eastern 3-pt (no PRU/SIL/LVN), TUR Black Sea/ARM/BUL + Balkans partition (RU north), ITA Adriatic/Tyrol/VEN.",
+    "Execute GER-RU north surge F1910M (STP/NC-BOT, NWY-NTH w/ BAL S, LVN S); post-Fall KIE build: KIE-BAL-NTH-ENG-LON convoy (STP/LVN/NWY S), split LON/EDI/BEL/HOL 50/50 vs ENG stalemate.",
+    "De-escalate ENG tensions via north actions proving anti-FRA pivot potential, but prioritize GER NAP; monitor NTH/ENG for vacuums.",
+    "Build F SEV post-Fall for Black Sea independence + south flex vs FRA/ITA only if violated.",
+    "Lock ITA Med to 6+ SCs (SIC success) + mutual support vs FRA; eternal DMZ/partition.",
+    "Exploit west ENG-FRA-GER stalemate vacuums for solo/joint grabs (north LON/EDI/BEL/HOL, south if opened); target 15+ SCs then 18 via unopposed expansion.",
+    "Perfect NAP compliance with GER/TUR/ITA (trust 0.94+); monitor ENG friction (0.75), ignore FRA threats."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

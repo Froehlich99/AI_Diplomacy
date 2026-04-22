@@ -1,0 +1,47 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany has maintained a strict defensive posture while honoring all non‑aggression pacts (NAPs) with Austria, France, Russia, Turkey and Italy. The core agreements are: * **Western NAP with France** – Germany will not move into BEL, HOL or BUR; France will stay out of BER, KIE and MUN. France has respected this, holding PIC and BRE, probing only unsuccessfully toward ENG. * **Eastern 3‑point NAP with Russia** – Germany will not move into PRU, SIL or LVN; Russia will stay out of those provinces. Russia has been highly reliable (trust ≈ 0.9), consistently supporting German moves in the Baltic and keeping the BAL↔NTH convoy corridor open. * **Mutual NAP with Austria** – No moves against each other; Austria’s actions have been limited to GAL/BOH/TYR and have not threatened German centers. * **Neutral/friendly NAPs with Turkey and Italy** – Both have held their supply centers and offered no aggression. The **primary external threat** is England, which has repeatedly violated peace overtures, moved fleets aggressively in the North Sea (BEL→ENG, HOL→BEL, NTH→ENG) and, crucially, landed an army in LON, establishing a continental foothold. England remains hostile (trust = 0.0) and continues to contest the Channel and the North Sea. **Key collaborative actions**: 1. **Baltic‑North Sea corridor** – Germany moved F KIE→BAL (later) and supported Russian fleet moves (e.g., F DEN→SKA, F SKA→NTH). This corridor is live and will enable a future convoy strike on LON once Germany rebuilds a fleet in KIE. 2. **Planned KIE fleet build** – Rebuilding a fleet in KIE is essential to contest English naval power and to launch the joint convoy assault with Russia (and optionally France or Turkey) against LON. 3. **Joint anti‑England plan** – France has pledged naval assistance after Germany’s KIE rebuild; Russia has committed to supporting a convoy into LON via the BAL↔NTH line. Turkey is open to broader anti‑England coordination but has not committed concrete moves. **Strategic priorities going forward**: * Build the KIE fleet immediately in the next build season. * Secure the BAL↔NTH corridor with Russian support and prepare a convoy‑borne army to retake LON. * Maintain the Western and Eastern NAPs; avoid any moves into BEL, HOL, BUR, PRU, SIL or LVN to preserve trust with France and Russia. * Monitor Austria for any shift but continue the mutual NAP. * Keep Italy and Turkey as neutral allies; consider inviting Turkey into the anti‑England coalition once the KIE fleet is operational. Overall, Germany’s position is secure domestically, but the English foothold in LON and its naval pressure demand an urgent naval buildup and coordinated convoy attack with Russia (and possibly France) to eliminate the sole hostile power. [S1910M] France confirmed the Western NAP and pledged to use a fleet (F BRE or F ENG) to support a convoy into ENG this turn, and to keep BEL/HOL/BUR empty. Russia reaffirmed the Eastern 3‑point NAP, promised support for the KIE‑BAL‑NTH convoy line and will move F NTH → ENG (supported) once Germany has a fleet in KIE. Both powers\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Friendly",
+    "ENGLAND": "Enemy",
+    "TURKEY": "Friendly",
+    "RUSSIA": "Ally",
+    "AUSTRIA": "Neutral",
+    "FRANCE": "Friendly"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.6,
+    "ENGLAND": 0.0,
+    "TURKEY": 0.7,
+    "RUSSIA": 0.9,
+    "AUSTRIA": 0.0,
+    "FRANCE": 0.8
+  },
+  "final_goals": [
+    "Hold all German home supply centers (BER, KIE, MUN) this phase.",
+    "Build a fleet in KIE in the Fall 1909 build season.",
+    "Re‑establish the KIE‑BAL‑NTH convoy corridor after the build.",
+    "Execute a joint convoy strike on LON with Russia (and France) once the KIE fleet is operational.",
+    "Maintain the Western NAP with France (no moves into BEL/HOL/BUR).",
+    "Maintain the Eastern 3‑point NAP with Russia (no moves into PRU, SIL, LVN).",
+    "Keep NAPs with Turkey and Italy intact.",
+    "Monitor French activity near BEL/HOL and be ready to defend if the Western NAP is breached."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}

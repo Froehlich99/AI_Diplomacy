@@ -1,0 +1,45 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria's previous game ended in elimination, a stark lesson that France is the primary existential threat, capable of synchronized offensives. Germany remains a high-trust, reliable ally under a strict NAP, essential for western stability. Italy, initially a neutral buffer with DMZs, has proven untrustworthy, culminating in a betrayal that compromised Austria's western flank and core territories, turning them into an immediate threat. Russia and Turkey are hostile and opportunistic; they previously broke Balkan partition agreements and have now seized Austrian supply centers (Vienna to Russia, Greece to Turkey). In the current game, initial Balkan partition attempts with Russia and Turkey proved unstable, with both powers deviating from agreements and Austria losing territory. Italy's DMZ with Austria has been repeatedly violated, culminating in a direct betrayal with a fleet move into the Adriatic, directly threatening Austria's remaining core. Austria's attempts to secure its western flank and expand into Bohemia and Bulgaria failed due to bounces and direct opposition from Italy, Russia, and Turkey. The current situation is critical: Vienna and Greece have been lost to Russia and Turkey respectively, and Italy's betrayal has compromised Trieste, Austria's last bastion. Survival hinges on maintaining the German NAP, countering Italy's immediate threat, and preparing for France's inevitable aggression, having learned that relying on enemy coordination failures is a fatal gamble. [S1905M] Italy has reaffirmed its commitment to the Trieste-Tyrol DMZ for S1905M, stating its fleet in the Adriatic (F ADR) will hold defensively and its army in Piedmont (A PIE) will consolidate defensively, not supporting operations against Austria. Austria requested explicit confirmation against moves into Trieste, which Italy provided, emphasizing its written commitments are binding. Germany reaffirmed its NAP with Austria and will hold its positions. Austria's primary focus remains defending its last supply center, Trieste, against immediate threats. Intent: A TYR - TRI F TRI Hold Rationale: To defend Austria's last supply center, Trieste, against potential Italian advances (F ADR, A PIE) and Russian threats. This move consolidates forces on Trieste, adhering to the critical lesson learned from the previous phase's elimination, which was to never abandon the defense of the last SC. The fleet in Trieste is held to provide a defensive presence, despite Italy's claims of defensive consolidation. [S1905M] Italy and Russia have proven utterly untrustworthy, shattering their DMZ and defensive consolidation promises. Russia launched a direct assault on Trieste (A VIE-TRI bounce) and Tyrol (A BOH-TYR bounce), while Italy's moves (A VEN-TUS, PIE S VEN-TUS) are overtly aggressive, threatening our last SC. Our defensive hold on Trieste succeeded in preventing a loss, but the sheer aggression from both powers despite their stated intentions is a critical failure of diplomacy. We are now under siege from two fronts. Trust in Italy and Russia is zero; Germany remains our sole ally. The lesson is clear: defensive claims from enemies are meaningless. We must consolidate all forces to survive the next phase, as expansion is impossible. [F1905M] Italy and Russia have repeatedly broken diplomatic assurances (DMZs, defensive consolidation) and engaged in\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "ITALY": "Enemy",
+    "ENGLAND": "Neutral",
+    "TURKEY": "Enemy",
+    "RUSSIA": "Enemy",
+    "FRANCE": "Enemy",
+    "GERMANY": "Ally"
+  },
+  "final_trust_scores": {
+    "ITALY": 0.0,
+    "ENGLAND": 0.3,
+    "TURKEY": 0.0,
+    "RUSSIA": 0.0,
+    "FRANCE": 0.0,
+    "GERMANY": 0.9
+  },
+  "final_goals": [
+    "Survive the current phase by defending Trieste at all costs.",
+    "Recognize Italy and Russia as active, untrustworthy enemies who have broken all diplomatic assurances.",
+    "Maintain the alliance with Germany.",
+    "Prepare for France's inevitable aggression.",
+    "Reclaim lost centers only after immediate survival is secured.",
+    "Consolidate all available forces for defense."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "openrouter:google/gemini-2.5-flash-lite",
+    "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+    "FRANCE": "openrouter:qwen/qwen3.6-plus",
+    "GERMANY": "openrouter:openai/gpt-oss-120b",
+    "ITALY": "openrouter:anthropic/claude-haiku-4.5",
+    "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+    "TURKEY": "openrouter:google/gemma-4-31b-it"
+  }
+}
