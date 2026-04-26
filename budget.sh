@@ -2,7 +2,7 @@
 BUDGET=75.00
 TOTAL=0
 
-for f in $(find results -name token_usage.json); do
+for f in $(find results -name token_usage.json -o -name deception_token_usage.json); do
     [ -f "$f" ] || continue
     cost=$(python3 -c "import json; print(json.load(open('$f'))['total_cost_usd'])")
     TOTAL=$(python3 -c "print($TOTAL + $cost)")

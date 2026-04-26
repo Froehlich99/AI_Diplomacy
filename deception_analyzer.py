@@ -31,6 +31,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from ai_diplomacy.clients import load_model_client  # noqa: E402
+from ai_diplomacy.token_tracker import init_tracker, get_tracker  # noqa: E402
 
 logger = logging.getLogger("deception_analyzer")
 logging.basicConfig(
@@ -256,15 +257,21 @@ async def analyse_game(
     model_id: str,
     *,
     concurrency: int = 5,
+    existing_results: Optional[Dict[str, Dict[str, Any]]] = None,
+    on_result: Optional[Any] = None,
 ) -> Dict[str, Any]:
     """Analyse a single game file and return structured results.
 
     Returns a dict keyed by phase name, each mapping to a dict keyed by
     power name with the LLM analysis result.
+
+    If *existing_results* is provided, already-analysed power/phase pairs
+    are skipped.  *on_result* is called after each new result so the
+    caller can checkpoint.
     """
     game_id = get_game_id(game_data, game_file)
     phases = game_data.get("phases", [])
-    results: Dict[str, Dict[str, Any]] = {}
+    results: Dict[str, Dict[str, Any]] = existing_results or {}
 
     # Find the last phase that has state_agents (needed for diary data).
     # state_agents is only stored on certain phases; we build a lookup.
@@ -320,11 +327,18 @@ async def analyse_game(
             return (phase_name, power, result)
 
     tasks: list[asyncio.Task] = []
+    skipped = 0
     for phase_data in movement_phases:
         phase_name = phase_data["name"]
         active_powers = get_non_eliminated_powers(phase_data)
         for power in active_powers:
+            if phase_name in results and power in results[phase_name]:
+                skipped += 1
+                continue
             tasks.append(asyncio.create_task(_run(phase_data, power)))
+
+    if skipped:
+        logger.info("Skipping %d already-analysed power/phases for game %s", skipped, game_id)
 
     total = len(tasks)
     done_count = 0
@@ -333,6 +347,8 @@ async def analyse_game(
         done_count += 1
         if result is not None:
             results.setdefault(phase_name, {})[power] = result
+            if on_result is not None:
+                on_result()
             logger.info(
                 "[%d/%d] %s %s/%s – score=%.2f (%s)",
                 done_count,
@@ -350,6 +366,33 @@ async def analyse_game(
             )
 
     return results
+
+
+# ── Checkpoint helpers ──────────────────────────────────────────────────
+
+
+def _load_checkpoint(path: Path) -> Dict[str, Dict[str, Dict[str, Any]]]:
+    """Load previously saved partial results, or return empty dict."""
+    if path.exists():
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                data = json.load(fh)
+            total = sum(len(pw) for ph in data.values() for pw in ph.values())
+            logger.info("Resumed from checkpoint: %d games, %d results", len(data), total)
+            return data
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("Corrupt checkpoint %s, starting fresh: %s", path, exc)
+    return {}
+
+
+def _save_checkpoint(
+    path: Path, all_results: Dict[str, Dict[str, Dict[str, Any]]]
+) -> None:
+    """Atomically write current results to the checkpoint file."""
+    tmp = path.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(all_results, fh, indent=2, ensure_ascii=False)
+    os.rename(tmp, path)
 
 
 # ── Output writers ───────────────────────────────────────────────────────
@@ -460,6 +503,9 @@ async def main(argv: Optional[List[str]] = None) -> None:
 
     logger.info("Found %d game file(s) to analyse.", len(game_files))
 
+    # Initialise token tracker so LLM costs are recorded
+    tracker = init_tracker()
+
     # Set up the LLM client with a neutral system prompt
     client = load_model_client(args.model)
     client.set_system_prompt(
@@ -476,17 +522,29 @@ async def main(argv: Optional[List[str]] = None) -> None:
         output_dir = Path(args.path)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Analyse each game
-    all_results: Dict[str, Dict[str, Dict[str, Any]]] = {}
+    # Analyse each game (with checkpoint resume)
+    checkpoint_path = output_dir / "deception_checkpoint.json"
+    all_results = _load_checkpoint(checkpoint_path)
+
     for gf in game_files:
         logger.info("Loading %s …", gf)
         game_data = load_game(gf)
         game_id = get_game_id(game_data, gf)
+
+        existing = all_results.get(game_id, {})
+
+        def _checkpoint():
+            _save_checkpoint(checkpoint_path, all_results)
+
         game_results = await analyse_game(
             game_data, gf, client, args.model, concurrency=args.concurrency,
+            existing_results=existing,
+            on_result=_checkpoint,
         )
         if game_results:
             all_results[game_id] = game_results
+            _save_checkpoint(checkpoint_path, all_results)
+            logger.info("Checkpoint saved after game %s", game_id)
 
     if not all_results:
         logger.warning("No analysis results produced. Nothing to write.")
@@ -495,6 +553,17 @@ async def main(argv: Optional[List[str]] = None) -> None:
     # Write outputs
     write_json_output(all_results, output_dir / "deception_analysis.json")
     write_csv_output(all_results, args.model, output_dir / "deception_scores.csv")
+
+    # Export token usage so it feeds into `make budget`
+    token_usage_path = output_dir / "deception_token_usage.json"
+    tracker.export_json(str(token_usage_path))
+    tracker.export_csv(str(output_dir / "deception_token_usage.csv"))
+    logger.info("Wrote token usage to %s", token_usage_path)
+
+    # Clean up checkpoint now that final outputs are written
+    if checkpoint_path.exists():
+        checkpoint_path.unlink()
+        logger.info("Removed checkpoint file (analysis complete)")
 
     # Print summary
     total_analyses = sum(
