@@ -35,14 +35,14 @@ Results are saved to `results/<timestamp>/` including game state, logs, and agen
 
 ## Cross-Game Memory
 
-After each game, every agent's diary, relationships, trust scores, and goals are exported to `agent_memories/`. These can be injected into the next game's system prompt so agents learn from prior experience.
+After each game, every agent's diary, relationships, trust scores, and goals are exported to `agent_memories/`. Memory is **per-model** (not per-power), so each model accumulates its own experience across sequential games — even when power assignments rotate. Trust scores and relationships are stored as model-to-model, enabling agents to track the behavior of specific opponent models regardless of which power they control.
 
 ```bash
-# Game 1: produces memory exports
+# Game 1: produces memory exports (one file per model)
 python lm_game.py --max_year 1910 --models "openrouter:x-ai/grok-4.1-fast" \
   --run_dir results/game1
 
-# Game 2: agents start with Game 1's experience
+# Game 2: each model receives its OWN prior memory
 python lm_game.py --max_year 1910 --models "openrouter:x-ai/grok-4.1-fast" \
   --run_dir results/game2 \
   --prior_memory_dir results/game1/agent_memories/
@@ -53,7 +53,7 @@ python lm_game.py --max_year 1910 --models "openrouter:x-ai/grok-4.1-fast" \
   --prior_memory_dir results/game2/agent_memories/
 ```
 
-Memory files are JSON containing the consolidated diary (token-capped via `--memory_cap_words`, default 500), final relationships, numeric trust scores, goals, and game outcome.
+Memory files are named by sanitized model ID (e.g., `x-ai_grok-4.1-fast_memory.json`) and contain the consolidated diary (token-capped via `--memory_cap_words`, default 500), model-to-model relationships, numeric trust scores, goals, game outcome, and the power-model map from that game.
 
 For quick testing without running a full game, generate dummy memory files:
 

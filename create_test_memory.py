@@ -5,8 +5,8 @@ Generate dummy cross-game memory files for testing the memory import flow.
 Usage:
     python create_test_memory.py [--output_dir OUTPUT_DIR]
 
-This creates agent_memories/{POWER}_memory.json files that can be passed
-to lm_game.py via --prior_memory_dir to verify the injection works.
+This creates agent_memories/{sanitized_model_id}_memory.json files that can be
+passed to lm_game.py via --prior_memory_dir to verify the injection works.
 
 Example workflow:
     # 1. Generate test memories
@@ -25,6 +25,17 @@ import json
 import os
 
 ALL_POWERS = ["AUSTRIA", "ENGLAND", "FRANCE", "GERMANY", "ITALY", "RUSSIA", "TURKEY"]
+
+# Test models (one per power, same order as ALL_POWERS)
+TEST_MODELS = [
+    "x-ai/grok-4.1-fast",
+    "google/gemma-4-31b-it",
+    "google/gemini-2.5-flash-lite",
+    "qwen/qwen3.5-27b",
+    "qwen/qwen3.6-plus",
+    "openai/gpt-oss-120b",
+    "anthropic/claude-haiku-4.5",
+]
 
 # Dummy diary content for each power
 DUMMY_DIARIES = {
@@ -75,20 +86,37 @@ DUMMY_DIARIES = {
     ),
 }
 
+# Trust/relationships are now model-to-model (keyed by model ID, not power)
+# In this test scenario: each model's trust reflects their in-game experience
+DUMMY_TRUST_SCORES = {
+    "x-ai/grok-4.1-fast": {"google/gemma-4-31b-it": 0.5, "google/gemini-2.5-flash-lite": 0.5, "qwen/qwen3.5-27b": 0.8, "qwen/qwen3.6-plus": 0.9, "openai/gpt-oss-120b": 0.1, "anthropic/claude-haiku-4.5": 0.3},
+    "google/gemma-4-31b-it": {"x-ai/grok-4.1-fast": 0.5, "google/gemini-2.5-flash-lite": 0.2, "qwen/qwen3.5-27b": 0.7, "qwen/qwen3.6-plus": 0.5, "openai/gpt-oss-120b": 0.5, "anthropic/claude-haiku-4.5": 0.5},
+    "google/gemini-2.5-flash-lite": {"x-ai/grok-4.1-fast": 0.5, "google/gemma-4-31b-it": 0.3, "qwen/qwen3.5-27b": 0.1, "qwen/qwen3.6-plus": 0.9, "openai/gpt-oss-120b": 0.5, "anthropic/claude-haiku-4.5": 0.5},
+    "qwen/qwen3.5-27b": {"x-ai/grok-4.1-fast": 0.7, "google/gemma-4-31b-it": 0.3, "google/gemini-2.5-flash-lite": 0.2, "qwen/qwen3.6-plus": 0.5, "openai/gpt-oss-120b": 0.1, "anthropic/claude-haiku-4.5": 0.5},
+    "qwen/qwen3.6-plus": {"x-ai/grok-4.1-fast": 0.8, "google/gemma-4-31b-it": 0.5, "google/gemini-2.5-flash-lite": 0.5, "qwen/qwen3.5-27b": 0.5, "openai/gpt-oss-120b": 0.5, "anthropic/claude-haiku-4.5": 0.2},
+    "openai/gpt-oss-120b": {"x-ai/grok-4.1-fast": 0.3, "google/gemma-4-31b-it": 0.5, "google/gemini-2.5-flash-lite": 0.5, "qwen/qwen3.5-27b": 0.1, "qwen/qwen3.6-plus": 0.5, "anthropic/claude-haiku-4.5": 0.7},
+    "anthropic/claude-haiku-4.5": {"x-ai/grok-4.1-fast": 0.2, "google/gemma-4-31b-it": 0.5, "google/gemini-2.5-flash-lite": 0.5, "qwen/qwen3.5-27b": 0.5, "qwen/qwen3.6-plus": 0.2, "openai/gpt-oss-120b": 0.7},
+}
+
 DUMMY_RELATIONSHIPS = {
-    "AUSTRIA": {"ENGLAND": "Neutral", "FRANCE": "Neutral", "GERMANY": "Friendly", "ITALY": "Ally", "RUSSIA": "Enemy", "TURKEY": "Unfriendly"},
-    "ENGLAND": {"AUSTRIA": "Neutral", "FRANCE": "Enemy", "GERMANY": "Friendly", "ITALY": "Neutral", "RUSSIA": "Neutral", "TURKEY": "Neutral"},
-    "FRANCE": {"AUSTRIA": "Neutral", "ENGLAND": "Unfriendly", "GERMANY": "Enemy", "ITALY": "Ally", "RUSSIA": "Neutral", "TURKEY": "Neutral"},
-    "GERMANY": {"AUSTRIA": "Friendly", "ENGLAND": "Unfriendly", "FRANCE": "Enemy", "ITALY": "Neutral", "RUSSIA": "Enemy", "TURKEY": "Neutral"},
-    "ITALY": {"AUSTRIA": "Unfriendly", "ENGLAND": "Neutral", "FRANCE": "Friendly", "GERMANY": "Neutral", "RUSSIA": "Neutral", "TURKEY": "Enemy"},
-    "RUSSIA": {"AUSTRIA": "Unfriendly", "ENGLAND": "Neutral", "FRANCE": "Neutral", "GERMANY": "Enemy", "ITALY": "Neutral", "TURKEY": "Friendly"},
-    "TURKEY": {"AUSTRIA": "Enemy", "ENGLAND": "Neutral", "FRANCE": "Neutral", "GERMANY": "Neutral", "ITALY": "Enemy", "RUSSIA": "Friendly"},
+    "x-ai/grok-4.1-fast": {"google/gemma-4-31b-it": "Neutral", "google/gemini-2.5-flash-lite": "Neutral", "qwen/qwen3.5-27b": "Friendly", "qwen/qwen3.6-plus": "Ally", "openai/gpt-oss-120b": "Enemy", "anthropic/claude-haiku-4.5": "Unfriendly"},
+    "google/gemma-4-31b-it": {"x-ai/grok-4.1-fast": "Neutral", "google/gemini-2.5-flash-lite": "Enemy", "qwen/qwen3.5-27b": "Friendly", "qwen/qwen3.6-plus": "Neutral", "openai/gpt-oss-120b": "Neutral", "anthropic/claude-haiku-4.5": "Neutral"},
+    "google/gemini-2.5-flash-lite": {"x-ai/grok-4.1-fast": "Neutral", "google/gemma-4-31b-it": "Unfriendly", "qwen/qwen3.5-27b": "Enemy", "qwen/qwen3.6-plus": "Ally", "openai/gpt-oss-120b": "Neutral", "anthropic/claude-haiku-4.5": "Neutral"},
+    "qwen/qwen3.5-27b": {"x-ai/grok-4.1-fast": "Friendly", "google/gemma-4-31b-it": "Unfriendly", "google/gemini-2.5-flash-lite": "Enemy", "qwen/qwen3.6-plus": "Neutral", "openai/gpt-oss-120b": "Enemy", "anthropic/claude-haiku-4.5": "Neutral"},
+    "qwen/qwen3.6-plus": {"x-ai/grok-4.1-fast": "Ally", "google/gemma-4-31b-it": "Neutral", "google/gemini-2.5-flash-lite": "Neutral", "qwen/qwen3.5-27b": "Neutral", "openai/gpt-oss-120b": "Neutral", "anthropic/claude-haiku-4.5": "Unfriendly"},
+    "openai/gpt-oss-120b": {"x-ai/grok-4.1-fast": "Unfriendly", "google/gemma-4-31b-it": "Neutral", "google/gemini-2.5-flash-lite": "Neutral", "qwen/qwen3.5-27b": "Enemy", "qwen/qwen3.6-plus": "Neutral", "anthropic/claude-haiku-4.5": "Friendly"},
+    "anthropic/claude-haiku-4.5": {"x-ai/grok-4.1-fast": "Enemy", "google/gemma-4-31b-it": "Neutral", "google/gemini-2.5-flash-lite": "Neutral", "qwen/qwen3.5-27b": "Neutral", "qwen/qwen3.6-plus": "Unfriendly", "openai/gpt-oss-120b": "Friendly"},
 }
 
 DUMMY_SC_COUNTS = {
     "AUSTRIA": 6, "ENGLAND": 5, "FRANCE": 7, "GERMANY": 4,
     "ITALY": 5, "RUSSIA": 6, "TURKEY": 0,
 }
+
+
+def sanitize_model_id(model_id: str) -> str:
+    """Convert model ID to safe filename component."""
+    return model_id.replace("/", "_").replace(":", "_")
 
 
 def main():
@@ -100,12 +128,15 @@ def main():
     memories_dir = os.path.join(args.output_dir, "agent_memories")
     os.makedirs(memories_dir, exist_ok=True)
 
-    for power in ALL_POWERS:
+    # Build power_model_map for this test game
+    power_model_map = dict(zip(ALL_POWERS, TEST_MODELS))
+
+    for power, model_id in zip(ALL_POWERS, TEST_MODELS):
         sc_count = DUMMY_SC_COUNTS[power]
         survived = sc_count > 0
         memory = {
             "power_name": power,
-            "model_id": "test-model",
+            "model_id": model_id,
             "game_outcome": {
                 "survived": survived,
                 "won": False,
@@ -114,18 +145,21 @@ def main():
                 "final_year": "1908",
             },
             "consolidated_diary": DUMMY_DIARIES[power],
-            "final_relationships": DUMMY_RELATIONSHIPS[power],
-            "final_goals": [f"Defend home centers", f"Expand influence in neighboring regions"],
+            "final_trust_scores": DUMMY_TRUST_SCORES[model_id],
+            "final_relationships": DUMMY_RELATIONSHIPS[model_id],
+            "final_goals": ["Defend home centers", "Expand influence in neighboring regions"],
+            "power_model_map": power_model_map,
         }
 
-        file_path = os.path.join(memories_dir, f"{power}_memory.json")
+        safe_name = sanitize_model_id(model_id)
+        file_path = os.path.join(memories_dir, f"{safe_name}_memory.json")
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(memory, f, indent=2, ensure_ascii=False)
-        print(f"  Created {file_path}")
+        print(f"  Created {file_path} (played {power})")
 
     print(f"\nDone. Test memories written to {memories_dir}/")
     print(f"\nTo use them:")
-    print(f"  python lm_game.py --max_year 1902 --models <model> \\")
+    print(f"  python lm_game.py --max_year 1902 --models {','.join(TEST_MODELS)} \\")
     print(f"    --prior_memory_dir {memories_dir}/")
 
 

@@ -24,6 +24,11 @@ logger = logging.getLogger(__name__)
 DEFAULT_MEMORY_CAP_WORDS = 500
 
 
+def sanitize_model_id(model_id: str) -> str:
+    """Convert model ID to safe filename component: 'x-ai/grok-4.1-fast' → 'x-ai_grok-4.1-fast'"""
+    return model_id.replace("/", "_").replace(":", "_")
+
+
 def export_agent_memories(
     game: "Game",
     agents: Dict[str, "DiplomacyAgent"],
@@ -31,15 +36,16 @@ def export_agent_memories(
     memory_cap_words: int = DEFAULT_MEMORY_CAP_WORDS,
 ) -> Dict[str, str]:
     """
-    Export each agent's consolidated memory to a per-power JSON file
+    Export each agent's consolidated memory to a per-model JSON file
     for injection into a subsequent game.
 
-    Returns a dict mapping power_name -> file path of the exported memory.
+    Returns a dict mapping model_id -> file path of the exported memory.
     """
     memories_dir = os.path.join(output_dir, "agent_memories")
     os.makedirs(memories_dir, exist_ok=True)
 
     exported: Dict[str, str] = {}
+    power_model_map = dict(getattr(game, "power_model_map", {}))
 
     for power_name, agent in agents.items():
         power_obj = game.powers.get(power_name)
@@ -63,9 +69,25 @@ def export_agent_memories(
             if len(words) > memory_cap_words:
                 diary_text = " ".join(words[:memory_cap_words]) + "\n[... truncated to fit memory cap ...]"
 
+        # Convert power-based trust_scores to model-based using power_model_map
+        model_trust_scores: Dict[str, float] = {}
+        for other_power, score in agent.trust_scores.items():
+            other_model = power_model_map.get(other_power)
+            if other_model:
+                model_trust_scores[other_model] = score
+
+        # Convert power-based relationships to model-based using power_model_map
+        model_relationships: Dict[str, str] = {}
+        for other_power, relationship in agent.relationships.items():
+            other_model = power_model_map.get(other_power)
+            if other_model:
+                model_relationships[other_model] = relationship
+
+        model_id = agent.client.model_name
+
         memory = {
             "power_name": power_name,
-            "model_id": agent.client.model_name,
+            "model_id": model_id,
             "game_outcome": {
                 "survived": survived,
                 "won": won,
@@ -74,39 +96,39 @@ def export_agent_memories(
                 "final_year": final_year,
             },
             "consolidated_diary": diary_text,
-            "final_relationships": dict(agent.relationships),
-            "final_trust_scores": dict(agent.trust_scores),
+            "final_relationships": model_relationships,
+            "final_trust_scores": model_trust_scores,
             "final_goals": list(agent.goals),
-            "power_model_map": dict(getattr(game, "power_model_map", {})),
+            "power_model_map": power_model_map,
         }
 
-        file_path = os.path.join(memories_dir, f"{power_name}_memory.json")
+        file_path = os.path.join(memories_dir, f"{sanitize_model_id(model_id)}_memory.json")
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(memory, f, indent=2, ensure_ascii=False)
 
-        exported[power_name] = file_path
+        exported[model_id] = file_path
         logger.info(
-            f"[{power_name}] Exported cross-game memory to {file_path} "
+            f"[{power_name}/{model_id}] Exported cross-game memory to {file_path} "
             f"(diary: {len(diary_text.split())} words)"
         )
 
     return exported
 
 
-def load_agent_memory(memory_dir: str, power_name: str) -> Optional[dict]:
+def load_agent_memory(memory_dir: str, model_id: str) -> Optional[dict]:
     """
-    Load a single agent's prior-game memory from a JSON file.
+    Load a single agent's prior-game memory from a JSON file (keyed by model ID).
     Returns None if the file doesn't exist.
     """
-    file_path = os.path.join(memory_dir, f"{power_name}_memory.json")
+    file_path = os.path.join(memory_dir, f"{sanitize_model_id(model_id)}_memory.json")
     if not os.path.isfile(file_path):
-        logger.info(f"[{power_name}] No prior memory file found at {file_path}")
+        logger.info(f"[{model_id}] No prior memory file found at {file_path}")
         return None
 
     with open(file_path, "r", encoding="utf-8") as f:
         memory = json.load(f)
 
-    logger.info(f"[{power_name}] Loaded prior game memory from {file_path}")
+    logger.info(f"[{model_id}] Loaded prior game memory from {file_path}")
     return memory
 
 
@@ -128,15 +150,15 @@ def format_prior_experience(memory: dict, current_power_model_map: Optional[Dict
     else:
         outcome_str = f"The game ended. You controlled {outcome.get('final_supply_center_count', '?')} supply centers"
 
-    # Relationships
-    relationships = memory.get("final_relationships", {})
-    rel_lines = [f"  - {p}: {r}" for p, r in sorted(relationships.items())]
-    rel_str = "\n".join(rel_lines) if rel_lines else "  (none recorded)"
-
-    # Trust scores
+    # Trust scores (now keyed by model ID)
     trust_scores = memory.get("final_trust_scores", {})
-    ts_lines = [f"  - {p}: {s:.2f}" for p, s in sorted(trust_scores.items())]
+    ts_lines = [f"  - {model}: {score:.2f}" for model, score in sorted(trust_scores.items())]
     ts_str = "\n".join(ts_lines) if ts_lines else "  (none recorded)"
+
+    # Relationships (now keyed by model ID)
+    relationships = memory.get("final_relationships", {})
+    rel_lines = [f"  - {model}: {rel}" for model, rel in sorted(relationships.items())]
+    rel_str = "\n".join(rel_lines) if rel_lines else "  (none recorded)"
 
     # Goals
     goals = memory.get("final_goals", [])
@@ -147,35 +169,27 @@ def format_prior_experience(memory: dict, current_power_model_map: Optional[Dict
     diary = memory.get("consolidated_diary", "")
     diary_str = diary if diary.strip() else "(no diary recorded)"
 
-    # Model identities
-    prev_map = memory.get("power_model_map", {})
-    model_id_str = ""
-    if prev_map:
-        prev_lines = [f"  - {p} was played by {m}" for p, m in sorted(prev_map.items())]
-        model_id_str = "\nModel identities from the previous game:\n" + "\n".join(prev_lines)
-
-        if current_power_model_map:
-            prev_model_to_power = {m: p for p, m in prev_map.items()}
-            remap_lines = []
-            for cur_power, cur_model in sorted(current_power_model_map.items()):
-                prev_power = prev_model_to_power.get(cur_model)
-                if prev_power and prev_power != cur_power:
-                    remap_lines.append(f"  - {cur_model} (was {prev_power}) is now playing {cur_power}")
-            if remap_lines:
-                model_id_str += "\n\nIn the current game, the model assignments have changed:\n" + "\n".join(remap_lines)
-
-        model_id_str += "\n"
+    # Current game model assignments
+    current_map_str = ""
+    if current_power_model_map:
+        map_lines = [f"  - {p} is played by {m}" for p, m in sorted(current_power_model_map.items())]
+        current_map_str = (
+            "\nIn the CURRENT game, the model assignments are:\n"
+            + "\n".join(map_lines)
+            + "\n\nUse your prior trust and relationship knowledge about these models to inform \n"
+            "how you interact with the powers they now control.\n"
+        )
 
     return (
         f"\n\n--- PRIOR GAME EXPERIENCE ---\n"
-        f"You have played a previous game of Diplomacy as {power}. "
+        f"You previously played a game of Diplomacy as {power}. "
         f"Use this experience to inform your strategy, but adapt to the new game state.\n\n"
         f"Game Outcome: {outcome_str} when the game ended in {outcome.get('final_year', '?')}.\n\n"
         f"Your strategic diary from that game:\n{diary_str}\n\n"
-        f"Your final assessment of other players:\n{rel_str}\n\n"
-        f"Your trust scores for other players (0.0=no trust, 1.0=full trust):\n{ts_str}\n\n"
-        f"Your goals at game end:\n{goals_str}\n"
-        f"{model_id_str}"
+        f"Your trust in other models (from your previous game, scale 0.0-1.0):\n{ts_str}\n\n"
+        f"Your relationships with other models (from your previous game):\n{rel_str}\n\n"
+        f"Your goals at the end of that game:\n{goals_str}\n"
+        f"{current_map_str}"
         f"--- END PRIOR EXPERIENCE ---\n"
     )
 
@@ -528,7 +542,7 @@ async def initialize_new_game(
                 # Load prior-game memory if available
                 prior_experience_text = None
                 if prior_memory_dir:
-                    memory_data = load_agent_memory(prior_memory_dir, power_name)
+                    memory_data = load_agent_memory(prior_memory_dir, model_id)
                     if memory_data:
                         prior_experience_text = format_prior_experience(
                             memory_data,
