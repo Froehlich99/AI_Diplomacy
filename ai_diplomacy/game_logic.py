@@ -24,6 +24,12 @@ logger = logging.getLogger(__name__)
 DEFAULT_MEMORY_CAP_WORDS = 500
 
 
+def strip_model_prefix(model_id: str) -> str:
+    """Strip provider prefix from config model ID: 'openrouter:x-ai/grok-4.1-fast' → 'x-ai/grok-4.1-fast'"""
+    _, sep, rest = model_id.partition(":")
+    return rest if sep else model_id
+
+
 def sanitize_model_id(model_id: str) -> str:
     """Convert model ID to safe filename component: 'x-ai/grok-4.1-fast' → 'x-ai_grok-4.1-fast'"""
     return model_id.replace("/", "_").replace(":", "_")
@@ -45,7 +51,7 @@ def export_agent_memories(
     os.makedirs(memories_dir, exist_ok=True)
 
     exported: Dict[str, str] = {}
-    power_model_map = dict(getattr(game, "power_model_map", {}))
+    power_model_map = {p: a.client.model_name for p, a in agents.items()}
 
     for power_name, agent in agents.items():
         power_obj = game.powers.get(power_name)
@@ -542,11 +548,13 @@ async def initialize_new_game(
                 # Load prior-game memory if available
                 prior_experience_text = None
                 if prior_memory_dir:
-                    memory_data = load_agent_memory(prior_memory_dir, model_id)
+                    memory_data = load_agent_memory(prior_memory_dir, client.model_name)
                     if memory_data:
+                        raw_map = getattr(game, "power_model_map", None)
+                        canonical_map = {p: strip_model_prefix(m) for p, m in raw_map.items()} if raw_map else None
                         prior_experience_text = format_prior_experience(
                             memory_data,
-                            current_power_model_map=getattr(game, "power_model_map", None),
+                            current_power_model_map=canonical_map,
                         )
 
                 agent = DiplomacyAgent(
