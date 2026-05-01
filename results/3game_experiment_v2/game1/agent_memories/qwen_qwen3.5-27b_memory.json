@@ -1,0 +1,45 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 6,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Strategic Situation Fall 1909: Germany faces existential crisis. England occupies Berlin and controls the Baltic and North Sea. Italy occupies Westphalia, threatening the Ruhr. France holds Paris. Russia honors a non-aggression pact on the Eastern front but remains opportunistic. Austria is collapsed. Germany's heartland is breached; supply center count is critically low. The loss of Berlin exposes the Ruhr and Munich to direct assault. England's fleet in the Baltic threatens Kiel and Denmark. Italy's presence in Westphalia cuts off land routes to the North. Diplomatic Reliability: England is the primary threat with a history of betrayal regarding Denmark and the North Sea. Italy is untrustworthy, exploiting German focus to seize Bohemia and Westphalia. France is stubborn and opportunistic. Russia is currently static but prioritizes expansion over alliance stability. Austria is irrelevant. Strategic Directives: Retake Berlin immediately using Prussia and Ruhr units to prevent encirclement. Dislodge Italy from Westphalia to secure the industrial core. Maintain control of Kiel, Denmark, and the North Sea; England's fleet must be destroyed. Secure Paris and Picardy once England is neutralized. Current German units must coordinate to push England out of Berlin. A WAR and A SIL must hold the East against Russia. A MUN must defend against Italy. F KIE and F DEN must secure the Baltic. Core Lessons: Alliances are temporary tools, not guarantees. Trust is nonexistent; only force matters. Avoid overextension; focus on one major enemy at a time, England first. Passive defense leads to collapse. Aggression is the only path to survival and eventual domination. Monitor Russia closely; do not let them exploit the chaos. Secure 18 supply centers by eliminating England, then France. Do not rely on diplomatic warnings; military pressure is required. All units must have orders assigned to capture empty supply centers or dislodge enemies. [S1910M] France apologized for past support error and proposed non-aggression on shared borders, but refuses to surrender Paris. England remains hostile, refusing to evacuate Berlin. Russia confirmed non-aggression pact and proposed reciprocal support (Germany supports UKR, Russia supports KIE). Italy confirmed non-aggression on MUN/BOH but holds F WES threatening Ruhr. Turkey focused on Med expansion, neutral to Germany. Intent: Retake Berlin (BER) from England using A PRU and A RUH. Dislodge Italy from Westphalia (WES) to secure Ruhr. Attack Paris (PAR) with F PIC to reclaim capital. Support Russia's hold on UKR to maintain Eastern pact. Consolidate North Sea dominance with F KIE and F DEN. Fulfill agreement with Russia to support UKR hold. [S1910M] Berlin is finally retaken by A PRU, a crucial victory against England. However, strategic errors cost us Denmark; moving F DEN to KIE allowed England's F SKA to occupy the supply center. We failed to dislodge Italy from Westphalia, leaving the Ruhr exposed. The pact with Russia is effectively dead; we failed to support UKR as agreed, and Russia moved A UKR to GAL, threatening our eastern flank. England remains the primary threat, now controlling Denmark and the Baltic. France holds Paris firmly. We must prioritize securing\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "anthropic/claude-haiku-4.5": "Neutral",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "openai/gpt-oss-120b": "Friendly",
+    "google/gemma-4-31b-it": "Enemy",
+    "qwen/qwen3.6-plus": "Unfriendly"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "anthropic/claude-haiku-4.5": 0.3,
+    "google/gemini-2.5-flash-lite": 0.1,
+    "openai/gpt-oss-120b": 0.6,
+    "google/gemma-4-31b-it": 0.0,
+    "qwen/qwen3.6-plus": 0.2
+  },
+  "final_goals": [
+    "Reclaim Denmark (DEN) and Holland (HOL) from England immediately",
+    "Dislodge Italy from Westphalia (WES) to secure Ruhr",
+    "Attack Paris (PAR) to pressure France",
+    "Maintain Eastern Pact with Russia (Hold WAR/GAL border)",
+    "Eliminate England's naval presence in North Sea/Baltic",
+    "Secure 18 supply centers for world domination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}
