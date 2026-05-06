@@ -43,7 +43,7 @@ sync_loop() {
 }
 sync_loop &
 SYNC_PID=$!
-trap "kill $SYNC_PID 2>/dev/null; wait $SYNC_PID 2>/dev/null" EXIT
+trap "kill $SYNC_PID 2>/dev/null; wait $SYNC_PID 2>/dev/null || true" EXIT
 
 # Run experiment
 echo "Starting experiment..."
