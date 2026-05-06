@@ -1,0 +1,31 @@
+{
+  "name": "k8s_3game_memory_v3",
+  "description": "2-game memory experiment with Claude Opus 4.6 replacing Haiku 4.5. Tests whether a stronger reasoning model improves cross-game learning with memory and power rotation. Reduced to 2 games for budget.",
+  "max_year": 1910,
+  "num_negotiation_rounds": 2,
+  "simple_prompts": true,
+  "planning_phase": false,
+  "max_tokens": 16000,
+  "memory_cap_words": 500,
+  "models": [
+    "openrouter:x-ai/grok-4.1-fast",
+    "openrouter:google/gemma-4-31b-it",
+    "openrouter:google/gemini-2.5-flash-lite",
+    "openrouter:qwen/qwen3.5-27b",
+    "openrouter:qwen/qwen3.6-plus",
+    "openrouter:openai/gpt-oss-120b",
+    "openrouter:anthropic/claude-opus-4.6"
+  ],
+  "rotate_powers": true,
+  "rotation_offset": 0,
+  "games": [
+    {
+      "id": "game1",
+      "memory": false
+    },
+    {
+      "id": "game2",
+      "memory": true
+    }
+  ]
+}

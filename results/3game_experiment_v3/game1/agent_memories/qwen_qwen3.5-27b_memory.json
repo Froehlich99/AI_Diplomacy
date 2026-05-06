@@ -1,0 +1,44 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany faces imminent elimination following the Fall 1909 loss of Berlin to a coordinated Austro-Turkish pincer. Current supply centers are critically low, restricted to Kiel and Holland. France is the only viable ally, maintaining a Non-Aggression Pact (NAP) and holding Paris to buffer Italy and England, though their position weakened after losing Wales. All other powers are hostile. Austria and Turkey constitute the primary existential threat, controlling Prussia, Silesia, and Galicia. They demonstrated lethal coordination in dislodging Berlin despite German support. Italy holds Belgium, Munich, and Ruhr, actively threatening the Western flank and Kiel. England controls Denmark and the North Sea, pressuring Holland. Russia is eliminated. Diplomatic history confirms trust is nonexistent outside the French NAP. Early alliances with Austria, Turkey, and England collapsed into betrayal. Turkey obstructed Moscow strikes; Austria seized Ukraine and Silesia opportunistically. Static defense proved fatal; holding Berlin against a 2v1 pincer failed. Future strategy must prioritize aggressive mobility over passive holds. Germany must leverage French stability to prevent a 4-front war while launching counter-offensives against the Austro-Turkish coalition. Reclaiming core SCs like Berlin or Prussia is essential for survival. Italy and England are opportunistic but currently contained by France. No verbal agreements with enemies are trustworthy. Survival depends on shattering the Austro-Turkish alliance before total elimination. Immediate orders must focus on breaking the encirclement, utilizing fleets in Kiel and Holland to support land pushes or secure naval dominance to prevent further isolation. The French NAP is the lifeline; do not provoke them. Focus all offensive pressure on the East to break the Turkey-Austria grip, as the West is temporarily stabilized by French containment. Avoid overextension; survival is the only metric for the next phase. [S1910M] France confirmed NAP is ending; will hold Paris to survive Italy but cannot support Germany. Italy declared total offensive on KIE and HOL. Turkey offered temporary truce against Italy, advising Germany to hold KIE/HOL to deny Italy SCs, implying potential support from PRU. Austria and England remain hostile and coordinate for partition. Intent: F KIE -> Hold (Banking on Turkey's implied support from PRU to bounce Italy's A MUN). F HOL -> Hold (Attempting to deny Italy SCs as advised by Turkey, hoping for bounce or French indirect pressure). Survival is priority; moving guarantees loss of SCs. [S1910M] Survival secured via Turkey’s unexpected defense. Despite occupying Berlin, Turkey moved A BER to KIE, bouncing Italy’s attack. This validates their truce offer against Italy, suggesting they prioritize containing Italy over eliminating Germany immediately. France confirmed NAP termination, holding Paris without aid; trust is fully broken. Italy overextended, failing to capture Kiel or Holland due to bounces from Turkey and England. England also failed to take Holland. Strategic lesson: Turkey is a volatile variable. They hold our SC but defended us against Italy. Exploit this rift. France is irrelevant now. Focus on breaking the Italy-Turkey dynamic. If Turkey continues defending Kiel, we can stabilize. However, Turkey holding Berlin remains a long-term threat. Immediate priority: Maintain Kiel/Hold, seek opportunity to retake\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "openai/gpt-oss-120b": "Enemy",
+    "google/gemma-4-31b-it": "Enemy",
+    "anthropic/claude-opus-4.6": "Neutral",
+    "google/gemini-2.5-flash-lite": "Friendly",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "openai/gpt-oss-120b": 0.0,
+    "google/gemma-4-31b-it": 0.0,
+    "anthropic/claude-opus-4.6": 0.6,
+    "google/gemini-2.5-flash-lite": 0.5,
+    "qwen/qwen3.6-plus": 0.0
+  },
+  "final_goals": [
+    "Survive Fall 1910 elimination attempt",
+    "Retain Kiel and Holland supply centers",
+    "Maintain temporary truce with Turkey to prevent 2-front war",
+    "Exploit Italy's overextension and Turkey-Italy rivalry",
+    "Prepare for counter-offensive to reclaim Berlin/Prussia once stabilized"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

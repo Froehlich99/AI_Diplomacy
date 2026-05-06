@@ -1,0 +1,47 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "anthropic/claude-opus-4.6",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 12,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **TURKEY CONSOLIDATED DIARY - End of F1909 (9 SCs: ANK, SMY, CON, BUL, GRE, SEV, MOS, WAR, BER)** **AUSTRIA (MAXIMUM TRUST ALLY - 5 SCs):** Rock-solid alliance since S1901. Delivered perfectly on Berlin kill shot (F1909), Warsaw campaign, and Moscow campaign. One coordination failure (F1907 - both units tried supporting the other, nobody moved to PRU). Lesson: ALWAYS triple-confirm who MOVES vs who SUPPORTS with explicit order text. Austria needs me against Italy's A BOH threatening Vienna. Alliance is mutual survival. **ITALY (PRIMARY THREAT - 9 SCs):** Non-aggression held perfectly through entire game but Italy is now the fastest-growing power. Has A BOH (threatens Vienna), A MUN, A BEL, likely taking PAR/HOL soon (10-11 SCs). I moved F EAS→ION and F BUL→AEG in F1909 - anti-Italian containment infrastructure already deployed. Must build anti-Italian coalition with Austria+England IMMEDIATELY before Italy snowballs. **ENGLAND (UNRELIABLE - ~4 SCs):** Broke specific support promises THREE consecutive times (F1903-S1905). Finally delivered on F1909 Berlin attack (cut KIE support). Useful against Germany, may be useful against Italy. Never plan critical moves around English promises alone. **GERMANY (COLLAPSING - 2 SCs: KIE, HOL):** Only F KIE and F HOL remain. A PRU positioned for KIE capture. Finishing Germany is trivial - one more supported attack. **FRANCE (NEARLY DEAD - 1-2 SCs):** Irrelevant militarily. Likely loses Paris to Italy this turn. **STRATEGIC POSITION:** A PRU threatens KIE (10th SC next). F ION + F AEG + A ALB = anti-Italian Mediterranean force ready. A WAR/MOS/SEV secure eastern corridor. **IMMEDIATE S1910 PRIORITIES:** (1) Alert Austria to Italian A BOH - coordinate defense of Vienna. (2) Take KIE with A PRU + support. (3) Build anti-Italian coalition (Austria+England). (4) Begin planning Mediterranean campaign against Italian coastal SCs. Path to 18: current 9 + KIE(10) + Italian SCs (TUN/NAP/ROM/VEN/MAR) = 15+ with Austrian cooperation. [S1910M] ENGLAND: Explicitly agreed to F DEN S A BER→KIE. Strong anti-Italian alignment. Wants HOL next turn - I promised no contest. Trust significantly improved after two consecutive turns of honored commitments. AUSTRIA: Agreed A SIL→BOH (taking empty BOH as Italy vacates), A UKR→GAL, A TRI→VIE (defend). RED FLAG: Austria proposed 'A RUM→SEV (secure vs any TK flake, str2v1 w/BLA)' - this is Austria moving INTO my SC as 'insurance'. I proposed RUM H but Austria counter-proposed RUM→SEV. I did NOT confirm this. Must guard SEV with F BLA support. ITALY: Shared full orders publicly (A BOH→GAL, A MUN→KIE, A BEL→HOL, A ROM→VEN, F ENG→NTH, etc.). Claims continued Mediterranean boundary respect. I offered to support their MUN→KIE (deceptive - actually taking KIE myself with English support). Italy likely takes PAR this turn (2v1 via BUR+PIC). If Italy's announced orders are true, BOH empties for Austria and ROM empties - making F ION→TYS very strong next phase. FRANCE: Likely loses Paris. Told them to hold on. GERMANY: 2 fleets only, irrelevant. Told them to fight Italy. Intent: S1910M ORDERS: (1) A BER→KIE - take Kiel with English F DEN support at str 2 vs German hold str\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "openai/gpt-oss-120b": "Enemy",
+    "google/gemma-4-31b-it": "Unfriendly",
+    "google/gemini-2.5-flash-lite": "Friendly",
+    "qwen/qwen3.5-27b": "Friendly",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.15,
+    "openai/gpt-oss-120b": 0.0,
+    "google/gemma-4-31b-it": 0.15,
+    "google/gemini-2.5-flash-lite": 0.5,
+    "qwen/qwen3.5-27b": 0.4,
+    "qwen/qwen3.6-plus": 0.2
+  },
+  "final_goals": [
+    "F1910M PRIORITY #1: F TYS→ROM (empty Rome = guaranteed SC #10). F ION supports to guarantee even if A VEN→ROM attempted.",
+    "F1910M PRIORITY #2: A ALB→SER supported by A BUL (unoccupied Austrian SC = SC #11). Both targets require zero external support.",
+    "F1910M DEFENSE: F BLA S A SEV H blocks Austrian A RUM→SEV. A BER H protects Berlin.",
+    "POST-FALL TARGETS: With 11 SCs, next targets are NAP (F ION or chain advancement), then TUN. Fleet chain at ROM/TYS/ION positions perfectly for continued Italian coastal seizures.",
+    "STRATEGIC: Now at war with BOTH Italy and Austria. Italy's main force is in the west (BUR/PIC/BEL/ENG/MAO/MUN) - only A VEN near me. Austria has 5 units but loses SER down to 4 SCs. Geographic position strong - I threaten both from interior lines.",
+    "GERMANY PRESERVATION: Keep Germany alive as buffer. Their F KIE blocks Italian expansion northward. A BER H denies Italy any easy northern gains.",
+    "ENGLAND UTILITY: Don't rely on England for anything but hope they independently pressure Italy from north (NTH/LON/SWE). Any English pressure on Italy helps me regardless of coordination.",
+    "SC PATH TO 18: Current 9 + ROM(10) + SER(11). Then NAP(12), TUN(13), RUM(14), BUD(15) from Austria. Then assess remaining 3 SCs from Italy/England depending on board state."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

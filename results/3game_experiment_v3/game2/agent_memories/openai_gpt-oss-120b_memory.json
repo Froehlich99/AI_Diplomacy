@@ -1,0 +1,46 @@
+{
+  "power_name": "ITALY",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Italy’s early game (1901‑1902) built a solid Mediterranean DMZ with Turkey (no moves into ION, AEG, GRE) and non‑aggression understandings with Germany, France and Austria. The DMZ let Italy seize Tyrolia (A VEN→TYR) and later Vienna (A TYR→VIE), giving a foothold in Central Europe and the supply centre VIE. Russia was a friendly but passive partner; England stayed neutral. From 1903 onward Turkey repeatedly broke the DMZ, sending fleets into ION/AEG and later attacking Naples, making Turkey a clear and ongoing naval threat. Austria remained hostile, repeatedly bouncing Italy’s attacks on Budapest and even supporting its own defence (GAL→BUD). Repeated solo Budapest pushes (TRI→BUD with VIE support) failed each spring because no external support arrived; Germany consistently refused convoy or naval aid while honouring the Alps DMZ, and France offered only diplomatic backing. Russia’s promises of support (GAL, SEV convoy, SER→BUL) never materialised, leaving Italy’s land offensives unsupported. Key stable relationships: - **Germany** – reliable for border security (Alps DMZ) but non‑committal on convoys or offensive help. - **France** – friendly diplomatically, never provides material aid. - **Russia** – unreliable for joint attacks; only useful as a passive ally that can pressure Turkey in the Black Sea when it chooses. Key threats: - **Turkey** – hostile naval force, repeatedly violates the DMZ, threatens Naples and the Adriatic; must be countered with a fleet in ADR/ROM or a convoy partner. - **Austria** – aggressive in the Balkans, capable of retaking VIE and pushing into BUD/RUM; requires multi‑power support to dislodge. Current holdings (after 1909): Venice (VEN) and Trieste (TRI) as land centres, Adriatic fleet in ADR, plus a weakened presence in the south (no fleet in ROM). Italy has lost VIE and the Mediterranean DMZ is dead. Strategic priorities: 1. Re‑establish a naval partner (seek a convoy pact with England or a limited naval cooperation with Germany). 2. Build a second Adriatic fleet (via convoy or retreat‑build) to block Turkish raids on Naples. 3. Coordinate a multi‑power attack on Austria (add at least one more land support or convoy) before attempting Budapest again. 4. Keep the Alps DMZ with Germany intact and maintain diplomatic goodwill with France for future non‑aggression. [S1910M] Austria demanded Italy vacate Trieste; Italy replied it will instead move A TRI to the empty supply centre BUD, pressuring Austria on three fronts. Russia asked Italy not to support Austria and suggested an attack on VIE; Italy chose to follow Russia's advice by not supporting Austria and will capture BUD instead. No convoy or naval assistance was secured from France, Germany, or England. Intent: Issue orders for S1910M: F VEN H (hold in the Adriatic) and A TRI - BUD (move into the empty centre). No other units are available, and Italy will not provide support to Austria. [S1910M] Italy’s bold move to seize the empty centre BUD paid off – the army from TRI arrived unopposed, giving us a second supply centre and a foothold in Austria’s heartland. The Adriatic fleet in VEN held, but we\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "anthropic/claude-opus-4.6": "Unfriendly",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Friendly",
+    "qwen/qwen3.6-plus": "Friendly"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.0,
+    "anthropic/claude-opus-4.6": 0.2,
+    "google/gemini-2.5-flash-lite": 0.0,
+    "x-ai/grok-4.1-fast": 0.0,
+    "qwen/qwen3.5-27b": 0.6,
+    "qwen/qwen3.6-plus": 0.5
+  },
+  "final_goals": [
+    "Defend Venice, Trieste and the Adriatic coast against Turkish naval aggression.",
+    "Maintain the Alps DMZ with Germany and a non‑aggression stance with France.",
+    "Secure a reliable convoy partner (ideally England, otherwise Germany or France) for future fleet builds.",
+    "Limit reliance on Russian support; keep options open for joint actions against Turkey.",
+    "Re‑build a second Adriatic fleet next build phase (via retreat‑build or convoy).",
+    "Hold the newly acquired Budapest centre and use it as diplomatic leverage against Austria.",
+    "Work towards retaking Vienna or another northern centre when a solid coalition can be formed."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-opus-4.6",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

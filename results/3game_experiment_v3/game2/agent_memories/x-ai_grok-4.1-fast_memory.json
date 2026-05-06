@@ -1,0 +1,45 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **TURKEY Position (F1909M):** 7SC/7u (GRE/BUL/SMY/ANK/CON + Med gains NAP/TUS/ROM vs ITA; stalled east vs RU SEV). AT juggernaut collapsed (AUS 8+ refusals SEV/UKR/RUM supports, trust 0 Enemy lockout—self-focused VIE/TRI/BUD vs ITA stabs). RU resilient 9SC (SEV/BER/KIE/DEN/NWY; early BLA betrayal, multiple 4v1+ TK solo kills bounced via execution errors). ITA gutted to ~2SC (ROM/NAP/TUS dislodged, ALB->SER stab lost SC—VEN/TUN next). ENG Ally reliable anti-ITA (GAS/SPA/NC/MAO pressure, trust 0.90). GER Friendly DMZ/appreciates TK ROM/SEV efforts (trust 0.75, defensive vs FRA/RU stalls TYR pivot). FRA GER-focused ignores Med. **Key Diplomacy History:** Initial AT east lock (BUL/GRE/SER/RUM grabs 1901-03) strained by AUS VIE/TRI greed vs ITA stabs (TYR/VIE/TRI/ALB/SER); ITA DMZ held→breached (expose globally). Solo RU SEV crushes fumbled x6 (self-holds/bounces: ARM/BLA/ANK/BUL->SEV chains). ENG/GER anti-ITA locked (SPA/NC->GAS/MAO, RUH->MUN sets TYR); globals unite vs ITA/RU/AUS stabs. Recent: ITA ALB->SER (S1908M), RU north surge (SWE->DEN), FRA GER BEL crush; TK Med dominance (TYS/NAP/ROM->TUN/VEN). **Trust/Relationships:** ENG (gemini Ally 0.90↑ reliable executes), GER (qwen Friendly 0.75 DMZ/verifies), AUS/ITA/RU/FRA Enemies (0.0 stalls/stabs). **Strategic Path to 18SC:** Crush RU SEV 5v2+ verbatim F1910M (ARM/BLA->SEV, ANK/BUL->BLA s, no self-errors/holds); gut ITA TUN/VEN (TYS/NAP->TUN/ION); demand ENG MAO->WES/POR, GER DEN->KIE/MUN->TYR explicit. Post-SEV: BLA->RUM/UKR north carve w/GER PRU/BER, ENG STP; Med/Alps lock ITA west (TUN/NAP/TYS vs LYO/TUS). Aggressive no-holds, triple-verify orders, global exposes. Pivot north post-east 10SC lock. (298 words) [S1910M] No explicit move agreements: ENG refuses MAO->WES/LYO (defensive vs FRA Channel/home threat, remains allied); GER (1u HOL) holds for survival, neutral/DMZ, no DEN->KIE/TYR/PRU/anti-ITA/RU; RU NAP proposal rejected, exposed as stall; AUS threatens BUL stalls; FRA RU-allied until GER gone, Med non-agg ack'd but no anti-RU; ITA silent. Globals expose AT/ITA/RU stabs/coalition. ENG/GER trust holds (no betrayals), monitor executes; no moves agreed/fulfilled. Intent: Aggressively solo RU SEV 5v2+ kill: A ARM->SEV, F BLA->SEV, F ANK->BLA s SEV, F BUL/SC->BLA s SEV; anti-ITA gut/probe: F TUS->LYO, F NAP->ION; A GRE->SER (reclaim pressure vs AUS/ITA). No agreements made/fulfilled. All 7 units active/no holds; post-SEV pivot BLA->RUM north w/GER/ENG if verifies. [S1910M] [S1910M] Catastrophic self-execution failure: Intended 5v2+ RU SEV kill (ARM/BLA->SEV + ANK/BUL->BLA s) + TUS->LYO/NAP->ION anti-ITA gut executed as all holds—BAN HOLDS FOREVER, triple-verify orders. AUS Enemy stole BUL/SC (RUM->BUL s SER), dislodging F BUL; they lost RUM to RU GAL->RUM. RU defended SEV H (UKR/MOS s) + center/north gains (KIE->HOL bounce vs GER, BOH->TYR). ENG Ally MAO->ENG defensive (no WES/LYO), GER Friendly HOL->RUH survival. ITA TRI->BUD vs AUS. Impact: TK 6SC/6u (BUL retreat), east stalled vs RU 9SC juggernaut; Med/ITA probe lost momentum. Lessons: Own errors > enemies; global expose AUS BUL stab, demand ENG MAO->WES/GER RUH->MUN/KIE explicit F1910M for SEV retry + north carve. Solo aggression + ENG/GER verifies only path to 10SC+ pivot. (138 words) [F1910M] ENG Ally committed to F ENG->MAO->WES explicit to support TK anti-ITA Med squeeze (TUS->LYO/NAP->ION); TK will fulfil coordination. GER declined RUH->MUN->TYR/DEN->KIE (no builds), insists RUH H neutral buffer survival—TK accepts DMZ if verifies defensive. RU ceasefire/BLA-SEV stall rejected. AUS alliance vs RU rejected due BUL stab. ITA Adriatic ceasefire ignored. Globals expose AUS/ITA/RU stabs; FRA\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "anthropic/claude-opus-4.6": "Enemy",
+    "google/gemini-2.5-flash-lite": "Ally",
+    "qwen/qwen3.5-27b": "Unfriendly",
+    "qwen/qwen3.6-plus": "Friendly",
+    "openai/gpt-oss-120b": "Enemy"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.0,
+    "anthropic/claude-opus-4.6": 0.0,
+    "google/gemini-2.5-flash-lite": 0.9,
+    "qwen/qwen3.5-27b": 0.0,
+    "qwen/qwen3.6-plus": 0.75,
+    "openai/gpt-oss-120b": 0.0
+  },
+  "final_goals": [
+    "Aggressively solo RU east: ARM/BLA->SEV + ANK/CON->BLA s (4v2+ kill post-BUL loss, triple-verify no holds/errors), SER/BUL/GRE reclaim + build F ADR/BLA/SMY post-SEV for ION/RUM/WAR/10SC+ north",
+    "Execute anti-ITA crush w/ENG: TUS->LYO + NAP->ION (gut VEN/TUN 3v1+ w/ENG MAO->WES/LYO), leverage GER DMZ for Alps/Med; verify ENG MAO->WES explicit, monitor GER RUH H",
+    "Global expose AUS BUL/ITA SER stabs/RU SEV/BER/KIE taunts; permanent solo/no AT/ITA/RU aids, BLA->RUM->WAR/UKR north w/GER PRU/BER/ENG BAL/NWY post-SEV",
+    "Lock GER/ENG west/north vs RU/FRA: Verify GER RUH H neutral + ENG MAO->WES/EDI->NTH->BAL explicit; post-RU/ITA GER PRU/BER + ENG north split (STP/NWY/SWE/DEN)",
+    "All units active/no holds ever (ban passive); TK 10SC+ east/Med solo vs ENG/GER reliable anti-ITA/RU (monitor ENG MAO executes/GER RUH hold), post-RU/ITA north/west dominance (WAR/PRU/BER + VEN/TUN/PIE/MAR/POR)",
+    "Contain RU/ITA/AUS globals: Dismiss anti-TK coalitions/NAPs/taunts/ceasefires, unite ENG/GER vs BER/PRU/SKA/BOH/DEN + ITA aggression post-SEV; demand ENG MAO->WES/GER TYR verbatim or pivot north solo"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-opus-4.6",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

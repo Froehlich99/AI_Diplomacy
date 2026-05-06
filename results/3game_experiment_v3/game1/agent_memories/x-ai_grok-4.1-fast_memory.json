@@ -1,0 +1,43 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **AUSTRIA Position (1909):** 5 SC/5 units (SIL, UKR, WAR support lock, RUM, TRI, ADR). AT alliance dominates east (13 SC combined: AUS SER/RUM/UKR + TK WAR/PRU/BER/MOS/SEV/BUL/GRE). RU eliminated 1905. GER collapsing (2 SC/2u post-BER/PRU losses; overextended PRU/SIL/BOH/KIE). ITA 8+ SC west gains (crushing FRA PAR/BUR/MAR/BRE; TYR-BOH Alps greed probes vs TRI/ADR—post-GER contain priority). ENG tripartite north reliable (DEN-KIE/HOL pressure). **Key Diplomacy History:** - **AT Core (1901-09):** Flawless vs RU (SEV/MOS/UKR/RUM), GER north (WAR/UKR/SIL/PRU/BER boots via 2v1+). TK 95-100% reliable (occasional sloppy self-s like F1908 WAR H, F1907 crossed s); explicit \"s X→Y\" essential. Demand WAR H/PRU→SIL post-BER for AT 13 SC lock. - **ITA Alliance (1901-09):** Anti-TUR/FRA then GER west (VEN-TYR/MUN flank); 100% executed but recent TYR→BOH/VEN-TYR greed flags. Rebuke: Post-GER ADR/TRI→VEN/TYR + ALB→APU Med/Alps contain; split GER west (ITA MAR/BRE/PAR/BUR/MUN). - **ENG Tripartite (1906-09):** North GER carve (DEN/HOL/KIE/BEL); 100% reliable, probe STP post-GER. - **GER/FRA/RU:** Hostile/elim; ignore pleas. **Strategic Path to 18 SC:** Finish GER S1910 (4v1+ PRU/BER/BOH/SIL/KIE w/ AT SIL/UKR/WAR/GAL s TK LVN/PRU + ITA TYR-BOH/ENG DEN-KIE explicit). Builds to 6-7u. Post-GER: AT north (BER/MUN/WAR/PRU/SIL + ENG STP) + ITA contain (ADR/TRI/ALB/BUL vs TYR/VEN/APU). Aggressive no-holds: Overcommit supports, verify ally secondaries. (248 words) [S1910M] TK/ENG confirm GER kill (TK BER→KIE s PRU, ENG DEN→KIE/NTH→HOL, ITA MUN→KIE/BEL→HOL) then anti-ITA pivot; TK urges/proposes SIL→BOH (take ITA emptying BOH→GAL), PRU→SIL (your empty SIL), RUM/UKR H, TRI/ADR defend/contest; I agreed/locked SIL→BOH, UKR→GAL (counter GAL), TRI→VIE (defend), ADR→ALB (s TK ALB, threaten ITA), RUM→SEV (secure east); ITA broadcasts BOH→GAL/ROM→VEN (breaks east/west split, VIE/GAL threat) despite rebukes, insists SIL s BER/KIE; ENG ITA 'existential threat', coordinates GER wipe then ITA contain; FRA warns ITA threat. All allies align anti-ITA post-GER. Intent: Fulfil TK/ENG anti-ITA/GER agreements: A SIL→BOH (take empty BOH vs ITA BOH→GAL str1v0, secure north buffer/13SC lock); A UKR→GAL (counter/block ITA BOH→GAL str1v0); A TRI→VIE (defend home vs ITA ROM→VEN); F ADR→ALB (s TK ALB, lock GRE/VEN/ADR vs ITA); A RUM→SEV (secure SEV str2v1 w/TK BLA, east lock). Expect TK PRU→SIL/BER→KIE/WAR H. No holds, max anti-ITA/GER pressure, prep Med/Alps contain. [S1910M] **S1910M Analysis:** Partial AT collab: TK executed PRU→SIL/BER→KIE (bounces vs ITA/GER holds) + SEV H/BLA s + ION→TYS anti-ITA pivot, securing east (RUM→SEV bounce reinforces lock). ITA BOH→GAL/ROM→VEN greed bounced perfectly (UKR→GAL counter + my SIL→BOH vs rebound), holding BOH buffer. ENG betrayal: DEN→SWE/NTH→HOL fizzle (no KIE hit), sparing GER 2SC—trust eroded, demand explicit next. No TK/ITA breaks. Position stable 5SC/5u (TRI→VIE defends VIE; ADR→ALB bounce vs ALB H). GER crush delayed (multi-hit KIE/HOL failed); ITA west-focused (VEN home, no east gains). Lesson: Lock ENG \"DEN→KIE s PRU\" verbatim; F1910M retry PRU←SIL→BOH/UKR→WAR s TK, TK WAR→PRU/BER→MUN, ENG DEN-KIE/HOL dual. Pivot west: TK TYS→NAP/ALB→APU, ADR→TRI→TYR. AT/TK 13SC primed. (138 words) [F1910M] TK demands strict F1910M ceasefire (RUM/ADR/SEV H, no mutual attacks) post-S1910M bounced probes (RUM→SEV/ADR→ALB); AT assured alliance/ceasefire locked, east 13SC intact but verify TK non-east moves. ENG confirms NTH→HOL priority + SWE→BAL s TK KIE hit; North4 carve (HOL/KIE/DEN/BEL) agreed post-GER. ITA requests explicit AT s BUR→PAR/BEL→HOL/MUN→KIE for GER/FR wipe\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "openai/gpt-oss-120b": "Enemy",
+    "google/gemma-4-31b-it": "Ally",
+    "anthropic/claude-opus-4.6": "Ally",
+    "google/gemini-2.5-flash-lite": "Friendly",
+    "qwen/qwen3.5-27b": "Enemy",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "openai/gpt-oss-120b": 0.0,
+    "google/gemma-4-31b-it": 0.85,
+    "anthropic/claude-opus-4.6": 0.75,
+    "google/gemini-2.5-flash-lite": 0.6,
+    "qwen/qwen3.5-27b": 0.0,
+    "qwen/qwen3.6-plus": 0.15
+  },
+  "final_goals": [
+    "AT/TK east/north lock 13SC: PRU→SIL (TK fills AUS SIL), BER→KIE/MUN (TK cut GER), WAR H str3+ (UKR→GAL/WAR flex); secure SEV/RUM/UKR/MOS/WAR/PRU/BER/BOH/SIL; F1910M SIL→BOH (VIE s str2v1) + UKR→GAL block ITA",
+    "Crush GER now: TK PRU/BER + ITA MUN/BEL + ENG DEN/NTH/KIE/BAL multi-hit KIE/HOL (target 0SC); explicit TK/ENG/ITA verifies essential",
+    "Anti-ITA pivot/contain: SIL→BOH/UKR→GAL/TRI→VIE/ADR→TRI lock central/Alps (block BOH→GAL/VEN); TK ION→TYS→NAP + ALB→APU/GRE + ENG ENG/MAO + FRA PAR Med pressure; post-GER ADR/TRI→TYR/VEN buffer",
+    "Aggressive 18SC: GER carve (WAR/PRU/BER/SIL/BOH + ENG north4 HOL/KIE/DEN/BEL) + contain ITA west7 (MAR/BRE/PAR/BUR/MUN/RUH); AT/TK 13SC elite pivot west, ENG north lock; TK ceasefire verify or retaliate"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}
