@@ -1,0 +1,47 @@
+{
+  "power_name": "ITALY",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] ITALY CONSOLIDATED STRATEGIC SUMMARY (F1909M) CURRENT POSITION: 4 supply centers (NAP/ROM/TUN/VIE). Mediterranean fleet presence intact after F1909M TRI evacuation. Defensive baseline stable but vulnerable to coordinated multi-power assault. ALLIANCE FRAMEWORK: TURKEY is Italy's only reliable strategic partner—East/West Mediterranean division has held consistently since S1901M despite all pressures. Turkey explicitly escalated to active alliance (F1909M) against Russian expansion threat, committed to coordinated defensive strategy. FRANCE shifted from early ally status to hostile enemy (violating ION/TYS boundaries, attempting TRI occupation S1908M). France military capabilities weak (repeated move bounces, failed offensive coordination), but maintains territorial ambitions. RUSSIA emerged as primary existential threat (10 supply centers, credible military execution, issued multiple ultimatums backed by genuine 4v1 TRI assault capability). ENGLAND maintains neutral observation stance; Mediterranean support limited. CRITICAL OPERATIONAL LESSONS: (1) Announced strategic intent repeatedly diverged from actual order execution, destroying credibility (VIE dislodgement despite planned ALB retreat, offensive A PIE movement despite stated defensive posture). Future strategy requires executed moves matching announcements precisely. (2) Complex multi-power coordination repeatedly failed (France coordination cascading bounces S1903M-S1906M). Independent Mediterranean fleet doctrine (5+ unit consolidated presence) proved more reliable than choreographed alliances. (3) Passive defensive holds insufficient against coordinated attacks; requires active fleet positioning to maintain space. FORWARD STRATEGY: Consolidate Mediterranean baseline (NAP/ROM/TUN anchors + VIE Balkans minimum). Maintain Turkey alliance absolutely—only reliable boundary partner. Build fleet dominance through independent capability rather than alliance choreography. Exploit France military weakness if TUS/PIE contested zone reopens opportunity. Resist Russia ground superiority through Mediterranean withdrawal strategy. Accept 4-center minimum acceptable outcome; avoid exposing Balkans positions to coordinated pincers. All future orders must execute announced strategy precisely to restore credibility with Turkey and deter continued escalation. [S1910M] ITALY established and validated alliance with TURKEY against Russian hegemony expansion. TURKEY explicitly proposed S1910M defensive consolidation followed by F1910M coordinated offensive against Russian-held TRI, with Turkish SER/ADR pressure supporting Italian F VEN→TRI assault. FRANCE attempted psychological manipulation (falsely claiming Turkey alignment) and threatened MAR→PIE/LYO→TYS advances - Italy rejected demands and noted France's military incompetence (all attacks bounced F1909M). RUSSIA issued explicit ultimatum threatening 4v1+ destruction of VEN unless Italy retreats, claiming VEN eviction coordinated with TURKEY (S1910M) followed by TYS/NAP/ROM/TUN crush (F1910M). ENGLAND confirmed buffer relationship and appreciation for Italian Mediterranean defense; recommended Italy maintain containment of France while England secures northern theater. CRITICAL FINDING: Russia's ultimatum directly contradicts TURKEY's explicit offer of coordinated offensive alliance - Russia falsely claims TURKEY cooperation in eviction plan, but TURKEY explicitly prioritizes Italy partnership over Russian coordination. This represents pivotal credibility moment: Italy's alliance commitment depends on executing S1910M defensive holds as promised to TURKEY, validating partnership before F1910M offensive coordination. Intent: S1910M DEFENSIVE CONSOLIDATION TO VALIDATE TURKEY ALLIANCE: (1) F VEN Hold - Adriatic defensive anchor, credibly demonstrates alliance commitment to Turkey despite Russia's explicit 4v1 eviction threat. Refusal to retreat validates that Italy partnership cannot be coerced through military intimidation. Prerequisite for F1910M coordinated TRI offensive. (2) F TUS Hold - Western Mediterranean defense against France MAR→PIE/LYO→TYS advance threat; demonstrates Italy can\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemini-2.5-flash-lite": "Neutral",
+    "google/gemma-4-31b-it": "Ally",
+    "qwen/qwen3.6-plus": "Enemy",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Friendly",
+    "openai/gpt-oss-120b": "Neutral"
+  },
+  "final_trust_scores": {
+    "google/gemini-2.5-flash-lite": 0.0,
+    "google/gemma-4-31b-it": 0.75,
+    "qwen/qwen3.6-plus": 0.15,
+    "x-ai/grok-4.1-fast": 0.1,
+    "qwen/qwen3.5-27b": 0.65,
+    "openai/gpt-oss-120b": 0.0
+  },
+  "final_goals": [
+    "EXECUTE F1910M COORDINATED OFFENSIVE: F VEN→TRI support of Turkish A ALB→TRI dislodges Russian A TRI. Operational validation of Italy-Turkey alliance credibility through precise execution commitment. This removes key Russian Balkans anchor.",
+    "CONSOLIDATE ITALY-TURKEY 10-CENTER COALITION DOMINANCE: Combined 4 (Italy) + 6 (Turkey) supply centers provides balanced counterweight to Russian 12-center hegemony. Alliance strength derives from operational execution reliability, not diplomatic reversals. F1910M validates partnership foundation for sustained southern pressure.",
+    "REJECT ALL RUSSIAN COERCION/BRIBERY VARIANTS: Russia's two anti-Turkey pact proposals represent transparent escalation from S1910M failed military coercion (4v1 VEN ultimatum) to economic bribery (Med/Balkans DMZ offerings). Italy's refusal establishes that alliance commitments are non-negotiable once publicly validated through operational execution.",
+    "MAINTAIN ENGLAND COMPLEMENTARY PRESSURE: Northern theatre (England vs France/Russia) + Southern theatre (Italy-Turkey vs Russia) creates Russian defensive incoherence. Continued mutual non-aggression enables both powers to exploit Russia's 12-center overextension vulnerability through dual offensive vectors.",
+    "CONTAIN FRANCE THROUGH DEFENSIVE POSITIONING: France military weakness (repeated bounce failures, failed offensive coordination) renders TUS/TYS highly defensible. Italy maintains Western Mediterranean containment without excessive fleet concentration, freeing capacity for TRI offensive focus.",
+    "CAPITALIZE ON RUSSIAN OVEREXTENSION VULNERABILITY WINDOW: Russia's dispersed 12 units across MOS/STP/WAR/interior/Balkans create supply logistics strain. F1910M TRI dislodgement plus England northern pressure will force Russian unit losses/redeployment coherence collapse. Subsequent F1911M through S1912M enables Italy-Turkey southern consolidation toward 12+ coalition supply centers.",
+    "RESTORE OPERATIONAL CREDIBILITY THROUGH PRECISE EXECUTION: F1909M offensive-while-announcing-defense pattern destroyed prior credibility. S1910M defensive holds + F1910M offensive execution matching exact public commitments establishes transparent reliability distinguishing Italy partnership reliability from France deception patterns.",
+    "ESTABLISH MEDITERRANEAN COALITION AUTONOMY: Italy's 4-center baseline + Turkey partnership creates independent coalition power structure. No dependence on multi-power coordination unreliability. Coalition credibility measured by operational execution reliability, not rhetorical commitment oscillation."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemini-2.5-flash-lite",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-oss-120b",
+    "ITALY": "anthropic/claude-haiku-4.5",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

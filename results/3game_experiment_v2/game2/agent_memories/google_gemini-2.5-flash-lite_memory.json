@@ -1,0 +1,50 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 1,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] England's initial strategy involved a Northern Sphere pact with Germany, intended to coordinate pressure on France. This alliance collapsed due to German betrayal, transforming Germany into a direct and aggressive enemy. France has proven equally untrustworthy and hostile. Despite proposing truces, France consistently betrayed them, occupying England's home centers (Liverpool, London), issuing ultimatums, and directly assaulting English supply centers. The most critical event was the loss of Edinburgh, England's sole supply center, due to a combination of relentless French aggression and critical execution errors by England itself. France also actively aided Germany in naval assaults on the English Channel. England is now under severe existential threat, with London exposed and Edinburgh lost. Trust in both France and Germany is zero. Austria and Italy maintain neutrality through non-aggression pacts with England, while Russia offers friendly but passive support, unable to commit to Western action. The paramount lessons are the absolute necessity of flawless execution and the inadequacy of passive defense against these determined, untrustworthy adversaries. [S1910M] Italy proposed a non-aggression pact with England and Russia, agreeing to maintain neutrality regarding England's F EDI to NWG move. France issued a threat to England against moving from Edinburgh. Turkey is aggressively attacking Russia and Austria. Germany is focused on its western offensive against France. Russia is consolidating defensively. Intent: Move F EDI to NWG. This move was communicated to Italy, Austria, and Russia, with Italy agreeing to maintain neutrality. France threatened England against moving from Edinburgh. [S1910M] Italy upheld its neutrality pact. France and Germany, however, launched a brutal, coordinated assault on England, betraying all trust. France's F ENG S A PIC - BEL and Germany's F NTH - ENG moves directly threatened English home centers. England is now in a dire defensive crisis; Edinburgh is lost, and London is under direct attack from both enemies. The F EDI to NWG move, though executed, was a strategic failure, as it was communicated to hostile powers and failed to deter aggression, leaving EDI vulnerable. France and Germany are confirmed enemies with zero trustworthiness. Italy remains a reliable neutral. Russia is friendly but passive. Never telegraph moves against multiple aggressors, especially when warned. Passive defense is suicidal. Foresight is critical; the Northern Sphere pact with Germany was a fatal miscalculation. Survival is the immediate priority. [F1910M] England is under a brutal, coordinated assault from France and Germany. England's home center, Edinburgh (EDI), has fallen, and its only fleet is in the North-West (NWG). Italy has upheld its non-aggression pact with England, maintaining neutrality. France and Germany are confirmed enemies who have betrayed trust. Germany suggested England pressure NWG/EDI to isolate London, but England's sole fleet is critically needed to retake EDI. France had previously threatened England against moving from Edinburgh. Intent: Move F NWG to EDI to retake the home center. This is a critical survival move. England will maintain non-aggression pacts with Austria and Italy by not threatening their territories. [F1910M] My F NWG - EDI move succeeded, retaking our home center\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Neutral",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Enemy",
+    "anthropic/claude-haiku-4.5": "Friendly",
+    "qwen/qwen3.6-plus": "Enemy",
+    "openai/gpt-oss-120b": "Neutral"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.5,
+    "x-ai/grok-4.1-fast": 0.0,
+    "qwen/qwen3.5-27b": 0.0,
+    "anthropic/claude-haiku-4.5": 0.7,
+    "qwen/qwen3.6-plus": 0.0,
+    "openai/gpt-oss-120b": 0.9
+  },
+  "final_goals": [
+    "Regain Edinburgh (EDI) at all costs.",
+    "Defend London (LON).",
+    "Survive the immediate dual assault from France and Germany.",
+    "Expel France from Yorkshire (YOR) and the English Channel (ENG).",
+    "Neutralize France as the immediate aggressor.",
+    "Maintain non-aggression pacts with Austria and Italy.",
+    "Leverage friendly neutrality from Russia (limited).",
+    "Find a path to resurgence after surviving the initial onslaught.",
+    "Achieve world domination (18 supply centers).",
+    "Avoid telegraphing moves to enemies.",
+    "Prioritize flawless execution."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-haiku-4.5",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

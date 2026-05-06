@@ -1,0 +1,47 @@
+{
+  "power_name": "ITALY",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 10,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria was eliminated in 1906 following coordinated Balkan campaigns, granting Italy control of VIE, BUD, GAL, and TRI. France has been openly hostile since 1903, repeatedly violating Mediterranean agreements. Despite recent Italian victories securing SPA, MAR, TUN, NAF, and WES, France remains aggressive but strategically isolated. England is coordinating anti-French pressure in MAO/BRE, while Germany and Russia maintain stable border non-aggression pacts (MUN/BOH and BUD/GAL strictly off-limits). Italy honors these boundaries to secure northern and eastern flanks. The Turkish alliance is formally intact but operationally unreliable. Strict sphere boundaries are enforced: Italy must avoid BUL, RUM, and SER. Turkey’s historical passivity and unverified fleet positioning have repeatedly disrupted Italian naval routing, most recently blocking EAS and preventing the planned A SYR→EGY convoy. Future coordination demands explicit, turn-by-turn routing verification rather than verbal guarantees. Italy currently controls approximately 11-12 centers with established naval dominance across the Central and Western Mediterranean. The fleet screen (TYS, TUN, ION, ADR) is essential for containing France and projecting power. Core strategic doctrine mandates zero passive holds, strict sequential fleet routing to prevent self-interference, and verified support chains before committing ground forces. Immediate priorities: Compel Turkish fleet withdrawal from EAS to enable the Egyptian convoy, maintain the TYS/WES naval blockade to permanently starve French naval recovery, and synchronize with England to pressure MAO/BRE. Eastern armies will hold defensive consolidation to honor German/Russian pacts while positioning for future inland expansion. Reaching 18 centers depends on sustained Mediterranean pressure, eliminating remaining French coastal holdings, and either activating Turkish offensive support or pivoting to fully independent operations if coordination continues to fail. [S1910M] England committed to MAO/ENG pressure to isolate France; coordinated Med squeeze confirmed. Russia extended 2-turn non-aggression pact covering Balkans/SEV-MOS-STP and agreed to joint diplomatic note to Germany. Turkey confirmed EAS is clear for F ION to position for A SYR->EGY convoy, reaffirmed strict sphere boundaries. Germany declared war on England, reiterated strict border pact (MUN/BOH off-limits). France openly hostile, targeting TUN/NAF with F NAF->TUN. Intent: Execute zero-hold doctrine: F TUN->NAF supported by F WES->NAF to eliminate last French fleet. A PIE->MAR and A SPA->POR to secure French coast. F ION->EAS to enable Turkish A SYR->EGY convoy. A VEN->TUS, F TRI->ADR, F ROM->TYS, F NAP->ION to consolidate eastern/central screens. All 9 units assigned active orders. Fulfill English Med squeeze coordination, Turkish convoy setup, and Russian/German border pacts. [S1910M] S1910M executed flawlessly under the zero-hold doctrine. All nine Italian orders succeeded: we seized MAR, POR, and NAF, while the French F NAF bounced harmlessly against our advance. Crucially, Turkey honored the EAS clearance, moving F EAS→AEG and finally enabling the SYR→EGY convoy route. France’s A GAS→SPA reclaimed that center, a minor setback offset by our western gains. Germany’s sudden war on England shifts the northern balance, validating our strict border pacts with Berlin and Moscow. England’s MAO pressure aligns with our Med squeeze, successfully isolating Paris. Naval screen consolidation (TYS/ADR/ION) is complete, securing our flanks for inland pushes. Turkey’s compliance warrants cautious optimism, but I will\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "anthropic/claude-haiku-4.5": "Ally",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "openai/gpt-oss-120b": "Ally",
+    "google/gemma-4-31b-it": "Ally",
+    "qwen/qwen3.5-27b": "Friendly"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "anthropic/claude-haiku-4.5": 0.7,
+    "google/gemini-2.5-flash-lite": 0.0,
+    "openai/gpt-oss-120b": 0.9,
+    "google/gemma-4-31b-it": 0.8,
+    "qwen/qwen3.5-27b": 0.6
+  },
+  "final_goals": [
+    "Execute synchronized Med squeeze with England to eliminate France and capture PAR/SPA",
+    "Position F ION in EAS to convoy A SYR->EGY per verified Turkish routing",
+    "Maintain strict zero-hold doctrine across all 9 units",
+    "Consolidate central/eastern naval screen (TYS/ADR/ION) to secure flanks",
+    "Honor extended Russian non-aggression pact (avoid BUD/GAL) and German border restrictions (avoid MUN/BOH/Ruhr)",
+    "Aggressively expand toward 18 SCs by dismantling France and securing remaining coastal centers",
+    "Monitor Turkish compliance and enforce verified convoy routing; pivot to independent ops if coordination fails",
+    "Co-sign joint diplomatic note with Russia and Germany on LVN-WAR-GAL corridor"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

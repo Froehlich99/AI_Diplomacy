@@ -1,0 +1,45 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Current Position (End F1909M):** 6 SC/6 units stagnant; Black Sea/Med lock (BLA/RUM retreat, AEG/SMY/ANK secure) but Balkans exposed (SER/GRE empty threats, RUM lost to A 2v1, GRE seized by A earlier); RU south viable (empty SER, UKR/MOS contested); +0 builds, momentum stalled by 5x self-execution fails (holds vs attacks, missed empty SC like SER/BUL). **AUSTRIA (Enemy, 0/10 trust):** Early anti-RU ally (SEV/RUM/BUL split) eroded by my 4x non-supports (RUM/GRE/BUL H fails); stabbed S1907M GAL-RUM s BUD dislodge, recent BUD/SER 2v1 RUM seize, ALB-GRE grabs. No joint RU pinch (RU non-agg pact thru 1906W); monitor BUL/RUM/ALB/ADR threats. **ITALY (Strained Neutral, 6/10 trust):** Med NAP solid (no ION/AEG/ADR aggression); repeated convoy fails (GRE-BUL/APU-TUS sync mismatches, S1909M ION-GRE steal betrayal) but recent ION s AEG-GRE partial redemption. Enables NAP-GRE-TUS post-reclaim; watch ION/ADR greed vs A. **RUSSIA (Enemy, 0/10 trust):** Initial NAP broken by SEV/RUM grabs; defensive holds (UKR/SER/WAR/MOS/PRU/STP) honored recently despite threats; south exposed (empty SER, no WAR/PRU aid south). Blitz viable solo 3v1+. **FRANCE (Ally):** Recent alliance: Mutual RU south/G west pressure (FR MUN/BEL grind); post-RU win G-stab (BUR/SIL + WAR). **GERMANY (Neutral, firm DMZ):** No east/south interference vs no PRU/SIL/BAL/PRU friction; west vs F/E focus aids FR distraction. **Strategic Lessons:** Execute intents precisely (triple-verify no H on seize paths/vacuums); overcommit 4v1+ vs defended SC (add GRE/BLA/ARM s); never vacate/leave empty SC undefended (GRE/RUM traps); demand IT support verifies pre-phase. **Forward:** S1910M SER/GRE 3v1 reclaim (BUL-SER, AEG-GRE s IT ION), RUM/BLA/SEV pinch A/RU UKR/WAR 4v1+, IT NAP-GRE-TUS exact; FR G-stab sync; target +3 SC (9 total)/builds F SMY; Balkans/Black Sea fortress, east solo viable vs A/IT/RU. (298 words) [S1910M] FR alliance locked: FR strikes G MUN (BOH/BUR) & BEL (PIC/ENG), T RU UKR/MOS pressure + A south hits, post-RU joint G-pincer (T east/Balkans/SIL/WAR, FR west/Ruhr/Ber/NTH). G DMZ confirmed: T no PRU/SIL/BAL/NWY, G no Balkans/Black Sea contest. IT exact S1910M coord confirmed: F ION S F AEG-GRE (no solo grab, trust rebuild), future NAP-GRE-TUS convoy via ION post-reclaim. RU accepts south losses (SER/RUM/UKR/MOS undefended), seeks post-loss NAP at WAR/MOS baseline. A defiant no surrender. E neutral pleas ignored. Intent: Fulfil all agreements: IT exact F AEG - GRE w/ ION S (GRE reclaim +1); FR RU pressure (A STP - MOS, A SEV - UKR pinch); G DMZ (no PRU/SIL/BAL moves). Aggressive no-holds: F BUL - SER (empty RU SC seize +1), F BLA - RUM s A SEV - RUM? Wait SEV to UKR: adjust F BLA - RUM (1v1 vs A), F AEG - GRE (IT s +1), F BUL - SER (+1), A STP - MOS (+1 probe), A SEV - UKR (RU pinch), F SMY H (Med secure), F ANK H (Bla/Black Sea secure). Target +3 SC (10 total, 1-2 builds); transmit exact IT/FR/G coords for F1910M verification. [S1910M] [S1910M] IT flawless ION s AEG-GRE reclaim (+1 SC, trust 8/10); no betrayals—all holds/neutrals as expected (RU WAR/PRU H exposes MOS seize via STP +1 SC, total 8?); FR G-stab BOH/BUR-MUN success distracts north. Self-execution disaster #6: F\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "qwen/qwen3.5-27b": "Ally",
+    "anthropic/claude-haiku-4.5": "Enemy",
+    "google/gemini-2.5-flash-lite": "Neutral",
+    "qwen/qwen3.6-plus": "Neutral",
+    "openai/gpt-oss-120b": "Friendly"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.2,
+    "qwen/qwen3.5-27b": 0.9,
+    "anthropic/claude-haiku-4.5": 0.0,
+    "google/gemini-2.5-flash-lite": 0.4,
+    "qwen/qwen3.6-plus": 0.6,
+    "openai/gpt-oss-120b": 0.8
+  },
+  "final_goals": [
+    "RU full eviction F1910M: WAR/UKR seize +2 SC (MOS already), expose PRU/SIL/WAR next",
+    "A Balkans eviction: RUM/SER/ALB F1910M 3v1+ (+2 SC), TRI/VIE path opens",
+    "FR-synced G-stab post-RU: T east pinch SIL/PRU/WAR/Balkans, FR west Ruhr/BER/BEL/NTH (exact F1910M coord)",
+    "IT Med/Balkans lock: F1910M joint ALB, S1911M NAP-TUS convoy exact (ION s GRE-APU, GRE c NAP-TUS) to PIE/MAR vs FR",
+    "East/Balkans/Med/Black Sea fortress: +3 SC to 10/2 builds F SMY/ANK, target 12+ via RU/A crush",
+    "Long-term: East/Balkans/Med solo dom post-RU/A, FR/G north/west carve (split spoils), E neutral carve, 18 SC world domination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-haiku-4.5",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

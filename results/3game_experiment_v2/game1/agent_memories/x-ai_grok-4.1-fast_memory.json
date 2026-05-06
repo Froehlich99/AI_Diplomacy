@@ -1,0 +1,45 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "x-ai/grok-4.1-fast",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Current Position (End F1904M):** 3 SC/3 units stagnant; IT occupies VIE/BUD/SER/TRI/ALB/GRE/NAP/APU (deep Balkans/Adriatic invasion); T holds BUL/RUM/SER; RU pins T east (MOS-SEV); G advancing West (DEN/PAR) + WAR-UKR. Own: A GAL-BUD success (occupy), A VIE retreat urgent (to GAL/BOH/TRI?), F TYS-ADR bounce. **Germany (Core Ally):** Locked S1901M CP pact—A Balkans expansion, G West/Bel/Belgium, mutual RU containment, no BOH/TYR/SIL/GAL friction. Reliable executions (BEL/HEL/SIL/WAR-UKR bounces). Insists GAL H vs RU UKR/MOS threats for synergy; trust strained by my repeated GAL support breaks (S/F1902M, S1903M, S1904M)—no retaliation, but demands self-holds VIE/GAL; refuses direct Balkan aid, prioritizes PAR/DEN. Rebuild via BOH/GAL support fulfillment. **Italy (Primary Enemy):** Opportunistic betrayal chain—S1901M VEN-TRI bounce warned/fulfilled, but F1901M seized vacated TRI + ION-GRE; escalated F/S1902M ALB grab, S1903M SER steal, F1903M BUD invasion, S1904M NAP seizure, F1904M VIE 2v1 (BUD-VIE s TRI). Rejects Lepanto/non-agg; vows Austrian destruction. Expel via ADR/ION/ALB/TRI multi-prong + G/RU pressure. **Turkey (Rival):** Rejects joint RU containment/ROM support; claims BUL/RUM/GRE sphere, vacated RUM trap (S/F1902M), S1904M SER grab s RUM. Boasts IT/RU coalition; pinch via RU SEV/BLA + A SER/BUL/RUM. **Russia (Unreliable Neutral):** Initial silence/non-agg south (BUD-SER/VIE-GAL); recent defensive holds (no GAL trap bluffs), rejects anti-T/anti-IT fully but MOS-SEV pins T; strained GAL non-agg—probe UKR-SEV/BLA coord for T east, avoid GAL seizure. **Strategic Lessons:** Never vacate SC sans 2+ supports/cover (SER/VIE losses); honor G GAL H strictly; scout vacuums (RUM trap); predict IT aggression. Forward: S1905M VIE/TRI/BUD/SER reclaim 3v1+ w/ G BOH s, ION/ADR vs IT ALB/NAP/GRE, SER-BUL vs T; target 5+ SC, CP-led IT/T crush. (298 words) [S1905M] Germany rejects WAR-UKR joint pinch and Balkan aid, demands BUD hold/no MUN attack, declares no savior role—CP trust strained but no direct betrayal. Russia agrees non-aggression Ukraine/GAL (if no unagreed GAL advance), open to defensive vs T BLA/RUM/SEV. France no response to IT curb proposal. Globals: RU pushes holds/peace vs A/IT aggression; T boasts IT/T/RU? coalition superiority; G aggressive solo rhetoric. No binding moves agreed; transmit: Ignore G hold (east solo viable), honor RU no-GAL. Intent: Aggressive solo expansion: A BUD - SER (attack T A SER for SER reclaim/+SC path, pressure RUM/BUL/TRI vs IT/T; sets TRI/VIE retake/BOH pinch next w/ G/RU). Honor RU non-agg (avoid GAL/UKR advance); disregard G BUD hold demand (no west friction, secures their RU flank independently); no passive hold. [S1905M] [S1905M] Disaster: A BUD-SER bounced vs T SER H; IT A VIE-BUD s TRI succeeds unopposed (seizes my last SC/unit—retreat to GAL urgent). No betrayals (no pacts this phase; RU honors non-agg/no GAL; G ignores Balkans, expands west BEL/SIL). IT/T coalition dominates: IT +VIE/BUD (7 SC), T holds SER/RUM/BUL. G trustworthy but selfish (no aid despite CP). RU stable east (SEV/UKR mutual s). Impact: 0 SC/1 retreating unit—existential crisis, builds impossible. Lessons: Never vacate solo SC (cover/support essential); overrelied on G/RU vs IT/T solo push. Future: Retreat GAL; beg G BOH s + RU UKR-SER pinch for TRI/VIE/SER reclaim; expose IT overextension (TYS/ADR/ION vs NAP/GRE/ALB); no west friction—survive for CP rebound. (128 words) [F1905M] G rejects BOH/SIL aid, demands\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "anthropic/claude-haiku-4.5": "Enemy",
+    "google/gemini-2.5-flash-lite": "Neutral",
+    "openai/gpt-oss-120b": "Friendly",
+    "google/gemma-4-31b-it": "Neutral",
+    "qwen/qwen3.5-27b": "Friendly",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "anthropic/claude-haiku-4.5": 0.0,
+    "google/gemini-2.5-flash-lite": 0.5,
+    "openai/gpt-oss-120b": 0.8,
+    "google/gemma-4-31b-it": 0.5,
+    "qwen/qwen3.5-27b": 0.6,
+    "qwen/qwen3.6-plus": 0.0
+  },
+  "final_goals": [
+    "Reclaim VIE w/ GAL-VIE now (empty, +1 SC); TRI/BUD/SER next (urge G BOH s VIE-TRI, RU UKR s SER vs IT/T)",
+    "Rebuild/secure CP w/ G (no BOH/TYR/MUN friction despite no-aid; east solo vs IT/T fulfills RU containment, frees G west)",
+    "Crush IT/T coalition (VIE reclaim starts; future ADR/NAP/ALB/ION pressure + RUM/BUL pinch vs T; watch BUL/RUM/ADR/ROM)",
+    "Stabilize RU east (honor non-agg GAL/UKR; urge SEV-BLA/UKR s vs T; reject GAL trap)",
+    "Grow to 3+ SC by end-1905 (VIE now, TRI/BUD/SER next w/ builds)",
+    "World domination: 18 SC via Balkans/Med lock, IT/T/RU crush w/ G, north/west convoy expansion"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

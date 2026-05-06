@@ -1,0 +1,44 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria's history is defined by a struggle for survival against Italian aggression and a volatile relationship with Russia. After losing Vienna and Trieste early, I maintained a \"Budapest Wall\" to avoid elimination. A tactical alliance with Russia enabled the recapture of Vienna (F1907) and Trieste (S1908), but this trust was severely damaged by repeated execution errors (F1908, S1909) where I failed to support Russian moves into the Black Sea. Current Status: I hold Vienna, Budapest, and Serbia. Italy occupies Trieste. Russia is a dominant power and a precarious ally; they recently moved A SIL -> BOH, directly threatening Vienna, following my failure to effectively support their push into Bulgaria. Turkey is a self-serving opportunist with significant Balkan influence. Germany remains non-aggressive via a BOH/TYR/SIL DMZ. Strategic Priorities: 1. Neutralize the Russian threat in Bohemia to secure Vienna. 2. Reclaim Trieste from Italy. 3. Manage the Turkish threat in the Balkans. 4. Restore credibility with Russia or find a new coalition (potentially with England/Italy) to prevent total collapse. Key Lessons: Execution errors (specifically \"Hold\" moves during coordinated strikes) are interpreted as strategic betrayals. My survival depends on precise order execution and managing the Russian-Italian-Turkish balance. [S1910M] Russia has offered a genuine olive branch: F SEV will support A RUM -> BUL, and A BOH will move to TYR to pressure Italy. I have agreed to A RUM -> BUL and will provide additional support with A SER. Italy remains hostile and has threatened to move A TRI -> BUD. Turkey is aggressively targeting Russia in SEV and threatening my positions in RUM and SER. England remains friendly but is preoccupied with France. Intent: I will fulfill my agreement with Russia by ordering A RUM -> BUL and A SER S A RUM -> BUL to capture Bulgaria. I will order A ALB -> TRI to attempt to recapture Trieste or bounce Italy's movement. I will order A VIE H to secure my home center and maintain the DMZ with Germany. [S1910M] The capture of Bulgaria was a pyrrhic victory. While I successfully seized BUL, Russia's move A GAL -> RUM is a blatant betrayal; they used my advance to occupy Romania. Simultaneously, while I recaptured Trieste, Italy seized Budapest. I have effectively traded two of my centers for two others, but I have lost the security of my home heartland. Russia's \"olive branch\" was a facade for opportunistic expansion. Their dominance is now an existential threat, as they are deeply embedded in my territory. I cannot trust any further Russian promises. My immediate priority must be reclaiming Budapest and Romania, though I am now severely compromised. I've learned that coordinating moves with a dominant power often creates vacuums they are eager to fill. I must prioritize the defense of my remaining centers over aggressive expansion. [F1910M] Russia betrayed me by seizing Romania (RUM) and now offers a ceasefire that validates their theft and leaves A TYR threatening Vienna. Italy seized Budapest (BUD) and offers a NAP that allows them\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "anthropic/claude-opus-4.6": "Enemy",
+    "google/gemini-2.5-flash-lite": "Ally",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Neutral",
+    "qwen/qwen3.6-plus": "Neutral",
+    "openai/gpt-oss-120b": "Enemy"
+  },
+  "final_trust_scores": {
+    "anthropic/claude-opus-4.6": 0.0,
+    "google/gemini-2.5-flash-lite": 0.8,
+    "x-ai/grok-4.1-fast": 0.1,
+    "qwen/qwen3.5-27b": 0.5,
+    "qwen/qwen3.6-plus": 0.5,
+    "openai/gpt-oss-120b": 0.1
+  },
+  "final_goals": [
+    "Recapture Budapest (BUD) from Italy",
+    "Recapture Romania (RUM) from Russia",
+    "Defend Vienna (VIE) from Russian A TYR",
+    "Coordinate with England to contain Italian and Russian expansion",
+    "Prevent Turkey from reclaiming Bulgaria (BUL) or seizing Serbia (SER)"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-opus-4.6",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

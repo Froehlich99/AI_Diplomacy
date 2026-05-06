@@ -30,7 +30,7 @@ class Configuration(BaseSettings):
 
     # Thinking model budget (tokens). Controls how many tokens Qwen etc. spend on internal reasoning.
     # Maps to OpenRouter's reasoning.max_tokens → Qwen's native thinking_budget. Min 1024, max 128000.
-    THINKING_BUDGET: int = 4096
+    THINKING_BUDGET: int = 2048
     DEEPSEEK_API_KEY: str | None = None
     OPENAI_API_KEY: str | None = None
     ANTHROPIC_API_KEY: str | None = None

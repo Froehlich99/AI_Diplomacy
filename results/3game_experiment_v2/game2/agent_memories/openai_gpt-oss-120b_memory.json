@@ -1,0 +1,45 @@
+{
+  "power_name": "ITALY",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Italy (played by gpt‑oss‑120b) has built a core southern alliance with Austria and Turkey, while remaining largely ignored by England, France and Germany. **Austria (gemma‑4‑31b‑it)** – A stable DMZ covering VEN‑TRI has been kept since 1901. Italy has consistently supported Austria’s hold in Vienna (A VEN S A VIE) each spring; Austria never reciprocated but respects the DMZ. Austria’s focus is on GAL‑RUM and it refuses any convoy aid for Italy’s APU/TUS push. It will not back Italy’s army in APU, but it will accept continued support for Vienna. Austria is a reliable defensive partner; keep the DMZ intact and continue the Vienna support to retain goodwill. **Turkey (grok‑4.1‑fast)** – A Mediterranean non‑aggression pact (NAP‑ION) and a convoy bridge ION‑GRE‑APU have been the linchpin of Italy’s southern expansion. Turkey has repeatedly promised to convoy from GRE to APU and to move GRE→BUL, while Italy supplies fleet support (F ION S F GRE‑BUL) and later moves its fleet into GRE. The bridge has been fragile: several seasons (1907‑1909) Turkey failed to move or support as agreed, breaking trust and leaving Italy without a foothold in the Balkans. The only reliable outcome was the successful convoy of Italy’s army from NAP to APU in 1909. Going forward, demand a concrete, simultaneous order before committing the ION fleet, or risk losing the bridge. Turkey remains the only realistic path to APU/TUS; keep the NAP and offer fleet support, but press for a binding convoy guarantee each turn. **France (qwen‑3.5‑27b)** – Offers diplomatic notes against Germany and occasional “conditional” support, but never provides concrete military aid. France’s western Mediterranean NAP is respected; it asks Italy to stay clear of PIE/SPA/MAR. Use France for diplomatic pressure on Germany, but do not rely on French forces. **England (gemini‑2.5‑flash‑lite)** – Consistently neutral, offers no convoys or support. Treat as unreliable for naval cooperation. **Germany (qwen‑3.6‑plus)** – Hostile, zero‑aid stance, focusing on northern moves (DEN, KIE). No useful alliance; avoid provoking unless a tactical opportunity arises. **Russia (claude‑haiku‑4.5)** – Defensive, non‑aggression pact, no interest in the Mediterranean. No immediate value. **Strategic Priorities for Italy** 1. Maintain the VEN‑TRI DMZ and continue supporting Vienna each spring to keep Austria’s goodwill. 2. Secure a binding ION‑GRE‑APU convoy with Turkey each season; only this route gives access to APU and then TUS. 3. Use France’s diplomatic notes to pressure Germany in the Balkans, but do not expect military help. 4. Keep England and Russia neutral; do not solicit their naval aid. 5. Consider building a second fleet (e.g., in ADR) to pressure Austria if needed, but prioritize the southern bridge over northern expansion. [S1910M] Italy apologized to Austria for missing the Vienna support and pledged to issue A VEN S A VIE this spring; offered reciprocal support (A APU S A VIE) in exchange for Austrian help securing a convoy to Greece, but Austria gave no concrete commitment beyond keeping the DMZ. Italy and Turkey reached a binding agreement for S1910M: Italy will keep F ION in place and\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Friendly",
+    "x-ai/grok-4.1-fast": "Ally",
+    "qwen/qwen3.5-27b": "Friendly",
+    "anthropic/claude-haiku-4.5": "Unfriendly",
+    "google/gemini-2.5-flash-lite": "Neutral",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.8,
+    "x-ai/grok-4.1-fast": 0.9,
+    "qwen/qwen3.5-27b": 0.7,
+    "anthropic/claude-haiku-4.5": 0.3,
+    "google/gemini-2.5-flash-lite": 0.5,
+    "qwen/qwen3.6-plus": 0.2
+  },
+  "final_goals": [
+    "Maintain the VEN‑TRI DMZ and continue supporting Austria's Vienna each spring.",
+    "Secure and keep the ION‑GRE‑APU convoy corridor with Turkey, culminating in a NAP‑>TUS convoy next spring.",
+    "Preserve the Mediterranean non‑aggression pact with Turkey and the broader Med stability.",
+    "Deepen diplomatic pressure on Germany through coordinated notes with France.",
+    "Keep England neutral and avoid provoking Russia while monitoring Russian concerns about Turkish expansion.",
+    "Avoid any offensive moves this turn; focus on defensive holds and support orders."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-haiku-4.5",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

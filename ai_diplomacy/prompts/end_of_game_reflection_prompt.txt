@@ -1,0 +1,24 @@
+END OF GAME REFLECTION
+Your Power: {power_name}
+Model: {model_id}
+Game Outcome: {outcome_str}
+
+FULL DIARY HISTORY
+{full_diary_text}
+
+FINAL STATE
+Supply centers controlled: {sc_count}
+Final relationships: {relationships_str}
+Final trust scores: {trust_scores_str}
+
+TASK
+Write a strategic briefing for your future self who will play another Diplomacy game against the same opponent models (but possibly controlling a different power).
+
+This is your only memory between games. Write everything that would be useful to know going into a fresh game against these same models. Include opponent behavioral patterns, what strategies worked or failed, coordination lessons, and model-specific advice. Be concrete and specific — reference actual events from this game as evidence.
+
+Do NOT include: current board positions or anything only useful for THIS game's continuation. Write for a fresh game where you may play any power.
+
+Aim for around 800-1000 words. Be concrete and actionable.
+
+RESPONSE FORMAT
+Return ONLY the reflection text. No JSON, no formatting markers.

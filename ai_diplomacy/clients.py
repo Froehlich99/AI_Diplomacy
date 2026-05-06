@@ -1201,8 +1201,8 @@ class OpenRouterClient(BaseModelClient):
     For OpenRouter models, with default being 'openrouter/quasar-alpha'
     """
 
-    THINKING_MODELS = {"qwen/qwen3.5-27b", "qwen/qwen3.6-plus", "qwen/qwen3-235b-a22b", "google/gemma-4-31b-it"}
-    SLOW_MODELS = {"google/gemma-4-31b-it"}
+    THINKING_MODELS = {"qwen/qwen3.5-27b", "qwen/qwen3.6-plus", "qwen/qwen3-235b-a22b", "google/gemma-4-31b-it", "anthropic/claude-opus-4.6"}
+    SLOW_MODELS = {"google/gemma-4-31b-it", "anthropic/claude-opus-4.6"}
     DEFAULT_THINKING_BUDGET = 4096
     DEFAULT_TIMEOUT = 180
     SLOW_MODEL_TIMEOUT = 300

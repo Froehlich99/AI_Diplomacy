@@ -1,0 +1,43 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany is the primary adversary. After a brief anti-French coalition, England's seizure of Denmark triggered a prolonged conflict. Germany has repeatedly seized the North Sea (NTH), but England recently reclaimed NTH and captured Berlin, significantly destabilizing the German core. Russia was an early ally, but trust is permanently destroyed due to England's repeated failure to execute promised convoys from St. Petersburg to the Baltic. Russia is now viewed as untrustworthy and passive. Italy is a steadfast and reliable ally. The two are currently coordinating a pincer movement to collapse France, which is now severely weakened and focused on the Mediterranean. Strategic priorities: 1. Maintain control of the North Sea (NTH) as the primary defensive shield for home centers. 2. Leverage the occupation of Berlin to further dismantle Germany. 3. Coordinate with Italy to ensure the total removal of France. 4. Stabilize the Scandinavian perimeter (Denmark/Kiel) to prevent German resurgence. [S1910M] Italy is coordinating a 'Med squeeze' to completely eliminate France, with Italy seizing the French coast and England maintaining pressure on the English Channel and MAO. Germany has declared total war, demanding the immediate evacuation of Berlin. Russia continues to make illogical requests for a Baltic convoy (F BAL -> BOT), despite England not occupying the Baltic, indicating a lack of map awareness or deceptive intent. Intent: Defend Berlin (F BER) and the Scandinavian perimeter (F HEL, F SKA) against German aggression. Maintain control of the North Sea (F NTH) to secure home centers. Support Italy by pressuring the English Channel/MAO to ensure France cannot escape or reinforce. I will ignore Russia's nonsensical Baltic request and maintain a cold peace. [S1910M] Germany retook Berlin (A PRU -> BER), but I successfully seized Denmark and Holland, trading a central city for strategic coastal positions. The \"Med squeeze\" with Italy is proceeding perfectly; Italy has effectively dismantled France's coastal defenses, and my move to MAO ensures France remains trapped and unable to recover. Russia remains irrelevant and confused. My priority now is to leverage my positions in DEN and HOL to further destabilize Germany while Italy finishes France. The trade-off of Berlin for the Scandinavian and North Sea perimeter is acceptable, as it secures my northern flank and maintains pressure on the German core. Italy remains my most trustworthy ally, while Germany's aggression confirms they are the primary threat to my hegemony. [F1910M] Coordinating with Italy to execute the final 'Med squeeze' to eliminate France; agreed to move F MAO to SPA to seal the coast. Germany remains hostile, demanding withdrawal from Berlin and the Baltic, which I have refused. Russia continues to make geographically impossible convoy requests (DEN to STP/SC), which I am ignoring while maintaining a cold peace. France is desperately attempting to build a coalition against Italy and Turkey, which I will ignore. Intent: Execute the final blow to France by moving F MAO to SPA as agreed with Italy. Secure the captured center of Berlin by moving F BAL to BER. Maintain the Scandinavian and North\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Neutral",
+    "anthropic/claude-haiku-4.5": "Neutral",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "openai/gpt-oss-120b": "Unfriendly",
+    "qwen/qwen3.5-27b": "Enemy",
+    "qwen/qwen3.6-plus": "Ally"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.5,
+    "anthropic/claude-haiku-4.5": 0.5,
+    "google/gemini-2.5-flash-lite": 0.0,
+    "openai/gpt-oss-120b": 0.2,
+    "qwen/qwen3.5-27b": 0.0,
+    "qwen/qwen3.6-plus": 1.0
+  },
+  "final_goals": [
+    "Eliminate France completely in coordination with Italy",
+    "Secure and hold Berlin (BER) against German counter-attacks",
+    "Maintain control of the North Sea (NTH) and the Scandinavian perimeter (DEN, HOL)",
+    "Prevent Germany from regaining hegemony in Northern Europe"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

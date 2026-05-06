@@ -1,0 +1,46 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Analyzing Diplomatic Maneuvers** I'm currently synthesizing the provided diary entries, aiming to extract strategically and diplomatically pertinent details. My focus is on pinpointing pivotal historical occurrences that demonstrably shaped France's international standing and alliances. **Synthesizing Diplomatic Data** I'm actively processing the diary entries, focusing on extracting information relevant to France's diplomatic and strategic history. My current priority is to identify and synthesize key alliances, betrayals, and the resulting shifts in power dynamics, particularly concerning Italy, England, and Germany. I'm also noting significant territorial gains and losses that impact France's standing. **Consolidating Strategic Insights** I'm now focusing on extracting the core strategic lessons and immediate threats from the provided diplomatic history. My aim is to synthesize the critical power dynamics, particularly concerning the hostile consolidation of Italy in the Mediterranean and the ongoing territorial struggles in the West with England and Germany. **Analyzing Diplomatic History** I'm currently distilling the provided diary entries to extract the most strategically vital insights for France. My primary focus is on synthesizing the recent cascade of betrayals and enemy consolidations that have left us isolated and facing significant threats from Italy in the Mediterranean, and England and Germany in the West. [S1910M] France has secured a temporary non-aggression pact with Germany on shared borders, agreeing not to attack Brest, in exchange for Germany's focus on other fronts. France has declared aggressive intent to contest Italy's southern naval bloc and reclaim Tunisia, and to neutralize England's continental presence. Russia remains a stated ally, though its non-aggression pacts with Turkey and Italy are noted with caution. Turkey and Italy are allied and pose a significant threat. Intent: France will move F NAF to TUN to contest Italy's southern naval bloc. A PAR will hold to defend Paris. A GAS will hold to defend Gascony and adhere to the non-aggression pact with Germany. France will focus on neutralizing England and defending its home centers. [S1910M] Italy has brutally betrayed our intentions. My move to contest Tunisia failed, and Italy not only held NAF but also seized MAR and SPA. This is a catastrophic loss, leaving France severely weakened and isolated, down to only 3 SCs. Germany held Brest as agreed, but their broader moves are aggressive towards England and Italy. England is now focused on Germany, which might offer a distraction, but France must first defend its core. Italy is a clear and present danger, and their consolidation in the south and west is alarming. We must secure our home centers and rethink our approach to Italy immediately. Never telegraph an offensive move against a stronger foe; build strength and surprise. Trust in Italy is zero. [F1910M] France's attempt to contest Italy's southern naval bloc and reclaim Tunisia failed, resulting in Italy seizing MAR and SPA. Germany broke its non-aggression pact with France by attacking Paris. Russia is pursuing its own agenda regarding the LVN-WAR-GAL corridor and is not providing direct support to France's defense. France is isolated and under direct attack from Germany, while Italy and\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "anthropic/claude-haiku-4.5": "Enemy",
+    "openai/gpt-oss-120b": "Unfriendly",
+    "google/gemma-4-31b-it": "Unfriendly",
+    "qwen/qwen3.5-27b": "Enemy",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "anthropic/claude-haiku-4.5": 0.0,
+    "openai/gpt-oss-120b": 0.2,
+    "google/gemma-4-31b-it": 0.1,
+    "qwen/qwen3.5-27b": 0.0,
+    "qwen/qwen3.6-plus": 0.0
+  },
+  "final_goals": [
+    "Achieve world domination (18 supply centers).",
+    "Secure French home centers (Paris).",
+    "Reclaim MAR and SPA from Italy.",
+    "Neutralize England as a threat and clear its continental presence.",
+    "Defend Paris against German occupation, seeking its eventual return.",
+    "Expel Germany from Brest and retake it.",
+    "Break Italy's southern naval bloc and reclaim Tunisia."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-haiku-4.5"
+  }
+}

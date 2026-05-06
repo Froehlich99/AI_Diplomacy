@@ -1,0 +1,50 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Austria's diplomatic landscape has been defined by profound betrayals. Italy, initially an ally, broke its non-aggression pact, seized Austria's home center Trieste (TRI) in F1903M, and launched a direct assault on Vienna (VIE) in F1904M. Turkey similarly shattered Balkan agreements, capturing Greece (GRE) in S1904M after earlier aggression. Both are now confirmed enemies with zero trust, exposing Austria's southern and eastern flanks. Russia remains a reliable, friendly ally, coordinating against Turkey. Germany's Central European DMZ is respected, though Austria has employed deception, misrepresenting its move to Silesia (SIL) to support Russia and monitor the German border. France and England are confirmed enemies; England is now coordinating with Russia against Germany, highlighting a complex Western front. With core centers TRI and GRE lost and VIE under threat, passive defense is suicidal. Austria must pivot to aggressive counter-offensives against Italy and Turkey, consolidate remaining core territories, and leverage the alliance with Russia. Maintaining deception towards Germany is crucial for strategic flexibility. Prioritize regaining lost territory and securing the core. [S1905M] Austria and Russia have solidified a friendly pact, agreeing to coordinate against Italy and Turkey. Austria will move A BUD to TRI to contest Italy's occupation, while Russia will hold its southern units and maintain DMZs. Austria will hold A GAL (which is A SIL) to honor this pact and continue deception towards Germany. Austria views Italy and Turkey as direct enemies, vowing to contest their gains in TRI, VIE, and GRE. Austria and Germany maintain a neutral stance, with Austria focusing eastward and continuing deception. Global messages indicate Germany is calling for a ceasefire with England/Russia, which Russia rejects, signaling an ongoing conflict in the north. Intent: My intent is to move A BUD to TRI to contest Italy's occupation. I will hold A VIE to defend my core and hold A GAL (which is A SIL) to maintain the DMZ with Russia and continue deception towards Germany. [S1905M] S1905M: My offensive against Italy has failed. A BUD - TRI bounced as Italy successfully defended BUD and TRI with A VIE - BUD and A TRI S A VIE - BUD. Turkey also successfully defended Greece. Austria remains without its core centers, and Italy and Turkey are confirmed enemies who have successfully repelled my initial counter-attack. Russia is friendly but focused on Germany this phase, not directly aiding my fight against the southern powers. My deception towards Germany appears to be working, as their units are engaging Russia. I must find a more effective way to break Italy's defenses and regain lost territory. Aggressive, coordinated action is required. [F1905M] Austria and Russia have solidified a friendly pact to coordinate against Italy and Turkey. Austria's attempt to reclaim Trieste (TRI) with A BUD failed due to Italian defenses. Austria will continue to feint towards Germany (holding A GAL at Silesia) to maintain deception and the DMZ, while Russia focuses on Germany. Italy and Turkey are confirmed enemies who have successfully repelled Austria's initial counter-attack. Germany has proposed a DMZ and\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "qwen/qwen3.6-plus": "Enemy",
+    "x-ai/grok-4.1-fast": "Ally",
+    "qwen/qwen3.5-27b": "Enemy",
+    "openai/gpt-oss-120b": "Neutral",
+    "anthropic/claude-haiku-4.5": "Enemy"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.0,
+    "qwen/qwen3.6-plus": 0.0,
+    "x-ai/grok-4.1-fast": 0.6,
+    "qwen/qwen3.5-27b": 0.0,
+    "openai/gpt-oss-120b": 0.3,
+    "anthropic/claude-haiku-4.5": 0.0
+  },
+  "final_goals": [
+    "Achieve world domination by controlling 18 supply centers (long-term).",
+    "Contest Italy's occupation of Trieste (TRI) and Vienna (VIE).",
+    "Actively counter Turkey's aggression and regain influence in the Balkans, specifically Greece (GRE).",
+    "Maintain strong coordination with Russia against Italy and Turkey.",
+    "Continue deception towards Germany regarding A GAL's position.",
+    "Avoid direct conflict with England and France for now, focusing on southern/eastern fronts.",
+    "Recognize Italy and Turkey as direct enemies with zero trust.",
+    "Prioritize flawless execution and avoid telegraphing moves, especially to Germany.",
+    "Defend Austrian core (VIE, BUD) against immediate threats.",
+    "Regain lost supply centers (TRI, GRE).",
+    "Leverage Germany's potential distraction in the West to focus on the South/East."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemini-2.5-flash-lite",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-oss-120b",
+    "ITALY": "anthropic/claude-haiku-4.5",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

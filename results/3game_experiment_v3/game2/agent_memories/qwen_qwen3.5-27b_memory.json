@@ -1,0 +1,47 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] France dominates Western Europe (Paris, Belgium, Ruhr, Channel, Brest, Gascony). Germany (Qwen) is critically weakened, holding only Holland (1 SC). Russia (Claude) is the current primary ally, having successfully coordinated the Fall 1909 strikes on Kiel and Denmark. However, Russia is historically opportunistic; they prioritize Eastern expansion (Austria/Turkey) once Germany falls and cannot be relied upon for long-term Western defense. England (Gemini) is hostile and untrustworthy; they previously broke Channel truces to seize Gascony and remain a naval threat in the Atlantic. Germany (Qwen) is the primary existential threat; their diplomatic overtures are deceptive, and they must be eliminated completely before recovery. Strategic Priority: Immediate total elimination of Germany. Press Holland aggressively to prevent stabilization. Maintain Channel dominance (F ENG) to deter England. Secure the Western border (Belgium/Picardy) to prevent German counter-attacks; do not leave SCs undefended for distant support orders (lesson from Belgium loss). Diplomatic Stance: - Russia (Claude): High trust for specific strikes, but prepare for betrayal once Germany falls. Do not cede core SCs. - England (Gemini): Contain naval expansion. No truces are binding; assume hostility. - Germany (Qwen): Zero trust. No NAPs. - Italy/Turkey: Secondary. Decline Mediterranean entanglements until Germany is gone. Key Lessons: Aggressive expansion works but core security (Munich/Belgium) is vital. Never trust German NAPs. Russia is a tool for specific objectives, not a permanent ally. England is opportunistic. Survival depends on shattering Germany before a two-front war with Russia/England emerges. Control the Channel to secure the Atlantic flank. Avoid support cuts by ensuring units are not overextended. Naval bounces in the Channel are common; maintain pressure. Russia's reliability is conditional on shared immediate threats; once Germany falls, they will pivot East. England will exploit any weakness in the Channel. Germany will bluff to survive. Prioritize SC retention over risky expansion. [S1910M] Russia confirmed alliance and agreed to A KIE->HOL strike with French A BEL support to eliminate Germany. Germany rejected DMZ proposal; France committed to elimination. England remains hostile/defensive in Channel. Turkey proposed anti-Russia coalition (rejected). Italy requested convoy support (declined). Intent: Execute agreed strike: A BEL supports A KIE->HOL to eliminate Germany. F ENG holds or supports A BEL to deter England. A PIC and A BUR hold to secure Western flank (Paris/Munich). A MAR holds to guard against Turkey/Italy. Fulfill Russia agreement to secure trust, but prepare for post-Germany conflict. [S1910M] Germany is eliminated. Our coordinated strike with Russia succeeded; A BEL supported A KIE into HOL, forcing Germany's last unit to retreat to Ruhr. Objective achieved. However, Russia honored their agreement, gaining Holland and expanding to 10 supply centers. This makes them the new existential threat. Reliability is high, but power growth is alarming. England consolidated naval control with F MAO to ENG, maintaining pressure on the Channel. I consolidated internally, moving units to Paris, Munich, and Brest to secure the core. My priority shifts immediately from eliminating Germany to containing Russia. I cannot allow them to dominate the North Sea or Central Europe. I must secure my\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "anthropic/claude-opus-4.6": "Unfriendly",
+    "google/gemini-2.5-flash-lite": "Unfriendly",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.6-plus": "Neutral",
+    "openai/gpt-oss-120b": "Friendly"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.1,
+    "anthropic/claude-opus-4.6": 0.3,
+    "google/gemini-2.5-flash-lite": 0.2,
+    "x-ai/grok-4.1-fast": 0.1,
+    "qwen/qwen3.6-plus": 0.4,
+    "openai/gpt-oss-120b": 0.6
+  },
+  "final_goals": [
+    "Contain Russian expansion into Western Europe",
+    "Secure eastern border (Munich, Belgium) against Russian threat",
+    "Maintain Germany as buffer state against Russia",
+    "Build anti-Russia coalition with England and/or Germany",
+    "Protect all 5 French supply centers",
+    "Prepare for potential war with Russia if they breach demarcation line",
+    "Maintain Channel dominance to deter England",
+    "Monitor Italy-Turkey-Austria dynamics in Mediterranean"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-opus-4.6",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

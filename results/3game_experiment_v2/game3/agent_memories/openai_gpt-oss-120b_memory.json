@@ -1,0 +1,46 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "openai/gpt-oss-120b",
+  "game_outcome": {
+    "survived": false,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 0,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Germany’s early game was built on a network of DMZs and mutual holds: Balkans DMZ with Austria, BUR‑RUH DMZ with France, PRU‑SIL‑BAL‑LVN DMZ with Russia, and a North‑Sea/Baltic non‑aggression pact with England. These held through 1901‑1902, allowing successful moves KIE→DEN and MUN→RUH, giving Germany a foothold in Denmark and the Ruhr supply centre. The first major breach came in 1902 when England violated the North‑Sea/Baltic pact, moving F NTH→DEN and dislodging Germany’s fleet. Russia remained reliable then, continuing to support KIE→RUH and the PRU‑SIL‑BAL‑LVN DMZ. In 1903 Russia began to back Germany’s KIE→RUH push, offering naval cover in the Baltic, while France reaffirmed the BUR‑RUH DMZ and offered defensive aid against England. England persisted as hostile, expanding from DEN into the North Sea and later into Holland and Holland‑adjacent territories. A turning point occurred in 1904 when Russia broke the joint‑hold agreement, moving F BER→KIE and seizing KIE, turning a former ally into an enemy. France stayed friendly but provided no concrete convoy or support. Austria remained neutral, respecting the Balkans DMZ but offering no help. Turkey stayed passive, offering only diplomatic backing. From 1905 onward Germany suffered repeated attacks: England (with Russian backing) seized Holland and later HOL, while Russia continued aggressive moves toward Berlin and Munich. Germany lost KIE, HOL and its only Baltic fleet, leaving only MUN, RUH (now held) and Berlin as supply centres. France’s defensive pact remains verbal; no convoy or naval aid has materialised. Austria and Turkey are unreliable for military aid but respect existing DMZs. Italy respects the Alpine DMZ (PIE/TYR‑KIE/MUN) and stays neutral in the north. Current strategic picture (1906): - **Allies:** France (friendly but inactive), Austria (neutral), Turkey (neutral). - **Enemies:** England (hostile naval power), Russia (hostile, occupying KIE). - **Key needs:** secure naval support (likely via a firm French convoy pact or new alliance), retake KIE/BER to restore a Baltic foothold, and protect RUH/MUN from coordinated English‑Russian pressure. [S1907M] France confirmed its move A BEL -> RUH to reinforce the BUR‑RUH DMZ and pledged not to attack MUN this turn, but gave no naval assets or convoy support. England offered a non‑aggression suggestion that was not accepted. Italy reiterated respect for the Alpine DMZ (PIE/TYR/KIE/MUN) and asked for no northern moves. No new binding agreements were reached beyond the existing defensive pact with France. Intent: Hold both German armies this turn: A MUN H and A RUH H. No support or movement orders will be issued. We will honor the DMZs and the defensive pact with France, and we will not break any promises made in negotiations. [S1907M] S1907M – Germany was forced to watch its lone army in Munich dislodged by Russia’s bold BER→MUN push, despite our intention to hold both MUN and RUH. France kept its promise not to attack MUN, moving A BEL→RUH to reinforce the BUR‑RUH DMZ, but offered no naval aid—so the convoy hope remains unfulfilled. England ignored our non‑aggression overture and continued sea aggression, sailing F NTH→DEN and supporting its own fleet\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemini-2.5-flash-lite": "Neutral",
+    "google/gemma-4-31b-it": "Neutral",
+    "qwen/qwen3.6-plus": "Enemy",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Enemy",
+    "anthropic/claude-haiku-4.5": "Neutral"
+  },
+  "final_trust_scores": {
+    "google/gemini-2.5-flash-lite": 0.5,
+    "google/gemma-4-31b-it": 0.5,
+    "qwen/qwen3.6-plus": 0.0,
+    "x-ai/grok-4.1-fast": 0.0,
+    "qwen/qwen3.5-27b": 0.0,
+    "anthropic/claude-haiku-4.5": 0.5
+  },
+  "final_goals": [
+    "Preserve the remaining German supply centre (BUR) and avoid elimination.",
+    "Maintain all existing DMZs (Balkans‑Austria, BUR‑RUH, PRU‑SIL‑BAL‑LVN‑Russia, Alpine PIE/TYR/KIE/MUN).",
+    "Seek a new naval or convoy partnership, preferably with Italy or Turkey, to counter English sea power.",
+    "Contain English expansion in the North Sea and Baltic as far as possible.",
+    "Monitor Russian movements in the Baltic and prevent further incursions toward Berlin.",
+    "Explore diplomatic options to form a defensive alliance against England and Russia, possibly offering information sharing or future support.",
+    "Plan for a build in BUR next year to regain a second army if the unit survives this turn."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemini-2.5-flash-lite",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-oss-120b",
+    "ITALY": "anthropic/claude-haiku-4.5",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

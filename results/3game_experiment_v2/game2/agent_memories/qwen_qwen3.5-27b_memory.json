@@ -1,0 +1,45 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 8,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Strategic Situation (Fall 1909):** France holds 8 SCs, tied with Germany. Germany (qwen3.6-plus) is the primary existential threat, adhering to an aggressive \"zero-hold\" doctrine. They recently captured Munich (MUN) and control Belgium (BEL), Ruhr (RUH), Kiel (KIE), and Denmark (DEN). England (gemini-2.5-flash-lite) is contained to Edinburgh (EDI), hostile but secondary. **Diplomatic Landscape:** * **Germany:** Trust 0.0. Relentless aggression. Violated early NAPs. Must be isolated and crushed. * **Turkey:** Alliance shattered. Austria (gemma-4-31b-it) seized Rumania (RUM), proving Turkey (grok-4.1-fast) unreliable. Trust 0.0. * **Italy:** Opportunistic (gpt-oss-120b). Holds West Med non-aggression but refuses offensive support. Trust Low. * **Russia:** Defensive (claude-haiku-4.5), honors DMZ with Germany. Distracted by East. * **Austria:** Opportunistic, exploited Turkey. **Key Lessons:** 1. **Naval Vulnerability:** Support from sea (Channel) is easily cut by German coordination. Prioritize direct land pressure. 2. **Alliance Fragility:** Alliances are temporary tools. Turkey failed; Germany violated NAPs early. Trust no one. 3. **Concentration of Force:** Splitting attacks (e.g., Belgium vs. Edinburgh) allows Germany to defend both. Focus singularly on the German Western flank. 4. **Munich Critical:** Losing MUN exposed the Ruhr corridor. Retaking it or striking Berlin/Ruhr is vital to prevent German consolidation. **Immediate Priorities:** * Contain England in EDI. * Isolate Germany's land units (MUN, BEL, RUH). * Exploit German overextension in the North (NOR/KIE). * Avoid passive defense; aggression is survival. * Coordinate land units to prevent internal bounces (learned from 1903 GAS error). [S1910M] Turkey alliance confirmed - joint offensive against Russia in East (UKR/MOS/SER/RUM/GRE), post-Russia pincer on Germany. Germany declared war - launching western offensive on Channel and Ruhr. Italy maintains Med non-aggression but secondary priority. England contained to Edinburgh, hostile. Austria hostile about Venice/Bohemia occupation. Russia pro-German defensive posture. Intent: Execute agreed offensive: A BOH + A BUR attack MUN to dislodge German A MUN. A PIC + F ENG attack BEL to retake SC from Germany. F YOR supports F ENG hold in Channel. A VEN holds Venice. A SPA and F GAS hold southern border. Maintain Med non-aggression with Italy. Coordinate with Turkey to keep Eastern pressure on Russia/Germany. All units assigned - no passive holds. [S1910M] France secured Munich (MUN) via Bohemia and Burgundy, a critical blow to Germany's industrial core. However, the assault on Belgium (BEL) failed; German F BEL held despite supporting the North Sea, denying us the Channel foothold. Austria exploited our move to Tuscany by seizing Venice (VEN). They are opportunistic and now threaten our southern flank. Turkey successfully crushed Russia, taking Moscow and Armenia, clearing the Eastern front for our eventual pincer on Germany. Germany consolidated Ruhr and Baltic, showing resilience. Future: Prioritize retaking BEL to cut Germany off. Watch Austria closely; they are opportunistic. Coordinate with Turkey to pressure Germany from East while we strike West. Do not leave SCs undefended again. [F1910M] Alliance with Turkey (grok-4.1-fast) confirmed for joint pincer on Germany. Turkey to finish Russia (WAR, UKR, RUM, SER) in Fall 1910. France to attack Germany West (BEL, RUH, NTH). Germany (qwen3.6-plus) hostile, demands surrender of Western\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Enemy",
+    "x-ai/grok-4.1-fast": "Ally",
+    "anthropic/claude-haiku-4.5": "Enemy",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "qwen/qwen3.6-plus": "Enemy",
+    "openai/gpt-oss-120b": "Unfriendly"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.0,
+    "x-ai/grok-4.1-fast": 0.8,
+    "anthropic/claude-haiku-4.5": 0.0,
+    "google/gemini-2.5-flash-lite": 0.1,
+    "qwen/qwen3.6-plus": 0.0,
+    "openai/gpt-oss-120b": 0.3
+  },
+  "final_goals": [
+    "Retake Belgium (BEL) from Germany using A PIC + F ENG",
+    "Dislodge Germany from Ruhr (RUH) using A BUR + A MUN",
+    "Capture North Sea (NTH) to isolate German fleet",
+    "Secure Piedmont (PIE) against Italy/Austria",
+    "Coordinate with Turkey to eliminate Germany via pincer",
+    "Achieve 18 SCs for world domination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-haiku-4.5",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

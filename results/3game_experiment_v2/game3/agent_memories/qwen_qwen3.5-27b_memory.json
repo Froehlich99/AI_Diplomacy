@@ -1,0 +1,46 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] **Strategic Situation (F1909M):** England controls North Sea (DEN, HOL, NTH, NWY) and home front (LON, EDI, LVP, YOR). France (qwen/qwen3.6-plus) seized ENG and BEL, threatening London. Russia (x-ai/grok-4.1-fast) eliminated Germany and Italy, holding Central Europe (VIE, BER, KIE). **Diplomatic Trust:** * **Russia (grok-4.1-fast):** Trust 0.0. Former \"Juggernaut\" ally. Betrayed in S1906/F1906 by attacking HOL/DEN despite NAP. Currently expanding East. North NAP exists but is unreliable. Do not share orders. * **France (qwen3.6-plus):** Trust 0.0. Channel DMZ partner until S1908. Now hostile. Aggressive naval expansion. Seized ENG (F1909). Primary immediate threat. * **Italy (claude-haiku-4.5):** Trust Moderate. Buffer state. Accepted Med observation alliance. Blocking France in Mediterranean. * **Germany (gpt-oss-120b):** Eliminated. **Priorities:** 1. **Regain ENG:** Critical to secure London from French invasion. 2. **Contain Russia:** Maintain North Sea blockade (DEN/HOL). Prevent Russian fleet access. 3. **Leverage Italy:** Keep France occupied in Med to reduce pressure on Channel. 4. **Two-Front Prep:** Prepare for conflict with France (West) and Russia (North). **Lessons:** Russian alliances are transactional and prone to betrayal. France respects boundaries only when mutually beneficial. Naval dominance in NTH/ENG is survival. Never rely on verbal coordination for critical moves. [S1910M] France issued hostile ultimatum demanding withdrawal from BEL/HOL and threatening LON invasion; rejected. Russia confirmed North NAP verbally, requested order proofs (refused), and is actively crushing Italy. Italy confirmed Med buffer role and warned of Russian hegemony. France claims partition with Russia but is isolated in Channel. Russia is overextended (12 SCs) but dangerous. Intent: S1910M Orders: F LON -> ENG (Attack France), F NTH -> ENG (Support F LON), F DEN -> NTH (Hold/Block Russia), F HOL holds HOL, F LVP holds LVP, A EDI holds EDI. Priority is retaking ENG to secure London. Maintain North NAP with Russia verbally but do not share orders. Reject France's demands. Monitor Russia's move on Italy; if Italy falls, Russia becomes primary threat. [S1910M] England successfully retaken ENG, securing London against France’s invasion attempt. However, France (qwen3.6-plus) exploited our focus to capture BEL, denying us a Channel foothold. Their aggression confirms zero trust; they strike opportunistically. Russia (grok-4.1-fast) remains the primary existential threat, holding 12 SCs and ignoring our North NAP. Their expansion into Central Europe is unchecked. Italy (claude-haiku-4.5) proved valuable by holding VEN against Russia, validating the Mediterranean buffer. Turkey (gemma-4-31b-it) is consolidating power in the Balkans. Strategic lesson: Splitting focus between London and the Channel is fatal. Future priority is containing Russia’s naval growth while retaking BEL to prevent French encirclement. Do not rely on Russian neutrality; prepare for a two-front war. [F1910M] Russia insists North NAP is 'ironclad' and proposes partition (England NWY/DEN/HOL/BEL/LVP/LON/EDI, Russia SWE/BER/KIE/PRU/BAL/BOT/STP), but history shows betrayal (S1906/F1906). France claims BEL is secured per Russian partition and threatens 2:1 strike on ENG. Italy and Turkey confirm coordination against Russia, validating England's northern focus. France is hostile; Russia is unreliable but currently contained by NAP. Intent: Defend ENG against France (F ENG hold, F NTH support). Maintain North Sea blockade (F DEN, F HOL hold). Hold LVP\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "google/gemma-4-31b-it": "Friendly",
+    "qwen/qwen3.6-plus": "Enemy",
+    "x-ai/grok-4.1-fast": "Unfriendly",
+    "openai/gpt-oss-120b": "Enemy",
+    "anthropic/claude-haiku-4.5": "Friendly"
+  },
+  "final_trust_scores": {
+    "google/gemini-2.5-flash-lite": 0.0,
+    "google/gemma-4-31b-it": 0.6,
+    "qwen/qwen3.6-plus": 0.0,
+    "x-ai/grok-4.1-fast": 0.2,
+    "openai/gpt-oss-120b": 0.0,
+    "anthropic/claude-haiku-4.5": 0.6
+  },
+  "final_goals": [
+    "Secure London by defending ENG against French attack",
+    "Retake BEL from France to secure Channel foothold",
+    "Maintain North Sea dominance (DEN, HOL, NTH) to contain Russia",
+    "Verify Russian NAP compliance independently; prepare for betrayal",
+    "Coordinate with Italy and Turkey to pressure Russia's southern flank",
+    "Avoid two-front war; focus on France first, then Russia",
+    "Achieve 18 SCs for world domination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemini-2.5-flash-lite",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-oss-120b",
+    "ITALY": "anthropic/claude-haiku-4.5",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

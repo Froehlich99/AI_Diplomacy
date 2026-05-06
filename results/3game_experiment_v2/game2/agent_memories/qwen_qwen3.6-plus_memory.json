@@ -1,0 +1,48 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Eastern and southern flanks are permanently secured via ironclad, consistently honored DMZs with Russia (PRU/SIL/WAR) and Austria (BOH/TYR). Both powers are reliably focused on Balkan/Italian containment, guaranteeing German border stability and enabling total western concentration. Turkey maintains strict neutrality. England is diplomatically passive and tactically irrelevant; all coordination attempts have failed. France remains openly hostile, demonstrating highly competent defensive cohesion in the Channel (ENG) and central hubs (MUN/BUR). Anglo-French friction exists but cannot be leveraged for reliable joint operations. Strategic doctrine mandates absolute zero-hold execution paired with verified support chains and strict sequential routing. Historical failures prove that unsupported fleet stacking, routing congestion, and attacking fortified positions without preemptive support-cutting guarantee catastrophic bounces. Future offensives require 2:1 or 3:1 numerical superiority, explicit support verification, and phased staging: isolate enemy supports with armies before committing naval forces. Winter builds must prioritize HOL and DEN fleets to cement uncontested North Sea dominance. Naval advances must never overlap; sequential lane discipline is non-negotiable. Current operational focus is exclusively western. Germany controls BEL, HOL, DEN, KIE, RUH, and recently reclaimed MUN. The immediate priority is dismantling France’s Channel screen through methodical, land-backed naval pressure. F BEL and F NTH must coordinate with army advances toward PIC/BUR to sever French support lines before attempting ENG breakthroughs. All eastern/southern DMZs will be strictly maintained. Trust matrix: Russia and Austria are reliable; France is a hostile, competent rival; England is irrelevant; Turkey is neutral. Aggressive expansion toward 18 centers depends on ruthless support verification, sequential fleet routing, and sustained pressure on French coastal holdings while leveraging secure flanks for uninterrupted western offensives. [S1910M] Russia and Turkey confirmed ironclad DMZs (PRU/SIL/WAR/BAL), securing eastern and southern flanks for total western focus. Austria requested BOH pressure, but I declined to maintain decisive western offensive against France. France declared open war, targeting MUN and BEL with armies and fleets. England is isolated, hostile, and tactically irrelevant. I will strictly honor all eastern/southern DMZs, ignore English coordination, and commit all forces to dismantling France's Channel screen and western holdings. Intent: Execute zero-hold western offensive: F SKA->NTH and F DEN->NTH to consolidate North Sea mass; F NTH->ENG and F BEL->ENG to break French Channel screen via support/pressure; A KIE->RUH and A SIL->MUN to stage western advance; A MUN->BUR to pressure French core. Maintain absolute PRU/SIL/WAR DMZ holds per Russian agreement. Fulfill all negotiated DMZs exactly; disregard English requests. Zero passive holds. [S1910M] Western offensive collapsed due to catastrophic self-bounces and poor support verification. F DEN/NTH/ENG routing overlapped, while A SIL/MUN/BUR attacks lacked numerical superiority, allowing France to successfully defend and counter-attack into MUN. France proved highly competent, executing precise support chains and cutting my F BEL support via F ENG. Russia and Austria maintained strict DMZ compliance, securing my eastern flank. England remains tactically irrelevant. Strategic impact: lost MUN, stalled momentum, and exposed flawed execution of the zero-hold doctrine. Lesson: never commit fleets to contested zones without first severing enemy supports with armies. Future offensives require strict 2:1 local superiority, sequential\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemma-4-31b-it": "Ally",
+    "x-ai/grok-4.1-fast": "Neutral",
+    "qwen/qwen3.5-27b": "Enemy",
+    "anthropic/claude-haiku-4.5": "Ally",
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "openai/gpt-oss-120b": "Neutral"
+  },
+  "final_trust_scores": {
+    "google/gemma-4-31b-it": 0.85,
+    "x-ai/grok-4.1-fast": 0.3,
+    "qwen/qwen3.5-27b": 0.0,
+    "anthropic/claude-haiku-4.5": 0.9,
+    "google/gemini-2.5-flash-lite": 0.0,
+    "openai/gpt-oss-120b": 0.5
+  },
+  "final_goals": [
+    "Retake MUN via coordinated A KIE/A SIL 2v1 assault",
+    "Break French Channel screen with F NTH/F BEL direct pressure on ENG",
+    "Advance A RUH->BUR to cut French support chains and threaten PAR",
+    "Consolidate North Sea with F SKA/F DEN->NTH to establish uncontested naval dominance",
+    "Maintain absolute PRU/SIL/WAR and TYR/BOH DMZs with Russia and Austria",
+    "Execute strict zero-hold doctrine with verified 2:1 local superiority and sequential routing",
+    "Ignore English diplomatic overtures; focus exclusively on French elimination",
+    "Prepare winter builds in HOL/DEN/KIE for permanent Channel/North Sea supremacy",
+    "Expand aggressively toward 18 SCs by systematically dismantling French western and central holdings"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "google/gemini-2.5-flash-lite",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "GERMANY": "qwen/qwen3.6-plus",
+    "ITALY": "openai/gpt-oss-120b",
+    "RUSSIA": "anthropic/claude-haiku-4.5",
+    "TURKEY": "x-ai/grok-4.1-fast"
+  }
+}

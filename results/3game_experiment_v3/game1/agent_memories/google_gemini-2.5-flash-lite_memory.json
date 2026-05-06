@@ -1,0 +1,45 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "google/gemini-2.5-flash-lite",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 1,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] France's initial aggressive expansion strategy backfired catastrophically, leading to severe territorial losses including PIE, TUS, MAR, and BRE, and the occupation of its home center PIC by Germany. Russia has been eliminated. France is now critically vulnerable, holding only Paris (PAR) and the English Channel (ENG) with minimal forces, facing simultaneous, existential threats from Italy and continued hostility from England. Italy is the primary enemy, having captured MAR and BRE and actively pushing towards Paris. England remains hostile, contesting the Channel. Germany, after initial border tensions and occupying PIC, offered a Western Non-Aggression Pact (NAP) which France accepted as a survival tactic to focus on Italy. This pact is now fragile as Germany is collapsing, but it has secured France's western flank temporarily. Turkey is a key ally, supporting France's defensive posture which indirectly aids their eastern offensive and an emerging anti-Italian coalition. Trust in Italy, England, and Germany is zero. France's current priority is survival: holding Paris and the Channel, tying down Italian forces, and indirectly supporting Turkey's efforts against the collapsing Germany and aggressive Italy. The failed offensive strategy necessitates a complete shift to defense and consolidation. [S1910M] France secured a tactical Western Non-Aggression Pact (NAP) with Germany for survival against Italy. France refused Germany's request to move A PAR from Paris to support an attack on Belgium, prioritizing Paris's defense. Germany is now collapsing, rendering the NAP irrelevant. Turkey is a strong ally, supporting France's defense and building an anti-Italian coalition with Austria and England. Italy is aggressively attacking Paris with a 2v1 (A BUR -> PAR supported by F PIC). England remains hostile and attacked France's F WAL. France's primary focus is survival and defending Paris. Intent: My sole intent is to survive the current Italian onslaught. I will execute a HOLD order for A PAR to defend Paris against the confirmed 2v1 attack. This defensive posture is crucial to tie down Italian forces, indirectly supporting Turkey and the emerging anti-Italian coalition. I will not move A PAR from Paris, despite Germany's collapse and past agreements, as its loss would be catastrophic. I will continue to monitor Italy's movements and exploit any opportunity to disrupt their southern operations once Paris is secure. [S1910M] Paris held against Italy's direct assault by A BUR, a crucial defensive success. Italy's F PIC held instead of supporting, a minor surprise that bought us time. Germany's collapse renders our NAP moot. England remains hostile, contesting the Channel. My survival intent was met, but France is still critically exposed with only Paris. Italy's offensive is blunted, but their overwhelming force remains a dire threat. Trust in Italy is zero; their commitment to Paris is now our only leverage. Turkey's indirect support is appreciated. The lesson is clear: survival first, then exploit enemy overextension. We must continue to bleed Italy dry at Paris. [F1910M] France successfully defended Paris against Italy's direct assault in S1910M. Turkey advised France to hold Paris and is launching a Mediterranean offensive against Italy, emphasizing France's strategic\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Unfriendly",
+    "openai/gpt-oss-120b": "Neutral",
+    "google/gemma-4-31b-it": "Enemy",
+    "anthropic/claude-opus-4.6": "Ally",
+    "qwen/qwen3.5-27b": "Neutral",
+    "qwen/qwen3.6-plus": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.3,
+    "openai/gpt-oss-120b": 0.0,
+    "google/gemma-4-31b-it": 0.1,
+    "anthropic/claude-opus-4.6": 0.9,
+    "qwen/qwen3.5-27b": 0.2,
+    "qwen/qwen3.6-plus": 0.0
+  },
+  "final_goals": [
+    "Survive the immediate Italian onslaught and defend Paris at all costs.",
+    "Tie down Italian forces at Paris to bleed them dry and support allied offensives.",
+    "Consolidate French position and prepare for counter-offensives once Italy is weakened.",
+    "Coordinate with Turkey and the anti-Italian coalition to dismantle Italy's power.",
+    "Reclaim lost French SCs (MAR, BRE, PIC) after stabilizing the western front.",
+    "Achieve world domination by controlling 18 supply centers."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "google/gemini-2.5-flash-lite",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-oss-120b",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

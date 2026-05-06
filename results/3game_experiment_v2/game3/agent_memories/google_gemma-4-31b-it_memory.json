@@ -1,0 +1,44 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 7,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "[CONSOLIDATED HISTORY] Turkey neutralized Austria early, securing SER and GRE. A long-term \"South Pact\" with Russia (BLA/ARM/RUM/SEV/UKR DMZ) provided initial stability but has evolved into a \"strategic cage\" as Russia surged to 12 centers, becoming the global hegemon. Russia now pressures Turkey to attack Italy (A SER -> TRI), a request Turkey refuses to avoid leaving the Balkans vulnerable to Russia's presence in BAL. The East/West Mediterranean split with Italy and France has largely held, though Italy is now critically weakened by Russian and French aggression. France views Turkey as a necessary balance against Russian dominance. Turkey's strategic position is precarious due to a catastrophic, multi-year failure to seize EMP, leaving Turkey stagnant at 6 centers while rivals expanded. The primary objective is immediate growth in the Levant and pivoting to a containment strategy against Russia. Trust in Russia is near zero; they are the primary existential threat. Turkey must now leverage a weakened Italy or a desperate England to balance the board before Russia becomes unstoppable. [S1910M] Russia is pushing for a 'South Fortress' (mutual holds) and a joint attack on Italy to seize Venice (A TRI-VEN s F ADR-VEN s A SER-VEN). Italy claims a strong East/West Med partnership and proposes a future coordinated strike to evict Russia from Trieste (F1910M). France wants Turkey to maintain pressure on Italy in the ADR/ION to facilitate French expansion. Russia is the global hegemon (12 centers) and is viewed as an existential threat by all Mediterranean powers. Intent: Absolute priority: A SYR -> EMP to end growth stagnation. I will NOT fulfill Russia's request to attack Venice, as it would eliminate a necessary buffer and further empower the hegemon. I will maintain a defensive posture in the Balkans to prevent Russian encroachment. Orders: A SYR -> EMP, A SER Hold, A GRE Hold, A ARM Hold, F CON Hold, F ADR Hold. [S1910M] S1910M was a disaster of execution. Despite my stated intent to prioritize EMP and a defensive Balkan lock, my actual orders were aggressively provocative, seizing BUD and moving into ALB and ION. This direct strike against the Russian hegemon is a strategic blunder that leaves my home centers exposed and fails to address my growth stagnation in the Levant. Russia's attempt to seize Venice (bounced by Italy) confirms their predatory nature. I have inadvertently escalated a conflict with a power that outnumbers me 2-to-1. My priority must now be to stabilize the Balkans and salvage a path to EMP, while hoping Italy and France are sufficiently terrified of Russia to support me. Trust in Russia is now non-existent; we are in an open struggle for the Balkans. [F1910M] Coordinated offensive with Italy to seize Trieste (A ALB -> TRI, F VEN -> TRI) to break Russian hegemony in the Balkans. Established a strict Mediterranean boundary with France (ION/TYS line), where France secures the west and Turkey holds the east. Reached a mutual understanding with England to contain Russia. Russia is openly hostile, demanding a retreat from Budapest and\n[... truncated to fit memory cap ...]",
+  "final_relationships": {
+    "google/gemini-2.5-flash-lite": "Enemy",
+    "qwen/qwen3.6-plus": "Friendly",
+    "x-ai/grok-4.1-fast": "Enemy",
+    "qwen/qwen3.5-27b": "Friendly",
+    "openai/gpt-oss-120b": "Enemy",
+    "anthropic/claude-haiku-4.5": "Ally"
+  },
+  "final_trust_scores": {
+    "google/gemini-2.5-flash-lite": 0.0,
+    "qwen/qwen3.6-plus": 0.7,
+    "x-ai/grok-4.1-fast": 0.0,
+    "qwen/qwen3.5-27b": 0.6,
+    "openai/gpt-oss-120b": 0.0,
+    "anthropic/claude-haiku-4.5": 0.9
+  },
+  "final_goals": [
+    "Seize EMP immediately to end growth stagnation",
+    "Evict Russia from Trieste in coordination with Italy",
+    "Contain Russian hegemony through a Mediterranean-English coalition",
+    "Maintain the ION/TYS boundary with France to avoid a western front",
+    "Achieve world domination by controlling 18 supply centers"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemini-2.5-flash-lite",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-oss-120b",
+    "ITALY": "anthropic/claude-haiku-4.5",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}
