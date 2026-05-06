@@ -15,7 +15,7 @@ from .agent import DiplomacyAgent, ALL_POWERS
 from .clients import load_model_client
 from .game_history import GameHistory
 from .initialization import initialize_agent_state_ext
-from .utils import atomic_write_json, atomic_write_json_async, assign_models_to_powers
+from .utils import atomic_write_json, atomic_write_json_async, assign_models_to_powers, run_llm_and_log, load_prompt, log_llm_response
 
 logger = logging.getLogger(__name__)
 
@@ -35,15 +35,17 @@ def sanitize_model_id(model_id: str) -> str:
     return model_id.replace("/", "_").replace(":", "_")
 
 
-def export_agent_memories(
+async def export_agent_memories(
     game: "Game",
     agents: Dict[str, "DiplomacyAgent"],
     output_dir: str,
     memory_cap_words: int = DEFAULT_MEMORY_CAP_WORDS,
+    log_file_path: str = "",
 ) -> Dict[str, str]:
     """
-    Export each agent's consolidated memory to a per-model JSON file
-    for injection into a subsequent game.
+    Export each agent's cross-game memory by asking the LLM to write
+    an end-of-game strategic reflection. Falls back to mechanical
+    diary truncation if the LLM call fails.
 
     Returns a dict mapping model_id -> file path of the exported memory.
     """
@@ -53,7 +55,14 @@ def export_agent_memories(
     exported: Dict[str, str] = {}
     power_model_map = {p: a.client.model_name for p, a in agents.items()}
 
-    for power_name, agent in agents.items():
+    # Load reflection prompt template
+    prompt_template = None
+    try:
+        prompt_template = load_prompt("end_of_game_reflection_prompt.txt", prompts_dir=None)
+    except Exception:
+        logger.warning("end_of_game_reflection_prompt.txt not found, will use mechanical fallback")
+
+    async def _export_single(power_name: str, agent: "DiplomacyAgent") -> None:
         power_obj = game.powers.get(power_name)
         survived = power_obj is not None and not power_obj.is_eliminated()
         sc_count = len(power_obj.centers) if power_obj else 0
@@ -68,21 +77,14 @@ def export_agent_memories(
             if m:
                 final_year = m.group(1)
 
-        # Build consolidated diary text, token-capped by word count
-        diary_text = "\n\n".join(agent.private_diary) if agent.private_diary else ""
-        if memory_cap_words > 0:
-            words = diary_text.split()
-            if len(words) > memory_cap_words:
-                diary_text = " ".join(words[:memory_cap_words]) + "\n[... truncated to fit memory cap ...]"
-
-        # Convert power-based trust_scores to model-based using power_model_map
+        # Convert power-based trust_scores to model-based
         model_trust_scores: Dict[str, float] = {}
         for other_power, score in agent.trust_scores.items():
             other_model = power_model_map.get(other_power)
             if other_model:
                 model_trust_scores[other_model] = score
 
-        # Convert power-based relationships to model-based using power_model_map
+        # Convert power-based relationships to model-based
         model_relationships: Dict[str, str] = {}
         for other_power, relationship in agent.relationships.items():
             other_model = power_model_map.get(other_power)
@@ -90,6 +92,72 @@ def export_agent_memories(
                 model_relationships[other_model] = relationship
 
         model_id = agent.client.model_name
+
+        # Build outcome string
+        if won:
+            outcome_str = f"You won the game, controlling {sc_count} supply centers"
+        elif not survived:
+            outcome_str = "You were eliminated"
+        else:
+            outcome_str = f"The game ended. You controlled {sc_count} supply centers"
+
+        # Try LLM reflection
+        diary_text = ""
+        if prompt_template and agent.full_private_diary:
+            full_diary_text = "\n\n".join(agent.full_private_diary)
+            trust_lines = [f"  - {m}: {s:.2f}" for m, s in sorted(model_trust_scores.items())]
+            rel_lines = [f"  - {m}: {r}" for m, r in sorted(model_relationships.items())]
+
+            prompt = prompt_template.format(
+                power_name=power_name,
+                model_id=model_id,
+                outcome_str=f"{outcome_str} when the game ended in {final_year}",
+                full_diary_text=full_diary_text,
+                sc_count=sc_count,
+                relationships_str="\n".join(rel_lines) if rel_lines else "(none)",
+                trust_scores_str="\n".join(trust_lines) if trust_lines else "(none)",
+            )
+
+            try:
+                diary_text = await run_llm_and_log(
+                    client=agent.client,
+                    prompt=prompt,
+                    power_name=power_name,
+                    phase="END",
+                    response_type="end_of_game_reflection",
+                )
+                if diary_text:
+                    diary_text = diary_text.strip()
+                    logger.info(
+                        f"[{power_name}/{model_id}] LLM reflection generated "
+                        f"({len(diary_text.split())} words)"
+                    )
+            except Exception as exc:
+                logger.warning(
+                    f"[{power_name}/{model_id}] LLM reflection failed: {exc}. "
+                    "Falling back to mechanical truncation."
+                )
+                diary_text = ""
+
+            if log_file_path:
+                log_llm_response(
+                    log_file_path=log_file_path,
+                    model_name=model_id,
+                    power_name=power_name,
+                    phase="END",
+                    response_type="end_of_game_reflection",
+                    raw_input_prompt=prompt,
+                    raw_response=diary_text or "(failed)",
+                    success="Success" if diary_text else "Failure",
+                )
+
+        # Fallback: mechanical truncation of diary
+        if not diary_text:
+            diary_text = "\n\n".join(agent.private_diary) if agent.private_diary else ""
+            if memory_cap_words > 0:
+                words = diary_text.split()
+                if len(words) > memory_cap_words:
+                    diary_text = " ".join(words[:memory_cap_words]) + "\n[... truncated to fit memory cap ...]"
 
         memory = {
             "power_name": power_name,
@@ -117,6 +185,10 @@ def export_agent_memories(
             f"[{power_name}/{model_id}] Exported cross-game memory to {file_path} "
             f"(diary: {len(diary_text.split())} words)"
         )
+
+    # Run all reflections in parallel
+    tasks = [_export_single(pn, ag) for pn, ag in agents.items()]
+    await asyncio.gather(*tasks, return_exceptions=True)
 
     return exported
 

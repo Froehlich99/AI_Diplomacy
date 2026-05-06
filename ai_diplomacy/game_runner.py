@@ -389,7 +389,9 @@ async def run_single_game(
     # Export cross-game memory
     try:
         memory_cap = getattr(run_config, "memory_cap_words", 500)
-        exported_memories = export_agent_memories(game, agents, run_dir, memory_cap_words=memory_cap)
+        exported_memories = await export_agent_memories(
+            game, agents, run_dir, memory_cap_words=memory_cap, log_file_path=llm_log_file_path
+        )
         logger.info(f"Exported cross-game memories for {len(exported_memories)} agents to {run_dir}/agent_memories/")
     except Exception as e:
         logger.error(f"Failed to export agent memories: {e}", exc_info=True)
