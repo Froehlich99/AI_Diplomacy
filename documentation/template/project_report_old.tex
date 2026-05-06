@@ -1,0 +1,518 @@
+% Do not change document class, margins, fonts, etc.
+\documentclass[a4paper,oneside,bibliography=totoc]{scrbook}
+
+% some useful packages (add more as needed)
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{algorithm} % you can modify the algorithm style to your liking
+\counterwithin{algorithm}{chapter} % so that algorithms have chapter numbers as well
+\usepackage{algorithmic}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\renewcommand{\algorithmiccomment}[1]{\hfill\textit{// #1}}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks,citecolor=Green]{hyperref} % you may change/remove the colors
+\usepackage{lipsum} % you do not need this
+\usepackage{subcaption}
+
+% \us prints an underscore (_) and allows a line break afterwards.
+% \sls prints a slash (/) and allows a line break afterwards.
+\newcommand{\us}{\_\allowbreak}
+\newcommand{\sls}{/\allowbreak}
+
+% chicago citation style
+\usepackage{natbib}
+\bibliographystyle{chicagoa}
+\setcitestyle{authoryear,round,semicolon,aysep={},yysep={,}} \let\cite\citep
+
+% example enviroments (add more as needed)
+\newtheorem{definition}{Definition} \newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+
+% Quick fix to remove the 0 in front of sections.
+\makeatletter
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\makeatother
+
+
+
+\frontmatter \subject{Project Report} % change to appropriate type
+\title{Predicting Injury Severity in Road Accidents: A Real-Time Classification Approach}
+\author{
+  David Cebulla (1922129)\\
+  Gabriel Himmelein (1649181)\\
+  Lukas Ott (1842341)\\
+  Artur Loreit (2268917)\\
+  Aaron Niemesch (1836924)
+} \date{November 30, 2025}
+\publishers{{\small Submitted to}\\
+  Data and Web Science Group\\
+  Dr.\ Sven Hertling\\
+  University of Mannheim\\}
+\maketitle
+
+% none of the things below is needed, but you may add them if you feel that they
+% are helpful for your work \listofalgorithms \listoffigures \listoftables
+% \listtheorems{definition} \listtheorems{proposition}
+
+
+% okay, start new numbering ... here is where it really starts
+\mainmatter
+
+\section{Application Area and Goals}
+
+Modern intelligent and connected vehicle systems, such as the mandatory European eCall service, are designed to automatically transmit crucial accident data to emergency centers. These transmissions typically include location, timestamp, and passenger count but lack information on injury severity: a critical shortcoming for emergency services, as this data is vital for prioritizing rescue efforts and optimizing medical response times.
+
+To address this gap, we leverage historical accident data provided by the French National Interministerial Observatory for Road Safety (ONISR). This organization maintains the “Bulletins d’Analyse des Accidents Corporels de la Circulation” (BAAC), a national database recording all injury accidents on public roads in France. The dataset captures detailed information covering the circumstances of each accident (Caractéristiques), the location (Lieux), the vehicles involved (Véhicules), and the individual users (Usagers). Contextual variables include road category, lighting, weather conditions, vehicle type, and user behavior at the time of the accident.
+
+Each accident record specifies the injury outcome (\textit{grav}) for every participant, coded as uninjured, lightly injured, hospitalized, or killed. Although the ONISR database provides this information retrospectively, it represents a uniquely valuable source for supervised learning aimed at approximating these outcomes in real time.
+
+The goal of this project is to develop a machine learning classifier capable of predicting injury severity immediately after an accident, based solely on information realistically available to vehicle telematics systems at the moment of impact. Such a model enhances first-responder coordination by providing an automated injury risk assessment, enabling faster triage and more efficient resource allocation.
+
+\section{Structure and Size of the Data Set}
+
+Our analysis uses the "Annual Road Traffic Injury Databases" from 2019-2023, provided by ONISR. The data is supplied in four files per year (characteristics, locations, users, and vehicles) and includes features such as road conditions, weather, and user information. Recognizing the one-to-many relationship where each accident involves multiple participants, we defined our unit of analysis at the \textbf{individual level}. The \texttt{users} table serves as the base for our dataset.
+
+Directly after merging the accident characteristics, locations, users, and vehicle tables, and prior to any further preprocessing steps, the consolidated dataset comprised a total of 619,817 records and 71 columns. Processing the yearly data reveals an annual volume ranging between approximately 105,000 and 133,000 records per year. The final consolidated dataset was then partitioned into a training and validation set of \textbf{493,214 samples} (covering 2019-2022) and a test set of \textbf{125,505 samples} (covering 2023).
+
+The features we have selected are listed below. They are categorized into 23 original features (retained from raw data) and 34 engineered features (calculated to model complex relationships), comprising a total of 57 features.
+
+% \begin{description}
+%   [leftmargin=0pt]
+% \item[Time context] \hfill \\
+% {\raggedright \small\texttt{\{time\us of\us day, hour\us sin\sls cos, day\us of\us week\us sin\sls cos, month\us sin\sls cos, day\us of\us year\us sin\sls cos\}} \par}
+% Captures seasonality and daily patterns using cyclical sine/cosine transformations for time units. Also includes \texttt{time\us of\us day}, which groups hours into broader categories (e.g., Night, Rush Hour).
+
+% \item[Geospatial location] \hfill \\
+% {\raggedright \small\texttt{\{latitude, longitude\}} \par}
+% GPS coordinates (WGS84) utilized for spatial analysis and mapping.
+
+% \item[Environment \& Roadway] \hfill \\
+% {\raggedright \small\texttt{\{lighting\us ordinal, weather\us ordinal, location, infrastructure, accident\us situation, horizontal\us alignment, reserved\us lane\us present, speed\us limit, road\us complexity\us index, surface\us quality\us indicator\}} \par}
+% Combines physical site attributes (urban/rural status, alignment, infrastructure type) with risk-based ordinals for lighting and weather. Engineered indices quantify road complexity (0--10 scale) and surface quality.
+
+% \item[Crash dynamics \& Maneuvers] \hfill \\
+% {\raggedright \small\texttt{\{type\us of\us collision, initial\us point\us of\us impact, fixed\us obstacle\us struck, mobile\us obstacle\us struck, main\us maneuver\us before\us accident, impact\us score, impact\us delta\}} \par}
+% Describes the collision mechanics, including maneuvers, impact points, and obstacles. Derived metrics like \texttt{impact\us score} and \texttt{impact\us delta} quantify the relative risk based on vehicle size differences.
+
+% \item[Vehicle attributes \& Involvement] \hfill \\
+% {\raggedright \small\texttt{\{motor\us type, vehicle\us category\us simplified, vehicle\us category\us involved\us [type]\}} \par}
+% Specifies the primary vehicle's type and motorization. Includes binary flags indicating if specific other vehicle types (e.g., heavy trucks, bicycles, buses) were involved in the accident.
+
+% \item[Personal attributes] \hfill \\
+% {\raggedright \small\texttt{\{role, sex, age, age\us group, position, pedestrian\us location, pedestrian\us action\}} \par}
+% Covers demographic data (age, sex), the user's role (driver, passenger, pedestrian), seating position, and specific actions or locations for pedestrians at the time of the accident.
+
+% \item[Safety equipment usage] \hfill \\
+% {\raggedright \small\texttt{\{used\us belt, used\us helmet, used\us child\us restraint, used\us airbag\}} \par}
+% Binary variables indicating the use of protective gear (seatbelts, helmets) or the deployment of airbags.
+
+% \item[Accident Persona Clustering] \hfill \\
+% {\raggedright \small\texttt{\{cluster\}} \par}
+% A categorical feature derived from unsupervised K-Prototypes clustering. It groups accidents into distinct "personas" (e.g., 0, 1, 2) based on a combination of numerical and categorical attributes to capture complex, non-linear patterns in the data.
+
+% \item[Target / Outcome] \hfill \\
+% {\raggedright \small\texttt{\{injury\us target\}} \par}
+% The engineered ordinal target variable classifying injury severity into three levels: 0 (Uninjured), 1 (Lightly Injured), and 2 (Hospitalized or Dead).
+% \end{description}
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{@{} p{2cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{5.5cm} @{}}
+        \toprule
+        \textbf{Aspect} & \textbf{Features} & \textbf{Description} \\
+        \midrule
+        \textbf{Time\newline context} & time\_of\_day, hour\_sin/cos, day\_of\_week\_sin/cos, month\_sin/cos, day\_of\_year\_sin/cos & Captures seasonality and daily patterns using cyclical sine/cosine transformations. Includes time of day categories. \\
+        \midrule
+        \textbf{Geospatial} & latitude, longitude & GPS coordinates (WGS84) for spatial analysis. \\
+        \midrule
+        \textbf{Environment} & lighting\_ordinal, weather\_ordinal, location, infrastructure, accident\_situation, horizontal\_alignment, reserved\_lane\_present, speed\_limit, road\_complexity\_index, surface\_quality\_indicator & Combines physical site attributes with risk-based ordinals. Engineered indices quantify road complexity and surface quality. \\
+        \midrule
+        \textbf{Crash\newline dynamics} & type\_of\_collision, initial\_point\_of\_impact, fixed\_obstacle\_struck, mobile\_obstacle\_struck, main\_maneuver\_before\_accident, impact\_score, impact\_delta & Describes collision mechanics. Derived metrics quantify relative risk based on vehicle size differences. \\
+        \midrule
+        \textbf{Vehicle\newline attributes} & motor\_type, vehicle\_category\_simplified, vehicle\_category\_involved[type] & Specifies primary vehicle type. Includes binary flags for involvement of specific other vehicle types. \\
+        \midrule
+        \textbf{Personal attributes} & role, sex, age, age\_group, position, pedestrian\_location, pedestrian\_action & Covers demographic data, user’s role, seating position, and pedestrian actions. \\
+        \midrule
+        \textbf{Safety equipment} & used\_belt, used\_helmet, used\_child\_restraint, used\_airbag & Binary variables indicating use of protective gear or airbag deployment. \\
+        \midrule
+        \textbf{Clustering} & cluster & Categorical feature from K-Prototypes clustering, grouping accidents into distinct “personas”. \\
+        \midrule
+        \textbf{Target} & injury\_target & Engineered ordinal target: 0 (Uninjured), 1 (Lightly Injured), 2 (Hospitalized/Dead). \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Feature overview and descriptions from the engineered ONISR accident dataset}
+    \label{tab:feature_overview}
+\end{table}
+
+
+\section{Preprocessing}
+
+Given the nature of the "Annual Road Traffic Injury Database" as a raw database output provided by ONISR in multiple separate tables with complex many-to-one relationships, extensive preprocessing was required. The pipeline is designed to transform the disjointed raw data into a singular, model-ready tabular representation.
+
+\subsection{Data Standardization and Key Generation}
+The initial step involved normalizing column names to English equivalents. A critical challenge was the inconsistency in user identification across years. Data from 2022 onwards included a distinct \texttt{id\us user}, whereas data from 2019 and 2020 did not. To ensure a consistent unit of analysis across all years, we implemented a synthetic key generation strategy. For older data, we generated a unique identifier by combining the accident ID with a cumulative count of users within that accident (e.g., \texttt{2019000001\us U1}). This ensured that every individual involved in an accident could be uniquely tracked and merged with their respective vehicle and accident characteristics.
+
+\subsection{Advanced Data Merging strategies}
+A user-centric view was adopted for merging, treating each participant as an independent instance. While accident characteristics (weather, time) could be joined directly, the relationship between users, their vehicles, and opposing vehicles required complex logic.
+
+\subsubsection{Vehicle Antagonist Resolution}
+A significant predictor of injury severity is the disparity between the user's vehicle and the "opposing" entity (the antagonist). Since a simple join cannot determine which of the multiple vehicles in an accident caused the injury, we engineered a selection algorithm. We assigned an \texttt{impact\us score} to vehicle categories based on mass and risk (e.g., HGV Truck = 6, Bicycle = 2).
+For multi-vehicle accidents, the pipeline identifies the "antagonist" vehicle as the one involved in the same accident with the highest impact score, excluding the user's own vehicle. For pedestrians, the striking vehicle is explicitly identified. This allows us to calculate an \texttt{impact\us delta}, representing the structural disadvantage of the user (e.g., a cyclist hit by a truck results in a high negative delta).
+
+\subsubsection{Location Deduplication}
+Contrary to the dataset description, multiple location entries were found for single accident IDs, likely due to first responders logging entries for every intersecting street. To resolve this, we implemented a \texttt{completeness\us score}. We assigned weights to critical columns (Road Category: 2.0, Speed Limit: 2.0, others: 1.0). For each accident, the location entry with the highest weighted score, indicating the most data-rich description of the scene, was selected, ensuring the model trains on the highest quality data available.
+
+\subsection{Feature Selection \& Cleaning}
+The dataset underwent a rigorous cleaning process. Invalid data, such as speed limits exceeding 130 km/h or negative values for age, were filtered out. We removed high-cardinality identifiers (IDs, address strings) and columns with excessive missingness (e.g., \texttt{width\us central\us reservation}) that offered little predictive value. Hereof, we distinguished between "structural missingness" (values that should not exist) and "data quality missingness" (values that are unknown).
+
+\begin{itemize}
+    \item \textbf{Structural Missingness:} Pedestrians, by definition, do not have a vehicle category or motor type. For these cases, we explicitly imputed a value of \texttt{-1} or \texttt{'none'} to indicate "Not Applicable". Missing values for the driver, indicating a hit and run, were imputed with \texttt{0} or \texttt{Unknown} to keep the information.
+    \item \textbf{Data Quality Missingness:} Columns with $\approx5\%$ missing values were dropped, alongside rows missing values in columns without special NaN meaning.
+    \item \textbf{Other Vehicle Imputation:} If no opposing vehicle was involved, columns related to the "other" vehicle were set to \texttt{-1}. However, if a second vehicle ID existed but its characteristics were missing, we imputed \texttt{Unknown} to differentiate this state from single-vehicle accidents.
+\end{itemize}
+
+Rows missing the target variable \texttt{injury\us severity} were dropped as well, as they cannot be used for supervised learning.
+In addition, an isolation forest was used for simple outlier elimination considering the dataset's size.
+
+\subsection{Feature Engineering}
+To capture complex non-linear relationships, we generated 34 new features across four domains. The final dataset consists of 57 refined features ready for the modeling pipeline.
+
+\subsubsection{Temporal Cyclical Features}
+Raw timestamps are ill-suited for many models due to the discontinuity between 23:59 and 00:00. We decomposed time into cyclical components using Sine and Cosine transformations for hours, days of the week, and months. Additionally, we bucketed hours into a \texttt{time\us of\us day} feature (Night, Morning Rush, Midday, Evening Rush) to assist tree-based models in identifying high-level patterns.
+
+\subsubsection{Road Complexity Index}
+We hypothesized that complex road environments increase accident probability but might decrease severity due to lower speeds. We engineered a \texttt{road\us complexity\us index}, a composite score normalized between 0 and 10. This index aggregates weighted scores from:
+\begin{itemize}
+    \item \textbf{Intersection Type:} High weights for roundabouts and multi-branch intersections.
+    \item \textbf{Road Category:} Higher weights for urban communal ways vs. motorways.
+    \item \textbf{Traffic Regime:} Penalties for variable assignment lanes.
+    \item \textbf{Lane Count:} Higher complexity for multi-lane roads.
+\end{itemize}
+Complementing this, a binary \texttt{surface\us quality\us indicator} was created, set to 1 only if both the pavement condition was normal and the longitudinal profile was flat.
+
+\subsubsection{Vehicle and User Attributes}
+Vehicle categories were simplified from over 30 specific codes into 6 broad classes (Bicycle, Powered 2-3 Wheeler, Light Motor Vehicle, HGV/Truck, Bus/Coach, Other) to reduce dimensionality.
+For users, we transformed the \texttt{year\us of\us birth} into an \texttt{age} feature and further binned it into sociologically relevant \texttt{age\us groups} (e.g., Child/Teen, Senior). Safety equipment flags (seatbelts, helmets, airbags) were consolidated from three separate columns into binary "Used/Not Used" indicators to resolve data sparsity.
+
+\subsection{Resampling}
+Regarding the target value of injury severity, the dataset exhibits a clear class imbalance towards less severe cases (47\% non-injured, 36\% injured, and 16\% heavily injured) biasing models trained towards the majority class. To address this, the raw target variable \texttt{injury\us severity} (4 classes) was re-mapped to an ordinal \texttt{injury\us target} (0: Uninjured, 1: Light Injury, 2: Hospitalized/Dead), both adjusting for updates received up to 30 days afterwards and better reflecting the triage needs of first responders.
+
+Given the importance of correctly assessing cases of heavy injury, resampling was applied to the dataset to remove class imbalance.
+Both over- (SMOTE) and undersampling were considered and tested. Given the large amount of data at disposal (\textgreater400k) and considering compute constraints, random undersampling (130k) was ultimately chosen.
+
+\section{Data Mining}
+\label{sec:dm}
+We partition the dataset into a training set (2019-2022) and a test set (2023). Our primary evaluation metric is the macro F1-score, chosen to prioritize recall for the critical "severely injured" class without introducing the sensitivity of arbitrary cost matrices. This metric ensures that the performance on the minority class (severe injuries) is given equal weight to the majority class (uninjured), preventing the model from being biased towards the more frequent, less severe cases. Instead of using a simple majority-vote baseline, we implemented a domain-specific baseline that relies exclusively on the speed-limit feature to predict accident severity:
+\[
+\hat{y} =
+\begin{cases}
+\text{uninjured}, & \text{if } \text{speed\_limit} \le 50, \\[4pt]
+\text{injured}, & \text{if } \text{speed\_limit} < 100, \\[4pt]
+\text{severely injured}, & \text{otherwise}.
+\end{cases}
+\]
+
+% \subsection{Model Selection}
+% Initial screening of linear models, decision trees, and boosting algorithms revealed a performance plateau around a macro F1-score of 0.7. We applied Occam’s Razor to select three distinct architectures for optimization, each offering specific theoretical advantages:
+
+% \begin{itemize}
+%     \item \textbf{Ridge Classifier with Under-sampling:} 
+%     This linear model was selected for its computational efficiency and interpretability. Ridge regularization ($L2$) effectively handles the potential multicollinearity arising from our engineered features (e.g., cyclical time features). We combined this with under-sampling of the majority class to counteract the linear model's sensitivity to class imbalance.
+    
+%     \item \textbf{Balanced Random Forest (BRF):} 
+%     Standard Random Forests often bias towards the majority class. The Balanced Random Forest addresses this by under-sampling the majority class in the bootstrap sample for each tree. This method was chosen to improve recall for the "severely injured" class while maintaining the robustness of an ensemble method.
+    
+%     \item \textbf{CatBoost:} 
+%     Gradient boosting often yields state-of-the-art results on tabular data. CatBoost was specifically selected for its native handling of categorical features, which constitute a large portion of our dataset. We utilized the \texttt{auto\_class\_weights\\='Balanced'} parameter to handle imbalance without external sampling strategies.
+% \end{itemize}
+
+\subsection{Classification: Model Selection}
+To establish a baseline understanding of the prediction task's complexity, we initially experimented with a diverse range of machine learning algorithms with minimal hyperparameter tuning. This exploratory phase included logistic regression variants (Ordinal, Lasso, Ridge), tree-based ensembles (Random Forests, Histogram Gradient Boosting, CatBoost), and simple neural networks.
+
+Consistent with our hypothesis, all machine learning models substantially outperformed the rule-based baseline. Interestingly, models explicitly designed for ordinal regression did not yield significant improvements in F1-scores or specific error reduction compared to standard classifiers, leading to their exclusion. Applying the principle of parsimony (Occam's Razor), we narrowed our focus to three distinct architectures for further optimization, each selected for its specific theoretical strengths in addressing our data characteristics:
+\begin{itemize}
+  \item \textbf{Ridge Classifier:} A linear model incorporating L2 regularization. It was selected for its computational efficiency and ability to mitigate multicollinearity, providing a robust linear baseline. To address class imbalance, it was coupled with random undersampling.
+
+  \item \textbf{Balanced Random Forest (BRF):} An ensemble method that directly addresses the class imbalance problem by iteratively undersampling the majority class during the bootstrap aggregation (bagging) process. This ensures that each decision tree in the forest is trained on a balanced subset of data.
+
+  \item \textbf{CatBoost:} A gradient boosting algorithm chosen for its superior native handling of categorical features, which constitute a significant portion of our dataset. Its ordered boosting technique is particularly effective at reducing overfitting on small datasets or when using high-cardinality features.
+\end{itemize}
+
+\begin{table}[tb]
+  \centering
+  \begin{tabularx}{\textwidth}{@{} l l c c c @{}}
+    \toprule
+    \textbf{Model} & \textbf{Hyperparameter} & \textbf{Search Space} & \textbf{Best Value} & \textbf{F1-Macro}\\
+    \midrule
+    \textbf{Ridge} & alpha & $\{0.05, 0.10, \dots, 10\}$ & 1.5 & 0.654\\
+    \midrule
+    \textbf{BRF} & n\_estimators & $[50,\,400] \cap \mathbb{Z}$ & 400 & 0.674\\
+    & max\_depth & $\{3, \dots, 20\}$ & 18 \\
+    & min\_samples\_leaf & $\{1, \dots, 20\}$ & 1 \\
+    & replacement & \{\texttt{True}, \texttt{False}\} & \texttt{False} \\
+    & sampling\_strategy & \{\texttt{all}, \texttt{not minority}\} & \texttt{all} \\ 
+    \midrule
+    \textbf{CatBoost} & iterations & $\{1000, \dots, 5000\}$ & 4139 & 0.696 \\
+    & learning\_rate & $[0.01,\,0.2]$ & 0.01 \\
+    & depth & $\{4, \dots, 10\}$ & 10 \\
+    & l2\_leaf\_reg & $[10^{-2},\,10]$ & 0.1887 \\
+    & border\_count & $\{32, \dots, 255\}$ & 255 \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Search space and optimal hyperparameters for Ridge, BRF and CatBoost.}
+  \label{tab:hyperparams}
+\end{table}
+
+Given the dataset size and computational constraints, hyperparameter tuning was performed using 3-fold cross-validation with shuffling to mitigate ordering bias. We employed Bayesian Optimization to maximize the F1-Macro score. While Ridge Regression tuning was limited to the regularization strength $\alpha$, the ensemble methods provided a broader range of hyperparameters, particularly regarding tree pruning to prevent overfitting. The considered hyperparameter spaces are listed in \autoref{tab:hyperparams}.
+
+Final model selection relied on both the F1-Macro score and an analysis of confusion matrices, with a specific focus on recall and misclassification rates for severe injury cases. Based on these criteria and the results from the cross-validation, CatBoost was selected as the optimal model. 
+
+\subsection{Clustering: Strategy}
+To identify distinct "Accident Personas," we explored three clustering algorithms, each chosen for a specific capability:
+
+\begin{itemize}
+    \item \textbf{K-Prototypes:} A hybrid extension of K-Means that handles mixed data types (numerical and categorical) natively. This is critical for our dataset, where features like 'road category' or 'vehicle type' carry significant semantic weight that cannot be captured by Euclidean distance alone.
+    \item \textbf{HDBSCAN:} A density-based algorithm chosen for its ability to detect noise and clusters of varying shapes. Unlike partition-based methods, it does not force every point into a cluster, which is useful for identifying "outlier" accident types.
+    \item \textbf{Agglomerative Clustering:} Used with Gower distance to explore hierarchical structures in the mixed dataset, offering a visual way to assess natural groupings via dendrograms.
+\end{itemize}
+
+\textbf{Cluster Profiling Methodology:}
+To derive meaningful profiles from the clustered dataset, we conducted a structured categorical overrepresentation analysis. For each cluster and each categorical feature, we computed the conditional distribution $P(X = x \mid C = c)$ and compared it to the global distribution $P(X=x)$. A category was considered \emph{cluster-characteristic} if it satisfied the following criteria:
+\begin{itemize}
+    \item \textbf{Lift filter:} A minimum overrepresentation of $\text{lift}(x,c) = \frac{P(X=x \mid C=c)}{P(X=x)} > 1.5$.
+    \item \textbf{Support filter:} The category must represent more than 3\% of observations within the cluster.
+    \item \textbf{Dominance filter:} Features were excluded if the same dominant category appeared in all clusters (e.g., "Daylight").
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/confusion_matrices_row.pdf}
+    \caption{Generalization Performance: Confusion Matrices}
+    \label{fig:confusion_matrices}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/precision_recall_row.pdf}
+    \caption{Generalization Performance: PR-Curves}
+    \label{fig:pr_curves}
+\end{figure}
+
+\section{Evaluation}
+
+% \subsection{Hyperparameter Tuning}
+% We optimized hyperparameters using macro-F1 as the objective function. For the \textbf{Ridge classifier}, a grid search yielded an optimal regularization parameter $\alpha=2.0$.
+% For the ensemble models, we employed Bayesian Optimization (30 iterations) with stratified 3-fold cross-validation.
+
+% The tuning process for the \textbf{Balanced Random Forest} revealed that a high model complexity was necessary to capture the nuances of severe accidents. The optimal configuration required a large number of estimators ($n=400$) and a significant maximum depth ($depth=18$). Furthermore, we found that disabling replacement in the bootstrap sampling improved diversity among the trees.
+
+% In contrast, the optimization for \textbf{CatBoost} converged towards parameters that mitigated overfitting. The optimal learning rate was relatively low ($0.0194$), and the depth was moderate ($10$). The regularization parameter ($l2\_leaf\_reg=0.01$) suggested that the model relied heavily on the natural structure of the categorical splits rather than aggressive weight penalties.
+
+\subsection{Classification}
+
+The models were evaluated on the held-out test set (2023), which exhibits a similar target value distribution to previous years, thus naturally ensuring stratification. For the hyperparameters, the optimal values listed in \autoref{tab:hyperparams} were used. Each model was systematically evaluated using an automated pipeline to report the metrics listed in \autoref{tab:model_comparison}. Cohen's kappa was additionally included to evaluate ordinal performance.
+
+%\subsubsection{Performance Metrics}
+CatBoost achieves the highest F1 and Cohen’s $\kappa$, followed by BRF and RC, while the baseline performs substantially worse, following the results obtained in model selection.\\
+While models reliably predict low severity cases (e.g. F1 $[0.78, 0.80]$), differentiation between injured and heavily injured cases remains challenging, contributing the most to performance lost. 
+
+\autoref{fig:confusion_matrices} provides deeper insight into these classification errors. While the models rarely commit extreme misclassifications (confusing uninjured with heavily injured), the decision boundary between injured and heavily injured is not well defined, resulting in mix-ups between the two.
+
+The Multi-class Precision-Recall curves of \autoref{fig:pr_curves} corroborate these findings. The curves for the ``Uninjured'' class (blue) consistently demonstrate high precision across a wide range of recall values, reflecting the model's robustness in correctly identifying non-injury cases. In contrast, the ``Severe'' class (green) exhibits a sharper decline, visually confirming the trade-off inherent in balancing high recall for critical cases against the precision of those alerts.
+
+Later iterations of the data mining process attempted to alleviate this issue through various means, including OneVsOne, hierarchical (first 0 vs \{1,2\}, then 1 vs 2) and stacking classification, as well as regression with custom thresholds, but were unable to achieve meaningful improvements.
+%
+Considering this result and based on the misclassification costs involved, model training and selection could be altered to prefer one over the other, depending on the exact requirements.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{} cXXX @{}}
+\toprule
+\textbf{Rank} & \textbf{RC} & \textbf{BRF} & \textbf{CB} \\
+\midrule
+\textbf{1} & mobile\_obstacle\_struck\_1        & mobile\_obstacle\_struck      & type\_of\_collision       \\
+\textbf{2} & vehicle\_category\_other\_none  & impact\_delta                        & mobile\_obstacle\_struck\\
+\textbf{3} & sex\_2 (Female)                            & fixed\_obstacle\_struck        & age\_group                  \\
+\textbf{4} & mobile\_obstacle\_struck\_4        & type\_of\_collision                  & initial\_point\_of\_impact\\
+\textbf{5} & vehicle\_2\_3\_wheeler                & speed\_limit                         & speed\_limit\\
+\bottomrule
+\end{tabularx}
+\caption{\small Feature Importances per Classifier}
+\label{tab:feature_importance}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccccccccc}
+\toprule
+\textbf{} 
+    & \multicolumn{3}{c}{\textbf{RC}} 
+    & \multicolumn{3}{c}{\textbf{BRF}} 
+    & \multicolumn{3}{c}{\textbf{CB}}
+    & \multicolumn{3}{c}{\textbf{BL}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+& P & R & F1
+& P & R & F1
+& P & R & F1
+& P & R & F1 \\
+\midrule
+
+\textbf{Uninjured}
+& 0.84 & 0.72 & 0.78 
+& 0.88 & 0.72 & 0.79
+& 0.88 & 0.73 & 0.80
+& 0.50 & 0.64 & 0.56 \\
+
+\textbf{Injured}
+& 0.59 & 0.46 & 0.52
+& 0.62 & 0.63 & 0.63
+& 0.63 & 0.60 & 0.62
+& 0.34 & 0.30 & 0.32 \\
+
+\textbf{Severe} 
+& 0.40 & 0.77 & 0.53
+& 0.47 & 0.70 & 0.56
+& 0.46 & 0.73 & 0.57
+& 0.16 & 0.08 & 0.10 \\
+\midrule
+
+\textbf{Macro F1}
+& \multicolumn{3}{c}{0.61} 
+& \multicolumn{3}{c}{0.66} 
+& \multicolumn{3}{c}{0.66} 
+& \multicolumn{3}{c}{0.33} \\
+
+\textbf{Cohen's $\kappa$}
+& \multicolumn{3}{c}{0.59} 
+& \multicolumn{3}{c}{0.63} 
+& \multicolumn{3}{c}{0.6342} 
+& \multicolumn{3}{c}{0.0910} \\
+
+% \textbf{Macro AUC}
+% & \multicolumn{3}{c}{-}
+% & \multicolumn{3}{c}{0.72296}
+% & \multicolumn{3}{c}{0.72929}
+% & \multicolumn{3}{c}{-} \\
+
+% \textbf{Micro AUC}
+% & \multicolumn{3}{c}{-}
+% & \multicolumn{3}{c}{0.78559}
+% & \multicolumn{3}{c}{0.80404}
+% & \multicolumn{3}{c}{-} \\
+\bottomrule
+\end{tabular}
+\caption{\small Test Performance: Ridge Classifier, Balanced Random Forest, CatBoost, Baseline.}
+\end{table}
+
+\subsubsection{Feature Importance Analysis}
+\label{tab:model_comparison}
+
+\autoref{tab:feature_importance} presents the top three features for each model. Ridge importance is determined by coefficient magnitudes, BRF importance by mean decrease in impurity, and CatBoost importance by built-in feature attribution.
+%
+The feature importance analysis demonstrates that the nature of the obstacle struck is critical for injury prediction, as evidenced by the consistent appearance of \texttt{mobile\_obstacle\_struck} (\texttt{mos}) across all classifiers and the inclusion of \texttt{impact\_delta} in BRF. Collisions involving a pedestrian or a train (\texttt{mos\_1} and \texttt{4}) serve as strong indicators for injury outcomes. Furthermore, variables such as \texttt{type\_of\_collision} and \texttt{initial\_point\_of\_impact} highlight that the precise point of impact, in conjunction with vehicle speed, is highly relevant for prediction.
+
+
+
+% \textbf{1} & mobile\_obstacle\_struck\_1 & vehicle\_category\_other\_none & num\_light\_motor\_vehicle \\
+% \textbf{BRF} & mobile\_obstacle\_struck & impact\_delta & fixed\_obstacle\_struck \\
+% \textbf{CB} & type\_of\_collision & mobile\_obstacle\_struck & age\_group \\
+
+% Ridge emphasizes vehicle counts, BRF highlights collision type and impact intensity, and CatBoost leverages a broader mix of demographic, situational, and crash-mechanics variables, which likely contributes to its superior performance.
+
+% CatBoost performing best. The \textbf{Injured} class is more ambiguous, with many misclassifications toward Uninjured or Severe, while \textbf{Severely Injured} cases are generally identified correctly, though models tend to overpredict this class.  Figure~\ref{fig:three_images} shows the normalized confusion matrices, highlighting these consistent patterns across models.
+
+% This dataset preserves the natural distribution of the problem (47\% non-injured, 36\% injured, 16\% heavily injured). We report class-wise precision, recall, and F1-scores. This granular evaluation is critical because a high global accuracy could hide a model's failure to detect severe injuries: the most costly error in our domain.
+
+
+\subsection{Clustering Evaluation}
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabularx}{\textwidth}{c X}
+        \toprule
+        \textbf{Cluster} & \textbf{Persona Description} \\
+        \midrule
+        \textbf{0} & Midday pedestrian-related accidents with older road users in semi-urban areas. \\[1mm]
+        \textbf{1} & Night-time accidents involving younger adults (18-30 years) under low visibility. \\[1mm]
+        \textbf{2} & Morning rush-hour collisions linked to commuter traffic and congestion. \\[1mm]
+        \textbf{3} & High-complexity urban intersection accidents with notable pedestrian involvement. \\[1mm]
+        \textbf{4} & Low-speed urban maneuver collisions (parking, turning) in narrow streets, usually minor but risky for vulnerable users. \\[1mm]
+        \bottomrule
+    \end{tabularx}
+    \caption{Identified accident personas (features with lift $>1.5$).}
+    \label{tab:cluster_personas}
+\end{table}
+
+
+Clustering performance was evaluated via Silhouette scores (Table~\ref{tab:cluster_results}). Although HDBSCAN and Agglomerative Clustering yielded higher raw scores ($>0.08$), further inspection revealed degenerate solutions where over 85\% (HDBSCAN) or 100\% (Agglomerative) of the data collapsed into a single predominant cluster. Such partitions offer no analytical value for differentiating between accident types. In contrast, K-Prototypes with $k=5$ produced a more balanced distribution (largest cluster $\approx 39\%$) with clear semantic distinctions, offering the optimal trade-off between mathematical cohesion and practical interpretability.
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{l c c c}
+\hline
+\textbf{Algorithm} & \textbf{Param} & \textbf{Silhouette} & \textbf{Largest Cluster [\%]} \\
+\hline
+K-Prototypes   & 5  & 0.041 & 38.8 \\
+Agglomerative  & 3  & 0.107 & 100.0 \\
+HDBSCAN        & 10 & 0.089 & 85.4 \\
+\hline
+\end{tabular}
+\caption{Comparison of clustering algorithms (abbreviated).}
+\label{tab:cluster_results}
+\end{table}
+
+\section{Results}
+Initial model selection via cross validated F1-Macro, later affirmed in model evaluation via F1-Macro, Cohen's Kappa and AUC scores, identify CatBoost as the optimal candidate for the targeted real-time telematics application, yielding the most separable precision-recall curves (\autoref{fig:pr_curves}). Outperforming the Ridge Classifier, it validates the necessity of flexible, non-linear models to capture complex injury risks within the ONISR data.
+
+% It slightly outperforms the Balanced Random Forest, validating the necessity of flexible, non-linear models to capture complex injury risks within the ONISR data.
+
+% Micro and macro AUC scores identify CatBoost as the optimal candidate for the targeted real-time telematics application, yielding the most separable precision-recall curves ($\text{micro\_AUC}=0.80$; $\text{macro\_AUC}=0.73$). It slightly outperforms the Balanced Random Forest, validating the necessity of flexible, non-linear models to capture complex injury risks within the ONISR data.
+
+In the context of eCall goals, the results illustrate a critical balance between safety and efficiency. CatBoost classifies $\approx96\%$ of severely injured cases as at least injured, directly meeting the primary objective of accelerating medical response for high-risk accidents. However, this sensitivity incurs a cost in resource allocation, as $\approx7\%$ of non-injury cases are predicted as severe, potentially triggering unnecessary deployments. Furthermore, the misclassification of the remaining $\approx3\%$ of severe cases confirms that the system cannot replace human judgment. Instead, it serves as a decision-support tool, enhancing emergency coordination by flagging severe accidents that standard protocols might recognize too late.
+
+\newpage
+\section*{Ehrenwörtliche Erklärung}
+Ich versichere, dass ich die beiliegende Bachelor-, Master-, Seminar-, oder
+Projektarbeit ohne Hilfe Dritter und ohne Benutzung anderer als der angegebenen
+Quellen und in der untenstehenden Tabelle angegebenen Hilfsmittel angefertigt
+und die den benutzten Quellen wörtlich oder inhaltlich entnommenen Stellen als
+solche kenntlich gemacht habe. Diese Arbeit hat in gleicher oder ähnlicher Form
+noch keiner Prüfungsbehörde vorgelegen. Ich bin mir bewusst, dass eine falsche
+Erklärung rechtliche Folgen haben wird.
+
+% Declare below which AI tools you used in the process of writing your work,
+% including text, image, code, and data generation. If you used a tool for a
+% purpose not included in the list yet, add it to the list.
+\begin{center}
+  \textbf{Declaration of Used AI Tools} \\[.3em]
+  \begin{tabularx}{\textwidth}{lXlc}
+    \toprule
+    Tool & Purpose & Where? & Useful? \\
+    \midrule
+    Gemini 2.5/3 Pro & Translation &  column\_description.pdf & +++\\
+    Gemini 2.5/3 Pro & Rephrasing & Throughout & +++ \\
+    Gemini 2.5/3 Pro & Code Generation/Debugging & Throughout & +++ \\
+    \bottomrule
+  \end{tabularx}
+\end{center}
+
+\vspace{2cm}
+\noindent Unterschrift\\
+\noindent Mannheim, den 30.~November 2025 \hfill
+\end{document}
