@@ -19,6 +19,8 @@
 \usepackage[colorlinks,citecolor=Green]{hyperref} % you may change/remove the colors
 \usepackage{lipsum} % you do not need this
 \usepackage{tikz}
+\usepackage{hyperref}
+\newcommand{\bref}[1]{\hyperref[#1]{[\ref*{#1}]}}
 
 % chicago citation style
 \usepackage{natbib}
@@ -116,7 +118,8 @@ A successful implementation will demonstrate a systematic shift in strategic beh
         \centering
         % Replace with your actual filename
         \includegraphics[width=\textwidth]{images/dynamic_trust_shifts.png}
-        \caption{Micro Dynamics: England's internal trust in Russia drops to 0.0 prior to a betrayal, while Russia remains unaware.}
+        \phantomcaption
+        % \caption{Micro Dynamics: England's internal trust in Russia drops to 0.0 prior to a betrayal, while Russia remains unaware.}
         \label{fig:trust_shift}
     \end{subfigure}
     \hfill
@@ -125,7 +128,8 @@ A successful implementation will demonstrate a systematic shift in strategic beh
         \centering
         % Replace with your actual filename
         \includegraphics[width=\textwidth]{images/alliance_heatmap.png} % Ensure this matches your heatmap filename
-        \caption{Macro Dynamics: A trust matrix from Game 1 successfully maps overarching geopolitical alliances and isolated pariahs.}
+        \phantomcaption
+        % \caption{Macro Dynamics: A trust matrix from Game 1 successfully maps overarching geopolitical alliances and isolated pariahs.}
         \label{fig:trust_heatmap}
     \end{subfigure}
     
@@ -137,18 +141,22 @@ A successful implementation will demonstrate a systematic shift in strategic beh
 \subsection {Evaluation of the trust system}
 The following findings are derived from our first experiment, which evaluates the core trust system's behavior in "naive" agents. This establishes a baseline control group, allowing us to accurately isolate and measure the impact of the cross-game memory loops in subsequent experiments.
 
-\textbf{Dynamic Deception \& The Sucker's Metric:} Continuous tracking of mutual trust scores successfully quantified diplomatic backstabs. In Game 3, England and Russia maintained high mutual trust (0.7--0.9) until 1908, when England's internal trust in Russia plummeted to 0.0 ahead of a betrayal. Russia remained unaware, maintaining a 0.88 trust score. This visually proves the framework captures unilateral alliance breakdowns. Other extreme asymmetries included massive trust gaps of 0.95 (Game 1) and 0.90 (Game 2).
+\textbf{Dynamic Deception \& The Sucker's Metric:} Continuous tracking of mutual trust scores successfully quantified diplomatic backstabs. In Game 3, England and Russia maintained high mutual trust (0.7--0.9) until 1908, when England's internal trust in Russia plummeted to 0.0 ahead of a betrayal \bref{fig:trust_shift}. Russia remained unaware, maintaining a 0.88 trust score. This visually proves the framework captures unilateral alliance breakdowns. Other extreme asymmetries included massive trust gaps of 0.95 (Game 1) and 0.90 (Game 2).
 
 \textbf{Trust vs. Game Success:} Comparing average received trust against final supply centers revealed no meaningful correlation ($r = -0.05$), proving that universally trusted agents do not inherently win. Victory relies on tactical positioning and timely betrayals rather than simply projecting honesty. Additionally, we observed no strong "Paranoia Effect" ($r = 0.12$): agents that frequently perceived betrayal did not systematically withdraw trust across the board.
 
-\textbf{Global Alliance Mapping:} By aggregating mutual trust scores into matrices, the system successfully mapped overarching geopolitical landscapes. Trust heatmaps from Game 1 clearly visualized strong mutual axes (England-Russia), isolated pariahs (Germany, Austria), and agents successfully playing multiple sides (Italy).
+\textbf{Global Alliance Mapping:} By aggregating mutual trust scores into matrices, the system successfully mapped overarching geopolitical landscapes. Trust heatmaps from Game 1 clearly visualized strong mutual axes (England-Russia), isolated pariahs (Germany, Austria), and agents successfully playing multiple sides (Italy) \bref{fig:trust_heatmap}.
 
-\textbf{LLM Personas \& Adaptation:} Underlying architectures strictly dictate baseline diplomatic postures. Grok (\texttt{x-ai/grok-4.1-fast}) emerged as the most cooperative baseline (0.54), while Qwen variants were highly skeptical ($\sim$0.33--0.42). However, these personas are not static. Progression tracking showed dynamic adaptation, with almost all models exhibiting a sharp, widespread decline in given trust during the late game (1908-1910) as board tensions peaked.
+\textbf{LLM Personas \& Adaptation:} Underlying architectures strictly dictate baseline diplomatic postures. Grok (\texttt{x-ai/grok-4.1-fast}) emerged as the most cooperative baseline (0.54), while Qwen variants were highly skeptical ($\sim$0.33--0.42). However, these personas are not static. Progression tracking showed dynamic adaptation, with almost all models exhibiting a sharp, widespread decline in given trust during the late game (1908-1910) as board tensions peaked \bref{fig:model_adaptation}.
+
+\textbf{The Instruction-Following Artifact:} Analysis of unprompted trust score updates revealed a massive architectural artifact rather than pure strategic paranoia. Models like Grok, Qwen, and GPT-OSS frequently failed to document their internal reasoning, making nearly 100\% of their updates appear unprompted due to JSON schema adherence failures. Conversely, models like Claude and Gemini meticulously populated these textual evidence fields. Furthermore, this failure to document reasoning showed virtually no correlation ($r = -0.05$) with final game success.
+
+\textbf{Implementation Safeguards \& Data Integrity:} To ensure the validity of the diplomatic behaviors observed, the framework incorporates strict structural safeguards. This includes robust edge-case handling for LLM formatting hallucinations (gracefully catching \texttt{ValueError} exceptions during JSON parsing), asynchronous retry loops for API stability, and strict hidden-state encapsulation. This encapsulation guarantees zero data leakage, ensuring that the visualized deception and trust gaps are the result of genuine strategic deduction rather than programmatic access to other agents' internal memories.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/model_trust_progression.png}
-    \caption{Progression of Average Given Trust by Model (1901-1910). This highlights the architectural differences in baseline trust and demonstrates dynamic adaptation, with most models showing a sharp decline in trust during the high-stakes late game.}
+    \caption{Average Given Trust by Model (1901-1910): Highlights baseline architectural differences and a sharp late-game decline across most models.}
     \label{fig:model_adaptation}
 \end{figure}
 

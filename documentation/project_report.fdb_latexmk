@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1778081437.70736 "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" "project_report.pdf" "project_report" 1778081439.05255 0
+["lualatex"] 1778167386.81998 "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" "project_report.pdf" "project_report" 1778167388.25818 0
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1765582120.45102 81837 7091cab214959897276971ec5ae174a1 ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1758973537.35434 128410 3f752579a721aabb697cb5411c2b5223 ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1758973537.65221 136312 6547331b6da4bca63f5ef335e1edeaad ""
@@ -10,7 +10,7 @@
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1758973537.46326 128104 1f04e25a2de819cae1cdd0d5073e23be ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc" 1758973537.4201 127646 397fa0567f6d79c02271149f08186ede ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1758891421.45003 405951 888ea1a08d8b4709c46f38b11dc49f79 ""
-  "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" 1778081437.54044 15458 7cbe9e2906bcb1b61b1b6a506deca299 ""
+  "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" 1778167386.63016 16744 4091ea88997be31adfbe294b51de9d75 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -249,10 +249,10 @@
   "/usr/local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1758037753 5582613 982c772c693178c5ce762c9146471962 ""
   "images/alliance_heatmap.png" 1778080302.12618 115942 f7d93c6c71aee37b05988a967bdd501d ""
   "images/dynamic_trust_shifts.png" 1778080904.91969 79070 6fe6e20d8e5a9582bf6f0f7b97e3b115 ""
-  "images/model_trust_progression.png" 1778079854.66237 164903 7c88ac74fb2211b09c77ac0bd3b08ad6 ""
-  "project_report.aux" 1778081438.93918 9860 61b70f2ffaf2f46fe52bd95691eb4f47 "lualatex"
-  "project_report.out" 1778081438.64007 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "project_report.tex" 1778081437.54044 15458 7cbe9e2906bcb1b61b1b6a506deca299 ""
+  "images/model_trust_progression.png" 1778167380.33232 166996 10e5ab2087a0e6eacc21a2bd8a55df9a ""
+  "project_report.aux" 1778167388.14786 9310 73121fec5d8c914ed1a91b5c9039ac6f "lualatex"
+  "project_report.out" 1778167387.83753 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "project_report.tex" 1778167386.63016 16744 4091ea88997be31adfbe294b51de9d75 ""
   (generated)
   "project_report.aux"
   "project_report.log"
