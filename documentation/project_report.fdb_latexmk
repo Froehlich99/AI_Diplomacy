@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1778167729.67278 "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" "project_report.pdf" "project_report" 1778167731.02437 0
+["lualatex"] 1778243595.41676 "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" "project_report.pdf" "project_report" 1778243596.72911 0
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1765582120.45102 81837 7091cab214959897276971ec5ae174a1 ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1758973537.35434 128410 3f752579a721aabb697cb5411c2b5223 ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1758973537.65221 136312 6547331b6da4bca63f5ef335e1edeaad ""
@@ -10,7 +10,7 @@
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1758973537.46326 128104 1f04e25a2de819cae1cdd0d5073e23be ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc" 1758973537.4201 127646 397fa0567f6d79c02271149f08186ede ""
   "/Users/gabrielhimmelein/Library/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1758891421.45003 405951 888ea1a08d8b4709c46f38b11dc49f79 ""
-  "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" 1778167729.49926 16746 8db23d81731ea071c76887c6a4857711 ""
+  "/Users/gabrielhimmelein/Projects/AI_Diplomacy/documentation/project_report.tex" 1778243593.85093 16340 439f817230cfc35484207fc284e22473 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -250,9 +250,9 @@
   "images/alliance_heatmap.png" 1778080302.12618 115942 f7d93c6c71aee37b05988a967bdd501d ""
   "images/dynamic_trust_shifts.png" 1778080904.91969 79070 6fe6e20d8e5a9582bf6f0f7b97e3b115 ""
   "images/model_trust_progression.png" 1778167380.33232 166996 10e5ab2087a0e6eacc21a2bd8a55df9a ""
-  "project_report.aux" 1778167730.91532 9310 73121fec5d8c914ed1a91b5c9039ac6f "lualatex"
-  "project_report.out" 1778167730.62332 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "project_report.tex" 1778167729.49926 16746 8db23d81731ea071c76887c6a4857711 ""
+  "project_report.aux" 1778243596.6203 8092 873223ffc34f05493aaa5b45c310d9b6 "lualatex"
+  "project_report.out" 1778243596.33066 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "project_report.tex" 1778243593.85093 16340 439f817230cfc35484207fc284e22473 ""
   (generated)
   "project_report.aux"
   "project_report.log"
