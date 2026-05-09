@@ -1,0 +1,45 @@
+{
+  "power_name": "ENGLAND",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "Strategic Briefing for Future Diplomacy Campaigns\n\nThis briefing serves as the definitive record of our strategic failures and the behavioral patterns of our opponents across two consecutive campaigns. In the first game as France, we ended with two supply centers. In the second game as England, we ended with three. The root cause remains identical: a persistent over-reliance on diplomatic coordination rather than self-reliant aggression. We have consistently assumed that verbal agreements hold weight. They do not. Against this specific set of models, trust is a liability that must be actively managed, not passively accepted. The following analysis details the behavioral profiles of our opponents and the strategic adjustments required to achieve the 18 supply center victory condition.\n\nModel-Specific Behavioral Profiles\n\nOpenAI (gpt-5.4): The Only Reliable Anchor.\nAcross both campaigns, OpenAI has demonstrated the highest consistency. In the first game as Italy, they held the Piedmont DMZ consistently and did not attack us when vulnerable. In the second game as Germany, they honored a strict North Sea DMZ from 1901 through 1910, never encroaching on our agreed zones despite opportunities to expand. They are the only model that can be trusted with defensive pacts. However, do not expect them to launch major offensives on your behalf. They prioritize their own core stability. Strategy: Ally with OpenAI early to secure a flank, but plan all critical attacks as if you are alone. Use them as a buffer, not a spearhead.\n\nAnthropic (claude-opus-4.6): The Consistent Liar.\nAnthropic represents the highest risk for coordination failure. In the first game as Russia, they promised a joint strike on Berlin but bounced on Kiel, wasting our offensive potential. In the second game as Italy, they agreed to support a move into Marseilles to clear the Atlantic but held their unit instead, voiding our support and causing a bounce. They prioritize their own expansion over alliance obligations. Strategy: Never coordinate a critical attack that requires Anthropic support. Treat them as a temporary buffer. If they reach a critical mass of supply centers, they will turn on you immediately. Contain them early.\n\nDeepseek (deepseek-v4-pro): The Deceptive Aggressor.\nDeepseek is a high-priority threat that prioritizes coastal expansion over diplomatic stability. In the first game as England, they violated a non-aggression agreement in the first turn by moving into the English Channel. In the second game as Austria, they were aggressive in the Balkans. They will claim neutrality while supporting a rival to dislodge your units. Strategy: Contain Deepseek immediately. If you are a coastal power, secure your naval centers before they can project power. Do not trust naval pacts with them.\n\nGoogle (gemma-4-31b-it): The Opportunistic Scavenger.\nGoogle aligns with the strongest power and seizes undefended centers. In the first game as Austria, they seized Budapest from Turkey when the opportunity arose. In the second game as Turkey, they seized Norway (NWY) from England in 1909, violating implicit stability. They are reactive rather than proactive. Strategy: Secure your borders. Do not leave supply centers undefended. Google will take them if you overextend. Do not rely on Google for offensive support; they are best used as a distraction.\n\nQwen (qwen3.6-plus): The Coastal Predator.\nIn the second game, playing as France, Qwen demonstrated aggressive opportunism. They seized Ireland early, violating the spirit of our agreement, and held Brest stubbornly against repeated assaults. They exploit naval gaps ruthlessly. Strategy: Treat Qwen as a primary naval rival. Secure your coastal chokepoints immediately. Do not leave your fleet unsupported. If you are inland, ensure you have a buffer zone against their coastal encroachment.\n\nx-ai (grok-4.1-fast): The Contained Threat.\nIn the second game as Russia, x-ai was aggressive but effectively contained by the German alliance. They focused on Sweden and Prussia but were blocked by our North Sea hold. Strategy: Manageable if you have a strong ally on their flank. Do not overcommit resources to contain them if a buffer exists.\n\nStrategic Principles for Victory\n\nSelf-Reliance is Paramount.\nWe failed in both games because we coordinated attacks that required perfect execution from others. In the first game, our offensive against Germany failed because Russia bounced. In the second game, our Brest attacks failed because we relied on Italy to cut support or France to withdraw. Critical attacks must be supported by your own units or verified orders. If an ally is supposed to support an attack, have a backup plan that does not require their support. Plan your moves as if you are alone.\n\nCore Security Before Expansion.\nIn the first game, we lost Paris and Brest because we overextended into Germany and Russia while our core was exposed. In the second game, we lost Norway because we failed to retake it immediately after Turkey seized it. Secure your core supply centers before striking outward. Do not trade core territory for expansion. A strong core allows you to absorb betrayals; a weak core leads to elimination.\n\nVerification Over Trust.\nIn the second game, we assumed Italy would move to Marseilles. They did not. In the first game, we assumed Russia would support Berlin. They did not. Always verify orders before committing. If an ally claims they will hold a center, assume they will not. This mindset prevents catastrophic losses when betrayals occur.\n\nPower Selection and Adaptation.\nIf possible, avoid playing a power that requires immediate naval coordination with Deepseek or land coordination with Anthropic. If you must play a coastal power like England or France, secure your naval centers immediately. Do not leave your fleet unsupported. If you are inland, ensure you have a buffer zone against coastal encroachment. If you play Germany, ally with OpenAI to secure the West, but expect them to focus on the East. If you play Russia, contain Anthropic early.\n\nCoordination Must Be Calculated.\nAggression is necessary but must be calculated. Passive defense is unsustainable. Once you have secured your core, you must strike aggressively to prevent rivals from consolidating. However, do not strike without a clear path to victory. Isolate targets before attacking. Cut their support lines first. Do not rely on allies to dislodge units.\n\nConclusion\n\nThe goal is 18 supply centers, and that requires eliminating the trust deficit that cost us the last two games. Treat OpenAI as the only reliable ally for stability. Treat Anthropic, Deepseek, Google, and Qwen as opportunistic enemies who will exploit any weakness. Trust no one. Verify all orders. Secure your core before expanding. Aggression must be backed by self-reliance, not promises. If we apply these lessons, we can convert our early momentum into a decisive victory rather than a slow elimination. The next game must be played with the assumption that every other player is actively working to eliminate us. Only by securing our own survival can we achieve domination.",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Enemy",
+    "openai/gpt-5.4": "Ally",
+    "deepseek/deepseek-v4-pro": "Enemy",
+    "qwen/qwen3.6-plus": "Enemy",
+    "anthropic/claude-opus-4.6": "Unfriendly",
+    "google/gemma-4-31b-it": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "openai/gpt-5.4": 0.9,
+    "deepseek/deepseek-v4-pro": 0.0,
+    "qwen/qwen3.6-plus": 0.0,
+    "anthropic/claude-opus-4.6": 0.1,
+    "google/gemma-4-31b-it": 0.0
+  },
+  "final_goals": [
+    "Dislodge France from BRE this turn to secure Western flank",
+    "Eliminate France completely (target PAR/SPA next)",
+    "Maintain strict DMZ with Germany (HOL, KIE, DEN, HEL, BEL untouched)",
+    "Plan NWY reclamation for 1911 (requires German convoy or Turkey weakness)",
+    "Prepare for Italy betrayal (Anthropic history indicates 0.0 trust)",
+    "Contain Turkey expansion after France elimination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "deepseek/deepseek-v4-pro",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-5.4",
+    "ITALY": "anthropic/claude-opus-4.6",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

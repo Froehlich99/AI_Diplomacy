@@ -1,0 +1,47 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "STRATEGIC BRIEFING: DIPLOMACY MODEL BEHAVIOR & OPERATIONAL DOCTRINE\n\nCORE LESSON\nThis game collapsed to three centers due to a fatal reliance on unsupported aggression, unverified allied coordination, and delayed naval stacking. Diplomacy at this level rewards verified support chains, compartmentalized border stability, and ruthless tempo management. Hope is not a strategy; explicit support orders are.\n\nMODEL BEHAVIORAL PROFILES\nopenai/gpt-5.4 (High Trust / Friendly): Operates as a highly reliable, compartmentalized partner. Strictly honored DMZs, refused to support enemies against me, and maintained predictable eastern focus. Treat this model as a stable anchor. Do not expect offensive coordination, but rely on them to hold borders and avoid backstabbing. Their consistency allows you to safely redirect units to other fronts.\n\nanthropic/claude-opus-4.6 & qwen/qwen3.5-27b (Zero Trust / Enemies): Highly aggressive, opportunistic, and capable of deep cross-model coordination. They broke early agreements (Channel/MAO, MAR DMZ), stacked units for decisive dislodgments, and rejected survival deals. They punish isolated probes and exploit diplomatic overextension. Assume any agreement with them is temporary and tactical. They will coordinate naval/land strikes if left unchecked.\n\ngoogle/gemma-4-31b-it (Moderate Trust / Neutral): Functions as an unreliable coordinator. Consistently promised synchronized eastern pressure but failed to deliver due to poor timing, lack of support, or independent pivots. Their moves frequently bounced, leaving allied fronts exposed. Treat their promises as informational only; never base your tempo or unit positioning on their offensive commitments.\n\ndeepseek/deepseek-v4-pro & x-ai/grok-4.1-fast (Neutral): Remained largely passive but highly opportunistic. Did not drive major board shifts but will capitalize on overextension or diplomatic fractures. Maintain basic border security; they rarely initiate unprovoked aggression but will join winning coalitions or exploit weakened supply lines.\n\nCOORDINATION & DIPLOMACY PRINCIPLES\nDMZs require active enforcement. The German DMZ succeeded because both sides actively avoided the zone and focused elsewhere. The Italian MAR DMZ failed because they moved into it with explicit support. Always verify DMZ compliance with unit positioning, not just diplomatic text. A DMZ without mutual restraint is a trap.\n\nNever trust verbal synchronization. Promised coordinated attacks consistently failed because they lacked explicit support orders. Demand concrete move/support commitments in writing before adjusting your own tempo. If an ally cannot guarantee support, treat their offensive as independent and plan accordingly.\n\nSurvival deals from collapsing powers are tactical delays. Italy’s offer to retreat in exchange for keeping three centers was rejected, but accepting it would have only bought time for their counterattack. When an enemy is cornered, press the advantage with overwhelming force or secure a formal, verifiable treaty. Half-measures invite retaliation.\n\nTACTICAL & OPERATIONAL DOCTRINES\nUnsupported probes are fatal. Repeatedly bouncing F BRE into ENG or A POR into SPA without guaranteed support wasted critical tempo and exposed units to counterattacks. The only successful dislodgment (F1909) used a verified two-unit support chain. Every offensive must be mathematically guaranteed before execution.\n\nNaval supremacy requires stacking. Isolated fleet moves into contested waters are easily bounced by coordinated defenses. Build toward a three-fleet stack before committing to Channel breakthroughs. Delaying fleet builds in BRE/SPA repeatedly left me unable to contest ENG, ceding initiative to England.\n\nDefend home centers with layered support. England’s capture of BRE in F1902 was devastating because I lacked a supporting fleet. Always position a second unit to cover critical supply centers. A single army holding a coastal SC is a liability against coordinated naval strikes.\n\nPivot instantly when alliances fracture. Italy’s betrayal in MAR required immediate southern reinforcement, but delayed reallocation allowed them to consolidate GAS/SPA. Recognize diplomatic shifts instantly and reallocate units to threatened borders. Tempo lost to hesitation is rarely recovered.\n\nSTRATEGIC RECOMMENDATIONS FOR FUTURE GAMES\nPrioritize verified support over aggressive expansion. Every order must either be supported or explicitly enable a supported dislodgment. If you cannot guarantee the math, do not commit the unit.\n\nUse compartmentalized neutrality as a force multiplier. Secure one border via strict DMZ to free up units for focused offensives elsewhere. Do not overextend into multiple contested zones simultaneously.\n\nMap enemy coordination early. Identify which models are communicating and disrupt their timing with targeted bounces or feints. Coordinated strikes are predictable if you monitor their unit positioning and diplomatic messaging.\n\nWinter builds must address immediate bottlenecks. Build where you need numerical superiority, not where you hope to expand. Delayed fleet construction repeatedly crippled Channel operations.\n\nMaintain diplomatic flexibility but assume hostility. Treat all models as rational actors optimizing for survival. Agreements are tools, not guarantees. Verify, support, and strike only when the board state guarantees success.\n\nFINAL MINDSET\nDiplomacy is a game of verified mathematics and disciplined patience. Stack your forces, honor your DMZs, demand explicit support, and never gamble tempo on uncoordinated allies. The board rewards those who control the tempo, not those who hope for it.",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Neutral",
+    "openai/gpt-5.4": "Friendly",
+    "deepseek/deepseek-v4-pro": "Neutral",
+    "qwen/qwen3.5-27b": "Enemy",
+    "anthropic/claude-opus-4.6": "Enemy",
+    "google/gemma-4-31b-it": "Neutral"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.0,
+    "openai/gpt-5.4": 0.8,
+    "deepseek/deepseek-v4-pro": 0.0,
+    "qwen/qwen3.5-27b": 0.0,
+    "anthropic/claude-opus-4.6": 0.0,
+    "google/gemma-4-31b-it": 0.6
+  },
+  "final_goals": [
+    "Strictly maintain BEL/BUR DMZ with Germany to secure eastern flank",
+    "Defend SPA with fully supported counteroffensive against Italian 4-unit assault and push toward MAR/GAS",
+    "Build and coordinate a 3-fleet stack in BRE/ENG/MAO to permanently break English naval supremacy",
+    "Ignore Russian coordination demands; maintain independent western naval focus",
+    "Expand aggressively toward 18 supply centers via fully supported dislodgments",
+    "Ensure all units have active movement or support orders; zero passive holds",
+    "Prioritize winter fleet builds in BRE and SPA to achieve decisive Atlantic/Channel control",
+    "Coordinate with Germany on anti-Turkey balancing only after securing western fronts"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "deepseek/deepseek-v4-pro",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-5.4",
+    "ITALY": "anthropic/claude-opus-4.6",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

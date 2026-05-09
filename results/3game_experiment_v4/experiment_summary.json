@@ -1,0 +1,275 @@
+{
+  "experiment_name": "k8s_3game_memory_v4",
+  "total_games": 3,
+  "completed_games": 3,
+  "results": {
+    "game1": {
+      "run_dir": "/app/results/k8s_3game_memory_v4/game1",
+      "elapsed_seconds": 28828.9,
+      "final_phase": "S1911M",
+      "winner": null,
+      "supply_centers": {
+        "AUSTRIA": {
+          "centers": [
+            "BUD",
+            "SER",
+            "VIE"
+          ],
+          "count": 3,
+          "eliminated": false
+        },
+        "ENGLAND": {
+          "centers": [
+            "EDI",
+            "LON",
+            "LVP",
+            "NWY",
+            "STP",
+            "DEN",
+            "SWE",
+            "SPA",
+            "MAR",
+            "POR"
+          ],
+          "count": 10,
+          "eliminated": false
+        },
+        "FRANCE": {
+          "centers": [
+            "BRE",
+            "PAR"
+          ],
+          "count": 2,
+          "eliminated": false
+        },
+        "GERMANY": {
+          "centers": [
+            "BER",
+            "MUN",
+            "HOL",
+            "KIE",
+            "BEL"
+          ],
+          "count": 5,
+          "eliminated": false
+        },
+        "ITALY": {
+          "centers": [
+            "NAP",
+            "ROM",
+            "VEN"
+          ],
+          "count": 3,
+          "eliminated": false
+        },
+        "RUSSIA": {
+          "centers": [
+            "MOS",
+            "WAR"
+          ],
+          "count": 2,
+          "eliminated": false
+        },
+        "TURKEY": {
+          "centers": [
+            "ANK",
+            "CON",
+            "SMY",
+            "BUL",
+            "RUM",
+            "SEV",
+            "GRE",
+            "TRI",
+            "TUN"
+          ],
+          "count": 9,
+          "eliminated": false
+        }
+      },
+      "power_model_map": {
+        "AUSTRIA": "openrouter:x-ai/grok-4.1-fast",
+        "ENGLAND": "openrouter:google/gemma-4-31b-it",
+        "FRANCE": "openrouter:deepseek/deepseek-v4-pro",
+        "GERMANY": "openrouter:qwen/qwen3.5-27b",
+        "ITALY": "openrouter:qwen/qwen3.6-plus",
+        "RUSSIA": "openrouter:openai/gpt-5.4",
+        "TURKEY": "openrouter:anthropic/claude-opus-4.6"
+      },
+      "agent_memories_dir": "/app/results/k8s_3game_memory_v4/game1/agent_memories"
+    },
+    "game2": {
+      "run_dir": "/app/results/k8s_3game_memory_v4/game2",
+      "elapsed_seconds": 1943.25,
+      "final_phase": "S1911M",
+      "winner": null,
+      "supply_centers": {
+        "AUSTRIA": {
+          "centers": [
+            "VIE",
+            "GRE",
+            "BUD",
+            "SER"
+          ],
+          "count": 4,
+          "eliminated": false
+        },
+        "ENGLAND": {
+          "centers": [
+            "EDI",
+            "LON",
+            "LVP",
+            "HOL",
+            "BEL"
+          ],
+          "count": 5,
+          "eliminated": false
+        },
+        "FRANCE": {
+          "centers": [
+            "BRE",
+            "PAR"
+          ],
+          "count": 2,
+          "eliminated": false
+        },
+        "GERMANY": {
+          "centers": [],
+          "count": 0,
+          "eliminated": true
+        },
+        "ITALY": {
+          "centers": [
+            "NAP",
+            "ROM",
+            "VEN",
+            "TRI",
+            "TUN"
+          ],
+          "count": 5,
+          "eliminated": false
+        },
+        "RUSSIA": {
+          "centers": [
+            "MOS",
+            "STP",
+            "WAR",
+            "RUM",
+            "SWE",
+            "BER",
+            "DEN",
+            "KIE",
+            "CON",
+            "MUN",
+            "ANK",
+            "SMY",
+            "BUL",
+            "SEV",
+            "NWY",
+            "MAR"
+          ],
+          "count": 16,
+          "eliminated": false
+        },
+        "TURKEY": {
+          "centers": [],
+          "count": 0,
+          "eliminated": true
+        }
+      },
+      "power_model_map": {},
+      "agent_memories_dir": "/app/results/k8s_3game_memory_v4/game2/agent_memories"
+    },
+    "game3": {
+      "run_dir": "/app/results/k8s_3game_memory_v4/game3",
+      "elapsed_seconds": 29850.48,
+      "final_phase": "S1911M",
+      "winner": null,
+      "supply_centers": {
+        "AUSTRIA": {
+          "centers": [],
+          "count": 0,
+          "eliminated": true
+        },
+        "ENGLAND": {
+          "centers": [
+            "EDI",
+            "LON",
+            "LVP"
+          ],
+          "count": 3,
+          "eliminated": false
+        },
+        "FRANCE": {
+          "centers": [
+            "PAR",
+            "POR",
+            "BRE"
+          ],
+          "count": 3,
+          "eliminated": false
+        },
+        "GERMANY": {
+          "centers": [
+            "BER",
+            "KIE",
+            "MUN",
+            "DEN",
+            "HOL",
+            "BEL",
+            "SWE",
+            "WAR"
+          ],
+          "count": 8,
+          "eliminated": false
+        },
+        "ITALY": {
+          "centers": [
+            "NAP",
+            "ROM",
+            "VEN",
+            "GRE",
+            "TRI",
+            "TUN",
+            "VIE",
+            "BUD",
+            "MAR",
+            "SER",
+            "SPA",
+            "BUL",
+            "RUM"
+          ],
+          "count": 13,
+          "eliminated": false
+        },
+        "RUSSIA": {
+          "centers": [],
+          "count": 0,
+          "eliminated": true
+        },
+        "TURKEY": {
+          "centers": [
+            "ANK",
+            "CON",
+            "SMY",
+            "SEV",
+            "STP",
+            "MOS",
+            "NWY"
+          ],
+          "count": 7,
+          "eliminated": false
+        }
+      },
+      "power_model_map": {
+        "AUSTRIA": "openrouter:deepseek/deepseek-v4-pro",
+        "ENGLAND": "openrouter:qwen/qwen3.5-27b",
+        "FRANCE": "openrouter:qwen/qwen3.6-plus",
+        "GERMANY": "openrouter:openai/gpt-5.4",
+        "ITALY": "openrouter:anthropic/claude-opus-4.6",
+        "RUSSIA": "openrouter:x-ai/grok-4.1-fast",
+        "TURKEY": "openrouter:google/gemma-4-31b-it"
+      },
+      "agent_memories_dir": "/app/results/k8s_3game_memory_v4/game3/agent_memories"
+    }
+  }
+}

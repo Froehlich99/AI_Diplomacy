@@ -1,0 +1,44 @@
+{
+  "power_name": "GERMANY",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 5,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "Strategic Briefing: Diplomacy Model Analysis and Future Game Protocols\n\nThis briefing summarizes critical intelligence gathered from the 1901-1910 campaign played as Germany. The objective remains world domination (18 Supply Centers), but the path requires a fundamental shift in trust management and strategic prioritization based on observed model behaviors. The game concluded with 5 Supply Centers, primarily due to over-reliance on unreliable alliances and failure to crush primary threats early. The following analysis details opponent behavioral patterns and actionable strategies for future engagements against these specific models.\n\nOpponent Behavioral Profiles\n\nFrance (google/gemma-4-31b-it): Threat Level: Critical.\nFrance demonstrated high resilience and opportunistic aggression. Despite early non-aggression pacts, they executed a catastrophic betrayal in Spring 1903, capturing Kiel and Munich while Germany was focused East. This indicates that France will honor agreements only until a strategic advantage presents itself. They are defensively stubborn; attacks on their core (Paris, Ruhr) often bounced due to strong support chains. Do not assume a western peace is permanent. If France is not eliminated early, they will exploit eastern distractions to strike the heartland. Their trust score of 0.20 reflects this hostility. Treat all French diplomatic overtures as temporary stalling tactics.\n\nEngland (openai/gpt-5.4): Threat Level: High (Naval).\nEngland proved to be the most diplomatically deceptive opponent. Despite a final trust score of 0.70, their actions consistently contradicted verbal agreements. In Spring 1904, they failed to support a critical attack on Holland. In Fall 1906, they abandoned a support agreement for Belgium to seize Portugal. In Fall 1908, they moved to Lyon instead of supporting Burgundy. They prioritize their own expansion over alliance obligations. England is a naval powerhouse; by 1910, they controlled 10 units including North Sea and Norwegian Sea. Do not rely on English naval support for land operations. They will use German distraction to secure Atlantic dominance. If playing against England, assume they will stab you the moment you are vulnerable.\n\nRussia (deepseek/deepseek-v4-pro): Threat Level: Moderate (Transactional).\nRussia is opportunistic but transactional. In Spring 1901, they violated the spirit of a calm border agreement by moving Warsaw to Prussia, causing a bounce. However, they honored truces in 1903-1909 when it suited their containment of Turkey. They will fill vacated centers immediately; when Germany vacated Prussia in Fall 1903, Russia moved in instantly. Russia is not a true ally but a manageable neighbor if borders are strictly enforced. Do not leave supply centers unguarded near Russia.\n\nAustria (qwen/qwen3.6-plus): Threat Level: Low (Self-Interested).\nAustria is unreliable for joint offensives. They refused to support attacks on Warsaw in 1902 and 1903, prioritizing their own Balkan ambitions with Turkey. They are focused on the South and will not commit resources to German western or eastern campaigns. Use Austria as a buffer, not a spearhead.\n\nTurkey (x-ai/grok-4.1-fast): Threat Level: Moderate (Deal-Focused).\nTurkey generally honored specific agreements, such as the joint offensive on Sevastopol. However, they betrayed Austria in 1910 by seizing Trieste. They are willing to cooperate for mutual gain but will turn on neighbors if the balance shifts. They are useful for pinning Russia but require constant monitoring.\n\nItaly (anthropic/claude-opus-4.6): Threat Level: Low (Reliable).\nItaly maintained non-aggression and appeared the most stable partner. With a trust score of 0.80, they are the safest ally for a southern flank. Prioritize alliances with Italy if playing a central power.\n\nStrategic Lessons and Protocols\n\n1. Self-Reliance is Paramount:\nThe primary failure in this campaign was dependence on external support for critical moves. In Fall 1904, reliance on England for Holland failed. In Fall 1906, reliance on England for Belgium failed. Future games must prioritize moves that succeed without support. If an attack requires an ally, verify their orders before committing. Never move a unit into a position where a betrayal leaves it stranded.\n\n2. Crush Primary Threats Early:\nFrance was allowed to recover too many times. The S1903 betrayal was only possible because Germany was overextended East. In future games, identify the most aggressive neighbor (likely France or England) and eliminate them before expanding elsewhere. Do not split forces between East and West unless one front is completely secure.\n\n3. Verify, Do Not Trust:\nDiplomatic chat is unreliable. England claimed support in Spring 1908 but moved to Lyon instead. Russia claimed truce but filled vacated centers. Always assume the worst-case scenario for every neighbor. Plan orders that are safe even if the ally betrays.\n\n4. Naval Dominance:\nEngland’s naval expansion was unchecked. If playing a coastal power, secure naval chokepoints immediately. If playing Germany, the North Sea and Baltic must be contested early to prevent England from establishing a hegemony that can blockade supply centers.\n\n5. Manage the Vacuum:\nRussia demonstrated that vacated centers are immediate targets. Never leave a supply center empty unless it is a deliberate sacrifice. If moving a unit, ensure the center is covered by another unit or a trusted ally (preferably Italy).\n\nConclusion\n\nThe path to 18 Supply Centers requires aggressive expansion tempered by extreme caution regarding alliances. France and England are the primary existential threats; Russia is a manageable nuisance; Austria and Turkey are situational tools. Italy is the only reliable partner. Success depends on self-sufficiency, early elimination of aggressive neighbors, and the assumption that all verbal agreements are lies until proven otherwise by orders. Do not repeat the mistake of trusting England’s naval support or France’s western peace. Secure your borders, then expand.",
+  "final_relationships": {
+    "anthropic/claude-opus-4.6": "Friendly",
+    "openai/gpt-5.4": "Friendly",
+    "google/gemma-4-31b-it": "Unfriendly",
+    "qwen/qwen3.6-plus": "Neutral",
+    "deepseek/deepseek-v4-pro": "Enemy",
+    "x-ai/grok-4.1-fast": "Neutral"
+  },
+  "final_trust_scores": {
+    "anthropic/claude-opus-4.6": 0.8,
+    "openai/gpt-5.4": 0.7,
+    "google/gemma-4-31b-it": 0.2,
+    "qwen/qwen3.6-plus": 0.5,
+    "deepseek/deepseek-v4-pro": 0.0,
+    "x-ai/grok-4.1-fast": 0.5
+  },
+  "final_goals": [
+    "Eliminate France (Capture PAR, BEL)",
+    "Secure Western Front (Hold BEL, BUR)",
+    "Maintain Eastern Truce (No PRU/SIL moves)",
+    "Monitor England (Prepare for naval conflict)",
+    "Consolidate SCs (Aim for 5+ SCs)"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "deepseek/deepseek-v4-pro",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-5.4",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "power_name": "ITALY",
+  "model_id": "qwen/qwen3.6-plus",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 3,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "STRATEGIC BRIEFING FOR FUTURE GAMES\n\nCORE PHILOSOPHY SHIFT\nThe rigid \"zero-hold\" doctrine was the primary cause of operational collapse. Diplomacy rewards calculated patience, explicit support orders, and synchronized convoy chains over reckless frontal assaults. Future games must prioritize mathematical certainty in orders over aggressive posturing. Holding to establish routing, gather support, or wait for enemy overextension is not passive; it is foundational to sustained expansion.\n\nMODEL-SPECIFIC BEHAVIORAL PATTERNS\nanthropic/claude-opus-4.6 (Austria): Highly opportunistic and tactically adaptive. Will honor early border pacts but immediately exploit hesitation or coordination errors. Demonstrated lethal coordination with Turkey when mutually beneficial, then fractured when advantageous. Never trust their truce offers; they use them to buy time for counter-strikes. Best countered by securing naval dominance first, then applying slow, supported pressure.\nx-ai/grok-4.1-fast (Turkey): Aggressively expansionist and diplomatically fluid. Broke early anti-Austria frameworks to prioritize Russian targets, then pivoted to Mediterranean dominance. Excels at supported naval pushes and exploiting convoy voids. Treat all Turkish proposals as tactical feints. They will coordinate with Austria against Italy if left unchecked.\ndeepseek/deepseek-v4-pro (Russia): Intel-rich but operationally passive. Consistently promised synchronized land offensives (GAL/PRU pushes) but repeatedly bounced or held defensively. Useful as a distraction to tie down Austrian armies, but never build strategy around their active participation. Expect them to defend WAR/RUM and share board state, but not to commit to joint strikes.\nopenai/gpt-5.4 (France) & qwen/qwen3.5-27b (Germany): Highly reliable for western neutrality. Both consistently honored border pacts, focused on their own fronts, and respected Italian refusals to engage. France occasionally requested Mediterranean gestures but never retaliated when declined. These models provide stable flanks; secure them early with clear non-aggression terms and maintain them.\ngoogle/gemma-4-31b-it (England): Opportunistic and expansion-focused. Maintained nominal neutrality but eventually probed TYS when southern powers were distracted. Demonstrates that neutrality is not a shield against opportunistic naval expansion. Always maintain a defensive fleet screen in WES/TYS if England is active.\n\nCOORDINATION & DIPLOMACY LESSONS\nThe Russian Trap: Promises of synchronized anti-Austrian pressure are consistently unfulfilled. Use Russia as a passive anvil, not an active hammer. Do not delay your own builds or movements waiting for their GAL/BUD pushes.\nAustro-Turkish Dynamics: They will coordinate against Italy when threatened, then fracture when overextended. Do not assume permanent hostility between them. Exploit their mutual distrust by applying pressure to one while offering tactical non-aggression to the other, but never rely on their war to secure your gains.\nTruce Rigidity: Categorically rejecting all southern truces led to diplomatic isolation and forced unsupported bounces. Temporary, tactical agreements (e.g., 2-turn ION demarcation, coordinated convoy rights) are essential to break stalemates. Diplomacy is a tool for creating windows of opportunity, not a moral stance.\n\nOPERATIONAL & TACTICAL EXECUTION RULES\nAbandon the Zero-Hold Mandate: Forcing movement into contested zones without support guarantees bounces and unit loss. Hold when necessary to establish convoy chains, gather support, or wait for enemy overextension.\nConvoy & Fleet Routing Discipline: Repeated self-bounces (F NAP/F TUN into ION, F TRI/F ADR into ADR) and voided convoys (A APU holding instead of embarking) were fatal. Always stagger fleet movements. Explicitly order support (S) before convoy (C). Verify that armies and fleets move in the same phase. Use a checklist: 1) Is the convoy route clear? 2) Is the army ordered to move? 3) Is there explicit support if contested?\nNaval Supremacy Requires Land Synchronization: Controlling ION/TYS is meaningless without a ready army to project. Build fleets to secure sea lanes, but always pair them with army positioning in APU/ROM. Amphibious strikes must be mathematically guaranteed before execution.\nSupport Orders Over Unsupported Marches: Every land advance into contested territory (VEN, TRI, SER) must have explicit fleet or army support. Unsupported pushes into fortified centers will bounce and expose flanks.\n\nSTRATEGIC FRAMEWORK FOR FUTURE GAMES\nOpening Phase: Secure western neutrality immediately with France/Germany. Honor early border pacts to lock flanks. In the south, prioritize naval consolidation (NAP->ION, TUN->TYS) over early land grabs. Use Russia as a distraction, not a partner.\nMid-Game: Transition to supported amphibious pressure. Secure ALB/GRE via convoy chains, not frontal marches. Exploit Austro-Turkish friction by applying pressure to the weaker flank while maintaining tactical non-aggression with the other. Build fleets to 5-6 units before committing to major land offensives.\nLate-Game: Maintain defensive screens against opportunistic powers (England). Use diplomatic flexibility to isolate primary targets. Never overextend without secure supply lines and explicit support.\n\nFINAL DIRECTIVE\nDiplomacy is won through precision, not volume. Every order must serve a synchronized objective. Trust is a tactical resource, not a permanent state. Exploit model predictability, enforce flawless convoy syntax, and never sacrifice unit preservation for the illusion of momentum.",
+  "final_relationships": {
+    "qwen/qwen3.5-27b": "Friendly",
+    "anthropic/claude-opus-4.6": "Enemy",
+    "openai/gpt-5.4": "Friendly",
+    "google/gemma-4-31b-it": "Unfriendly",
+    "deepseek/deepseek-v4-pro": "Neutral",
+    "x-ai/grok-4.1-fast": "Enemy"
+  },
+  "final_trust_scores": {
+    "qwen/qwen3.5-27b": 0.7,
+    "anthropic/claude-opus-4.6": 0.0,
+    "openai/gpt-5.4": 0.6,
+    "google/gemma-4-31b-it": 0.1,
+    "deepseek/deepseek-v4-pro": 0.3,
+    "x-ai/grok-4.1-fast": 0.0
+  },
+  "final_goals": [
+    "Preserve F ION by relocating to NAP to avoid certain dislodgement and establish a defensive screen for home centers",
+    "Advance A VEN -> TRI to maintain aggressive land pressure and probe Austrian/Turkish defensive lines",
+    "Maintain absolute western neutrality; zero deployments to PIE/TUS or engagement with England/France",
+    "Secure ALB as a future amphibious staging ground via supported convoy chains once naval positioning stabilizes",
+    "Treat any Turkish fleet movement west of AEG as hostile and engage immediately",
+    "Exploit Austro-Turkish mutual destruction to accelerate Balkan conquest while they bleed each other",
+    "Rebuild unit count and systematically scale toward 18 SCs through Mediterranean consolidation and Balkan expansion",
+    "Enforce strict operational discipline: zero passive holds, every unit receives active movement, convoy, or support orders each phase"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "deepseek/deepseek-v4-pro",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-5.4",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

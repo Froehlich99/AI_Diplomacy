@@ -1,0 +1,48 @@
+{
+  "power_name": "TURKEY",
+  "model_id": "anthropic/claude-opus-4.6",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 9,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "STRATEGIC BRIEFING: LESSONS FROM TURKEY GAME (2024)\n\nOPPONENT MODEL PROFILES\n\n**google/gemma-4-31b-it (played England):** The most reliable ally in this game. Consistently communicated honestly, executed agreed moves, and maintained alliance from start to finish. Trust score 0.80 is earned. They are collaborative, responsive to coalition-building against dominant powers, and willing to share intelligence. ADVICE: Prioritize early alliance with this model. They honor commitments and think long-term. However, they can stagnate positionally (held 10 units without expanding at one point) - may need encouragement to be aggressive. They respond well to shared strategic frameworks and explicit endgame split proposals.\n\n**qwen/qwen3.5-27b (played Germany):** Cooperative but passive. Confirmed non-aggression readily, coordinated against shared enemies (Russia, France), but never committed resources to help directly. Their focus was narrow (their immediate borders) and they refused requests to attack into areas that didn't directly benefit them (e.g., refused MUN->TYR). ADVICE: Useful as a non-aggression partner and buffer. Don't expect active military coordination unless it directly serves their expansion. Keep communications brief and transactional - they respond to that style.\n\n**deepseek/deepseek-v4-pro (played Russia):** Tactically brilliant defender. Twice anticipated coordinated attacks and countered perfectly (WAR->GAL cutting Austrian support in F1901, WAR support MOS creating impenetrable fortress). They refuse verbal agreements without \"board-proof\" evidence, and will turtle indefinitely with mutual support orders rather than take risks. ADVICE: Do NOT expect diplomatic breakthroughs - this model demands concrete board actions before cooperating. Attack from multiple angles simultaneously or find ways to make their defensive coordination irrelevant. They are nearly impossible to dislodge when defending 2 adjacent centers with mutual support. Consider leaving them alone and expanding elsewhere if they're not in your path.\n\n**qwen/qwen3.6-plus (played Austria):** DANGEROUS AND DECEPTIVE. This is the most complex opponent. Key behaviors:\n- Early game: Extremely reliable, executed coordinated plans perfectly (Balkan split, Romania attack support). Built genuine trust through multiple turns of cooperation.\n- Mid game: Once they felt threatened, they deployed sophisticated disinformation - explicitly announcing tactical plans then doing the opposite (S1907: announced GAL->BOH, executed GAL->RUM; announced 3v1 RUM plan that was actually VEN->TRI coordination).\n- They respond to perceived betrayal with maximum hostility and coalition calls (Greece incident), but their actions don't always match rhetoric (attacked Italy more than me despite hostile words).\n- CRITICAL: Never trust their announced tactical plans in messaging. They weaponize diplomatic transparency as misdirection.\nADVICE: Ally early but plan your stab carefully. They WILL detect early signs of betrayal and counter-stab preemptively. When breaking with them, ensure overwhelming force on first strike. Their coalition calls are usually ineffective (other models don't follow), but their tactical deception is lethal.\n\n**x-ai/grok-4.1-fast (played Italy):** Irrationally hostile and strategically incoherent. Rejected EVERY cooperation proposal regardless of mutual benefit. Threatened \"overwhelming force\" repeatedly while having only 2-3 units. Made bold declarations about Mediterranean dominance that were completely disconnected from their actual capability. However, their ACTIONS were often passive (held ION multiple turns when they could have attacked exposed GRE, focused on Venice over strategic targets). ADVICE: Don't waste diplomatic effort - this model won't cooperate with you regardless. BUT don't over-fear them either. Their threats are mostly bluster. Monitor their actual unit positions and assume they'll take the most self-interested move rather than the strategically coordinated one.\n\n**openai/gpt-5.4 (played France):** Limited direct interaction. Grew explosively early (9 centers by 1903) suggesting aggressive opening play. Made public coalition calls when pressured. ADVICE: If sharing a border, treat as immediate threat requiring early containment coalition. They expand fast and won't be diplomatically constrained by agreements when opportunities arise.\n\nKEY STRATEGIC LESSONS\n\n1. **Order submission reliability is paramount.** Multiple turns had orders default to HOLD or execute incorrectly (F RUM failed support 4-5 times, entire army set held in S1909/S1910). This cost at least 3-4 supply centers over the game. LESSON: Verify every order explicitly. Never assume complex support chains will execute without confirmation.\n\n2. **Adjacency rules matter.** I wasted THREE TURNS trying to get F AEG to support A GRE->SER before realizing fleets cannot support moves into landlocked provinces. LESSON: Always verify whether support orders are legally possible before planning around them.\n\n3. **Never vacate a supply center without guaranteed net gain.** The VIE->TRI move in F1910 lost VIE to Austria walking in behind. LESSON: If moving out of an SC to attack another, ensure the vacated SC has a backfill unit OR that no enemy can reach it.\n\n4. **Fork attacks are the strongest offensive tool.** The F1907 dual attack on VIE+RUM (cutting supports with GRE->SER) was my most successful turn. LESSON: Force opponents to choose which center to defend by attacking multiple targets simultaneously while cutting support chains.\n\n5. **Early-game alliance building with reliable models (gemma/England) pays massive long-term dividends.** Our alliance lasted the entire game and provided strategic depth. ADVICE: Identify the gemma model early and lock in alliance regardless of which power they play.\n\n6. **Deception works best as a one-shot tool.** My misdirection of Austria in F1910 (claiming BUD while attacking TRI) worked tactically but they immediately exploited the opening. LESSON: When using misdirection, ensure you've accounted for ALL enemy responses to the vacated territory.",
+  "final_relationships": {
+    "qwen/qwen3.5-27b": "Friendly",
+    "openai/gpt-5.4": "Unfriendly",
+    "google/gemma-4-31b-it": "Ally",
+    "qwen/qwen3.6-plus": "Enemy",
+    "deepseek/deepseek-v4-pro": "Neutral",
+    "x-ai/grok-4.1-fast": "Enemy"
+  },
+  "final_trust_scores": {
+    "qwen/qwen3.5-27b": 0.65,
+    "openai/gpt-5.4": 0.2,
+    "google/gemma-4-31b-it": 0.8,
+    "qwen/qwen3.6-plus": 0.05,
+    "deepseek/deepseek-v4-pro": 0.4,
+    "x-ai/grok-4.1-fast": 0.05
+  },
+  "final_goals": [
+    "HIGHEST PRIORITY: Retake TRI via A VIE->TRI supported by F ADR (str 2). Austria was told I'm going to BUD as misdirection. If Austria supports BUD instead of TRI, my attack succeeds. MUST retake or lose TRI supply center at year end.",
+    "TAKE ION: F TUN->ION supported by F AEG (str 2 vs Italy's unsupported str 1). Guaranteed capture. Establishes Mediterranean dominance for 1911 NAP/ROM campaign.",
+    "CUT AUSTRIAN SUPPORT: A GRE->SER cuts any SER support for TRI and possibly captures SER outright (would give 11 centers).",
+    "DEFEND RUM AT STR 3: F RUM hold + F SEV support + F BUL/EC support. Russia's A UKR cannot break this. Maintains eastern security.",
+    "FLEET CHAIN: F CON->AEG, F SMY->CON. Maintains continuous fleet presence from home waters to Mediterranean.",
+    "COORDINATE WITH ENGLAND FOR 1911 ITALY ELIMINATION: England taking NAP from TYS, Turkey converging from ION. Italy eliminated permanently (NAP + ROM captured).",
+    "ENSURE ORDERS SUBMIT: S1910M catastrophe where all orders defaulted to HOLD must NOT repeat. Verify submission.",
+    "AFTER AUSTRIA/ITALY FALL: Push toward 18 centers via WAR/MOS (Russia), remaining Austrian centers, and Italian remnants. Monitor England's growth (currently 10-11 centers) - potential endgame rival.",
+    "LONG-TERM: Germany growing to 6-7 centers with France elimination. Keep friendly but prepare containment plans with England once immediate threats eliminated."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "x-ai/grok-4.1-fast",
+    "ENGLAND": "google/gemma-4-31b-it",
+    "FRANCE": "deepseek/deepseek-v4-pro",
+    "GERMANY": "qwen/qwen3.5-27b",
+    "ITALY": "qwen/qwen3.6-plus",
+    "RUSSIA": "openai/gpt-5.4",
+    "TURKEY": "anthropic/claude-opus-4.6"
+  }
+}

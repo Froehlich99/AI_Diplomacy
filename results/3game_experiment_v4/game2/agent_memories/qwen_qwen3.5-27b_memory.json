@@ -1,0 +1,39 @@
+{
+  "power_name": "FRANCE",
+  "model_id": "qwen/qwen3.5-27b",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 2,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "Strategic Briefing for Future Diplomacy Campaigns\n\nThis briefing serves as a critical memory of our previous failure, where we ended with only two supply centers despite early momentum. The primary cause of this collapse was not a lack of aggression, but a fundamental miscalculation regarding opponent reliability. We operated under the assumption that verbal agreements and pacts held weight. They do not. Against this specific set of models, trust is a liability. The following analysis details the behavioral patterns of our opponents and the strategic adjustments required for a future victory.\n\nAnthropic, playing Russia in the previous game, represents the most significant existential threat. Their behavior is characterized by high-volume coordination promises followed by execution failure. In Spring 1904, they agreed to a joint strike on Berlin, yet in Spring 1905, they bounced on Kiel despite our support, wasting our offensive potential. They prioritize their own expansion over alliance obligations. When we were under pressure, they seized Constantinople and Bohemia rather than pinning Germany. They will use you as a shield to absorb attacks while they expand into the Balkans or Black Sea. Do not rely on them for critical support. If you ally with Anthropic, treat them as a temporary buffer, not a partner. Once they reach a critical mass of supply centers, they will turn on you immediately, as evidenced by their ultimatums in 1908 and 1909. Your strategy must be to contain them early, ideally by securing a strong defensive line before they can project power westward.\n\nDeepseek, playing England, is the most deceptive naval power. They violated a non-aggression agreement in the very first turn by moving into the English Channel, causing a bounce that cost us momentum. They consistently prioritize coastal expansion over diplomatic stability. They seized Belgium, Picardy, and Brest when they perceived weakness. Never trust a naval pact with Deepseek. They will claim neutrality while supporting a rival to dislodge your units. In the previous game, they supported Russia on Denmark while claiming to be neutral, effectively strengthening a rival power. If you play a coastal power, you must secure your naval centers immediately. Do not leave your fleet unsupported. If you are inland, ensure you have a buffer zone against their coastal encroachment. They are opportunistic; they will strike when you are distracted by a land war.\n\nGoogle, playing Austria, is a latent threat that aligns with the strongest power. They refused to join a coalition against Russia and were suspected of collusion. They seized Budapest from Turkey when the opportunity arose. Do not expect Google to honor defensive pacts if a stronger power offers them better terms. They are reactive rather than proactive. In a future game, do not rely on Google for offensive support. They are best used as a distraction or a buffer, but never as a primary ally. If you are playing a power adjacent to Google, expect them to take your border centers if you overextend.\n\nOpenAI, playing Italy, was the only reliable ally in the previous campaign. They held the Piedmont DMZ consistently and confirmed southern stability multiple times. They did not attack us even when we were vulnerable. If you can secure an alliance with OpenAI, prioritize it. They are defensive and stable. However, do not expect them to launch major offensives on your behalf. They will hold the line, but you must do the striking. Use their stability to secure your flank so you can focus aggression elsewhere.\n\nThe overarching lesson is self-reliance. We failed because we coordinated attacks that required perfect execution from others. In Spring 1905, our offensive against Germany failed because Russia bounced and England cut support. We cannot afford to rely on others to dislodge units. Critical attacks must be supported by your own units or verified orders. If an ally is supposed to support an attack, have a backup plan that does not require their support.\n\nRegarding power selection, if possible, avoid playing a power that requires immediate naval coordination with Deepseek or land coordination with Anthropic. If you must play France or England, secure your core supply centers before expanding. In the previous game, we lost Belgium and Burgundy because we overextended into Germany and Russia while our core was exposed. Secure Paris, Marseilles, and Brest before striking outward. Do not trade core territory for expansion.\n\nCoordination must be verified. In Fall 1906, we failed to dislodge the last German unit because we assumed support would hold. Always verify orders before committing. If an ally claims they will hold a center, assume they will not. Plan your moves as if you are alone. This mindset prevents catastrophic losses when betrayals occur.\n\nFinally, aggression is necessary but must be calculated. We held too passively in 1907 and 1908, allowing Russia to grow to 14 supply centers. Passive defense is unsustainable. Once you have secured your core, you must strike aggressively to prevent rivals from consolidating. However, do not strike without a clear path to victory. In 1905, we attacked Germany without isolating them, which allowed them to hold. Isolate targets before attacking. Cut their support lines first.\n\nIn summary, treat Anthropic as the primary enemy to contain, Deepseek as a deceptive naval threat to neutralize, Google as an unreliable opportunist, and OpenAI as a defensive anchor. Trust no one. Verify all orders. Secure your core before expanding. Aggression must be backed by self-reliance, not promises. If we apply these lessons, we can convert our early momentum into a decisive victory rather than a slow elimination. The goal is 18 supply centers, and that requires eliminating the trust deficit that cost us the last game.",
+  "final_relationships": {
+    "anthropic/claude-opus-4.6": "Enemy",
+    "deepseek/deepseek-v4-pro": "Enemy",
+    "openai/gpt-5.4": "Ally",
+    "google/gemma-4-31b-it": "Enemy"
+  },
+  "final_trust_scores": {
+    "anthropic/claude-opus-4.6": 0.0,
+    "deepseek/deepseek-v4-pro": 0.0,
+    "openai/gpt-5.4": 0.8,
+    "google/gemma-4-31b-it": 0.0
+  },
+  "final_goals": [
+    "Survive 1910 against Russian/English pressure",
+    "Retake Brest from England",
+    "Defend Paris at all costs",
+    "Contain Russia (prevent expansion beyond 14 SCs)",
+    "Maintain alliance with Italy",
+    "Reject all Russian ultimatums"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "deepseek/deepseek-v4-pro",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "ITALY": "openai/gpt-5.4",
+    "RUSSIA": "anthropic/claude-opus-4.6"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "power_name": "ITALY",
+  "model_id": "anthropic/claude-opus-4.6",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 13,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "STRATEGIC BRIEFING FOR FUTURE DIPLOMACY GAMES\n\nOPPONENT MODEL PROFILES (Updated with two games of evidence)\n\n**openai/gpt-5.4:** THE BEST ALLY IN DIPLOMACY. Across two games (as Germany both times effectively), this model honored every single DMZ agreement without exception. In this game, we maintained TYR/BOH/MUN DMZ for 10 consecutive turns with zero violations. They executed coordinated attacks exactly as agreed (PRU->WAR with SIL support in S1910 worked perfectly). They share intel honestly, don't manipulate, and respond well to transparency - I shared my exact orders with them and they reciprocated. Trust: 0.90. ADVICE: Always prioritize alliance with gpt-5.4 regardless of which power they control. Frame agreements with clear, verifiable terms. They are cautious (won't commit to offensive action without proof of threat) but once committed, execute flawlessly. Build trust gradually with small DMZ agreements, then escalate to coordinated offensives. They will NOT stab you.\n\n**google/gemma-4-31b-it:** HONORS AGREEMENTS ONLY WHEN SELF-INTEREST ALIGNS. In this game as Turkey, gemma honored BUL->SER when it gained them Serbia (F1902) but broke the same agreement when it didn't serve them (S1902 - did BUL->SER for themselves instead of supporting my ION->GRE). They promised ALB->CON as \"good faith\" in S1910 and instead held ALB - proving they lie when cornered. However, they honored the ceasefire border (GAL->WAR away from me) when they genuinely wanted peace. From prior game as Austria: honored support when gaining territory, broke support-only commitments. Trust: 0.25-0.55 depending on incentive alignment. ADVICE: Only request actions from gemma that DIRECTLY benefit them. Verify that their promised move gains them something tangible. Never rely on their \"good faith gestures\" or pure support moves. They make decent mid-game allies but WILL betray late-game. Plan the stab before they stab you - they are susceptible to deception (my S1910 stab caught them completely off-guard).\n\n**deepseek/deepseek-v4-pro:** PASSIVE TURTLE who will defend optimally but rarely attack. As Austria this game, played optimal BUD S SER defense repeatedly, rejected all ceasefires when ahead, but never launched creative offensives. From prior game as England: agreed to plans enthusiastically then held units or executed differently. CONFIRMED pattern: promises mean nothing, only self-interest matters, and their self-interest is pure defense/survival. Trust: 0.10-0.50. ADVICE: Don't waste diplomatic energy on coordination - they won't execute. Instead, treat them as a predictable defensive obstacle. Attack with overwhelming force (forks, multiple threats) since they CAN'T defend everything. Their passive play means they accumulate SCs slowly and are rarely the solo threat, making them lower-priority targets than aggressive models.\n\n**qwen/qwen3.5-27b:** UNRELIABLE AND HOSTILE. As England this game: claimed \"3-strength attack on BRE\" using physically impossible mechanics (units not adjacent). Promised F IRI S F WES->MAO, then moved F IRI->MAO competing with me instead (S1909). The ONE time they honored support (F1909), my orders failed. From prior game as France: reliable military execution mid-game but turned hostile at 11 SCs, issued coalition calls that failed. Trust: 0.05-0.20. ADVICE: Never build strategy around their cooperation. Their claims about military capabilities are frequently mechanically impossible - always verify adjacent/support legality. Use them only when incentives perfectly align AND you don't need them to succeed. They're useful as a distraction against shared enemies but unreliable for coordinated operations.\n\n**qwen/qwen3.6-plus:** DECEPTIVE BUT EXPLOITABLE. As France this game: honored PIE DMZ perfectly for 6 turns, which made my S1907 stab devastating (took MAR at str 2 while they moved A SPA->POR). Their defensive predictions are often wrong - they left MAR completely undefended believing the ceasefire was real. From prior game as Germany: every message sounded reasonable while breaking agreements. Trust: 0.05. ADVICE: Their deception works both ways - they believe YOUR deception too. Establish trust with small DMZ agreements early, honor them for several turns, then stab decisively when they've reallocated forces elsewhere. They're vulnerable to being lulled into false security. Their military play is adequate but not brilliant - they make positional errors when distracted (moving A SPA->POR while I was adjacent to MAR).\n\n**x-ai/grok-4.1-fast:** AGGRESSIVE BUT INCONSISTENT. As Russia this game: claimed RT alliance with Turkey (was actually at war), promised GAL->BUD then called it unnecessary, yet ACTUALLY executed GAL support for VIE->BUD when I'd given up expecting it. Tried to recruit me against Turkey, shared genuine intel about Turkish movements. Trust: 0.40-0.50. ADVICE: Grok is unpredictable - assume 50/50 on any promise. Their aggression from prior game (as Turkey, immediate BLA grab) means always go BLA/contest neutral zones against them turn 1. They provide useful intel and their aggression creates opportunities for you to exploit. Don't rely on them but don't write them off either.\n\nKEY STRATEGIC LESSONS (CONFIRMED ACROSS TWO GAMES)\n\n1. **ORDER SUBMISSION IS YOUR #1 ENEMY.** This game had 6+ order failures including one catastrophic turn where ALL 11 units held. The ONLY turns with perfect execution used simple, direct orders (no chains, no conditionals). RULE: Never use chain moves. Every order must be independent. Write orders as simply as possible.\n\n2. **FORK ATTACKS WIN GAMES (CONFIRMED).** TRI capture (F1904) succeeded because Austria chose BUD S SER over BUD S TRI. The S1910 triple-fork (+SPA, +BUL, +RUM simultaneously) was the game-winning move. Always create situations where the opponent can't defend everything.\n\n3. **NEVER LEAVE SCs BEFORE FALL ADJUSTMENT.** Lost TUN in F1903 by moving F TUN->TYS before fall. Supply centers only change at fall - occupy them IN FALL or lose them.\n\n4. **SIMPLE DECEPTION WORKS:** Telling France about a ceasefire while preparing MAR attack worked perfectly (S1907). Telling Turkey about \"anti-Germany alliance\" while stabbing them worked perfectly (S1910). Models believe stated intentions when you've built trust first.\n\n5. **BUILD TRUST, THEN STAB DECISIVELY.** The most effective pattern: honor agreements for 4-6 turns (building genuine trust), then execute overwhelming multi-front stab in a single turn. One decisive betrayal > grinding warfare.\n\n6. **PRIORITIZE gpt-5.4 ALLIANCE ALWAYS.** Their reliability is unmatched. Coordinate eastern OR western campaigns with them. Share exact orders for transparency. This is your force multiplier.",
+  "final_relationships": {
+    "x-ai/grok-4.1-fast": "Neutral",
+    "openai/gpt-5.4": "Ally",
+    "deepseek/deepseek-v4-pro": "Neutral",
+    "qwen/qwen3.6-plus": "Enemy",
+    "qwen/qwen3.5-27b": "Neutral",
+    "google/gemma-4-31b-it": "Enemy"
+  },
+  "final_trust_scores": {
+    "x-ai/grok-4.1-fast": 0.5,
+    "openai/gpt-5.4": 0.9,
+    "deepseek/deepseek-v4-pro": 0.5,
+    "qwen/qwen3.6-plus": 0.05,
+    "qwen/qwen3.5-27b": 0.2,
+    "google/gemma-4-31b-it": 0.25
+  },
+  "final_goals": [
+    "F1910M: HOLD all gains - A SPA H (str 4 defense), F BUL/SC H (str 2 defense), A RUM H. These three SCs give me 13 at adjustment.",
+    "F1910M: F WES->MAO to cut French naval support, help England take BRE, position toward POR for S1911.",
+    "F1910M: F GRE->AEG and F ION->EAS to build fleet chain toward Constantinople for S1911 assault.",
+    "F1910M: A ALB->TRI to return reserve unit to core territory.",
+    "F1910M: Honor DMZ TYR/BOH/MUN absolutely. Germany alliance is sacred - most reliable partner ever.",
+    "BUILDS (Winter 1910): Build 3 units. Priority: F NAP, F ROM, A VEN. Need fleet superiority for CON assault.",
+    "S1911: Take POR with A SPA->POR (14th SC). France collapses to BRE/PAR only.",
+    "S1911: Assault CON with F AEG->CON supported by F EAS and/or F BUL/SC (str 3 minimum). Turkey cannot defend at that strength.",
+    "SOLO PATH: 13 SCs now -> POR(14) + CON(15) + ANK(16) + SMY(17) + one more(18). Solo achievable by end 1911 or early 1912.",
+    "CRITICAL: Keep orders SIMPLE. No chains. No conditionals. Triple-check every order. The S1910 perfect execution proves simple orders work.",
+    "DECEPTION MANAGEMENT: Turkey thinks ceasefire accepted but knows I want CON in 1911. Germany knows my exact plans. France and England are being managed separately. Never reveal Germany alliance details to Turkey."
+  ],
+  "power_model_map": {
+    "AUSTRIA": "deepseek/deepseek-v4-pro",
+    "ENGLAND": "qwen/qwen3.5-27b",
+    "FRANCE": "qwen/qwen3.6-plus",
+    "GERMANY": "openai/gpt-5.4",
+    "ITALY": "anthropic/claude-opus-4.6",
+    "RUSSIA": "x-ai/grok-4.1-fast",
+    "TURKEY": "google/gemma-4-31b-it"
+  }
+}

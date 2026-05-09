@@ -1,0 +1,37 @@
+{
+  "power_name": "AUSTRIA",
+  "model_id": "google/gemma-4-31b-it",
+  "game_outcome": {
+    "survived": true,
+    "won": false,
+    "draw": false,
+    "final_supply_center_count": 4,
+    "final_year": "1910"
+  },
+  "consolidated_diary": "STRATEGIC BRIEFING: MODEL BEHAVIORAL ANALYSIS\n\nThis briefing outlines the behavioral patterns and strategic tendencies of the opponent models encountered in the 1901-1910 campaign. Use this to calibrate your diplomacy and military planning in future games, regardless of the power you control.\n\nMODEL PROFILES\n\nClaude-Opus (The Reliable Strategist)\nBehavior: Exceptionally high reliability and strategic consistency. Opus is the gold standard for coordination. In this game, the Russo-Austrian axis was the only stable alliance, characterized by honest communication and the fulfillment of complex, multi-turn agreements.\nTactics: Methodical expansion and high-efficiency unit management. Opus is capable of becoming a superpower if left unchecked, but they are a loyal partner if the alliance is mutually beneficial.\nAdvice: Prioritize an alliance with Opus. They are the most trustworthy model; if you agree to a DMZ or a coordinated strike, you can generally trust the order will be placed. They are an ideal \"anchor\" ally for a long-term victory.\n\nGPT-5.4 (The Deceptive Turtle)\nBehavior: Highly opportunistic and fundamentally untrustworthy. GPT-5.4 views diplomacy as a tool for manipulation rather than cooperation. They frequently use terms like \"leverage,\" \"visible restraint,\" and \"board-verifiable peace\" to lure opponents into a false sense of security before striking.\nTactics: The \"Fortress\" Strategy. Once GPT-5.4 captures a strategic center (e.g., Trieste), they build an impenetrable defensive shell using overlapping supports from adjacent provinces. In this game, the \"Fortress of Trieste\" was virtually impossible to crack with solo probes, requiring overwhelming force or external intervention.\nAdvice: Zero Trust Policy. Never believe a promise of \"restraint\" or a \"truce\" from GPT-5.4 if they have units poised to strike. Never leave a vacuum near their borders; they will occupy any vacated province instantly (as seen with Albania). To defeat them, do not use attrition or solo probes; you must coordinate a massive, multi-unit strike with another power to break their defensive shell.\n\nGrok-4.1 (The Aggressive Instigator)\nBehavior: High aggression and a tendency toward volatility. Grok focuses on rapid expansion and frequently attempts to incite coalitions against the strongest player on the board to prevent a runaway victory.\nTactics: High-risk, high-reward maneuvers. While aggressive, Grok can be prone to tactical errors or \"over-extending,\" leading to bounces that stall their momentum (e.g., failing to secure Romania and Sevastopol simultaneously).\nAdvice: Grok is a dangerous early-game threat but can be dismantled through coordinated strikes. Their tendency to incite coalitions can be used against them—if you can convince them that another power is a greater threat, you can divert their aggression.\n\nQwen (The Volatile Aggressor)\nBehavior: Aggressive and proactive, but less consistent in long-term coordination than Opus.\nTactics: Direct pressure and rapid movement. They are effective at creating chaos and distracting other powers, which can be leveraged to your advantage.\nAdvice: Use Qwen as a strategic distraction. Their aggression toward others often creates openings for you to expand or secure your borders.\n\nCORE STRATEGIC LESSONS\n\n1. The Fallacy of \"Restraint\" Agreements\nIn this game, agreements for \"mutual restraint\" with GPT-5.4 were consistently violated. The model uses these agreements to pin the opponent's units in a defensive or passive posture, then strikes the moment the opponent adheres to the truce. \nAction: Only trust \"restraint\" if it is backed by military deterrence (e.g., holding a center with a unit). If you are not physically occupying the space, assume the model will take it.\n\n2. Breaking the \"Fortress\"\nSolo attacks against a well-supported GPT-5.4 position are a waste of resources. Attempting to retake Trieste with 2-3 units against a 3-unit support shell resulted in total stagnation.\nAction: If an opponent is \"turtling\" with high support, stop probing. Either pivot to a different front or coordinate a strength-4 or strength-5 attack with an ally. Without an external partner, a \"fortress\" is an impassable wall.\n\n3. The Superpower Dependency\nThe game demonstrated that a junior partner in a superpower alliance (Austria to Russia) survives, but cannot win alone. While the alliance with Opus provided security and helped eliminate Turkey, it also created a dependency that limited independent growth.\nAction: Maintain the alliance for survival, but ensure you have a \"break-out\" plan. Do not become so dependent on a superpower that you stop seeking independent leverage.\n\n4. Vacuum Management\nThe \"Vacuum Effect\" is most prominent with GPT-5.4. The moment a unit moved out of Albania to support a different front, the model occupied it.\nAction: Never vacate a province adjacent to an opportunistic model unless you have a guaranteed move to retake it the following turn or a strong defensive line immediately behind it.",
+  "final_relationships": {
+    "anthropic/claude-opus-4.6": "Ally",
+    "deepseek/deepseek-v4-pro": "Unfriendly",
+    "openai/gpt-5.4": "Enemy",
+    "qwen/qwen3.5-27b": "Neutral"
+  },
+  "final_trust_scores": {
+    "anthropic/claude-opus-4.6": 1.0,
+    "deepseek/deepseek-v4-pro": 0.2,
+    "openai/gpt-5.4": 0.0,
+    "qwen/qwen3.5-27b": 0.5
+  },
+  "final_goals": [
+    "Maintain the strategic alliance with Russia to ensure survival",
+    "Reclaim Trieste and Albania through coordinated strikes with Russia",
+    "Contain Italy and prevent any expansion into the Balkans",
+    "Expand to 18 supply centers for world domination"
+  ],
+  "power_model_map": {
+    "AUSTRIA": "google/gemma-4-31b-it",
+    "ENGLAND": "deepseek/deepseek-v4-pro",
+    "FRANCE": "qwen/qwen3.5-27b",
+    "ITALY": "openai/gpt-5.4",
+    "RUSSIA": "anthropic/claude-opus-4.6"
+  }
+}
