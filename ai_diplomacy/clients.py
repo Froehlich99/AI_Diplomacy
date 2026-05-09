@@ -1201,11 +1201,11 @@ class OpenRouterClient(BaseModelClient):
     For OpenRouter models, with default being 'openrouter/quasar-alpha'
     """
 
-    THINKING_MODELS = {"qwen/qwen3.5-27b", "qwen/qwen3.6-plus", "qwen/qwen3-235b-a22b", "google/gemma-4-31b-it", "anthropic/claude-opus-4.6"}
-    SLOW_MODELS = {"google/gemma-4-31b-it", "anthropic/claude-opus-4.6"}
+    THINKING_MODELS = {"qwen/qwen3.5-27b", "qwen/qwen3.6-plus", "qwen/qwen3-235b-a22b", "google/gemma-4-31b-it", "anthropic/claude-opus-4.6", "openai/gpt-5.4"}
+    SLOW_MODELS = {"google/gemma-4-31b-it", "anthropic/claude-opus-4.6", "openai/gpt-5.4"}
     DEFAULT_THINKING_BUDGET = 4096
     DEFAULT_TIMEOUT = 180
-    SLOW_MODEL_TIMEOUT = 300
+    SLOW_MODEL_TIMEOUT = 600
 
     def __init__(self, model_name: str = "openrouter/quasar-alpha", prompts_dir: Optional[str] = None, thinking_budget: Optional[int] = None):
         # Allow specifying just the model identifier or the full path
