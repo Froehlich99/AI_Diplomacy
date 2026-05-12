@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project_report"] 1778595815.15642 "project_report.aux" "project_report.bbl" "project_report" 1778596278.06155 0
+["bibtex project_report"] 1778597293.20379 "project_report.aux" "project_report.bbl" "project_report" 1778597337.45852 0
   "./references.bib" 1778587255.31453 775 030e7968913fa8d4f4585634ecd0278a ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/bibtex/bst/ieeetran/IEEEtranN.bst" 1 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "project_report.aux" 1778596277.88549 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
+  "project_report.aux" 1778597337.27816 9756 f7e737b78b02d9f9377a9932786f289a "pdflatex"
   (generated)
   "project_report.bbl"
   "project_report.blg"
   (rewritten before read)
-["pdflatex"] 1778596276.8249 "project_report.tex" "project_report.pdf" "project_report" 1778596278.06179 0
+["pdflatex"] 1778597336.25855 "project_report.tex" "project_report.pdf" "project_report" 1778597337.45871 0
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -196,12 +196,11 @@
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5541495 d1a1c66e1c24e3035373d24d63f3003a ""
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3637258 ae5d631b702bdb5d4f5accfafe4c8a9c ""
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf" 1 44359 c6bcc3851c911e3fd925420c089d8f2a ""
-  "images/aggression_by_model.png" 1778595881.34631 63216 2aece8fa0ae227d2da69dcf84aaa912b ""
   "images/error_rates_by_model.png" 1778595805.62558 49782 7b9e711745a3fa193a91a1ba31bad530 ""
   "images/trust_asymmetry.png" 1778593679.50419 53524 c60162fd342edd001a81e376b75823ff ""
-  "project_report.aux" 1778596277.88549 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
-  "project_report.bbl" 1778595815.22789 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
-  "project_report.tex" 1778596269.17881 28371 c9fffa9cf54325a5336bbda310c93e6a ""
+  "project_report.aux" 1778597337.27816 9756 f7e737b78b02d9f9377a9932786f289a "pdflatex"
+  "project_report.bbl" 1778597293.2593 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
+  "project_report.tex" 1778597328.59515 30194 c68301f19dccc5534d146f13e059d6cb ""
   (generated)
   "project_report.aux"
   "project_report.log"

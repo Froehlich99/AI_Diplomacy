@@ -231,14 +231,27 @@ GPT-5.4              & -- & -- & -- & -- & -- & -- & -- & -- & 2  & 5  & 8  & 5.
 \label{tab:sc-counts}
 \end{table}
 
-The overall aggression index (ratio of attack orders to total tactical orders) was 0.524, with Qwen 3.6 Plus as the most aggressive model (0.762) and GPT-OSS 120B the most passive (0.221). Figure~\ref{fig:aggression} shows the full distribution.
+The overall aggression index (ratio of attack orders to total tactical orders) was 0.524, with Qwen 3.6 Plus as the most aggressive model (0.762) and GPT-OSS 120B the most passive (0.221).
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.85\textwidth]{images/aggression_by_model.png}
-  \caption{Aggression index by model (ratio of attack orders to total tactical orders). Higher values indicate more offensive play.}
-  \label{fig:aggression}
-\end{figure}
+To determine which behavioral metrics actually predicted game success, we computed Pearson correlations between per-game model metrics and final supply center counts across all 70 model-game observations (Table~\ref{tab:correlations}).
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+  \toprule
+  Metric & Pearson $r$ & $p$-value \\
+  \midrule
+  Messages per phase vs.\ final SC & +0.338 & 0.003 \\
+  Support rate vs.\ final SC & +0.296 & 0.013 \\
+  Aggression index vs.\ final SC & +0.020 & 0.87 \\
+  Hold rate vs.\ final SC & $-$0.142 & 0.24 \\
+  \bottomrule
+\end{tabular}
+\caption{Correlation between per-game behavioral metrics and final supply center count (N=70 model-game observations across all experiments).}
+\label{tab:correlations}
+\end{table}
+
+Aggression alone did not predict success ($r = 0.02$, $p = 0.87$). Instead, message volume per phase ($r = 0.34$, $p = 0.003$) and the rate of support orders ($r = 0.30$, $p = 0.01$) were statistically significant predictors. Models that communicated more actively and coordinated through support orders consistently outperformed those that relied on unilateral aggression. This suggests that diplomatic engagement and unit coordination are more important than raw offensive output.
 
 \subsection{Behavioral Analysis}
 
@@ -290,7 +303,13 @@ With additional compute budget, several experiments would strengthen the finding
 %% ============================================================
 \section{Conclusion}
 
-LLM agents demonstrated meaningful social reasoning in Diplomacy, forming alliances, coordinating complex multi-unit attacks, and engaging in selective deception. Each model exhibited a distinct and consistent behavioral profile regardless of power assignment, ranging from confrontational (Qwen 3.5 27B) to formally diplomatic (GPT-OSS 120B) to strategically deceptive (Claude Opus 4.6). Cross-game memory did not produce systematic improvement across all models, though individual architectures appeared to benefit more than others. Scaling the experimental setup to allow controlled ablation studies would be necessary to establish causal relationships between agent design choices and strategic outcomes.
+\textbf{RQ1: Do LLM agents engage in meaningful social reasoning?} Yes. Message volume and support rate were the only statistically significant predictors of game success (Table~\ref{tab:correlations}), while pure aggression showed no correlation ($r = 0.02$). This indicates that agents which negotiate actively and coordinate through support orders outperform those playing mechanically. Additionally, models engaged in selective deception (mean score 0.347) with 83.8\% of commitments honored, suggesting strategic rather than random dishonesty.
+
+\textbf{RQ2: Can agents develop trust models reflecting game dynamics?} Partially. The trust system captured real asymmetries, including cases where one model's trust dropped to zero ahead of a betrayal while the target remained unaware (Figure~\ref{fig:trust_asymmetry}). However, baseline trust levels varied by model architecture (GPT-OSS: 0.493, Qwen 3.5: 0.317), indicating that trust scores partially reflect inherent model disposition rather than purely strategic assessment.
+
+\textbf{RQ3: Does persistent memory lead to improvement?} Not systematically. Neither the auto-compaction nor the reflection-prompt mechanism produced consistent cross-game gains (mean SC delta of 0.0 and $-0.29$ respectively). Individual models benefited (Claude Opus: 9$\rightarrow$16$\rightarrow$13 SC), while others declined. The inability to isolate memory as a variable prevents causal conclusions.
+
+\noindent Scaling the experimental setup to allow controlled ablation studies would be necessary to move from behavioral characterization to causal claims about agent design choices.
 
 %% ============================================================
 \clearpage
