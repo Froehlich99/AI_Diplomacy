@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project_report"] 1778597293.20379 "project_report.aux" "project_report.bbl" "project_report" 1778597337.45852 0
+["bibtex project_report"] 1778597909.6165 "project_report.aux" "project_report.bbl" "project_report" 1778597910.88812 0
   "./references.bib" 1778587255.31453 775 030e7968913fa8d4f4585634ecd0278a ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/bibtex/bst/ieeetran/IEEEtranN.bst" 1 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "project_report.aux" 1778597337.27816 9756 f7e737b78b02d9f9377a9932786f289a "pdflatex"
+  "project_report.aux" 1778597910.70643 9967 5dbfdad685705a788b3455be3231ebd7 "pdflatex"
   (generated)
   "project_report.bbl"
   "project_report.blg"
   (rewritten before read)
-["pdflatex"] 1778597336.25855 "project_report.tex" "project_report.pdf" "project_report" 1778597337.45871 0
+["pdflatex"] 1778597909.68343 "project_report.tex" "project_report.pdf" "project_report" 1778597910.88843 0
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -47,6 +47,7 @@
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
+  "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsl10.pfb" 1 35022 e40946b20bfdcd1099eafb2bcd9f25dd ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
@@ -198,11 +199,13 @@
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf" 1 44359 c6bcc3851c911e3fd925420c089d8f2a ""
   "images/error_rates_by_model.png" 1778595805.62558 49782 7b9e711745a3fa193a91a1ba31bad530 ""
   "images/trust_asymmetry.png" 1778593679.50419 53524 c60162fd342edd001a81e376b75823ff ""
-  "project_report.aux" 1778597337.27816 9756 f7e737b78b02d9f9377a9932786f289a "pdflatex"
-  "project_report.bbl" 1778597293.2593 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
-  "project_report.tex" 1778597328.59515 30194 c68301f19dccc5534d146f13e059d6cb ""
+  "project_report.aux" 1778597910.70643 9967 5dbfdad685705a788b3455be3231ebd7 "pdflatex"
+  "project_report.bbl" 1778597909.68071 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
+  "project_report.tex" 1778597901.30793 30176 9e25360e3cc3a55d866ee0702f41e0b2 ""
+  "project_report.toc" 1778597910.70825 1702 ef40d0791b6be9b65604e6432e1b7a7e "pdflatex"
   (generated)
   "project_report.aux"
   "project_report.log"
   "project_report.pdf"
+  "project_report.toc"
   (rewritten before read)
