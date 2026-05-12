@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project_report"] 1778595815.15642 "project_report.aux" "project_report.bbl" "project_report" 1778595889.42753 0
+["bibtex project_report"] 1778595815.15642 "project_report.aux" "project_report.bbl" "project_report" 1778596278.06155 0
   "./references.bib" 1778587255.31453 775 030e7968913fa8d4f4585634ecd0278a ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/bibtex/bst/ieeetran/IEEEtranN.bst" 1 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "project_report.aux" 1778595889.23367 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
+  "project_report.aux" 1778596277.88549 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
   (generated)
   "project_report.bbl"
   "project_report.blg"
   (rewritten before read)
-["pdflatex"] 1778595888.08609 "project_report.tex" "project_report.pdf" "project_report" 1778595889.42785 0
+["pdflatex"] 1778596276.8249 "project_report.tex" "project_report.pdf" "project_report" 1778596278.06179 0
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -199,9 +199,9 @@
   "images/aggression_by_model.png" 1778595881.34631 63216 2aece8fa0ae227d2da69dcf84aaa912b ""
   "images/error_rates_by_model.png" 1778595805.62558 49782 7b9e711745a3fa193a91a1ba31bad530 ""
   "images/trust_asymmetry.png" 1778593679.50419 53524 c60162fd342edd001a81e376b75823ff ""
-  "project_report.aux" 1778595889.23367 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
+  "project_report.aux" 1778596277.88549 9733 936209ab546ff3dfacdfd408aca66f44 "pdflatex"
   "project_report.bbl" 1778595815.22789 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
-  "project_report.tex" 1778595537.74504 28346 c28c96c2b869ef7996babc0eb749f927 ""
+  "project_report.tex" 1778596269.17881 28371 c9fffa9cf54325a5336bbda310c93e6a ""
   (generated)
   "project_report.aux"
   "project_report.log"

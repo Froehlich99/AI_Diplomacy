@@ -205,7 +205,7 @@ A separate class of errors emerged in schema adherence. Several models (Grok, Qw
 
 \subsection{Game Outcomes}
 
-Table~\ref{tab:sc-counts} shows the final supply center counts per model across all experiments. Claude Opus 4.6 achieved the strongest overall performance with an average of 12.2 supply centers at game end, though it only participated in experiments 3 and 4. Among models present across all four experiments, Gemma 4 31B averaged 5.8 and Grok 4.1 Fast 5.5, though with very different variance: Grok ranged from 0 to 16, while Gemma stayed between 0 and 10. At the opposite end, GPT-OSS 120B averaged 2.6 supply centers across experiments 1--3, with one outlier of 11 (as Russia in E2G3).
+Table~\ref{tab:sc-counts} shows the final supply center counts per model across all experiments. Claude Opus 4.6 achieved the strongest overall performance with an average of 12.2 supply centers at game end, though it only participated in experiments 3 and 4. Among models present across all four experiments, Grok 4.1 Fast and Gemma 4 31B both averaged 5.8, though with different variance: Grok ranged from 0 to 16, while Gemma stayed between 0 and 10. At the opposite end, GPT-OSS 120B averaged 1.4 supply centers across experiments 1--3, the weakest performer among models present for more than one experiment.
 
 \begin{table}[htbp]
 \centering
@@ -214,12 +214,12 @@ Table~\ref{tab:sc-counts} shows the final supply center counts per model across 
 \toprule
 Model & E1G1 & E1G2 & E1G3 & E2G1 & E2G2 & E2G3 & E3G1 & E3G2 & E4G1 & E4G2 & E4G3 & Avg \\
 \midrule
-Grok 4.1 Fast        & \textbf{16} & 5  & \textbf{11} & 0  & 7  & 7  & 4  & 7  & 3  & 0  & 0  & 5.5 \\
+Grok 4.1 Fast        & \textbf{16} & 5  & \textbf{11} & 0  & 7  & \textbf{11} & 4  & 7  & 3  & 0  & 0  & 5.8 \\
 Gemma 4 31B          & 7  & 0  & 6  & 7  & 7  & 7  & 6  & 3  & \textbf{10} & 4  & 7  & 5.8 \\
-Gemini 2.5 Flash Lite & 7  & 1  & 0  & 2  & \textbf{8}  & 5  & 1  & 4  & -- & -- & -- & 3.5 \\
-Qwen 3.5 27B         & 3  & 9  & 5  & 6  & 7  & 0  & 2  & 5  & 5  & 2  & 3  & 4.3 \\
-Qwen 3.6 Plus        & 0  & \textbf{10} & 5  & \textbf{10} & 2  & 4  & 7  & 2  & 3  & 0  & 3  & 4.2 \\
-GPT-OSS 120B         & 0  & 1  & 3  & 3  & 1  & \textbf{11} & 0  & 2  & -- & -- & -- & 2.6 \\
+Gemini 2.5 Flash Lite & 7  & 2  & 0  & 2  & 1  & 0  & 1  & 4  & -- & -- & -- & 2.1 \\
+Qwen 3.5 27B         & 3  & \textbf{10} & 5  & 6  & \textbf{8}  & 7  & 2  & 5  & 5  & 2  & 3  & 5.1 \\
+Qwen 3.6 Plus        & 0  & 9  & 5  & \textbf{10} & 7  & 5  & 7  & 0  & 3  & 0  & 3  & 4.5 \\
+GPT-OSS 120B         & 0  & 1  & 3  & 3  & 2  & 0  & 0  & 2  & -- & -- & -- & 1.4 \\
 Claude Haiku 4.5     & 1  & 6  & 4  & 6  & 1  & 4  & -- & -- & -- & -- & -- & 3.7 \\
 Claude Opus 4.6      & -- & -- & -- & -- & -- & -- & \textbf{12} & \textbf{11} & 9  & \textbf{16} & \textbf{13} & \textbf{12.2} \\
 DeepSeek V4 Pro      & -- & -- & -- & -- & -- & -- & -- & -- & 2  & 5  & 0  & 2.3 \\
