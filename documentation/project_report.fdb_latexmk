@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project_report"] 1778659382.95146 "project_report.aux" "project_report.bbl" "project_report" 1778659651.46886 0
-  "./references.bib" 1778587255.31453 775 030e7968913fa8d4f4585634ecd0278a ""
+["bibtex project_report"] 1778673356.31337 "project_report.aux" "project_report.bbl" "project_report" 1778673357.70968 0
+  "./references.bib" 1778672217.83197 1291 f8fe5e2cd7c81dd249b0d1e636f6fe61 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/bibtex/bst/ieeetran/IEEEtranN.bst" 1 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "project_report.aux" 1778659651.27073 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
+  "project_report.aux" 1778673357.5225 10706 a938c91bf44032f658e961400fc4c6d6 "pdflatex"
   (generated)
   "project_report.bbl"
   "project_report.blg"
   (rewritten before read)
-["pdflatex"] 1778659650.2918 "project_report.tex" "project_report.pdf" "project_report" 1778659651.46899 0
+["pdflatex"] 1778673356.37402 "project_report.tex" "project_report.pdf" "project_report" 1778673357.70999 0
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -39,6 +39,7 @@
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmsy6.tfm" 1 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmsy8.tfm" 1 1120 8b7d695260f3cff42e636090a8002094 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmsy9.tfm" 1 1116 25a7bf822c58caf309a702ef79f4afbb ""
+  "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmti10.tfm" 1 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmtt10.tfm" 1 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/cm/cmtt9.tfm" 1 764 c98a2af25c99b73a368cf7336e255190 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1 520 82a3d37183f34b6eb363a161dfc002c2 ""
@@ -57,6 +58,7 @@
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmtt9.pfb" 1 29078 718ea4567ceff944262b0f5b0800e1d9 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/cm-super/sfrm1095.pfb" 1 145929 f25e56369a345c4ff583b067cd87ce8e ""
@@ -208,10 +210,10 @@
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf" 1 44359 c6bcc3851c911e3fd925420c089d8f2a ""
   "images/error_rates_by_model.png" 1778595805.62558 49782 7b9e711745a3fa193a91a1ba31bad530 ""
   "images/trust_asymmetry.png" 1778659644.93771 79444 2784721265730f460e95626736676d8b ""
-  "project_report.aux" 1778659651.27073 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
-  "project_report.bbl" 1778659383.00283 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
-  "project_report.tex" 1778659377.2325 32338 36e613552582998173b8c0d21c47ac57 ""
-  "project_report.toc" 1778659651.27824 1782 34dd33a8cf77318052d32ccbac3a9deb "pdflatex"
+  "project_report.aux" 1778673357.5225 10706 a938c91bf44032f658e961400fc4c6d6 "pdflatex"
+  "project_report.bbl" 1778673356.37099 2147 c160e9763be3fd5a72def13a386644fa "bibtex project_report"
+  "project_report.tex" 1778673349.39723 31931 399d3fb099183972f6af4068427866fc ""
+  "project_report.toc" 1778673357.52434 1783 57206bd014b0e7f97c206588eed890de "pdflatex"
   (generated)
   "project_report.aux"
   "project_report.log"
