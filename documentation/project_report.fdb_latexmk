@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project_report"] 1778659382.95146 "project_report.aux" "project_report.bbl" "project_report" 1778659384.1416 0
+["bibtex project_report"] 1778659382.95146 "project_report.aux" "project_report.bbl" "project_report" 1778659651.46886 0
   "./references.bib" 1778587255.31453 775 030e7968913fa8d4f4585634ecd0278a ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/bibtex/bst/ieeetran/IEEEtranN.bst" 1 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "project_report.aux" 1778659383.96029 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
+  "project_report.aux" 1778659651.27073 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
   (generated)
   "project_report.bbl"
   "project_report.blg"
   (rewritten before read)
-["pdflatex"] 1778659383.00869 "project_report.tex" "project_report.pdf" "project_report" 1778659384.14173 0
+["pdflatex"] 1778659650.2918 "project_report.tex" "project_report.pdf" "project_report" 1778659651.46899 0
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/ky21235pxdmawqhwqn9yl8yl8kpp7gdb-texlive-combined-full-2025-final-texmfdist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -207,11 +207,11 @@
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3637258 ae5d631b702bdb5d4f5accfafe4c8a9c ""
   "/nix/store/x2apj1d1vj75477f6myq5fd2sz6a1vgw-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf" 1 44359 c6bcc3851c911e3fd925420c089d8f2a ""
   "images/error_rates_by_model.png" 1778595805.62558 49782 7b9e711745a3fa193a91a1ba31bad530 ""
-  "images/trust_asymmetry.png" 1778593679.50419 53524 c60162fd342edd001a81e376b75823ff ""
-  "project_report.aux" 1778659383.96029 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
+  "images/trust_asymmetry.png" 1778659644.93771 79444 2784721265730f460e95626736676d8b ""
+  "project_report.aux" 1778659651.27073 10454 7c70dab148bd4a81dff15e000625b55a "pdflatex"
   "project_report.bbl" 1778659383.00283 1598 8ab4490b61f08ba872888397d213b67e "bibtex project_report"
   "project_report.tex" 1778659377.2325 32338 36e613552582998173b8c0d21c47ac57 ""
-  "project_report.toc" 1778659383.96993 1782 34dd33a8cf77318052d32ccbac3a9deb "pdflatex"
+  "project_report.toc" 1778659651.27824 1782 34dd33a8cf77318052d32ccbac3a9deb "pdflatex"
   (generated)
   "project_report.aux"
   "project_report.log"

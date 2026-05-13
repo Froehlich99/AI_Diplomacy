@@ -290,7 +290,7 @@ def plot_trust_heatmap(trust_df, model_df):
     plt.close()
 
 
-def plot_trust_asymmetry(trust_df):
+def plot_trust_asymmetry(trust_df, model_df=None):
     """Plot trust asymmetry example - dynamic shifts between two powers."""
     print("Generating: trust_asymmetry.png")
 
@@ -323,6 +323,18 @@ def plot_trust_asymmetry(trust_df):
         return
 
     composite_game, power_a, power_b = best_game
+
+    # Resolve model names for the two powers
+    model_a = power_a
+    model_b = power_b
+    if model_df is not None:
+        match_a = model_df[(model_df["composite_game"] == composite_game) & (model_df["power"] == power_a)]
+        match_b = model_df[(model_df["composite_game"] == composite_game) & (model_df["power"] == power_b)]
+        if not match_a.empty:
+            model_a = match_a.iloc[0]["model"]
+        if not match_b.empty:
+            model_b = match_b.iloc[0]["model"]
+
     plot_data = trust_df[
         (trust_df["composite_game"] == composite_game) &
         (
@@ -331,21 +343,31 @@ def plot_trust_asymmetry(trust_df):
         )
     ].copy()
 
-    plot_data["Direction"] = plot_data["evaluating_power"] + " trusting " + plot_data["target_power"]
+    # Use model names in direction labels
+    plot_data["Direction"] = plot_data.apply(
+        lambda r: f"{model_a} trusting {model_b}" if r["evaluating_power"] == power_a else f"{model_b} trusting {model_a}",
+        axis=1
+    )
 
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.lineplot(
-        data=plot_data, x="phase", y="score", hue="Direction",
-        marker="o", linewidth=2.5, markersize=7, ax=ax
-    )
-    exp_label = composite_game.split("_")[0]
-    game_label = "_".join(composite_game.split("_")[1:])
-    ax.set_title(f"Trust Asymmetry: {power_a} vs {power_b} ({exp_label}, {game_label})")
+    directions = plot_data["Direction"].unique()
+    styles = [
+        {"color": "0.2", "marker": "o", "linestyle": "-"},
+        {"color": "0.6", "marker": "X", "linestyle": "--"},
+    ]
+    for i, direction in enumerate(directions):
+        subset = plot_data[plot_data["Direction"] == direction]
+        style = styles[i % len(styles)]
+        ax.plot(
+            subset["phase"], subset["score"],
+            label=direction, linewidth=2.5, markersize=7, **style
+        )
+    ax.set_title(f"Trust Asymmetry: {model_a} vs {model_b}")
     ax.set_ylabel("Trust Score (0-1)")
-    ax.set_xlabel("Game Phase")
+    ax.set_xlabel("Phase")
     ax.set_ylim(-0.05, 1.05)
     plt.xticks(rotation=45, ha="right")
-    ax.legend(loc="lower left")
+    ax.legend(loc="upper right")
 
     plt.savefig(os.path.join(OUTPUT_DIR, "trust_asymmetry.png"), **SAVE_KWARGS)
     plt.close()
@@ -876,7 +898,7 @@ def main():
 
     plot_trust_progression(trust_df, model_df)
     plot_trust_heatmap(trust_df, model_df)
-    plot_trust_asymmetry(trust_df)
+    plot_trust_asymmetry(trust_df, model_df)
     plot_deception_distribution(dec_prepared)
     plot_deception_by_model(dec_prepared)
     plot_error_rates(resp_df, model_df)
