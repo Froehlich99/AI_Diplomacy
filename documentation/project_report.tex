@@ -10,6 +10,7 @@
 \usepackage{subcaption}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{enumitem}
 \usepackage{algorithm} % you can modify the algorithm style to your liking
 \counterwithin{algorithm}{chapter} % so that algorithms have chapter numbers as well
 \usepackage{algorithmic}
@@ -24,6 +25,7 @@
 % IEEE citation style
 \usepackage[numbers]{natbib}
 \bibliographystyle{IEEEtranN}
+\renewcommand{\bibsection}{\section*{References}\addcontentsline{toc}{section}{References}}
 
 % example enviroments (add more as needed)
 \newtheorem{definition}{Definition} \newtheorem{proposition}{Proposition}
@@ -57,13 +59,14 @@
 \maketitle
 \tableofcontents
 \clearpage
+\pagestyle{plain}
 
 %% ============================================================
 %% SECTION 1: Application Area and Goals
 %% ============================================================
 \section{Application Area and Goals}
 
-Diplomacy is a seven-player board game set in pre-World War I Europe. Players control armies and fleets, issuing simultaneous movement orders each turn. The game has no dice, no hidden cards, and no randomness: outcomes depend entirely on the collective decisions of all players. Because a single power cannot win alone, the game revolves around negotiation, forming alliances, coordinating attacks, and betraying partners. This combination of strategic planning and social manipulation makes Diplomacy a compelling environment for studying LLM behavior. Compared to simpler social games like Werewolf or Mafia, Diplomacy uniquely combines free-text negotiation, long-horizon planning, seven-player coalition dynamics, and non-binding agreements, making it possible to study trust, deception, and strategic adaptation simultaneously within a single environment.
+Diplomacy is a seven-player board game set in pre-World War I Europe.\footnote{For the complete ruleset, see \url{https://media.wizards.com/2015/downloads/ah/diplomacy_rules.pdf}} Players control armies and fleets, issuing simultaneous movement orders each turn. The objective is to control a majority of the 34 supply centers on the map (18 required for a solo victory), which requires building alliances since no single power starts with enough units to dominate alone. The game has no dice, no hidden cards, and no randomness: outcomes depend entirely on the collective decisions of all players. Because a single power cannot win alone, the game revolves around negotiation, forming alliances, coordinating attacks, and betraying partners. This combination of strategic planning and social manipulation makes Diplomacy a compelling environment for studying LLM behavior. Compared to simpler social games like Werewolf or Mafia, Diplomacy uniquely combines free-text negotiation, long-horizon planning, seven-player coalition dynamics, and non-binding agreements, making it possible to study trust, deception, and strategic adaptation simultaneously within a single environment.
 
 In this project, we assigned each of the seven powers to a different LLM and let them play full games against each other. The agents communicate via free-text messages, maintain private diaries of their reasoning, and can carry memories across sequential games. Our goal was to observe what happens when different LLM models are placed in a competitive social environment and to characterize the behaviors that emerge. Specifically, we investigated:
 
@@ -76,36 +79,47 @@ In this project, we assigned each of the seven powers to a different LLM and let
 %% ============================================================
 %% SECTION 2: Profile of Data
 %% ============================================================
-\section{Profile of Data}
+\section{Profile of Data and Tasks}
 
 This project produces self-generated simulation data rather than relying on an external dataset. Each complete game yields a single JSON file (\texttt{lmvsgame.json}) containing the full game trace: every board state, every negotiation message, every submitted order, and the internal state of each agent at every phase. Alongside the game files, the framework stores per-model memory files for cross-game transfer, raw LLM input/output logs, and post-hoc deception analysis scores.
+
+\subsection{LLM Tasks}
+\label{subsec:tasks}
+
+Each agent performs five distinct LLM tasks during a game. These tasks define the problem that the agent architecture (Section~\ref{sec:approach}) is designed to solve.
+
+\noindent\begin{minipage}{\linewidth}
+\textbf{Negotiation message generation:}
+Given the board state, relationship map, trust scores, diary, and messages received this phase, the agent produces a free-text message addressed to one recipient (private) or all powers (broadcast). Agents may address any non-eliminated power; the LLM decides whom to contact based on the current board state, its goals, and recent diplomatic context. Messages are unconstrained, allowing proposals, threats, coordination requests, or deception. Executed twice per movement phase (two synchronized rounds).
+\end{minipage}
+
+\medskip
+\noindent\begin{minipage}{\linewidth}
+\textbf{Order generation:}
+Given the board state, list of legal moves, goals, relationships, trust scores, and diary, the agent produces one order per unit in domain-specific syntax (e.g., \texttt{A PAR - BUR}). A valid output must reference only the power's own units at legal destinations; all other outputs are considered invalid moves. Executed every movement phase.
+\end{minipage}
+
+\medskip
+\noindent\begin{minipage}{\linewidth}
+\textbf{Diary entry:}
+Given the phase events (messages exchanged, orders resolved, territory changes) and the previous diary, the agent writes a narrative summary and outputs updated trust scores as a JSON object (0.0--1.0 per opponent). Written twice per movement phase: once after negotiation and once after order resolution.
+\end{minipage}
+
+\medskip
+\noindent\begin{minipage}{\linewidth}
+\textbf{Diary consolidation:}
+Given the full diary (potentially hundreds of entries), the agent produces a compressed summary preserving alliances, betrayals, and opponent behavioral patterns. Executed every Spring movement phase to keep the diary within context window limits.
+\end{minipage}
+
+\medskip
+\noindent\begin{minipage}{\linewidth}
+\textbf{End-of-game reflection:}
+Given the complete game trajectory (final diary and outcomes), the agent writes a strategic briefing for its future self ($\leq$500 words): opponent patterns, lessons learned, and strategies to avoid. Added in later experiments as a replacement for passing the raw diary consolidation as cross-game memory (see Section~\ref{sec:approach}). Executed once per game.
+\end{minipage}
 
 \subsection{Data Structure}
 
 A game file is organized as an array of phases (typically 40--45 per game). Each phase contains four main components. The board state is a structured representation of all unit positions, supply center ownership, and home centers for each power. Messages are a list of negotiation exchanges, each recording sender, recipient (or global broadcast), and free-text content. Orders are the moves submitted by each power in domain-specific syntax (e.g., \texttt{A PAR - BUR}, \texttt{F ION S A ALB - GRE}). Finally, the agent state captures each power's strategic goals, relationship map (Enemy/Unfriendly/Neutral/Friendly/Ally per opponent), numeric trust scores (continuous 0.0--1.0 per opponent), and the full private diary up to that point.
-
-
-\subsection{Data Volume}
-
-Across four completed experiments totaling 11 full games, the framework generated:
-
-\begin{center}
-\begin{tabular}{lr}
-  \toprule
-  Metric & Value \\
-  \midrule
-  Total games & 11 \\
-  Total phases & 459 \\
-  Movement phases (with negotiation) & 231 \\
-  Negotiation messages & 11{,}474 \\
-  Average messages per movement phase & 49.7 \\
-  Average game file size & 8.7\,MB \\
-  Total data generated & 272\,MB \\
-  \bottomrule
-\end{tabular}
-\end{center}
-
-\noindent Each experiment ran two to three sequential games with rotated power assignments. Agents accumulated experience across games within an experiment, with the memory mechanism varying between experiments (detailed in Section~\ref{sec:approach}).
 
 %% ============================================================
 %% SECTION 3: Approach
@@ -115,9 +129,9 @@ Across four completed experiments totaling 11 full games, the framework generate
 
 \subsection{Agent Architecture and Game System}
 
-The project builds on a fork of the open-source GoodStartLabs/AI\_Diplomacy repository \cite{goodstartlabs2025}, which wraps the Diplomacy game engine with an LLM agent layer. The base system provides each power with a \texttt{DiplomacyAgent} that maintains three components of persistent state: a set of strategic goals (e.g., ``expand into the Balkans''), a categorical relationship map over the other six powers (Enemy/Unfriendly/Neutral/Friendly/Ally), and a private diary of phase-prefixed reflections recording the agent's reasoning over time. We extended this architecture with numeric trust scores (a continuous 0.0--1.0 value per opponent, updated each phase), a cross-game memory system that persists experience between sequential games, and a dedicated end-of-game reflection mechanism.
+The project builds on a fork of the open-source GoodStartLabs/AI\_Diplomacy repository \cite{goodstartlabs2025}, which wraps the Diplomacy game engine with an LLM agent layer. The base system provides each power with a \texttt{DiplomacyAgent} that maintains the persistent state components described in Section~\ref{subsec:tasks}: strategic goals, a categorical relationship map, and a private diary. We extended this architecture with numeric trust scores (a continuous 0.0--1.0 value per opponent, updated each phase), a cross-game memory system that persists experience between sequential games, and a dedicated end-of-game reflection mechanism.
 
-On each movement phase, the following pipeline executes concurrently across all active (non-eliminated) powers (see Figure~\ref{fig:pipeline}). First, agents negotiate: all powers generate messages in parallel across two synchronized rounds, with round-one messages becoming visible before round-two generation begins. Each agent then writes a negotiation diary entry summarizing what was discussed, what it intends to do, and how its trust in other players has shifted. Next, order generation occurs: the LLM receives the current board state, a list of all legal moves for its units, the agent's goals, relationships, trust scores, and recent diary entries. The generated orders pass through a two-stage validation filter before submission. Finally, the engine resolves all orders simultaneously and each agent writes a post-phase diary entry analyzing the results, identifying betrayals or successful coordination, and updating its goals and relationships.
+On each movement phase, the tasks defined in Section~\ref{subsec:tasks} execute in a fixed sequence, concurrently across all active (non-eliminated) powers (see Figure~\ref{fig:pipeline}). Generated orders pass through a two-stage validation filter: the system first checks syntactic conformance, then verifies that each order references only the power's own units at legal destinations (e.g., ordering a non-existent unit or moving to an unreachable province). Invalid orders are replaced with hold commands.
 
 \begin{figure}[htbp]
   \centering
@@ -131,6 +145,10 @@ On each movement phase, the following pipeline executes concurrently across all 
     \node[block] (neg) {Negotiation\\(2 rounds)};
     \node[block, right=of neg] (diary1) {Negotiation\\Diary Entry};
     \node[block, right=of diary1] (orders) {Order\\Generation};
+
+    % Start arrow
+    \node[above=0.5cm of neg, font=\scriptsize, text=black!60] (start) {Phase start};
+    \draw[arrow] (start) -- (neg);
 
     % Row 2
     \node[block, below=1.0cm of orders] (valid) {Order\\Validation};
@@ -172,9 +190,7 @@ The first two experiments used: Grok 4.1 Fast (xAI), Gemma 4 31B and Gemini 2.5 
 
 \subsection{Negotiation Structure}
 
-During each movement phase, agents exchange free-text messages across two synchronized rounds. Within a round, all active powers generate their messages concurrently. Each agent may send private messages to any other non-eliminated power or broadcast globally. The LLM decides whom to address based on the current board state, its diary, and recent messages received.
-
-After round one, all generated messages are added to the game state, making them visible to all recipients. Agents then generate a second round of messages with this new information available. This structure allows for one exchange of proposals and responses per phase. A repetition guard prevents a power from sending a private message to the same recipient in consecutive rounds if that recipient has not yet replied, reducing one-sided spam.
+Negotiation is organized as two synchronized rounds per movement phase. After round one, all generated messages are added to the game state, making them visible to all recipients. Agents then generate a second round of messages with this new information available. This structure allows for one exchange of proposals and responses per phase. A repetition guard prevents a power from sending a private message to the same recipient in consecutive rounds if that recipient has not yet replied, reducing one-sided spam.
 
 \subsection{Analysis Methodology}
 
@@ -190,6 +206,28 @@ Behavioral metrics complement the qualitative analyses. These include attack fre
 %% SECTION 4: Evaluation
 %% ============================================================
 \section{Evaluation}
+
+\subsection{Experiment Overview}
+
+Across four completed experiments totaling 11 full games, the framework generated:
+
+\begin{center}
+\begin{tabular}{lr}
+  \toprule
+  Metric & Value \\
+  \midrule
+  Total games & 11 \\
+  Total phases & 459 \\
+  Movement phases (with negotiation) & 231 \\
+  Negotiation messages & 11{,}474 \\
+  Average messages per movement phase & 49.7 \\
+  Average game file size & 8.7\,MB \\
+  Total data generated & 272\,MB \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Each experiment ran two to three sequential games with rotated power assignments. Agents accumulated experience across games, with the memory mechanism varying between configurations (see Section~\ref{sec:approach}).
 
 \subsection{Error Analysis}
 
@@ -228,7 +266,7 @@ GPT-5.4              & -- & -- & -- & -- & -- & -- & -- & -- & 2  & 5  & 8  & 5.
 \bottomrule
 \end{tabular}%
 }
-\caption{Final supply center counts per model across all experiments and games.\\``--'' indicates model not present in that experiment.}
+\caption{Final supply center counts per model across all experiments (E) and games (G).\\``--'' indicates model not present in that experiment.}
 \label{tab:sc-counts}
 \end{table}
 
@@ -291,13 +329,13 @@ However, individual models showed notable trajectories. Claude Opus 4.6 improved
 
 \subsection{Discussion}
 
-The primary limitation of this work is the inability to draw statistically rigorous conclusions due to budget constraints. Each full game consumes approximately 6--7 million tokens across all agents, and each experiment of 2--3 sequential games costs roughly \$35--40 in API calls. With a fixed total budget, we could afford approximately four experiments with no room for repetition or controlled ablation studies. We therefore optimized for behavioral insight over statistical power, accepting that our findings characterize observed tendencies rather than statistically validated effects.
+The primary limitation of this work is the inability to draw statistically rigorous conclusions due to budget constraints. Each full game consumes approximately 6--7 million tokens across all agents, and each experiment of 2--3 sequential games costs roughly \$35--40 in API calls. With a fixed total budget, we could afford approximately four experiments with no room for repetition or controlled single-variable experiments. We therefore optimized for behavioral insight over statistical power, accepting that our findings characterize observed tendencies rather than statistically validated effects.
 
 The most consequential methodological limitation is the inability to isolate individual variables. Cross-game memory was always enabled for all models simultaneously from game 2 onward. A rigorous evaluation would require a control condition where only one model receives memory while the others play without it, which would cleanly demonstrate whether memory provides a competitive advantage. Similarly, model lineup changes between experiments (e.g., replacing Gemini 2.5 Flash Lite with DeepSeek V4 Pro) mean that performance differences across experiments are confounded with model capability changes. Budget constraints also motivated practical compromises during development: the initial game used three negotiation rounds, which was reduced to two for all subsequent games both to reduce per-game costs by 33\% and based on the observation that the third round primarily produced confirmations rather than new proposals. Models with reasoning capabilities occasionally consumed excessive tokens in chain-of-thought, requiring a 2,048-token thinking budget cap to control costs.
 
 Additionally, all games were capped at 1910 (approximately 20 movement phases), which limits observation of late-game dynamics. In human Diplomacy, the most complex alliance shifts and endgame betrayals occur in the final phases when victory is within reach. Our time limit may have cut games short before these dynamics could fully develop.
 
-With additional compute budget, several experiments would strengthen the findings: running 10--20 games per configuration to achieve statistical significance, performing clean single-variable ablations (memory on/off for one agent, varying negotiation rounds systematically), and repeating configurations with identical models to quantify variance attributable to game dynamics versus model behavior. We acknowledge that the current sample size limits the generalizability of our findings.
+With additional compute budget, several experiments would strengthen the findings: running 10--20 games per configuration to achieve statistical significance, performing clean single-variable experiments (memory on/off for one agent, varying negotiation rounds systematically), and repeating configurations with identical models to quantify variance attributable to game dynamics versus model behavior. We acknowledge that the current sample size limits the generalizability of our findings.
 
 %% ============================================================
 %% SECTION 5: Conclusion
@@ -310,7 +348,9 @@ With additional compute budget, several experiments would strengthen the finding
 
 \textbf{RQ3: Does persistent memory lead to improvement?} Not systematically. Neither the auto-compaction nor the reflection-prompt mechanism produced consistent cross-game gains (mean SC delta of 0.0 and $-0.29$ respectively). Individual models benefited (Claude Opus: 9$\rightarrow$16$\rightarrow$13 SC), while others declined. The inability to isolate memory as a variable prevents causal conclusions.
 
-\noindent Scaling the experimental setup to allow controlled ablation studies would be necessary to move from behavioral characterization to causal claims about agent design choices.
+\noindent Scaling the experimental setup to allow controlled single-variable experiments would be necessary to move from behavioral characterization to causal claims about agent design choices.
+
+\bibliography{references}
 
 %% ============================================================
 \clearpage
@@ -343,7 +383,5 @@ Erkl\"arung rechtliche Folgen haben wird.
 \vspace{2cm}
 \noindent Unterschrift\\
 \noindent Mannheim, den 17.~Mai 2026 \hfill
-
-\bibliography{references}
 
 \end{document}
