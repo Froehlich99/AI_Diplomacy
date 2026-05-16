@@ -1,5 +1,10 @@
 %% Do not change document class, margins, fonts, etc.
-\documentclass[a4paper,oneside,bibliography=totoc]{scrbook}
+\documentclass[a4paper,oneside,bibliography=totoc,open=any]{scrbook}
+
+% Prevent chapters from starting on a new page
+\RedeclareSectionCommand[beforeskip=1.2em,afterskip=0.6em,style=section]{chapter}
+\RedeclareSectionCommand[beforeskip=0.8em,afterskip=0.4em]{section}
+\RedeclareSectionCommand[beforeskip=0.6em,afterskip=0.3em]{subsection}
 
 % some useful packages (add more as needed)
 \usepackage[utf8]{inputenc}
@@ -25,7 +30,7 @@
 % IEEE citation style
 \usepackage[numbers]{natbib}
 \bibliographystyle{IEEEtranN}
-\renewcommand{\bibsection}{\section*{References}\addcontentsline{toc}{section}{References}}
+\renewcommand{\bibsection}{\chapter*{References}\addcontentsline{toc}{chapter}{References}}
 
 % example enviroments (add more as needed)
 \newtheorem{definition}{Definition} \newtheorem{proposition}{Proposition}
@@ -33,15 +38,7 @@
 \begin{document}
 
 
-% Quick fix to remove the 0 in front of sections.
-\makeatletter
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
-\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
-\makeatother
-
-\frontmatter 
-\pagenumbering{arabic} % Switch to Arabic numbering in the front matter
+\frontmatter
 \subject{Project Report} % change to appropriate type
 \title{Multi-Agent Gaming \\with the Board Game Diplomacy}
 \author{
@@ -59,12 +56,13 @@
 \maketitle
 \tableofcontents
 \clearpage
+\mainmatter
 \pagestyle{plain}
 
 %% ============================================================
 %% SECTION 1: Application Area and Goals
 %% ============================================================
-\section{Application Area and Goals}
+\chapter{Application Area and Goals}
 
 Diplomacy is a seven-player board game set in pre-World War I Europe.\footnote{For the complete ruleset, see \url{https://media.wizards.com/2015/downloads/ah/diplomacy_rules.pdf}} Players control armies and fleets, issuing simultaneous movement orders each turn. The objective is to control a majority of the 34 supply centers on the map (18 required for a solo victory), which requires building alliances since no single power starts with enough units to dominate alone. The game has no dice, no hidden cards, and no randomness: outcomes depend entirely on the collective decisions of all players. Because a single power cannot win alone, the game revolves around negotiation, forming alliances, coordinating attacks, and betraying partners. This combination of strategic planning and social manipulation makes Diplomacy a compelling environment for studying LLM behavior. Compared to simpler social games like Werewolf or Mafia, Diplomacy uniquely combines free-text negotiation, long-horizon planning, seven-player coalition dynamics, and non-binding agreements, making it possible to study trust, deception, and strategic adaptation simultaneously within a single environment.
 
@@ -79,11 +77,11 @@ In this project, we assigned each of the seven powers to a different LLM and let
 %% ============================================================
 %% SECTION 2: Profile of Data
 %% ============================================================
-\section{Profile of Data and Tasks}
+\chapter{Profile of Data and Tasks}
 
 This project produces self-generated simulation data rather than relying on an external dataset. Each game yields a JSON file (\texttt{lmvsgame.json}) containing the full trace (board states, messages, orders, agent state), alongside per-model memory files, LLM logs, and deception analysis scores.
 
-\subsection{LLM Tasks}
+\section{LLM Tasks}
 \label{subsec:tasks}
 
 Each agent performs five distinct LLM tasks during a game. These tasks define the problem that the agent architecture (Section~\ref{sec:approach}) is designed to solve.
@@ -117,17 +115,17 @@ Given the full diary (potentially hundreds of entries), the agent produces a com
 Given the complete game trajectory (final diary and outcomes), the agent writes a strategic briefing for its future self ($\leq$500 words): opponent patterns, lessons learned, and strategies to avoid. Added in later experiments as a replacement for passing the raw diary consolidation as cross-game memory (see Section~\ref{sec:approach}). Executed once per game.
 \end{minipage}
 
-\subsection{Data Structure}
+\section{Data Structure}
 
 A game file is organized as an array of phases (typically 40--45 per game). Each phase contains four main components. The board state is a structured representation of all unit positions, supply center ownership, and home centers for each power. Messages are a list of negotiation exchanges, each recording sender, recipient (or global broadcast), and free-text content. Orders are the moves submitted by each power in domain-specific syntax (e.g., \texttt{A PAR - BUR}, \texttt{F ION S A ALB - GRE}). Finally, the agent state captures each power's strategic goals, relationship map (Enemy/Unfriendly/Neutral/Friendly/Ally per opponent), numeric trust scores (continuous 0.0--1.0 per opponent), and the full private diary up to that point.
 
 %% ============================================================
 %% SECTION 3: Approach
 %% ============================================================
-\section{Approach}
+\chapter{Approach}
 \label{sec:approach}
 
-\subsection{Agent Architecture and Game System}
+\section{Agent Architecture and Game System}
 
 The project builds on a fork of the open-source GoodStartLabs/AI\_Diplomacy repository \cite{goodstartlabs2025}, which wraps the Diplomacy game engine with an LLM agent layer. The base system provides each power with a \texttt{DiplomacyAgent} that maintains the persistent state components described in Section~\ref{subsec:tasks}: strategic goals, a categorical relationship map, and a private diary. We extended this architecture with numeric trust scores (a continuous 0.0--1.0 value per opponent, updated each phase), a cross-game memory system that persists experience between sequential games, and a dedicated end-of-game reflection mechanism.
 
@@ -182,32 +180,31 @@ After every phase, the agent's diary grows. To prevent the diary from exceeding 
 
 Agents also persist experience between games within an experiment. In the first three experiments, the final compacted diary was automatically injected into the next game's system prompt as prior knowledge. However, this diary was optimized for within-game reasoning and contained tactical details (specific unit positions, phase-level outcomes) that were largely irrelevant in a new game with different power assignments. To address this, in the fourth experiment a dedicated end-of-game reflection prompt asks the agent to write a concise strategic briefing for its future self, summarizing opponent behavioral patterns, what worked, and what to avoid. Memory is stored per-model rather than per-power, so that when power assignments rotate between games, each model receives its own prior experience regardless of which country it controls. The memory is capped at 500 words to ensure it fits within the system prompt without displacing other context.
 
-\subsection{Model Selection}
+\section{Model Selection}
 
 The model lineup was selected to balance cost-efficiency with strategic capability, as each full game requires substantial token throughput (approximately 6--7 million tokens per game across all agents). Selection was guided by two benchmarks: FoodTruckBench \cite{foodtruckbench2025}, which tests agentic multi-step decision-making under minimal instruction, and Artificial Analysis \cite{artificialanalysis2025}, which compares models across quality, price, and speed.
 
 The first two experiments used: Grok 4.1 Fast (xAI), Gemma 4 31B and Gemini 2.5 Flash Lite (Google), Qwen 3.5 27B and Qwen 3.6 Plus (Alibaba), GPT-OSS 120B (OpenAI), and Claude Haiku 4.5 (Anthropic). In the third experiment, Claude Haiku 4.5 was replaced by the more capable Claude Opus 4.6. After receiving additional compute budget, a fourth experiment became possible, in which we replaced two further models with larger alternatives: Gemini 2.5 Flash Lite was replaced by DeepSeek V4 Pro, and GPT-OSS 120B by GPT-5.4. Several models were excluded after early testing: MiniMax, Kimi, and MiMo models consistently failed to produce valid orders or follow the required output format.
 
-\subsection{Negotiation Structure}
+\section{Negotiation Structure}
 
 Negotiation is organized as two synchronized rounds per movement phase. After round one, all generated messages are added to the game state, making them visible to all recipients. Agents then generate a second round of messages with this new information available. This structure allows for one exchange of proposals and responses per phase. A repetition guard prevents a power from sending a private message to the same recipient in consecutive rounds if that recipient has not yet replied, reducing one-sided spam.
 
-\subsection{Analysis Methodology}
+\section{Analysis Methodology}
+\enlargethispage{\baselineskip}
 
 To evaluate agent behavior beyond raw game outcomes, three analysis systems were implemented.
 
 The deception analysis uses an LLM-as-judge approach. After a game concludes, an external model (Grok 4.1 Fast) receives, for each power on each movement phase, the agent's private diary entry, all messages it sent, and the orders it actually submitted. The judge compares these three information streams and classifies the agent's behavior on a five-point scale (Honorable, Mostly Honest, Ambiguous, Deceptive, Treacherous) along with a continuous deception score from 0.0 to 1.0.
 
-Trust score tracking is built into the agent loop itself. At the end of each phase, the agent is required to output a JSON object containing a numeric trust score (0.0--1.0) and a textual justification for each opponent. These scores are aggregated into temporal plots and cross-power matrices for asymmetry analysis.
-
-Behavioral metrics complement the qualitative analyses. These include attack frequency (percentage of orders that are offensive moves rather than holds or supports), message volume per phase, order validity rates (proportion of LLM-generated orders that pass validation), and supply center trajectories over time.
+Trust score tracking is built into the agent loop itself. At the end of each phase, the agent is required to output a JSON object containing a numeric trust score (0.0--1.0) and a textual justification for each opponent. These scores are aggregated into temporal plots and cross-power matrices for asymmetry analysis. Behavioral metrics complement the qualitative analyses, including attack frequency (percentage of orders that are offensive moves rather than holds or supports), message volume per phase, order validity rates (proportion of LLM-generated orders that pass validation), and supply center trajectories over time.
 
 %% ============================================================
 %% SECTION 4: Evaluation
 %% ============================================================
-\section{Evaluation}
+\chapter{Evaluation}
 
-\subsection{Experiment Overview}
+\section{Experiment Overview}
 
 Across four completed experiments totaling 11 full games, the framework generated:
 
@@ -229,7 +226,7 @@ Across four completed experiments totaling 11 full games, the framework generate
 
 \noindent Each experiment ran two to three sequential games with rotated power assignments. Agents accumulated experience across games, with the memory mechanism varying between configurations (see Section~\ref{sec:approach}).
 
-\subsection{Error Analysis}
+\section{Error Analysis}
 
 Across all 11 games, order generation produced invalid move rates ranging from 6\% to 27\% depending on the model. The dominant failure mode was the model producing orders referencing illegal destinations or non-existent units (infrastructure errors such as API timeouts were excluded from this analysis). Gemini 2.5 Flash Lite exhibited the highest rate at 27\%, while GPT-5.4 achieved the lowest at 6\% (see Figure~\ref{fig:error_rates}). Invalid orders were caught by the two-stage validation filter and replaced with hold orders before submission, preventing game corruption but reducing the affected agent's strategic effectiveness for that phase.
 
@@ -242,7 +239,7 @@ A separate class of errors emerged in schema adherence. Several models (Grok, Qw
   \label{fig:error_rates}
 \end{figure}
 
-\subsection{Game Outcomes}
+\section{Game Outcomes}
 
 Table~\ref{tab:sc-counts} shows the final supply center counts per model across all experiments. Claude Opus 4.6 achieved the strongest overall performance with an average of 12.2 supply centers at game end, though it only participated in experiments 3 and 4. Among models present across all four experiments, Grok 4.1 Fast and Gemma 4 31B both averaged 5.8, though with different variance: Grok ranged from 0 to 16, while Gemma stayed between 0 and 10. At the opposite end, GPT-OSS 120B averaged 1.4 supply centers across experiments 1--3, the weakest performer among models present for more than one experiment.
 
@@ -292,9 +289,9 @@ To determine which behavioral metrics actually predicted game success, we comput
 
 Aggression alone did not predict success ($r = 0.02$, $p = 0.87$). Instead, message volume per phase ($r = 0.34$, $p = 0.003$) and the rate of support orders ($r = 0.30$, $p = 0.01$) were statistically significant predictors. Models that communicated more actively and coordinated through support orders consistently outperformed those that relied on unilateral aggression. This suggests that diplomatic engagement and unit coordination are more important than raw offensive output.
 
-\subsection{Behavioral Analysis}
+\section{Behavioral Analysis}
 
-\subsubsection{Trust Dynamics}
+\subsection{Trust Dynamics}
 
 The trust tracking system produced 8,569 observations across all experiments. Mean trust was 0.407, with substantial variation between models: GPT-OSS 120B assigned the highest trust to opponents (mean 0.493), while Qwen 3.5 27B was the most skeptical (mean 0.317). The correlation between average trust received and final supply centers was moderate ($r = 0.35$), indicating that being trusted by opponents is positively associated with game success.
 
@@ -307,25 +304,25 @@ The system captured asymmetric trust dynamics characteristic of deceptive play. 
   \label{fig:trust_asymmetry}
 \end{figure}
 
-\subsubsection{Deception}
+\subsection{Deception}
 
 The LLM-as-judge deception analysis scored 1,460 model-phase observations. The mean deception score was 0.347, with 83.8\% of identified commitments being honored. Claude Opus 4.6 received the highest mean deception score (0.465), while GPT-5.4 was rated lowest (0.049). Experiments using the auto-compaction memory showed slightly higher deception levels (0.363) than the experiment using the reflection prompt (0.306), though sample sizes are insufficient to draw causal conclusions.
 
 Qualitative inspection revealed distinct deceptive strategies across models. Claude Opus 4.6 exhibited deliberate, premeditated deception: its private diary entries explicitly celebrated successful betrayals (e.g., ``France blindsided: moved A SPA-POR, confirming they completely believed the ceasefire. My betrayal cost them a critical SC'') while its outgoing messages to affected parties maintained cooperative framing. In contrast, GPT-5.4 showed near-zero divergence between private reasoning and public communication, consistently aligning its messages with its actual intentions.
 
-\subsubsection{Model Communication Profiles}
+\subsection{Model Communication Profiles}
 
 Analysis of 11,474 negotiation messages revealed consistent per-model communication styles across power assignments and experiments, indicating behavior driven by model architecture rather than game context.
 
 Average message length ranged from 40 words (Qwen 3.5 27B) to 119 words (Claude Opus 4.6). Beyond length, qualitative differences emerged in tone and structure. GPT-OSS 120B adopted a formal diplomatic register, consistently opening messages with salutations (``Dear France,'' ``Esteemed colleague'') and structuring proposals as numbered commitment lists. GPT-5.4 shared this formality but added a distinctive focus on verifiability, framing proposals in terms of what could be confirmed by the next phase's adjudication. Qwen 3.5 27B was terse and confrontational, frequently issuing ultimatums (``Do not mistake my restraint for weakness'') with minimal diplomatic framing. Claude Opus 4.6 combined conversational language with detailed strategic reasoning, often embedding specific order notation within multi-paragraph persuasive arguments. Gemini 2.5 Flash Lite was the most inconsistent communicator, sometimes producing well-structured diplomatic messages and other times outputting only raw order notation without context.
 
-\subsection{Cross-Game Memory Effectiveness}
+\section{Cross-Game Memory Effectiveness}
 
 Neither memory mechanism produced systematic improvement across games. Under auto-compaction (experiments 1--3), the mean supply center delta from game 1 to game 2 was 0.0, with approximately equal numbers of models improving and declining. The reflection-prompt mechanism (experiment 4) showed a similar pattern: mean delta of $-0.29$ from game 1 to game 2.
 
 However, individual models showed notable trajectories. Claude Opus 4.6 improved substantially with the reflection prompt (9 $\rightarrow$ 16 $\rightarrow$ 13 supply centers across three games), and GPT-5.4 showed consistent improvement (2 $\rightarrow$ 5 $\rightarrow$ 8). Conversely, Grok 4.1 Fast declined consistently despite strong initial performance. These results suggest that the effectiveness of cross-game memory depends heavily on the model's ability to extract actionable lessons from prior experience, a capability that varies across architectures. The small sample size (2--3 games per experiment) limits statistical conclusions.
 
-\subsection{Discussion}
+\section{Discussion}
 
 The primary limitation of this work is the inability to draw statistically rigorous conclusions due to budget constraints. Each full game consumes approximately 6--7 million tokens across all agents, and each experiment of 2--3 sequential games costs roughly \$35--40 in API calls. With a fixed total budget, we could afford approximately four experiments with no room for repetition or controlled single-variable experiments. We therefore optimized for behavioral insight over statistical power, accepting that our findings characterize observed tendencies rather than statistically validated effects.
 
@@ -340,7 +337,7 @@ The current state of the art for playing Diplomacy is Meta's CICERO \cite{meta20
 %% ============================================================
 %% SECTION 5: Conclusion
 %% ============================================================
-\section{Conclusion}
+\chapter{Conclusion}
 
 \textbf{RQ1: Do LLM agents engage in meaningful social reasoning?} Yes. Message volume and support rate were the only statistically significant predictors of game success (Table~\ref{tab:correlations}), while pure aggression showed no correlation ($r = 0.02$). This indicates that agents which negotiate actively and coordinate through support orders outperform those playing mechanically. Additionally, models engaged in selective deception (mean score 0.347) with 83.8\% of commitments honored, suggesting strategic rather than random dishonesty.
 
@@ -353,8 +350,9 @@ The current state of the art for playing Diplomacy is Meta's CICERO \cite{meta20
 \bibliography{references}
 
 %% ============================================================
-\clearpage
-\section*{Ehrenw\"ortliche Erkl\"arung}
+\backmatter
+\chapter*{Ehrenw\"ortliche Erkl\"arung}
+\addcontentsline{toc}{chapter}{Ehrenw\"ortliche Erkl\"arung}
 
 Ich versichere, dass ich die beiliegende Bachelor-, Master-, Seminar-, oder
 Projektarbeit ohne Hilfe Dritter und ohne Benutzung anderer als der angegebenen
