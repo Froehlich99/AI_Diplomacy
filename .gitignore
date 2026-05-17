@@ -181,3 +181,6 @@ documentation/project_outline.synctex.gz
 
 # Local zip backups (do not commit)
 *.zip
+
+# Map renders (generated from game logs)
+map_viewer/output/
