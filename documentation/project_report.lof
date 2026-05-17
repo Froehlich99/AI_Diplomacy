@@ -1,5 +1,0 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Per-phase agent pipeline. All seven powers execute the pipeline concurrently. Diary consolidation runs only on Spring movement phases.}}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Order generation error rates by model. Gemini 2.5 Flash Lite shows the highest failure rate; GPT-5.4 the lowest.}}{8}{figure.caption.5}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Asymmetric trust dynamics: Grok 4.1 Fast's trust drops to 0.0 by F1901M while GPT-OSS 120B maintains high trust, unaware of the betrayal.}}{10}{figure.caption.9}%
-\addvspace {10\p@ }
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

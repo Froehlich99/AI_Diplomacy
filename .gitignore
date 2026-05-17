@@ -161,3 +161,23 @@ documentation/project_outline.fdb_latexmk
 documentation/project_outline.fls
 documentation/project_outline.out
 documentation/project_outline.synctex.gz
+
+# LaTeX build artifacts (PDFs are tracked intentionally)
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+*.toc
+*.out
+*.synctex.gz
+*.dvi
+*.out.ps
+
+# Local Claude settings
+.claude/
+
+# Local zip backups (do not commit)
+*.zip
