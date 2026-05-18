@@ -1,0 +1,69 @@
+%% Do not change document class, margins, fonts, etc.
+\documentclass[a4paper,oneside,bibliography=totoc]{scrartcl}
+
+% some useful packages (add more as needed)
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{algorithm} % you can modify the algorithm style to your liking
+\usepackage{algorithmic}
+\usepackage{csquotes}
+\renewcommand{\algorithmiccomment}[1]{\hfill\textit{// #1}}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks,allcolors=black]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+\newcommand{\bref}[1]{\hyperref[#1]{[\ref*{#1}]}}
+
+% chicago citation style
+\usepackage{natbib}
+\bibliographystyle{chicagoa}
+\setcitestyle{authoryear,round,semicolon,aysep={},yysep={,}} \let\cite\citep
+
+% example enviroments (add more as needed)
+\newtheorem{definition}{Definition} \newtheorem{proposition}{Proposition}
+
+
+% Additional packages for professional tables and text wrapping
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+\subject{Project Contributions \textbar{} Team 1} % change to appropriate type
+\title{Multi-Agent Gaming \\with the Board Game Diplomacy}
+\date{May 20, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Project Roles and Contributions}
+
+The following table summarizes the specific contributions of each team member to the project. 
+
+
+\begin{table}[htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l l X @{}}
+        \toprule
+        Team Member & \textbf{Student ID} & \textbf{Core Contributions} \\
+        \midrule
+        Anatole Lobenko & 2187322 & In-Game Memory Explorations and Long-Horizon Memory Experimentation. \\
+        Gabriel Himmelein & 1649181 & Project Management and Requirements Engineering, Trust Score Exploration, and related Hypothesis Formulation. \\
+        José David Burbano Pesántez & 2266830 & Problem Formulation, Data Strategy, Execution, Token Logging and API Usage Testing, Presentation Setup. \\
+        David Siregar & 2262617 & General Implementation, Cross-Game Memory Exploration, Hypothesis Formulation, Project Report Writing, and Presentation Wrap-up. \\
+        Maxim Fröhlich & 2266015 & General Implementation, Playstyle and Deception Error Analysis, Project Report Writing, and Presentation Wrap-up. \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed breakdown of team responsibilities and contributions for team 1.}
+    \label{tab:team_contributions}
+\end{table}
+
+\end{document}
